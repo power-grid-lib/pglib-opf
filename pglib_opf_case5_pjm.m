@@ -3,7 +3,7 @@
 %%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                         26 - June - 2017                         %%%%%
+%%%%                         23 - July - 2017                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -36,21 +36,21 @@ mpc.areas = [
 %% bus data
 %	bus_i	type	Pd	Qd	Gs	Bs	area	Vm	Va	baseKV	zone	Vmax	Vmin
 mpc.bus = [
-	1	 2	 0.0	 0.0	 0.0	 0.0	 1	    1.07762	    2.80378	 230.0	 1	    1.10000	    0.90000;
-	2	 1	 300.0	 98.61	 0.0	 0.0	 1	    1.08406	   -0.73464	 230.0	 1	    1.10000	    0.90000;
-	3	 2	 300.0	 98.61	 0.0	 0.0	 1	    1.10000	   -0.55973	 230.0	 1	    1.10000	    0.90000;
-	4	 3	 400.0	 131.47	 0.0	 0.0	 1	    1.06414	    0.00000	 230.0	 1	    1.10000	    0.90000;
-	5	 2	 0.0	 0.0	 0.0	 0.0	 1	    1.06907	    3.59035	 230.0	 1	    1.10000	    0.90000;
+	1	 2	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 230.0	 1	    1.10000	    0.90000;
+	2	 1	 300.0	 98.61	 0.0	 0.0	 1	    1.00000	    0.00000	 230.0	 1	    1.10000	    0.90000;
+	3	 2	 300.0	 98.61	 0.0	 0.0	 1	    1.00000	    0.00000	 230.0	 1	    1.10000	    0.90000;
+	4	 3	 400.0	 131.47	 0.0	 0.0	 1	    1.00000	    0.00000	 230.0	 1	    1.10000	    0.90000;
+	5	 2	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 230.0	 1	    1.10000	    0.90000;
 ];
 
 %% generator data
 %	bus	Pg	Qg	Qmax	Qmin	Vg	mBase	status	Pmax	Pmin	Pc1	Pc2	Qc1min	Qc1max	Qc2min	Qc2max	ramp_agc	ramp_10	ramp_30	ramp_q	apf
 mpc.gen = [
-	1	 40.0	 30.0	 30.0	 -30.0	 1.07762	 100.0	 1	 40.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0;
-	1	 170.0	 127.5	 127.5	 -127.5	 1.07762	 100.0	 1	 170.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0;
-	3	 324.498	 390.0	 390.0	 -390.0	 1.1	 100.0	 1	 520.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0;
-	4	 0.0	 -10.802	 150.0	 -150.0	 1.06414	 100.0	 1	 200.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0;
-	5	 470.694	 -165.039	 450.0	 -450.0	 1.06907	 100.0	 1	 600.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0;
+	1	 20.0	 0.0	 30.0	 -30.0	 1.0	 100.0	 1	 40.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0;
+	1	 85.0	 0.0	 127.5	 -127.5	 1.0	 100.0	 1	 170.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0;
+	3	 260.0	 0.0	 390.0	 -390.0	 1.0	 100.0	 1	 520.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0;
+	4	 100.0	 0.0	 150.0	 -150.0	 1.0	 100.0	 1	 200.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0;
+	5	 300.0	 0.0	 450.0	 -450.0	 1.0	 100.0	 1	 600.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0;
 ];
 
 %% generator cost data
@@ -77,7 +77,7 @@ mpc.branch = [
 % INFO    : === Translation Options ===
 % INFO    : Phase Angle Bound:           30.0 (deg.)
 % INFO    : Line Capacity Model:         stat
-% INFO    : AC OPF Solution File:        pglib_opf_case5_pjm.m.opf.sol
+% INFO    : Setting Flat Start
 % INFO    : Line Capacity PAB:           15.0 (deg.)
 % INFO    : 
 % INFO    : === Line Capacity Stat Model Notes ===
@@ -87,22 +87,17 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 3-4 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 426
 % INFO    : 
 % INFO    : === Voltage Setpoint Replacement Notes ===
-% INFO    : Bus 1	: V=1.0, theta=0.0 -> V=1.07762, theta=2.80378
-% INFO    : Bus 2	: V=1.0, theta=0.0 -> V=1.08406, theta=-0.73464
-% INFO    : Bus 3	: V=1.0, theta=0.0 -> V=1.1, theta=-0.55973
-% INFO    : Bus 4	: V=1.0, theta=0.0 -> V=1.06414, theta=0.0
-% INFO    : Bus 5	: V=1.0, theta=0.0 -> V=1.06907, theta=3.59035
+% INFO    : Bus 1	: V=1.0, theta=0.0 -> V=1.0, theta=0.0
+% INFO    : Bus 2	: V=1.0, theta=0.0 -> V=1.0, theta=0.0
+% INFO    : Bus 3	: V=1.0, theta=0.0 -> V=1.0, theta=0.0
+% INFO    : Bus 4	: V=1.0, theta=0.0 -> V=1.0, theta=0.0
+% INFO    : Bus 5	: V=1.0, theta=0.0 -> V=1.0, theta=0.0
 % INFO    : 
 % INFO    : === Generator Setpoint Replacement Notes ===
-% INFO    : Gen at bus 1	: Pg=40.0, Qg=0.0 -> Pg=40.0, Qg=30.0
-% INFO    : Gen at bus 1	: Vg=1.0 -> Vg=1.07762
-% INFO    : Gen at bus 1	: Pg=170.0, Qg=0.0 -> Pg=170.0, Qg=127.5
-% INFO    : Gen at bus 1	: Vg=1.0 -> Vg=1.07762
-% INFO    : Gen at bus 3	: Pg=323.49, Qg=0.0 -> Pg=324.498, Qg=390.0
-% INFO    : Gen at bus 3	: Vg=1.0 -> Vg=1.1
-% INFO    : Gen at bus 4	: Pg=0.0, Qg=0.0 -> Pg=0.0, Qg=-10.802
-% INFO    : Gen at bus 4	: Vg=1.0 -> Vg=1.06414
-% INFO    : Gen at bus 5	: Pg=466.51, Qg=0.0 -> Pg=470.694, Qg=-165.039
-% INFO    : Gen at bus 5	: Vg=1.0 -> Vg=1.06907
+% INFO    : Gen at bus 1	: Pg=40.0, Qg=0.0 -> Pg=20.0, Qg=0.0
+% INFO    : Gen at bus 1	: Pg=170.0, Qg=0.0 -> Pg=85.0, Qg=0.0
+% INFO    : Gen at bus 3	: Pg=323.49, Qg=0.0 -> Pg=260.0, Qg=0.0
+% INFO    : Gen at bus 4	: Pg=0.0, Qg=0.0 -> Pg=100.0, Qg=0.0
+% INFO    : Gen at bus 5	: Pg=466.51, Qg=0.0 -> Pg=300.0, Qg=0.0
 % INFO    : 
 % INFO    : === Writing Matpower Case File Notes ===
