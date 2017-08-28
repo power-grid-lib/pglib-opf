@@ -3,7 +3,7 @@
 %%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                         23 - July - 2017                         %%%%%
+%%%%                        27 - August - 2017                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -104,13 +104,13 @@ mpc.gen = [
 %% generator cost data
 %	2	startup	shutdown	n	c(n-1)	...	c0
 mpc.gencost = [
-	2	 0.0	 0.0	 3	   0.000000	   0.530842	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  18.277588	   0.000000; % COW
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   1.056991	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  45.877299	   0.000000; % NG
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   0.939592	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  30.784636	   0.000000; % COW
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   1.113867	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  48.614960	   0.000000; % NG
 ];
 
 %% branch data
@@ -226,13 +226,13 @@ mpc.branch = [
 % INFO    : Gen at bus 3 - NG	: Pmax 60.0, Qmin -10.0, Qmax 60.0 -> Qmin -10.0, Qmax 30.0
 % INFO    : 
 % INFO    : === Generator Active Cost Stat Model Notes ===
-% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0775795 -> 0 0.530841864558 0
+% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0775795 -> 0 18.2775877945 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.25 -> 0 1.05699130243 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.25 -> 0 45.8772985984 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0222222 -> 0 0.939591817287 0
+% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0222222 -> 0 30.7846362054 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0322581 -> 0 1.1138670288 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0322581 -> 0 48.6149603689 0
 % INFO    : 
 % INFO    : === Line Capacity Stat Model Notes ===
 % WARNING : Missing data for branch flow stat model on line 1-2 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0083 x=0.028

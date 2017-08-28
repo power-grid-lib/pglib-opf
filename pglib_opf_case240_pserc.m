@@ -3,7 +3,7 @@
 %%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                         23 - July - 2017                         %%%%%
+%%%%                        27 - August - 2017                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -423,149 +423,149 @@ mpc.gen = [
 %% generator cost data
 %	2	startup	shutdown	n	c(n-1)	...	c0
 mpc.gencost = [
-	2	 0.0	 0.0	 3	   0.000000	   0.730720	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.547977	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.352530	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.224209	   0.000000; % NUC
-	2	 0.0	 0.0	 3	   0.000000	   0.207821	   0.000000; % NUC
-	2	 0.0	 0.0	 3	   0.000000	   1.000112	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.961285	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.849869	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.621551	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.963883	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.768782	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.877218	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.070412	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.221923	   0.000000; % NUC
-	2	 0.0	 0.0	 3	   0.000000	   6.678256	   0.000000; % PEL
-	2	 0.0	 0.0	 3	   0.000000	   1.231941	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.793715	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   6.607390	   0.000000; % PEL
-	2	 0.0	 0.0	 3	   0.000000	   0.197411	   0.000000; % NUC
-	2	 0.0	 0.0	 3	   0.000000	   0.365518	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.164452	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.094122	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.345345	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.797363	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.872125	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.782100	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.154910	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.696338	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.786609	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   6.937261	   0.000000; % PEL
-	2	 0.0	 0.0	 3	   0.000000	   0.909454	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.846175	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.322056	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.682277	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.681675	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  24.393520	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  18.801900	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  60.102763	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	   8.048101	   0.000000; % NUC
+	2	 0.0	 0.0	 3	   0.000000	   7.532251	   0.000000; % NUC
+	2	 0.0	 0.0	 3	   0.000000	  32.636440	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  31.448409	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  35.907634	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  21.053140	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  31.527892	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  25.558137	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  28.876100	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  34.787505	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	   7.976160	   0.000000; % NUC
+	2	 0.0	 0.0	 3	   0.000000	 120.959591	   0.000000; % PEL
+	2	 0.0	 0.0	 3	   0.000000	  39.730027	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  26.321067	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	 116.911795	   0.000000; % PEL
+	2	 0.0	 0.0	 3	   0.000000	   7.204570	   0.000000; % NUC
+	2	 0.0	 0.0	 3	   0.000000	  13.218963	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  37.664966	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  47.664547	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  59.756930	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  33.380307	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  28.720268	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  25.965664	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  50.590540	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  23.341498	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  26.103609	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	 135.753640	   0.000000; % PEL
+	2	 0.0	 0.0	 3	   0.000000	  29.862463	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  27.926242	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  42.487383	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  22.911230	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  22.892828	   0.000000; % COW
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   1.009259	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.763782	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.543755	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.902599	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.092298	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.036556	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.535969	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   7.035978	   0.000000; % PEL
-	2	 0.0	 0.0	 3	   0.000000	   0.795252	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   7.850123	   0.000000; % PEL
-	2	 0.0	 0.0	 3	   0.000000	   1.176670	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.029022	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.293004	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.847343	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.125050	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.975242	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.717821	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.593559	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.823994	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.716064	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.795387	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   6.887245	   0.000000; % PEL
-	2	 0.0	 0.0	 3	   0.000000	   1.117070	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.969854	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.228936	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.562633	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.840917	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  32.916334	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  25.405151	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  18.672714	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  38.445748	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  47.576744	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  33.751574	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  68.932478	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	 141.392226	   0.000000; % PEL
+	2	 0.0	 0.0	 3	   0.000000	  33.278725	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	 187.895200	   0.000000; % PEL
+	2	 0.0	 0.0	 3	   0.000000	  51.637905	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  33.521048	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  11.000143	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  35.786058	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  36.459343	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  41.942379	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  23.998822	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  20.196639	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  27.247540	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  23.945061	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  33.285233	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	 132.896815	   0.000000; % PEL
+	2	 0.0	 0.0	 3	   0.000000	  48.769149	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  41.683024	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  54.153703	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  19.250348	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  27.765370	   0.000000; % COW
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   1.225058	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.389758	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.011772	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.696809	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.079655	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.505750	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.167257	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.341739	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.975316	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.207398	   0.000000; % NUC
-	2	 0.0	 0.0	 3	   0.000000	   0.444718	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.001712	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.035891	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.892238	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.224492	   0.000000; % NUC
-	2	 0.0	 0.0	 3	   0.000000	   0.699310	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.047018	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.692968	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.694563	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.718635	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.020476	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.980788	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.318216	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.624472	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.428383	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.974272	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.260135	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.160818	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.457151	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.711020	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.315196	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.697369	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.198098	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.486146	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.192485	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.954522	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.843005	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.769684	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.866159	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.373967	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.982279	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.890317	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.123174	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.326548	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.022946	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   6.667906	   0.000000; % PEL
-	2	 0.0	 0.0	 3	   0.000000	   1.126477	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.036436	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.984509	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.162523	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.963800	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.958120	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.756595	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.169298	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.994377	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.756082	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.374853	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.921757	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.950610	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   6.584968	   0.000000; % PEL
-	2	 0.0	 0.0	 3	   0.000000	   0.735420	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.926551	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.600757	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.943986	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.636850	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.911166	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.114257	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.845519	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.207636	   0.000000; % NUC
-	2	 0.0	 0.0	 3	   0.000000	   1.197784	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.248914	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.777602	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.226066	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.983992	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.307486	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.781134	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   6.987086	   0.000000; % PEL
-	2	 0.0	 0.0	 3	   0.000000	   0.748811	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.773057	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  39.519424	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  61.894729	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  32.993218	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  23.355886	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  35.070316	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  67.477890	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  51.184835	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  12.491355	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  41.945944	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	   7.518943	   0.000000; % NUC
+	2	 0.0	 0.0	 3	   0.000000	  15.642333	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  32.685415	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  44.861665	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  29.335678	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	   8.057015	   0.000000; % NUC
+	2	 0.0	 0.0	 3	   0.000000	  28.660619	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  45.397258	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  28.355360	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  23.287177	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  24.023741	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  44.119679	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  32.045166	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  58.451130	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  21.142511	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  15.142507	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  31.845804	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  55.655433	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  50.874917	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  16.022778	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  29.224295	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  42.277488	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  28.567219	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  38.694479	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  16.909977	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  52.399186	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  40.945020	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  27.829253	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  25.585751	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  28.537708	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  13.477471	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  42.281081	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  29.276914	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  49.062928	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  58.852160	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  44.238556	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	 120.368428	   0.000000; % PEL
+	2	 0.0	 0.0	 3	   0.000000	  49.221943	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  33.747916	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  42.388441	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  37.605963	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  31.525369	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  41.118225	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  25.185235	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  37.813264	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  32.460983	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  25.169555	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  13.504585	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  30.238936	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  40.756741	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	 115.631122	   0.000000; % PEL
+	2	 0.0	 0.0	 3	   0.000000	  24.537326	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  39.598654	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  20.416875	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  40.437874	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  21.521265	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  38.858118	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  48.633718	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  27.906177	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	   7.526452	   0.000000; % NUC
+	2	 0.0	 0.0	 3	   0.000000	  38.684873	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  40.249356	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  32.429154	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  54.015575	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  32.143203	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  11.443281	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  25.936103	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	 138.599598	   0.000000; % PEL
+	2	 0.0	 0.0	 3	   0.000000	  24.947060	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  25.688951	   0.000000; % COW
 ];
 
 %% branch data
@@ -1037,149 +1037,149 @@ mpc.branch = [
 % INFO    : NG     47  -    10.54
 % INFO    : 
 % INFO    : === Generator Active Cost Stat Model Notes ===
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.730720109338 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.547977198165 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.35252950119 0
-% INFO    : Updated Generator Cost: NUC - 0.0 1.0 0.0 -> 0 0.224208563615 0
-% INFO    : Updated Generator Cost: NUC - 0.0 1.0 0.0 -> 0 0.207820631856 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.00011166991 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.961284966768 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.849868594413 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.621551247469 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.963882573851 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.768781637244 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.877217863017 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.07041185393 0
-% INFO    : Updated Generator Cost: NUC - 0.0 1.0 0.0 -> 0 0.221923092763 0
-% INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 6.6782559001 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.23194122536 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.793715388784 0
-% INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 6.60738960865 0
-% INFO    : Updated Generator Cost: NUC - 0.0 1.0 0.0 -> 0 0.197410567237 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.365518075127 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.16445179482 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.09412191839 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.34534471195 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.797362627306 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.872125026079 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.782100243058 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.15491027621 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.696338385651 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.786608503214 0
-% INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 6.93726089843 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.909453763414 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.84617499867 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.322055932 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.682276546655 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.681675163549 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 24.3935197159 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 18.801899652 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 60.1027631338 0
+% INFO    : Updated Generator Cost: NUC - 0.0 1.0 0.0 -> 0 8.048100716 0
+% INFO    : Updated Generator Cost: NUC - 0.0 1.0 0.0 -> 0 7.53225144695 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 32.636440032 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 31.4484094216 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 35.9076339336 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 21.0531395366 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 31.5278917489 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 25.5581372747 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 28.8761000443 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 34.7875052467 0
+% INFO    : Updated Generator Cost: NUC - 0.0 1.0 0.0 -> 0 7.97616006566 0
+% INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 120.959591326 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 39.7300273307 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 26.3210673631 0
+% INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 116.911795481 0
+% INFO    : Updated Generator Cost: NUC - 0.0 1.0 0.0 -> 0 7.20456981495 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 13.218963019 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 37.6649663581 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 47.6645472953 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 59.7569297866 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 33.3803065827 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 28.7202679574 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 25.9656637993 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 50.5905400497 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 23.3414978631 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 26.1036088379 0
+% INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 135.753639872 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 29.86246338 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 27.9262415682 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 42.4873829975 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 22.9112296761 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 22.8928283832 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 1.0 0.0 -> 0 0.0 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.00925903837 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.763781793382 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.543755220152 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.902598663495 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.09229777306 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.03655600116 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.53596942581 0
-% INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 7.03597775145 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.795252245661 0
-% INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 7.85012289629 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.17666960042 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.02902206021 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.29300355327 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.847342811636 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.12505012047 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.975242193161 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.717820776528 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.593559454496 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.823993957469 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.716063770622 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.795387436322 0
-% INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 6.88724538461 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.11707033305 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.969854007753 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.22893603602 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.562633193928 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.840917465624 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 32.9163338385 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 25.4051506167 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 18.6727143566 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 38.4457482308 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 47.5767437055 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 33.7515741432 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 68.932478389 0
+% INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 141.392225711 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 33.2787252663 0
+% INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 187.895200069 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 51.6379054874 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 33.521048455 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 11.0001428594 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 35.7860576586 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 36.4593426137 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 41.9423789856 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 23.998822227 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 20.1966386185 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 27.2475397011 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 23.9450608558 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 33.2852325469 0
+% INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 132.896814929 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 48.7691485284 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 41.6830235427 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 54.1537032053 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 19.2503480183 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 27.7653700626 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 1.0 0.0 -> 0 0.0 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.22505838696 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.38975811604 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.01177172746 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.696808617016 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.07965453655 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.50574993189 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.16725692546 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.341738709625 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.975316258147 0
-% INFO    : Updated Generator Cost: NUC - 0.0 1.0 0.0 -> 0 0.20739783345 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.444717616619 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.00171223969 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.03589120759 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.892237600877 0
-% INFO    : Updated Generator Cost: NUC - 0.0 1.0 0.0 -> 0 0.224491759545 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.699309729428 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.04701832656 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.69296789365 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.694563101739 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.718635169796 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.02047624548 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.980787914777 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.31821634445 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.624472055582 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.428382518823 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.974272436158 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.26013490589 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.16081828798 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.457151141325 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.711020260393 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.31519623021 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.697369314289 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.19809788065 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.486146198123 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.19248542498 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.954521764977 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.843005253918 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.769684086334 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.866158689477 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.37396651025 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.98227883672 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.890317087272 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.12317369021 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.32654786065 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.02294594447 0
-% INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 6.6679061793 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.12647726951 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.03643645109 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.98450926901 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.16252346383 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.963800122829 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.958120155405 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.756594607915 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.1692983802 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.994377450919 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.756082143109 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.374852638689 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.921757490755 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.950610208842 0
-% INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 6.58496837711 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.735419909145 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.926550622388 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.600757111755 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.94398565407 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.636850333655 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.911165770573 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.11425672992 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.845519257995 0
-% INFO    : Updated Generator Cost: NUC - 0.0 1.0 0.0 -> 0 0.207636385373 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.1977839475 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.24891369934 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.7776021524 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.22606638701 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.983991908179 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.30748599138 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.781134157755 0
-% INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 6.98708616811 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.748810670018 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.773056835085 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 39.5194242651 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 61.8947289183 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 32.9932178207 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 23.3558861374 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 35.070315503 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 67.4778903156 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 51.1848348712 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 12.491355166 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 41.9459440368 0
+% INFO    : Updated Generator Cost: NUC - 0.0 1.0 0.0 -> 0 7.51894285796 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 15.6423333288 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 32.6854147257 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 44.8616645719 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 29.3356782957 0
+% INFO    : Updated Generator Cost: NUC - 0.0 1.0 0.0 -> 0 8.05701498386 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 28.6606188157 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 45.3972584036 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 28.3553602728 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 23.2871772162 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 24.023741266 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 44.1196792794 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 32.0451662243 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 58.4511302945 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 21.1425112619 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 15.1425073164 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 31.8458037388 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 55.6554326562 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 50.8749168657 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 16.0227778875 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 29.2242946574 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 42.2774878727 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 28.5672186838 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 38.6944789526 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 16.9099769603 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 52.3991859323 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 40.9450198708 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 27.8292528082 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 25.585750671 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 28.5377082771 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 13.4774706625 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 42.2810814742 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 29.276913869 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 49.0629281186 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 58.8521603095 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 44.2385560119 0
+% INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 120.368427939 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 49.2219429274 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 33.7479161158 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 42.3884413199 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 37.6059627328 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 31.5253688889 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 41.1182251473 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 25.1852350522 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 37.813263569 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 32.4609827529 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 25.169554507 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 13.5045846749 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 30.2389363617 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 40.7567406456 0
+% INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 115.631122174 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 24.5373255397 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 39.5986541605 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 20.4168746018 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 40.437873679 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 21.5212653683 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 38.8581182 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 48.6337182808 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 27.9061770267 0
+% INFO    : Updated Generator Cost: NUC - 0.0 1.0 0.0 -> 0 7.52645184914 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 38.6848731359 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 40.2493559627 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 32.4291539528 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 54.0155752395 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 32.1432029343 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 11.4432806588 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 25.9361032438 0
+% INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 138.599598302 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 24.9470598856 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 25.6889510057 0
 % INFO    : 
 % INFO    : === Line Capacity UB Model Notes ===
 % INFO    : Updated Thermal Rating: on line 1001-1201 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 996

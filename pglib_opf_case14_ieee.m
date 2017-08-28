@@ -3,7 +3,7 @@
 %%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                         23 - July - 2017                         %%%%%
+%%%%                        27 - August - 2017                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -57,8 +57,8 @@ mpc.gen = [
 %% generator cost data
 %	2	startup	shutdown	n	c(n-1)	...	c0
 mpc.gencost = [
-	2	 0.0	 0.0	 3	   0.000000	   0.579201	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.859587	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  22.879299	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  36.375423	   0.000000; % NG
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
@@ -113,8 +113,8 @@ mpc.branch = [
 % INFO    : Gen at bus 2 - NG	: Pmax 59.0, Qmin -40.0, Qmax 50.0 -> Qmin -30.0, Qmax 30.0
 % INFO    : 
 % INFO    : === Generator Active Cost Stat Model Notes ===
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0430293 -> 0 0.579201114382 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.25 -> 0 0.859587042194 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0430293 -> 0 22.8792990037 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.25 -> 0 36.3754226486 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0

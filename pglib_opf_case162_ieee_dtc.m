@@ -3,7 +3,7 @@
 %%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                         23 - July - 2017                         %%%%%
+%%%%                        27 - August - 2017                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -213,18 +213,18 @@ mpc.gen = [
 %% generator cost data
 %	2	startup	shutdown	n	c(n-1)	...	c0
 mpc.gencost = [
-	2	 0.0	 0.0	 3	   0.000000	   0.730114	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.990017	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.593904	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.613505	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.137634	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.180023	   0.000000; % NUC
-	2	 0.0	 0.0	 3	   0.000000	   0.711971	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.977933	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.806747	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.213340	   0.000000; % NUC
-	2	 0.0	 0.0	 3	   0.000000	   0.478502	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.360850	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  24.374988	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  42.653546	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  20.207179	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  20.806951	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  49.758941	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	   6.657268	   0.000000; % NUC
+	2	 0.0	 0.0	 3	   0.000000	  23.819822	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  42.071883	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  33.832029	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	   7.706001	   0.000000; % NUC
+	2	 0.0	 0.0	 3	   0.000000	  16.676084	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  13.076122	   0.000000; % COW
 ];
 
 %% branch data
@@ -554,18 +554,18 @@ mpc.branch = [
 % INFO    : Gen at bus 125 - NUC	: Pmax 2526.0, Qmin -1099.0, Qmax 9900.0 -> Qmin -1099.0, Qmax 1263.0
 % INFO    : 
 % INFO    : === Generator Active Cost Stat Model Notes ===
-% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0125944584 -> 0 0.730114465291 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0223713647 -> 0 0.990016890716 0
-% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.00947867299 -> 0 0.593903941689 0
-% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.076394194 -> 0 0.613505405321 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.12195122 -> 0 1.1376335586 0
-% INFO    : Updated Generator Cost: NUC - 0.0 20.0 0.0181448686 -> 0 0.180023439837 0
-% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0763358779 -> 0 0.711970760004 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0578034682 -> 0 0.97793266773 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0161290323 -> 0 0.806747302754 0
-% INFO    : Updated Generator Cost: NUC - 0.0 20.0 0.00418760469 -> 0 0.213340467162 0
-% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.021978022 -> 0 0.478502193394 0
-% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0173913043 -> 0 0.360849803153 0
+% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0125944584 -> 0 24.3749880454 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0223713647 -> 0 42.6535457213 0
+% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.00947867299 -> 0 20.2071793365 0
+% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.076394194 -> 0 20.8069505485 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.12195122 -> 0 49.7589408362 0
+% INFO    : Updated Generator Cost: NUC - 0.0 20.0 0.0181448686 -> 0 6.65726847808 0
+% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0763358779 -> 0 23.8198217418 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0578034682 -> 0 42.0718825513 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0161290323 -> 0 33.8320294676 0
+% INFO    : Updated Generator Cost: NUC - 0.0 20.0 0.00418760469 -> 0 7.70600143872 0
+% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.021978022 -> 0 16.6760835089 0
+% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0173913043 -> 0 13.0761218928 0
 % INFO    : 
 % INFO    : === Line Capacity Stat Model Notes ===
 % INFO    : Updated Thermal Rating: on line 1-2 : Rate A, Rate B, Rate C , 3450.0, 0.0, 0.0 -> 613

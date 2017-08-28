@@ -3,7 +3,7 @@
 %%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                         23 - July - 2017                         %%%%%
+%%%%                        27 - August - 2017                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -178,18 +178,18 @@ mpc.gen = [
 %% generator cost data
 %	2	startup	shutdown	n	c(n-1)	...	c0
 mpc.gencost = [
-	2	 0.0	 0.0	 3	   0.000000	   0.192565	   0.000000; % NUC
-	2	 0.0	 0.0	 3	   0.000000	   1.071607	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.207122	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.004547	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.740717	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.940652	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.240421	   0.000000; % NUC
-	2	 0.0	 0.0	 3	   0.000000	   1.128543	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.813759	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.699345	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.005763	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.551907	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	   7.052047	   0.000000; % NUC
+	2	 0.0	 0.0	 3	   0.000000	  34.824079	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  53.103727	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  32.772156	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  30.653730	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  40.277393	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	   8.558427	   0.000000; % NUC
+	2	 0.0	 0.0	 3	   0.000000	  49.321361	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  34.169535	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  23.433494	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  43.411482	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  18.922145	   0.000000; % COW
 ];
 
 %% branch data
@@ -420,18 +420,18 @@ mpc.branch = [
 % INFO    : NG     6   -     9.08
 % INFO    : 
 % INFO    : === Generator Active Cost Stat Model Notes ===
-% INFO    : Updated Generator Cost: NUC - 0.0 1.0 0.0 -> 0 0.192565090146 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.07160713344 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.20712246832 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 1.00454708715 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.740717190684 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.940651618081 0
-% INFO    : Updated Generator Cost: NUC - 0.0 1.0 0.0 -> 0 0.24042103005 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.12854271235 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 0.813759089502 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.699344958636 0
-% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 1.00576324228 0
-% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 0.55190701209 0
+% INFO    : Updated Generator Cost: NUC - 0.0 1.0 0.0 -> 0 7.05204685765 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 34.8240787523 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 53.1037268066 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 32.772156202 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 30.6537296016 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 40.2773928649 0
+% INFO    : Updated Generator Cost: NUC - 0.0 1.0 0.0 -> 0 8.55842679514 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 49.3213611547 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 34.1695354961 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 23.4334938465 0
+% INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 43.411482146 0
+% INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 18.9221452268 0
 % INFO    : 
 % INFO    : === Line Capacity UB Model Notes ===
 % INFO    : Updated Thermal Rating: on line 3097-659 : Rate B, Rate C , 0.0, 0.0 -> 3480

@@ -3,7 +3,7 @@
 %%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                         24 - July - 2017                         %%%%%
+%%%%                        27 - August - 2017                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case14_ieee__api
@@ -42,8 +42,8 @@ mpc.gen = [
 %% generator cost data
 %	2	startup	shutdown	n	c(n-1)	...	c0
 mpc.gencost = [
-	2	 0.0	 0.0	 3	   0.000000	   0.579201	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.859587	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  22.879299	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  36.375423	   0.000000; % NG
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC

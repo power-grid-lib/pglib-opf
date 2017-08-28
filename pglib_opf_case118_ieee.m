@@ -3,7 +3,7 @@
 %%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                         23 - July - 2017                         %%%%%
+%%%%                        27 - August - 2017                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -217,53 +217,53 @@ mpc.gencost = [
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   0.890897	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   7.339177	   0.000000; % PEL
+	2	 0.0	 0.0	 3	   0.000000	  37.882494	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	 158.710570	   0.000000; % PEL
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   0.963327	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.690345	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  41.368870	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  23.158115	   0.000000; % COW
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   0.804749	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   0.876628	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.739100	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.932802	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   0.888676	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.727812	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   1.069892	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   1.007141	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.797607	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  26.658684	   0.000000; % COW
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   0.762505	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   1.056938	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	   0.762636	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  37.195653	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  30.575890	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  39.899563	   0.000000; % NG
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
+	2	 0.0	 0.0	 3	   0.000000	  37.775612	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  30.032564	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
+	2	 0.0	 0.0	 3	   0.000000	  46.498286	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  32.851524	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  26.440152	   0.000000; % COW
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   0.398989	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.957868	   0.000000; % NG
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	   1.074672	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  25.366073	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
+	2	 0.0	 0.0	 3	   0.000000	  45.874727	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  25.370090	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
+	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
+	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
+	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
+	2	 0.0	 0.0	 3	   0.000000	  14.243118	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  41.106088	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
+	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
+	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
+	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
+	2	 0.0	 0.0	 3	   0.000000	  46.728333	   0.000000; % NG
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
@@ -551,53 +551,53 @@ mpc.branch = [
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0222222 -> 0 0.890896898514 0
-% INFO    : Updated Generator Cost: PEL - 0.0 20.0 0.117647 -> 0 7.33917655162 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0222222 -> 0 37.8824943319 0
+% INFO    : Updated Generator Cost: PEL - 0.0 20.0 0.117647 -> 0 158.710570136 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0454545 -> 0 0.96332737765 0
-% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0318471 -> 0 0.690345156636 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0454545 -> 0 41.3688700916 0
+% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0318471 -> 0 23.1581153209 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: COW - 0.0 20.0 1.42857 -> 0 0.804749235754 0
-% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.526316 -> 0 0.876627563187 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0490196 -> 0 0.739100041848 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.208333 -> 0 0.9328020863 0
-% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0645161 -> 0 0.888676392716 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0625 -> 0 0.727812294274 0
-% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0255754 -> 0 1.06989249145 0
-% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0255102 -> 0 1.00714093577 0
-% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0193648 -> 0 0.797607270438 0
+% INFO    : Updated Generator Cost: COW - 0.0 20.0 1.42857 -> 0 26.6586841806 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0209644 -> 0 0.762504665084 0
-% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 2.5 -> 0 1.05693788366 0
-% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0164745 -> 0 0.762635965441 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.526316 -> 0 37.1956527511 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0490196 -> 0 30.5758896015 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.208333 -> 0 39.8995627352 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0645161 -> 0 37.7756122889 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0625 -> 0 30.0325640569 0
+% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0255754 -> 0 46.4982856915 0
+% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0255102 -> 0 32.8515235269 0
+% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0193648 -> 0 26.4401522754 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0396825 -> 0 0.398989053667 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.25 -> 0 0.957868006921 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.277778 -> 0 1.07467179995 0
+% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0209644 -> 0 25.3660726783 0
+% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 2.5 -> 0 45.8747273345 0
+% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0164745 -> 0 25.3700902444 0
+% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
+% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
+% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
+% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
+% INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0396825 -> 0 14.2431176303 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.25 -> 0 41.1060882075 0
+% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
+% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
+% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
+% INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.277778 -> 0 46.7283333935 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0

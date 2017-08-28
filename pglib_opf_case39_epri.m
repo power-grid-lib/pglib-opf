@@ -3,7 +3,7 @@
 %%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                         23 - July - 2017                         %%%%%
+%%%%                        27 - August - 2017                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -148,16 +148,16 @@ mpc.gen = [
 %% generator cost data
 %	2	startup	shutdown	n	c(n-1)	...	c0
 mpc.gencost = [
-	2	 0.0	 0.0	 3	   0.000000	   0.196216	   0.000000; % NUC
-	2	 0.0	 0.0	 3	   0.000000	   0.462527	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.768689	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   1.073117	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.764088	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.996155	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.567133	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.973223	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.698902	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	   0.848427	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	   7.166982	   0.000000; % NUC
+	2	 0.0	 0.0	 3	   0.000000	  16.187269	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  25.555307	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  34.870276	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  25.414524	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  32.515386	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  19.388021	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  31.813693	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  23.419927	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  27.995137	   0.000000; % COW
 ];
 
 %% branch data
@@ -221,16 +221,16 @@ mpc.branch = [
 % INFO    : COW    9   -    96.03
 % INFO    : 
 % INFO    : === Generator Active Cost Stat Model Notes ===
-% INFO    : Updated Generator Cost: NUC - 0.2 0.3 0.01 -> 0 0.196216438089 0
-% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 0.462526971987 0
-% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 0.768689144166 0
-% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 1.07311692544 0
-% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 0.764088120747 0
-% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 0.996155437334 0
-% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 0.567132560967 0
-% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 0.973223011764 0
-% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 0.698901587841 0
-% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 0.848426605944 0
+% INFO    : Updated Generator Cost: NUC - 0.2 0.3 0.01 -> 0 7.1669817497 0
+% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 16.1872690976 0
+% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 25.5553071449 0
+% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 34.8702758014 0
+% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 25.4145237093 0
+% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 32.5153860917 0
+% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 19.3880209428 0
+% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 31.8136931499 0
+% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 23.4199274596 0
+% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 27.995136894 0
 % INFO    : 
 % INFO    : === Voltage Setpoint Replacement Notes ===
 % INFO    : Bus 1	: V=1.0393836, theta=-13.536602 -> V=1.0, theta=0.0

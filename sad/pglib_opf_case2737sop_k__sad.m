@@ -3,7 +3,7 @@
 %%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Small Angle Difference             %%%%%
-%%%%                         24 - July - 2017                         %%%%%
+%%%%                        27 - August - 2017                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case2737sop_k__sad
@@ -7081,4 +7081,3 @@ mpc.branch = [
 % INFO    : Phase Angle Bound:           6.408062 (deg.)
 % INFO    : 
 % INFO    : === Writing Matpower Case File Notes ===
-% WARNING : No comments found in comments.txt for case named pglib_opf_case2737sop_k__sad
