@@ -1,5 +1,6 @@
 % render with latexit and then export as png, default settings
-% 18.00 pt
+% 18.00 pt (std display)
+%  9.00 pt (retina display)
 % \usepackage{amssymb, amsmath, bm}
 \begin{align}
 %
@@ -25,6 +26,6 @@
 & S_{ij} = \left( \bm Y^*_{ij} - \bm i\frac{\bm {b^c}_{ij}}{2} \right) \frac{|V_i|^2}{|\bm{T}_{ij}|^2} - \bm Y^*_{ij} \frac{V_i V^*_j}{\bm{T}_{ij}} \;\; \forall (i,j)\in E \\
 & S_{ji} = \left( \bm Y^*_{ij} - \bm i\frac{\bm {b^c}_{ij}}{2} \right) |V_j|^2 - \bm Y^*_{ij} \frac{V^*_i V_j}{\bm{T}^*_{ij}} \;\; \forall (i,j)\in E \\
 & |S_{ij}| \leq \bm {s^u}_{ij} \;\; \forall (i,j) \in E \cup E^R \\
-& -\bm {\theta^{\Delta l}}_{ij} \leq \angle (V_i V^*_j) \leq \bm {\theta^{\Delta u}}_{ij} \;\; \forall (i,j) \in E
+& \bm {\theta^{\Delta l}}_{ij} \leq \angle (V_i V^*_j) \leq \bm {\theta^{\Delta u}}_{ij} \;\; \forall (i,j) \in E
 %
 \end{align}
