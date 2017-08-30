@@ -8,6 +8,15 @@ This benchmark library is curated and maintained by the [IEEE PES Task Force on 
 
 A detailed description of this mathematical model is available [here](https://arxiv.org/abs/1502.07847).  All of the cases files are curated in the [Matpower](www.pserc.cornell.edu/matpower) data format and baseline results are available in [BASELINE.md](BASELINE.md).
 
+### Problem Variants
+
+These cases may also be useful for benchmarking the following variants of the Optimal Power Flow problem,
+* DC Optimal Power Flow
+* AC Optimal Transmission Switching
+* DC Optimal Transmission Switching
+
+That said, these cases are curated with the AC Optimal Power Flow problem in mind.  Application to other domains and problem variants should be done with discretion.
+
 ## Case File Overview
 
 A forthcoming technical report will detail the sources, motivations, and procedures for curating these case files.
