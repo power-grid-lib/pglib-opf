@@ -29,7 +29,9 @@ In this repository the network data files are organized into the following three
 
 ## Contributions
 
-Community-driven review and contributions are welcome and encouraged in all PGLib repositories. Please feel free to submit comments and questions in the [issue tracker](https://github.com/power-grid-lib/pglib-opf/issues).  Corrections and new network contributions are welcome via pull requests.  All contributions are subject to a quality assurance review by the repository curator(s).
+All case files are provided under a [Creative Commons Attribution License](http://creativecommons.org/licenses/by/4.0/), which allows anyone to share or adapt these cases as long as they give appropriate credit to the orginal author, provide a link to the license, and indicate if changes were made.
+
+Community-based recommendations and contributions are welcome and encouraged in all PGLib repositories. Please feel free to submit comments and questions in the [issue tracker](https://github.com/power-grid-lib/pglib-opf/issues).  Corrections and new network contributions are welcome via pull requests.  All data contributions are subject to a quality assurance review by the repository curator(s).
 
 ## Citation Guidelines
 
