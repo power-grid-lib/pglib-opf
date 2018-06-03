@@ -1,6 +1,6 @@
 # Power Grid Lib - Optimal Power Flow v17.08
 
-This benchmark library is curated and maintained by the [IEEE PES Task Force on Benchmarks for Validation of Emerging Power System Algorithms](https://power-grid-lib.github.io/) and is designed to evaluate a well established version of the the AC Optimal Power Flow problem.  Specifically, these cases are designed for benchmarking algorithms that solve the following Non-Convex Nonlinear Program,
+This benchmark library is curated and maintained by the [IEEE PES Task Force on Benchmarks for Validation of Emerging Power System Algorithms](https://power-grid-lib.github.io/) and is designed to evaluate a well established version of the the AC Optimal Power Flow problem.  An introductory video is available [here](https://youtu.be/fC3hzddCJ2c). Specifically, these cases are designed for benchmarking algorithms that solve the following Non-Convex Nonlinear Program,
 
 &nbsp;
 ![The Mathematical Model of the Optimal Power Flow Problem](MODEL.png?raw=true "Optional Title")
