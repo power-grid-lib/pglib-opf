@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.08     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.06     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                        30 - August - 2017                        %%%%%
+%%%%                         07 - June - 2018                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -917,7 +917,7 @@ mpc.branch = [
 	2404	 2411	 0.0	 0.01149	 0.0	 2750	 2750	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
 	2404	 2411	 0.0	 0.01149	 0.0	 2750	 2750	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
 	2404	 2411	 0.0	 0.01149	 0.0	 2750	 2750	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
-	2405	 2619	 0.0	 0.00115	 0.0	 27468	 27468	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
+	2405	 2619	 0.0	 0.00115	 0.0	 27468	 27468	 747.0	 0.0	 0.0	 1	 -30.0	 30.0;
 	2501	 2502	 0.0	 0.005	 0.0	 6318	 6318	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
 	2501	 2502	 0.0	 0.005	 0.0	 6318	 6318	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
 	2501	 2502	 0.0	 0.005	 0.0	 6318	 6318	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
@@ -933,8 +933,8 @@ mpc.branch = [
 	3301	 3303	 0.0003	 0.0174	 0.0	 1816	 1816	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
 	3301	 3303	 0.0003	 0.0174	 0.0	 1816	 1816	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
 	3301	 3303	 0.0003	 0.0174	 0.0	 1816	 1816	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
-	3701	 6402	 0.00089	 0.0299	 0.0	 1056	 1056	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
-	3701	 6402	 0.00089	 0.0299	 0.0	 1056	 1056	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
+	3701	 6402	 0.00089	 0.0299	 0.0	 1056	 1056	 747.0	 0.0	 0.0	 1	 -30.0	 30.0;
+	3701	 6402	 0.00089	 0.0299	 0.0	 1056	 1056	 747.0	 0.0	 0.0	 1	 -30.0	 30.0;
 	3802	 3804	 0.0003	 0.0174	 0.0	 1816	 1816	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
 	3803	 3805	 0.0003	 0.0174	 0.0	 1816	 1816	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
 	3803	 3805	 0.0002	 0.0119	 0.0	 2655	 2655	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
@@ -963,7 +963,7 @@ mpc.branch = [
 	6401	 6402	 0.00089	 0.0299	 0.0	 1056	 1056	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
 	6501	 6510	 0.0003	 0.0181	 0.0	 1745	 1745	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
 	6501	 6510	 0.0003	 0.0181	 0.0	 1745	 1745	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
-	6505	 6506	 0.0	 0.0195	 0.0	 1620	 1620	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
+	6505	 6506	 0.0	 0.0195	 0.0	 1620	 1620	 747.0	 0.0	 0.0	 1	 -30.0	 30.0;
 	8001	 8003	 0.0001	 0.0174	 0.0	 1816	 1816	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
 	8002	 8005	 0.0003	 0.0174	 0.0	 1816	 1816	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
 	1002	 1032	 0.0	 0.0005	 0.0	 63175	 63175	 747.0	 1.0	 0.0	 1	 -30.0	 30.0;
@@ -1180,6 +1180,14 @@ mpc.branch = [
 % INFO    : Updated Generator Cost: PEL - 0.0 1.0 0.0 -> 0 138.599598302 0
 % INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 24.9470598856 0
 % INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 25.6889510057 0
+% INFO    : 
+% INFO    : === Base KV Replacement Notes ===
+% INFO    : 
+% INFO    : === Transformer Setting Replacement Notes ===
+% WARNING : Transformer 2405-2619 connects the same voltage levels (230.0, 230.0) and has no phase shift, changing tap ratio 1.0 => 0.0
+% WARNING : Transformer 3701-6402 connects the same voltage levels (115.0, 115.0) and has no phase shift, changing tap ratio 1.0 => 0.0
+% WARNING : Transformer 3701-6402 connects the same voltage levels (115.0, 115.0) and has no phase shift, changing tap ratio 1.0 => 0.0
+% WARNING : Transformer 6505-6506 connects the same voltage levels (345.0, 345.0) and has no phase shift, changing tap ratio 1.0 => 0.0
 % INFO    : 
 % INFO    : === Line Capacity UB Model Notes ===
 % INFO    : Updated Thermal Rating: on line 1001-1201 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 996
@@ -1511,125 +1519,125 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 8003-8005 : Rate A, Rate B, Rate C , 0.0, 0.0, 747.0 -> 115
 % INFO    : Updated Thermal Rating: on line 8003-8005 : Rate A, Rate B, Rate C , 0.0, 0.0, 747.0 -> 115
 % INFO    : Updated Thermal Rating: on line 8004-8005 : Rate A, Rate B, Rate C , 0.0, 0.0, 747.0 -> 229
-% INFO    : Updated Thermal Rating: on line 1001-1002 : Rate A, Rate B , 0.0, 0.0 -> 2872
-% INFO    : Updated Thermal Rating: on line 1001-1002 : Rate A, Rate B , 0.0, 0.0 -> 2872
-% INFO    : Updated Thermal Rating: on line 1002-1003 : Rate A, Rate B , 0.0, 0.0 -> 2289
-% INFO    : Updated Thermal Rating: on line 1002-1003 : Rate A, Rate B , 0.0, 0.0 -> 2272
-% INFO    : Updated Thermal Rating: on line 1101-1102 : Rate A, Rate B , 0.0, 0.0 -> 2164
-% INFO    : Updated Thermal Rating: on line 1101-1102 : Rate A, Rate B , 0.0, 0.0 -> 2164
-% INFO    : Updated Thermal Rating: on line 1302-1303 : Rate A, Rate B , 0.0, 0.0 -> 4388
-% INFO    : Updated Thermal Rating: on line 1401-1403 : Rate A, Rate B , 0.0, 0.0 -> 2289
-% INFO    : Updated Thermal Rating: on line 2100-2400 : Rate A, Rate B , 0.0, 0.0 -> 2289
-% INFO    : Updated Thermal Rating: on line 2201-2202 : Rate A, Rate B , 0.0, 0.0 -> 6318
-% INFO    : Updated Thermal Rating: on line 2201-2202 : Rate A, Rate B , 0.0, 0.0 -> 6318
-% INFO    : Updated Thermal Rating: on line 2301-2302 : Rate A, Rate B , 0.0, 0.0 -> 6318
-% INFO    : Updated Thermal Rating: on line 2301-2302 : Rate A, Rate B , 0.0, 0.0 -> 6318
-% INFO    : Updated Thermal Rating: on line 2402-2409 : Rate A, Rate B , 0.0, 0.0 -> 6318
-% INFO    : Updated Thermal Rating: on line 2404-2411 : Rate A, Rate B , 0.0, 0.0 -> 2750
-% INFO    : Updated Thermal Rating: on line 2404-2411 : Rate A, Rate B , 0.0, 0.0 -> 2750
-% INFO    : Updated Thermal Rating: on line 2404-2411 : Rate A, Rate B , 0.0, 0.0 -> 2750
+% INFO    : Updated Thermal Rating: on transformer 1001-1002 : Rate A, Rate B , 0.0, 0.0 -> 2872
+% INFO    : Updated Thermal Rating: on transformer 1001-1002 : Rate A, Rate B , 0.0, 0.0 -> 2872
+% INFO    : Updated Thermal Rating: on transformer 1002-1003 : Rate A, Rate B , 0.0, 0.0 -> 2289
+% INFO    : Updated Thermal Rating: on transformer 1002-1003 : Rate A, Rate B , 0.0, 0.0 -> 2272
+% INFO    : Updated Thermal Rating: on transformer 1101-1102 : Rate A, Rate B , 0.0, 0.0 -> 2164
+% INFO    : Updated Thermal Rating: on transformer 1101-1102 : Rate A, Rate B , 0.0, 0.0 -> 2164
+% INFO    : Updated Thermal Rating: on transformer 1302-1303 : Rate A, Rate B , 0.0, 0.0 -> 4388
+% INFO    : Updated Thermal Rating: on transformer 1401-1403 : Rate A, Rate B , 0.0, 0.0 -> 2289
+% INFO    : Updated Thermal Rating: on transformer 2100-2400 : Rate A, Rate B , 0.0, 0.0 -> 2289
+% INFO    : Updated Thermal Rating: on transformer 2201-2202 : Rate A, Rate B , 0.0, 0.0 -> 6318
+% INFO    : Updated Thermal Rating: on transformer 2201-2202 : Rate A, Rate B , 0.0, 0.0 -> 6318
+% INFO    : Updated Thermal Rating: on transformer 2301-2302 : Rate A, Rate B , 0.0, 0.0 -> 6318
+% INFO    : Updated Thermal Rating: on transformer 2301-2302 : Rate A, Rate B , 0.0, 0.0 -> 6318
+% INFO    : Updated Thermal Rating: on transformer 2402-2409 : Rate A, Rate B , 0.0, 0.0 -> 6318
+% INFO    : Updated Thermal Rating: on transformer 2404-2411 : Rate A, Rate B , 0.0, 0.0 -> 2750
+% INFO    : Updated Thermal Rating: on transformer 2404-2411 : Rate A, Rate B , 0.0, 0.0 -> 2750
+% INFO    : Updated Thermal Rating: on transformer 2404-2411 : Rate A, Rate B , 0.0, 0.0 -> 2750
 % INFO    : Updated Thermal Rating: on line 2405-2619 : Rate A, Rate B , 0.0, 0.0 -> 27468
-% INFO    : Updated Thermal Rating: on line 2501-2502 : Rate A, Rate B , 0.0, 0.0 -> 6318
-% INFO    : Updated Thermal Rating: on line 2501-2502 : Rate A, Rate B , 0.0, 0.0 -> 6318
-% INFO    : Updated Thermal Rating: on line 2501-2502 : Rate A, Rate B , 0.0, 0.0 -> 6318
-% INFO    : Updated Thermal Rating: on line 2601-2612 : Rate A, Rate B , 0.0, 0.0 -> 2279
-% INFO    : Updated Thermal Rating: on line 2602-2615 : Rate A, Rate B , 0.0, 0.0 -> 2279
-% INFO    : Updated Thermal Rating: on line 2602-2615 : Rate A, Rate B , 0.0, 0.0 -> 2279
-% INFO    : Updated Thermal Rating: on line 2603-2607 : Rate A, Rate B , 0.0, 0.0 -> 1351
-% INFO    : Updated Thermal Rating: on line 2605-2621 : Rate A, Rate B , 0.0, 0.0 -> 2117
-% INFO    : Updated Thermal Rating: on line 2606-2621 : Rate A, Rate B , 0.0, 0.0 -> 2117
-% INFO    : Updated Thermal Rating: on line 2614-2621 : Rate A, Rate B , 0.0, 0.0 -> 2375
-% INFO    : Updated Thermal Rating: on line 2614-2621 : Rate A, Rate B , 0.0, 0.0 -> 2357
-% INFO    : Updated Thermal Rating: on line 3102-3104 : Rate A, Rate B , 0.0, 0.0 -> 1056
-% INFO    : Updated Thermal Rating: on line 3301-3303 : Rate A, Rate B , 0.0, 0.0 -> 1816
-% INFO    : Updated Thermal Rating: on line 3301-3303 : Rate A, Rate B , 0.0, 0.0 -> 1816
-% INFO    : Updated Thermal Rating: on line 3301-3303 : Rate A, Rate B , 0.0, 0.0 -> 1816
+% INFO    : Updated Thermal Rating: on transformer 2501-2502 : Rate A, Rate B , 0.0, 0.0 -> 6318
+% INFO    : Updated Thermal Rating: on transformer 2501-2502 : Rate A, Rate B , 0.0, 0.0 -> 6318
+% INFO    : Updated Thermal Rating: on transformer 2501-2502 : Rate A, Rate B , 0.0, 0.0 -> 6318
+% INFO    : Updated Thermal Rating: on transformer 2601-2612 : Rate A, Rate B , 0.0, 0.0 -> 2279
+% INFO    : Updated Thermal Rating: on transformer 2602-2615 : Rate A, Rate B , 0.0, 0.0 -> 2279
+% INFO    : Updated Thermal Rating: on transformer 2602-2615 : Rate A, Rate B , 0.0, 0.0 -> 2279
+% INFO    : Updated Thermal Rating: on transformer 2603-2607 : Rate A, Rate B , 0.0, 0.0 -> 1351
+% INFO    : Updated Thermal Rating: on transformer 2605-2621 : Rate A, Rate B , 0.0, 0.0 -> 2117
+% INFO    : Updated Thermal Rating: on transformer 2606-2621 : Rate A, Rate B , 0.0, 0.0 -> 2117
+% INFO    : Updated Thermal Rating: on transformer 2614-2621 : Rate A, Rate B , 0.0, 0.0 -> 2375
+% INFO    : Updated Thermal Rating: on transformer 2614-2621 : Rate A, Rate B , 0.0, 0.0 -> 2357
+% INFO    : Updated Thermal Rating: on transformer 3102-3104 : Rate A, Rate B , 0.0, 0.0 -> 1056
+% INFO    : Updated Thermal Rating: on transformer 3301-3303 : Rate A, Rate B , 0.0, 0.0 -> 1816
+% INFO    : Updated Thermal Rating: on transformer 3301-3303 : Rate A, Rate B , 0.0, 0.0 -> 1816
+% INFO    : Updated Thermal Rating: on transformer 3301-3303 : Rate A, Rate B , 0.0, 0.0 -> 1816
 % INFO    : Updated Thermal Rating: on line 3701-6402 : Rate A, Rate B , 0.0, 0.0 -> 1056
 % INFO    : Updated Thermal Rating: on line 3701-6402 : Rate A, Rate B , 0.0, 0.0 -> 1056
-% INFO    : Updated Thermal Rating: on line 3802-3804 : Rate A, Rate B , 0.0, 0.0 -> 1816
-% INFO    : Updated Thermal Rating: on line 3803-3805 : Rate A, Rate B , 0.0, 0.0 -> 1816
-% INFO    : Updated Thermal Rating: on line 3803-3805 : Rate A, Rate B , 0.0, 0.0 -> 2655
-% INFO    : Updated Thermal Rating: on line 3901-3917 : Rate A, Rate B , 0.0, 0.0 -> 1816
-% INFO    : Updated Thermal Rating: on line 3902-3918 : Rate A, Rate B , 0.0, 0.0 -> 1816
-% INFO    : Updated Thermal Rating: on line 3903-3923 : Rate A, Rate B , 0.0, 0.0 -> 1816
-% INFO    : Updated Thermal Rating: on line 3904-3924 : Rate A, Rate B , 0.0, 0.0 -> 2527
-% INFO    : Updated Thermal Rating: on line 3905-3922 : Rate A, Rate B , 0.0, 0.0 -> 1816
-% INFO    : Updated Thermal Rating: on line 3906-3921 : Rate A, Rate B , 0.0, 0.0 -> 1816
-% INFO    : Updated Thermal Rating: on line 3911-3925 : Rate A, Rate B , 0.0, 0.0 -> 1056
-% INFO    : Updated Thermal Rating: on line 3920-3926 : Rate A, Rate B , 0.0, 0.0 -> 1056
-% INFO    : Updated Thermal Rating: on line 3920-3926 : Rate A, Rate B , 0.0, 0.0 -> 1056
-% INFO    : Updated Thermal Rating: on line 4001-4008 : Rate A, Rate B , 0.0, 0.0 -> 4388
-% INFO    : Updated Thermal Rating: on line 4006-4009 : Rate A, Rate B , 0.0, 0.0 -> 2675
-% INFO    : Updated Thermal Rating: on line 4006-4009 : Rate A, Rate B , 0.0, 0.0 -> 4298
-% INFO    : Updated Thermal Rating: on line 4007-4010 : Rate A, Rate B , 0.0, 0.0 -> 14293
-% INFO    : Updated Thermal Rating: on line 4103-4104 : Rate A, Rate B , 0.0, 0.0 -> 3159
-% INFO    : Updated Thermal Rating: on line 5002-5003 : Rate A, Rate B , 0.0, 0.0 -> 3159
-% INFO    : Updated Thermal Rating: on line 6101-6102 : Rate A, Rate B , 0.0, 0.0 -> 4388
-% INFO    : Updated Thermal Rating: on line 6103-6104 : Rate A, Rate B , 0.0, 0.0 -> 1745
-% INFO    : Updated Thermal Rating: on line 6201-6203 : Rate A, Rate B , 0.0, 0.0 -> 1745
-% INFO    : Updated Thermal Rating: on line 6202-6204 : Rate A, Rate B , 0.0, 0.0 -> 1745
-% INFO    : Updated Thermal Rating: on line 6301-6303 : Rate A, Rate B , 0.0, 0.0 -> 1745
-% INFO    : Updated Thermal Rating: on line 6302-6304 : Rate A, Rate B , 0.0, 0.0 -> 1745
-% INFO    : Updated Thermal Rating: on line 6401-6402 : Rate A, Rate B , 0.0, 0.0 -> 1056
-% INFO    : Updated Thermal Rating: on line 6401-6402 : Rate A, Rate B , 0.0, 0.0 -> 1056
-% INFO    : Updated Thermal Rating: on line 6501-6510 : Rate A, Rate B , 0.0, 0.0 -> 1745
-% INFO    : Updated Thermal Rating: on line 6501-6510 : Rate A, Rate B , 0.0, 0.0 -> 1745
+% INFO    : Updated Thermal Rating: on transformer 3802-3804 : Rate A, Rate B , 0.0, 0.0 -> 1816
+% INFO    : Updated Thermal Rating: on transformer 3803-3805 : Rate A, Rate B , 0.0, 0.0 -> 1816
+% INFO    : Updated Thermal Rating: on transformer 3803-3805 : Rate A, Rate B , 0.0, 0.0 -> 2655
+% INFO    : Updated Thermal Rating: on transformer 3901-3917 : Rate A, Rate B , 0.0, 0.0 -> 1816
+% INFO    : Updated Thermal Rating: on transformer 3902-3918 : Rate A, Rate B , 0.0, 0.0 -> 1816
+% INFO    : Updated Thermal Rating: on transformer 3903-3923 : Rate A, Rate B , 0.0, 0.0 -> 1816
+% INFO    : Updated Thermal Rating: on transformer 3904-3924 : Rate A, Rate B , 0.0, 0.0 -> 2527
+% INFO    : Updated Thermal Rating: on transformer 3905-3922 : Rate A, Rate B , 0.0, 0.0 -> 1816
+% INFO    : Updated Thermal Rating: on transformer 3906-3921 : Rate A, Rate B , 0.0, 0.0 -> 1816
+% INFO    : Updated Thermal Rating: on transformer 3911-3925 : Rate A, Rate B , 0.0, 0.0 -> 1056
+% INFO    : Updated Thermal Rating: on transformer 3920-3926 : Rate A, Rate B , 0.0, 0.0 -> 1056
+% INFO    : Updated Thermal Rating: on transformer 3920-3926 : Rate A, Rate B , 0.0, 0.0 -> 1056
+% INFO    : Updated Thermal Rating: on transformer 4001-4008 : Rate A, Rate B , 0.0, 0.0 -> 4388
+% INFO    : Updated Thermal Rating: on transformer 4006-4009 : Rate A, Rate B , 0.0, 0.0 -> 2675
+% INFO    : Updated Thermal Rating: on transformer 4006-4009 : Rate A, Rate B , 0.0, 0.0 -> 4298
+% INFO    : Updated Thermal Rating: on transformer 4007-4010 : Rate A, Rate B , 0.0, 0.0 -> 14293
+% INFO    : Updated Thermal Rating: on transformer 4103-4104 : Rate A, Rate B , 0.0, 0.0 -> 3159
+% INFO    : Updated Thermal Rating: on transformer 5002-5003 : Rate A, Rate B , 0.0, 0.0 -> 3159
+% INFO    : Updated Thermal Rating: on transformer 6101-6102 : Rate A, Rate B , 0.0, 0.0 -> 4388
+% INFO    : Updated Thermal Rating: on transformer 6103-6104 : Rate A, Rate B , 0.0, 0.0 -> 1745
+% INFO    : Updated Thermal Rating: on transformer 6201-6203 : Rate A, Rate B , 0.0, 0.0 -> 1745
+% INFO    : Updated Thermal Rating: on transformer 6202-6204 : Rate A, Rate B , 0.0, 0.0 -> 1745
+% INFO    : Updated Thermal Rating: on transformer 6301-6303 : Rate A, Rate B , 0.0, 0.0 -> 1745
+% INFO    : Updated Thermal Rating: on transformer 6302-6304 : Rate A, Rate B , 0.0, 0.0 -> 1745
+% INFO    : Updated Thermal Rating: on transformer 6401-6402 : Rate A, Rate B , 0.0, 0.0 -> 1056
+% INFO    : Updated Thermal Rating: on transformer 6401-6402 : Rate A, Rate B , 0.0, 0.0 -> 1056
+% INFO    : Updated Thermal Rating: on transformer 6501-6510 : Rate A, Rate B , 0.0, 0.0 -> 1745
+% INFO    : Updated Thermal Rating: on transformer 6501-6510 : Rate A, Rate B , 0.0, 0.0 -> 1745
 % INFO    : Updated Thermal Rating: on line 6505-6506 : Rate A, Rate B , 0.0, 0.0 -> 1620
-% INFO    : Updated Thermal Rating: on line 8001-8003 : Rate A, Rate B , 0.0, 0.0 -> 1816
-% INFO    : Updated Thermal Rating: on line 8002-8005 : Rate A, Rate B , 0.0, 0.0 -> 1816
-% INFO    : Updated Thermal Rating: on line 1002-1032 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 1004-1034 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 1101-1131 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 1202-1232 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 1301-1331 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 1303-1333 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 1401-1431 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 2000-2030 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 2100-2130 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 2203-2233 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 2302-2332 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 2408-2438 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 2503-2533 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 2604-2634 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 2608-2638 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 2610-2630 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 2611-2631 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 2612-2637 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 3103-3133 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 3105-3135 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 3204-3234 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 3303-3333 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 3402-3432 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 3403-3433 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 3501-3531 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 3601-3631 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 3701-3731 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 3801-3831 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 3805-3835 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 3806-3836 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 3902-3932 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 3921-3931 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 3923-3933 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 4001-4031 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 4005-4035 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 4009-4039 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 4101-4131 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 4102-4132 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 4201-4231 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 4202-4232 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 5001-5031 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 5002-5032 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 6102-6132 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 6201-6231 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 6205-6235 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 6303-6333 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 6305-6335 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 6403-6433 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 6503-6533 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 7001-7031 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 7002-7032 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 8003-8033 : Rate A, Rate B , 0.0, 0.0 -> 63175
-% INFO    : Updated Thermal Rating: on line 8004-8034 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 8001-8003 : Rate A, Rate B , 0.0, 0.0 -> 1816
+% INFO    : Updated Thermal Rating: on transformer 8002-8005 : Rate A, Rate B , 0.0, 0.0 -> 1816
+% INFO    : Updated Thermal Rating: on transformer 1002-1032 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 1004-1034 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 1101-1131 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 1202-1232 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 1301-1331 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 1303-1333 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 1401-1431 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 2000-2030 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 2100-2130 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 2203-2233 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 2302-2332 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 2408-2438 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 2503-2533 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 2604-2634 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 2608-2638 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 2610-2630 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 2611-2631 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 2612-2637 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 3103-3133 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 3105-3135 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 3204-3234 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 3303-3333 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 3402-3432 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 3403-3433 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 3501-3531 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 3601-3631 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 3701-3731 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 3801-3831 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 3805-3835 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 3806-3836 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 3902-3932 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 3921-3931 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 3923-3933 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 4001-4031 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 4005-4035 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 4009-4039 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 4101-4131 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 4102-4132 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 4201-4231 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 4202-4232 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 5001-5031 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 5002-5032 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 6102-6132 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 6201-6231 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 6205-6235 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 6303-6333 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 6305-6335 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 6403-6433 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 6503-6533 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 7001-7031 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 7002-7032 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 8003-8033 : Rate A, Rate B , 0.0, 0.0 -> 63175
+% INFO    : Updated Thermal Rating: on transformer 8004-8034 : Rate A, Rate B , 0.0, 0.0 -> 63175
 % INFO    : 
 % INFO    : === Voltage Setpoint Replacement Notes ===
 % INFO    : Bus 1001	: V=1.02984, theta=0.0 -> V=1.0, theta=0.0

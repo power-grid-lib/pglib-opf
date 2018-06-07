@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.08     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.06     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                        30 - August - 2017                        %%%%%
+%%%%                         07 - June - 2018                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -551,7 +551,7 @@ mpc.branch = [
 	25	 26	 0.036	 0.071	 0.034	 369	 369	 369	 0.0	 0.0	 1	 -30.0	 30.0;
 	26	 27	 0.045	 0.12	 0.065	 229	 229	 229	 0.0	 0.0	 1	 -30.0	 30.0;
 	26	 320	 0.043	 0.13	 0.014	 215	 215	 215	 0.0	 0.0	 1	 -30.0	 30.0;
-	33	 34	 0.0	 0.063	 0.0	 466	 466	 466	 0.0	 0.0	 1	 -30.0	 30.0;
+	33	 34	 0.0	 0.063	 0.0	 466	 466	 466	 1.0	 0.0	 1	 -30.0	 30.0;
 	33	 38	 0.0025	 0.012	 0.013	 2393	 2393	 2393	 0.0	 0.0	 1	 -30.0	 30.0;
 	33	 40	 0.006	 0.029	 0.02	 991	 991	 991	 0.0	 0.0	 1	 -30.0	 30.0;
 	33	 41	 0.007	 0.043	 0.026	 674	 674	 674	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -570,7 +570,7 @@ mpc.branch = [
 	38	 43	 0.032	 0.087	 0.04	 317	 317	 317	 0.0	 0.0	 1	 -30.0	 30.0;
 	39	 42	 0.0006	 0.0064	 0.404	 4564	 4564	 4564	 0.0	 0.0	 1	 -30.0	 30.0;
 	40	 48	 0.026	 0.154	 0.022	 188	 188	 188	 0.0	 0.0	 1	 -30.0	 30.0;
-	41	 42	 0.0	 0.029	 0.0	 1012	 1012	 1012	 0.0	 0.0	 1	 -30.0	 30.0;
+	41	 42	 0.0	 0.029	 0.0	 1012	 1012	 1012	 1.0	 0.0	 1	 -30.0	 30.0;
 	41	 49	 0.065	 0.191	 0.02	 146	 146	 146	 0.0	 0.0	 1	 -30.0	 30.0;
 	41	 51	 0.031	 0.089	 0.036	 312	 312	 312	 0.0	 0.0	 1	 -30.0	 30.0;
 	42	 46	 0.002	 0.014	 0.806	 2075	 2075	 2075	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -668,12 +668,12 @@ mpc.branch = [
 	123	 124	 0.036	 0.1076	 0.117	 259	 259	 259	 0.0	 0.0	 1	 -30.0	 30.0;
 	123	 125	 0.0476	 0.1414	 0.149	 197	 197	 197	 0.0	 0.0	 1	 -30.0	 30.0;
 	125	 126	 0.0006	 0.0197	 0.0	 1489	 1489	 1489	 0.0	 0.0	 1	 -30.0	 30.0;
-	126	 127	 0.0059	 0.0405	 0.25	 717	 717	 717	 0.0	 0.0	 1	 -30.0	 30.0;
-	126	 129	 0.0115	 0.1106	 0.185	 264	 264	 264	 0.0	 0.0	 1	 -30.0	 30.0;
-	126	 132	 0.0198	 0.1688	 0.321	 173	 173	 173	 0.0	 0.0	 1	 -30.0	 30.0;
-	126	 157	 0.005	 0.05	 0.33	 584	 584	 584	 0.0	 0.0	 1	 -30.0	 30.0;
-	126	 158	 0.0077	 0.0538	 0.335	 540	 540	 540	 0.0	 0.0	 1	 -30.0	 30.0;
-	126	 169	 0.0165	 0.1157	 0.171	 251	 251	 251	 0.0	 0.0	 1	 -30.0	 30.0;
+	126	 127	 0.0059	 0.0405	 0.25	 717	 717	 717	 1.0	 0.0	 1	 -30.0	 30.0;
+	126	 129	 0.0115	 0.1106	 0.185	 264	 264	 264	 1.0	 0.0	 1	 -30.0	 30.0;
+	126	 132	 0.0198	 0.1688	 0.321	 173	 173	 173	 1.0	 0.0	 1	 -30.0	 30.0;
+	126	 157	 0.005	 0.05	 0.33	 584	 584	 584	 1.0	 0.0	 1	 -30.0	 30.0;
+	126	 158	 0.0077	 0.0538	 0.335	 540	 540	 540	 1.0	 0.0	 1	 -30.0	 30.0;
+	126	 169	 0.0165	 0.1157	 0.171	 251	 251	 251	 1.0	 0.0	 1	 -30.0	 30.0;
 	127	 128	 0.0059	 0.0577	 0.095	 506	 506	 506	 0.0	 0.0	 1	 -30.0	 30.0;
 	127	 134	 0.0049	 0.0336	 0.208	 864	 864	 864	 0.0	 0.0	 1	 -30.0	 30.0;
 	127	 168	 0.0059	 0.0577	 0.095	 506	 506	 506	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -688,7 +688,7 @@ mpc.branch = [
 	133	 137	 0.0017	 0.0117	 0.289	 2481	 2481	 2481	 0.0	 0.0	 1	 -30.0	 30.0;
 	133	 168	 0.0026	 0.0193	 0.03	 1507	 1507	 1507	 0.0	 0.0	 1	 -30.0	 30.0;
 	133	 169	 0.0021	 0.0186	 0.03	 1568	 1568	 1568	 0.0	 0.0	 1	 -30.0	 30.0;
-	133	 171	 0.0002	 0.0101	 0.0	 2904	 2904	 2904	 0.0	 0.0	 1	 -30.0	 30.0;
+	133	 171	 0.0002	 0.0101	 0.0	 2904	 2904	 2904	 1.0	 0.0	 1	 -30.0	 30.0;
 	134	 135	 0.0043	 0.0293	 0.18	 991	 991	 991	 0.0	 0.0	 1	 -30.0	 30.0;
 	134	 184	 0.0039	 0.0381	 0.258	 766	 766	 766	 0.0	 0.0	 1	 -30.0	 30.0;
 	135	 136	 0.0091	 0.0623	 0.385	 466	 466	 466	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -712,8 +712,8 @@ mpc.branch = [
 	145	 146	 0.0085	 0.0588	 0.087	 494	 494	 494	 0.0	 0.0	 1	 -30.0	 30.0;
 	145	 149	 0.0218	 0.1511	 0.223	 193	 193	 193	 0.0	 0.0	 1	 -30.0	 30.0;
 	146	 147	 0.0073	 0.0504	 0.074	 576	 576	 576	 0.0	 0.0	 1	 -30.0	 30.0;
-	148	 178	 0.0523	 0.1526	 0.074	 182	 182	 182	 0.0	 0.0	 1	 -30.0	 30.0;
-	148	 179	 0.1371	 0.3919	 0.076	 71	 71	 71	 0.0	 0.0	 1	 -30.0	 30.0;
+	148	 178	 0.0523	 0.1526	 0.074	 182	 182	 182	 1.0	 0.0	 1	 -30.0	 30.0;
+	148	 179	 0.1371	 0.3919	 0.076	 71	 71	 71	 1.0	 0.0	 1	 -30.0	 30.0;
 	152	 153	 0.0137	 0.0957	 0.141	 304	 304	 304	 0.0	 0.0	 1	 -30.0	 30.0;
 	153	 161	 0.0055	 0.0288	 0.19	 1001	 1001	 1001	 0.0	 0.0	 1	 -30.0	 30.0;
 	154	 156	 0.1746	 0.3161	 0.04	 82	 82	 82	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -747,7 +747,7 @@ mpc.branch = [
 	189	 208	 0.033	 0.095	 0.0	 292	 292	 292	 0.0	 0.0	 1	 -30.0	 30.0;
 	189	 209	 0.046	 0.069	 0.0	 354	 354	 354	 0.0	 0.0	 1	 -30.0	 30.0;
 	190	 231	 0.0004	 0.0022	 6.2	 9900.0	 13118	 13118	 0.0	 0.0	 1	 -30.0	 30.0;
-	190	 240	 0.0	 0.0275	 0.0	 1067	 1067	 1067	 0.0	 0.0	 1	 -30.0	 30.0;
+	190	 240	 0.0	 0.0275	 0.0	 1067	 1067	 1067	 1.0	 0.0	 1	 -30.0	 30.0;
 	191	 192	 0.003	 0.048	 0.0	 610	 610	 610	 0.0	 0.0	 1	 -30.0	 30.0;
 	192	 225	 0.002	 0.009	 0.0	 3182	 3182	 3182	 0.0	 0.0	 1	 -30.0	 30.0;
 	193	 205	 0.045	 0.063	 0.0	 379	 379	 379	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -759,7 +759,7 @@ mpc.branch = [
 	196	 210	 0.03	 0.081	 0.01	 340	 340	 340	 0.0	 0.0	 1	 -30.0	 30.0;
 	197	 198	 0.01	 0.06	 0.009	 483	 483	 483	 0.0	 0.0	 1	 -30.0	 30.0;
 	197	 211	 0.015	 0.04	 0.006	 687	 687	 687	 0.0	 0.0	 1	 -30.0	 30.0;
-	198	 202	 0.332	 0.688	 0.0	 39	 39	 39	 0.0	 0.0	 1	 -30.0	 30.0;
+	198	 202	 0.332	 0.688	 0.0	 39	 39	 39	 1.0	 0.0	 1	 -30.0	 30.0;
 	198	 203	 0.009	 0.046	 0.025	 626	 626	 626	 0.0	 0.0	 1	 -30.0	 30.0;
 	198	 210	 0.02	 0.073	 0.008	 388	 388	 388	 0.0	 0.0	 1	 -30.0	 30.0;
 	198	 211	 0.034	 0.109	 0.032	 257	 257	 257	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -779,7 +779,7 @@ mpc.branch = [
 	215	 216	 0.0045	 0.0249	 0.026	 1160	 1160	 1160	 0.0	 0.0	 1	 -30.0	 30.0;
 	216	 217	 0.004	 0.0497	 0.018	 589	 589	 589	 0.0	 0.0	 1	 -30.0	 30.0;
 	217	 218	 0.0	 0.0456	 0.0	 644	 644	 644	 0.0	 0.0	 1	 -30.0	 30.0;
-	217	 219	 0.0005	 0.0177	 0.02	 1657	 1657	 1657	 0.0	 0.0	 1	 -30.0	 30.0;
+	217	 219	 0.0005	 0.0177	 0.02	 1657	 1657	 1657	 1.0	 0.0	 1	 -30.0	 30.0;
 	217	 220	 0.0027	 0.0395	 0.832	 741	 741	 741	 0.0	 0.0	 1	 -30.0	 30.0;
 	219	 237	 0.0003	 0.0018	 5.2	 9900.0	 16074	 16074	 0.0	 0.0	 1	 -30.0	 30.0;
 	220	 218	 0.0037	 0.0484	 0.43	 605	 605	 605	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -790,22 +790,22 @@ mpc.branch = [
 	224	 225	 0.01	 0.064	 0.48	 453	 453	 453	 0.0	 0.0	 1	 -30.0	 30.0;
 	224	 226	 0.0019	 0.0081	 0.86	 3526	 3526	 3526	 0.0	 0.0	 1	 -30.0	 30.0;
 	225	 191	 0.001	 0.061	 0.0	 481	 481	 481	 0.0	 0.0	 1	 -30.0	 30.0;
-	226	 231	 0.0005	 0.0212	 0.0	 1384	 1384	 1384	 0.0	 0.0	 1	 -30.0	 30.0;
+	226	 231	 0.0005	 0.0212	 0.0	 1384	 1384	 1384	 1.0	 0.0	 1	 -30.0	 30.0;
 	227	 231	 0.0009	 0.0472	 0.186	 622	 622	 622	 1.0	 0.0	 1	 -30.0	 30.0;
 	228	 229	 0.0019	 0.0087	 1.28	 3294	 3294	 3294	 0.0	 0.0	 1	 -30.0	 30.0;
-	228	 231	 0.0026	 0.0917	 0.0	 320	 320	 320	 0.0	 0.0	 1	 -30.0	 30.0;
+	228	 231	 0.0026	 0.0917	 0.0	 320	 320	 320	 1.0	 0.0	 1	 -30.0	 30.0;
 	228	 234	 0.0013	 0.0288	 0.81	 1018	 1018	 1018	 0.0	 0.0	 1	 -30.0	 30.0;
-	229	 190	 0.0	 0.0626	 0.0	 469	 469	 469	 0.0	 0.0	 1	 -30.0	 30.0;
-	231	 232	 0.0002	 0.0069	 1.364	 4250	 4250	 4250	 0.0	 0.0	 1	 -30.0	 30.0;
+	229	 190	 0.0	 0.0626	 0.0	 469	 469	 469	 1.0	 0.0	 1	 -30.0	 30.0;
+	231	 232	 0.0002	 0.0069	 1.364	 4250	 4250	 4250	 1.0	 0.0	 1	 -30.0	 30.0;
 	231	 237	 0.0001	 0.0006	 3.57	 9900.0	 48222	 48222	 0.0	 0.0	 1	 -30.0	 30.0;
-	232	 233	 0.0017	 0.0485	 0.0	 605	 605	 605	 0.0	 0.0	 1	 -30.0	 30.0;
+	232	 233	 0.0017	 0.0485	 0.0	 605	 605	 605	 1.0	 0.0	 1	 -30.0	 30.0;
 	234	 235	 0.0002	 0.0259	 0.144	 1133	 1133	 1133	 0.0	 0.0	 1	 -30.0	 30.0;
-	234	 237	 0.0006	 0.0272	 0.0	 1079	 1079	 1079	 0.0	 0.0	 1	 -30.0	 30.0;
+	234	 237	 0.0006	 0.0272	 0.0	 1079	 1079	 1079	 1.0	 0.0	 1	 -30.0	 30.0;
 	235	 238	 0.0002	 0.0006	 0.8	 9900.0	 46378	 46378	 0.0	 0.0	 1	 -30.0	 30.0;
 	241	 237	 0.0005	 0.0154	 0.0	 1904	 1904	 1904	 1.0	 0.0	 1	 -30.0	 30.0;
 	240	 281	 0.0003	 0.0043	 0.009	 6805	 6805	 6805	 0.0	 0.0	 1	 -30.0	 30.0;
-	242	 245	 0.0082	 0.0851	 0.0	 344	 344	 344	 0.0	 0.0	 1	 -30.0	 30.0;
-	242	 247	 0.0112	 0.0723	 0.0	 401	 401	 401	 0.0	 0.0	 1	 -30.0	 30.0;
+	242	 245	 0.0082	 0.0851	 0.0	 344	 344	 344	 1.0	 0.0	 1	 -30.0	 30.0;
+	242	 247	 0.0112	 0.0723	 0.0	 401	 401	 401	 1.0	 0.0	 1	 -30.0	 30.0;
 	243	 244	 0.0127	 0.0355	 0.0	 778	 778	 778	 0.0	 0.0	 1	 -30.0	 30.0;
 	243	 245	 0.0326	 0.1804	 0.0	 161	 161	 161	 0.0	 0.0	 1	 -30.0	 30.0;
 	244	 246	 0.0195	 0.0551	 0.0	 502	 502	 502	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -1076,6 +1076,32 @@ mpc.branch = [
 % INFO    : Updated Generator Cost: NG - 0.0 20.0 0.2 -> 0 44.8976733391 0
 % INFO    : Updated Generator Cost: PEL - 0.0 20.0 1.25 -> 0 100.000463263 0
 % INFO    : 
+% INFO    : === Base KV Replacement Notes ===
+% INFO    : 
+% INFO    : === Transformer Setting Replacement Notes ===
+% WARNING : Branch 33-34 connects two different voltage levels (115.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 41-42 connects two different voltage levels (115.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 126-127 connects two different voltage levels (115.0, 230.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 126-129 connects two different voltage levels (115.0, 230.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 126-132 connects two different voltage levels (115.0, 230.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 126-157 connects two different voltage levels (115.0, 230.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 126-158 connects two different voltage levels (115.0, 230.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 126-169 connects two different voltage levels (115.0, 230.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 133-171 connects two different voltage levels (230.0, 115.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 148-178 connects two different voltage levels (230.0, 115.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 148-179 connects two different voltage levels (230.0, 115.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 190-240 connects two different voltage levels (345.0, 230.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 198-202 connects two different voltage levels (115.0, 66.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 217-219 connects two different voltage levels (138.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 226-231 connects two different voltage levels (230.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 228-231 connects two different voltage levels (138.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 229-190 connects two different voltage levels (138.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 231-232 connects two different voltage levels (345.0, 138.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 232-233 connects two different voltage levels (138.0, 66.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 234-237 connects two different voltage levels (138.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 242-245 connects two different voltage levels (138.0, 66.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 242-247 connects two different voltage levels (138.0, 66.0), changing tap ratio 0.0 => 1.0
+% INFO    : 
 % INFO    : === Line Capacity UB Model Notes ===
 % INFO    : Updated Thermal Rating: on transformer 37-9001 : Rate B , 0.0 -> 63230
 % INFO    : Updated Thermal Rating: on line 9001-9005 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 8215
@@ -1093,26 +1119,26 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 9012-9002 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 67
 % INFO    : Updated Thermal Rating: on line 9002-9021 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 332
 % INFO    : Updated Thermal Rating: on line 9021-9023 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 21
-% INFO    : Updated Thermal Rating: on line 9021-9022 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 11
-% INFO    : Updated Thermal Rating: on line 9002-9024 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 9
-% INFO    : Updated Thermal Rating: on line 9023-9025 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 8
-% INFO    : Updated Thermal Rating: on line 9023-9026 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 8
-% INFO    : Updated Thermal Rating: on line 9007-9071 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 10
-% INFO    : Updated Thermal Rating: on line 9007-9072 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 15
+% INFO    : Updated Thermal Rating: on transformer 9021-9022 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 11
+% INFO    : Updated Thermal Rating: on transformer 9002-9024 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 9
+% INFO    : Updated Thermal Rating: on transformer 9023-9025 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 8
+% INFO    : Updated Thermal Rating: on transformer 9023-9026 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 8
+% INFO    : Updated Thermal Rating: on transformer 9007-9071 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 10
+% INFO    : Updated Thermal Rating: on transformer 9007-9072 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 15
 % INFO    : Updated Thermal Rating: on line 9007-9003 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 116
-% INFO    : Updated Thermal Rating: on line 9003-9031 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 7
-% INFO    : Updated Thermal Rating: on line 9003-9032 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 6
-% INFO    : Updated Thermal Rating: on line 9003-9033 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 7
+% INFO    : Updated Thermal Rating: on transformer 9003-9031 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 7
+% INFO    : Updated Thermal Rating: on transformer 9003-9032 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 6
+% INFO    : Updated Thermal Rating: on transformer 9003-9033 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 7
 % INFO    : Updated Thermal Rating: on line 9003-9044 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 302
 % INFO    : Updated Thermal Rating: on line 9044-9004 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 611
-% INFO    : Updated Thermal Rating: on line 9004-9041 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 12
-% INFO    : Updated Thermal Rating: on line 9004-9042 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 6
-% INFO    : Updated Thermal Rating: on line 9004-9043 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 18
-% INFO    : Updated Thermal Rating: on line 9003-9034 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 21
-% INFO    : Updated Thermal Rating: on line 9003-9035 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 9
-% INFO    : Updated Thermal Rating: on line 9003-9036 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 18
-% INFO    : Updated Thermal Rating: on line 9003-9037 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 12
-% INFO    : Updated Thermal Rating: on line 9003-9038 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 10
+% INFO    : Updated Thermal Rating: on transformer 9004-9041 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 12
+% INFO    : Updated Thermal Rating: on transformer 9004-9042 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 6
+% INFO    : Updated Thermal Rating: on transformer 9004-9043 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 18
+% INFO    : Updated Thermal Rating: on transformer 9003-9034 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 21
+% INFO    : Updated Thermal Rating: on transformer 9003-9035 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 9
+% INFO    : Updated Thermal Rating: on transformer 9003-9036 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 18
+% INFO    : Updated Thermal Rating: on transformer 9003-9037 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 12
+% INFO    : Updated Thermal Rating: on transformer 9003-9038 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 10
 % INFO    : Updated Thermal Rating: on line 9012-9121 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 29
 % INFO    : Updated Thermal Rating: on transformer 9053-9533 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 40
 % INFO    : Updated Thermal Rating: on line 1-5 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 4823
@@ -1147,7 +1173,7 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 25-26 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 369
 % INFO    : Updated Thermal Rating: on line 26-27 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 229
 % INFO    : Updated Thermal Rating: on line 26-320 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 215
-% INFO    : Updated Thermal Rating: on line 33-34 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 466
+% INFO    : Updated Thermal Rating: on transformer 33-34 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 466
 % INFO    : Updated Thermal Rating: on line 33-38 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 2393
 % INFO    : Updated Thermal Rating: on line 33-40 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 991
 % INFO    : Updated Thermal Rating: on line 33-41 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 674
@@ -1166,7 +1192,7 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 38-43 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 317
 % INFO    : Updated Thermal Rating: on line 39-42 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 4564
 % INFO    : Updated Thermal Rating: on line 40-48 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 188
-% INFO    : Updated Thermal Rating: on line 41-42 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1012
+% INFO    : Updated Thermal Rating: on transformer 41-42 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1012
 % INFO    : Updated Thermal Rating: on line 41-49 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 146
 % INFO    : Updated Thermal Rating: on line 41-51 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 312
 % INFO    : Updated Thermal Rating: on line 42-46 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 2075
@@ -1264,12 +1290,12 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 123-124 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 259
 % INFO    : Updated Thermal Rating: on line 123-125 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 197
 % INFO    : Updated Thermal Rating: on line 125-126 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1489
-% INFO    : Updated Thermal Rating: on line 126-127 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 717
-% INFO    : Updated Thermal Rating: on line 126-129 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 264
-% INFO    : Updated Thermal Rating: on line 126-132 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 173
-% INFO    : Updated Thermal Rating: on line 126-157 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 584
-% INFO    : Updated Thermal Rating: on line 126-158 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 540
-% INFO    : Updated Thermal Rating: on line 126-169 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 251
+% INFO    : Updated Thermal Rating: on transformer 126-127 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 717
+% INFO    : Updated Thermal Rating: on transformer 126-129 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 264
+% INFO    : Updated Thermal Rating: on transformer 126-132 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 173
+% INFO    : Updated Thermal Rating: on transformer 126-157 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 584
+% INFO    : Updated Thermal Rating: on transformer 126-158 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 540
+% INFO    : Updated Thermal Rating: on transformer 126-169 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 251
 % INFO    : Updated Thermal Rating: on line 127-128 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 506
 % INFO    : Updated Thermal Rating: on line 127-134 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 864
 % INFO    : Updated Thermal Rating: on line 127-168 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 506
@@ -1284,7 +1310,7 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 133-137 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 2481
 % INFO    : Updated Thermal Rating: on line 133-168 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1507
 % INFO    : Updated Thermal Rating: on line 133-169 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1568
-% INFO    : Updated Thermal Rating: on line 133-171 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 2904
+% INFO    : Updated Thermal Rating: on transformer 133-171 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 2904
 % INFO    : Updated Thermal Rating: on line 134-135 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 991
 % INFO    : Updated Thermal Rating: on line 134-184 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 766
 % INFO    : Updated Thermal Rating: on line 135-136 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 466
@@ -1308,8 +1334,8 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 145-146 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 494
 % INFO    : Updated Thermal Rating: on line 145-149 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 193
 % INFO    : Updated Thermal Rating: on line 146-147 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 576
-% INFO    : Updated Thermal Rating: on line 148-178 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 182
-% INFO    : Updated Thermal Rating: on line 148-179 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 71
+% INFO    : Updated Thermal Rating: on transformer 148-178 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 182
+% INFO    : Updated Thermal Rating: on transformer 148-179 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 71
 % INFO    : Updated Thermal Rating: on line 152-153 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 304
 % INFO    : Updated Thermal Rating: on line 153-161 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1001
 % INFO    : Updated Thermal Rating: on line 154-156 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 82
@@ -1343,7 +1369,7 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 189-208 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 292
 % INFO    : Updated Thermal Rating: on line 189-209 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 354
 % INFO    : Updated Thermal Rating: on line 190-231 : Rate B, Rate C , 0.0, 0.0 -> 13118
-% INFO    : Updated Thermal Rating: on line 190-240 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1067
+% INFO    : Updated Thermal Rating: on transformer 190-240 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1067
 % INFO    : Updated Thermal Rating: on line 191-192 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 610
 % INFO    : Updated Thermal Rating: on line 192-225 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 3182
 % INFO    : Updated Thermal Rating: on line 193-205 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 379
@@ -1355,7 +1381,7 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 196-210 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 340
 % INFO    : Updated Thermal Rating: on line 197-198 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 483
 % INFO    : Updated Thermal Rating: on line 197-211 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 687
-% INFO    : Updated Thermal Rating: on line 198-202 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 39
+% INFO    : Updated Thermal Rating: on transformer 198-202 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 39
 % INFO    : Updated Thermal Rating: on line 198-203 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 626
 % INFO    : Updated Thermal Rating: on line 198-210 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 388
 % INFO    : Updated Thermal Rating: on line 198-211 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 257
@@ -1369,39 +1395,39 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 206-207 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 249
 % INFO    : Updated Thermal Rating: on line 206-208 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 61
 % INFO    : Updated Thermal Rating: on line 212-215 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 372
-% INFO    : Updated Thermal Rating: on line 213-214 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 771
+% INFO    : Updated Thermal Rating: on transformer 213-214 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 771
 % INFO    : Updated Thermal Rating: on line 214-215 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1579
 % INFO    : Updated Thermal Rating: on line 214-242 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 2691
 % INFO    : Updated Thermal Rating: on line 215-216 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1160
 % INFO    : Updated Thermal Rating: on line 216-217 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 589
 % INFO    : Updated Thermal Rating: on line 217-218 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 644
-% INFO    : Updated Thermal Rating: on line 217-219 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1657
+% INFO    : Updated Thermal Rating: on transformer 217-219 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1657
 % INFO    : Updated Thermal Rating: on line 217-220 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 741
 % INFO    : Updated Thermal Rating: on line 219-237 : Rate B, Rate C , 0.0, 0.0 -> 16074
 % INFO    : Updated Thermal Rating: on line 220-218 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 605
 % INFO    : Updated Thermal Rating: on line 220-221 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 994
 % INFO    : Updated Thermal Rating: on line 220-238 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 6023
 % INFO    : Updated Thermal Rating: on line 221-223 : Rate B, Rate C , 0.0, 0.0 -> 21986
-% INFO    : Updated Thermal Rating: on line 222-237 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 571
+% INFO    : Updated Thermal Rating: on transformer 222-237 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 571
 % INFO    : Updated Thermal Rating: on line 224-225 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 453
 % INFO    : Updated Thermal Rating: on line 224-226 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 3526
 % INFO    : Updated Thermal Rating: on line 225-191 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 481
-% INFO    : Updated Thermal Rating: on line 226-231 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1384
-% INFO    : Updated Thermal Rating: on line 227-231 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 622
+% INFO    : Updated Thermal Rating: on transformer 226-231 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1384
+% INFO    : Updated Thermal Rating: on transformer 227-231 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 622
 % INFO    : Updated Thermal Rating: on line 228-229 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 3294
-% INFO    : Updated Thermal Rating: on line 228-231 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 320
+% INFO    : Updated Thermal Rating: on transformer 228-231 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 320
 % INFO    : Updated Thermal Rating: on line 228-234 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1018
-% INFO    : Updated Thermal Rating: on line 229-190 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 469
-% INFO    : Updated Thermal Rating: on line 231-232 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 4250
+% INFO    : Updated Thermal Rating: on transformer 229-190 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 469
+% INFO    : Updated Thermal Rating: on transformer 231-232 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 4250
 % INFO    : Updated Thermal Rating: on line 231-237 : Rate B, Rate C , 0.0, 0.0 -> 48222
-% INFO    : Updated Thermal Rating: on line 232-233 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 605
+% INFO    : Updated Thermal Rating: on transformer 232-233 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 605
 % INFO    : Updated Thermal Rating: on line 234-235 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1133
-% INFO    : Updated Thermal Rating: on line 234-237 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1079
+% INFO    : Updated Thermal Rating: on transformer 234-237 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1079
 % INFO    : Updated Thermal Rating: on line 235-238 : Rate B, Rate C , 0.0, 0.0 -> 46378
-% INFO    : Updated Thermal Rating: on line 241-237 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1904
+% INFO    : Updated Thermal Rating: on transformer 241-237 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1904
 % INFO    : Updated Thermal Rating: on line 240-281 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 6805
-% INFO    : Updated Thermal Rating: on line 242-245 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 344
-% INFO    : Updated Thermal Rating: on line 242-247 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 401
+% INFO    : Updated Thermal Rating: on transformer 242-245 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 344
+% INFO    : Updated Thermal Rating: on transformer 242-247 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 401
 % INFO    : Updated Thermal Rating: on line 243-244 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 778
 % INFO    : Updated Thermal Rating: on line 243-245 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 161
 % INFO    : Updated Thermal Rating: on line 244-246 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 502
@@ -1424,26 +1450,26 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on transformer 24-23 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 459
 % INFO    : Updated Thermal Rating: on transformer 36-35 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 625
 % INFO    : Updated Thermal Rating: on transformer 45-44 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1467
-% INFO    : Updated Thermal Rating: on line 45-46 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1397
+% INFO    : Updated Thermal Rating: on transformer 45-46 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1397
 % INFO    : Updated Thermal Rating: on transformer 62-61 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 498
 % INFO    : Updated Thermal Rating: on transformer 63-64 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 772
-% INFO    : Updated Thermal Rating: on line 73-74 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1203
-% INFO    : Updated Thermal Rating: on line 81-88 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1467
-% INFO    : Updated Thermal Rating: on line 85-99 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 612
-% INFO    : Updated Thermal Rating: on line 86-102 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 612
+% INFO    : Updated Thermal Rating: on transformer 73-74 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1203
+% INFO    : Updated Thermal Rating: on transformer 81-88 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1467
+% INFO    : Updated Thermal Rating: on transformer 85-99 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 612
+% INFO    : Updated Thermal Rating: on transformer 86-102 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 612
 % INFO    : Updated Thermal Rating: on transformer 87-94 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 638
 % INFO    : Updated Thermal Rating: on transformer 114-207 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 197
 % INFO    : Updated Thermal Rating: on transformer 116-124 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1616
 % INFO    : Updated Thermal Rating: on transformer 121-115 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1048
-% INFO    : Updated Thermal Rating: on line 122-157 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1504
+% INFO    : Updated Thermal Rating: on transformer 122-157 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1504
 % INFO    : Updated Thermal Rating: on transformer 130-131 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1630
 % INFO    : Updated Thermal Rating: on transformer 130-150 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 2096
 % INFO    : Updated Thermal Rating: on transformer 132-170 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 730
 % INFO    : Updated Thermal Rating: on transformer 141-174 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 487
-% INFO    : Updated Thermal Rating: on line 142-175 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 589
+% INFO    : Updated Thermal Rating: on transformer 142-175 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 589
 % INFO    : Updated Thermal Rating: on transformer 143-144 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 353
 % INFO    : Updated Thermal Rating: on transformer 143-148 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 791
-% INFO    : Updated Thermal Rating: on line 145-180 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1612
+% INFO    : Updated Thermal Rating: on transformer 145-180 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1612
 % INFO    : Updated Thermal Rating: on transformer 151-170 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 749
 % INFO    : Updated Thermal Rating: on transformer 153-183 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 459
 % INFO    : Updated Thermal Rating: on transformer 155-156 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1146
@@ -1455,33 +1481,33 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on transformer 189-210 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 117
 % INFO    : Updated Thermal Rating: on transformer 193-196 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 124
 % INFO    : Updated Thermal Rating: on transformer 195-212 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 802
-% INFO    : Updated Thermal Rating: on line 200-248 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 134
+% INFO    : Updated Thermal Rating: on transformer 200-248 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 134
 % INFO    : Updated Thermal Rating: on transformer 201-69 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 300
 % INFO    : Updated Thermal Rating: on transformer 202-211 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 230
 % INFO    : Updated Thermal Rating: on transformer 204-2040 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 144
 % INFO    : Updated Thermal Rating: on transformer 209-198 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 138
-% INFO    : Updated Thermal Rating: on line 211-212 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 2335
+% INFO    : Updated Thermal Rating: on transformer 211-212 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 2335
 % INFO    : Updated Thermal Rating: on transformer 218-219 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 829
-% INFO    : Updated Thermal Rating: on line 223-224 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1502
+% INFO    : Updated Thermal Rating: on transformer 223-224 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1502
 % INFO    : Updated Thermal Rating: on transformer 229-230 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 884
 % INFO    : Updated Thermal Rating: on transformer 234-236 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1833
 % INFO    : Updated Thermal Rating: on transformer 238-239 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1833
 % INFO    : Updated Thermal Rating: on transformer 196-2040 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1467
 % INFO    : Updated Thermal Rating: on transformer 119-1190 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1275
 % INFO    : Updated Thermal Rating: on transformer 120-1200 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1276
-% INFO    : Updated Thermal Rating: on line 7002-2 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 2005
-% INFO    : Updated Thermal Rating: on line 7003-3 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 2783
-% INFO    : Updated Thermal Rating: on line 7061-61 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1233
+% INFO    : Updated Thermal Rating: on transformer 7002-2 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 2005
+% INFO    : Updated Thermal Rating: on transformer 7003-3 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 2783
+% INFO    : Updated Thermal Rating: on transformer 7061-61 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1233
 % INFO    : Updated Thermal Rating: on transformer 7062-62 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 913
-% INFO    : Updated Thermal Rating: on line 7166-166 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1905
-% INFO    : Updated Thermal Rating: on line 7024-24 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1015
-% INFO    : Updated Thermal Rating: on line 7001-1 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1502
-% INFO    : Updated Thermal Rating: on line 7130-130 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1520
-% INFO    : Updated Thermal Rating: on line 7011-11 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1526
-% INFO    : Updated Thermal Rating: on line 7023-23 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1276
-% INFO    : Updated Thermal Rating: on line 7049-49 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 2366
-% INFO    : Updated Thermal Rating: on line 7139-139 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1757
-% INFO    : Updated Thermal Rating: on line 7012-12 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 941
+% INFO    : Updated Thermal Rating: on transformer 7166-166 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1905
+% INFO    : Updated Thermal Rating: on transformer 7024-24 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1015
+% INFO    : Updated Thermal Rating: on transformer 7001-1 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1502
+% INFO    : Updated Thermal Rating: on transformer 7130-130 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1520
+% INFO    : Updated Thermal Rating: on transformer 7011-11 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1526
+% INFO    : Updated Thermal Rating: on transformer 7023-23 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1276
+% INFO    : Updated Thermal Rating: on transformer 7049-49 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 2366
+% INFO    : Updated Thermal Rating: on transformer 7139-139 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1757
+% INFO    : Updated Thermal Rating: on transformer 7012-12 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 941
 % INFO    : Updated Thermal Rating: on transformer 7017-17 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1774
 % INFO    : Updated Thermal Rating: on transformer 7039-39 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 929
 % INFO    : Updated Thermal Rating: on transformer 7057-57 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 549

@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.08     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.06     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                        30 - August - 2017                        %%%%%
+%%%%                         07 - June - 2018                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -405,7 +405,7 @@ mpc.branch = [
 	83	 85	 0.043	 0.148	 0.0348	 154	 154	 154	 0.0	 0.0	 1	 -30.0	 30.0;
 	84	 85	 0.0302	 0.0641	 0.01234	 122	 122	 122	 0.0	 0.0	 1	 -30.0	 30.0;
 	85	 86	 0.035	 0.123	 0.0276	 156	 156	 156	 0.0	 0.0	 1	 -30.0	 30.0;
-	86	 87	 0.02828	 0.2074	 0.0445	 141	 141	 141	 0.0	 0.0	 1	 -30.0	 30.0;
+	86	 87	 0.02828	 0.2074	 0.0445	 141	 141	 141	 1.0	 0.0	 1	 -30.0	 30.0;
 	85	 88	 0.02	 0.102	 0.0276	 186	 186	 186	 0.0	 0.0	 1	 -30.0	 30.0;
 	85	 89	 0.0239	 0.173	 0.047	 168	 168	 168	 0.0	 0.0	 1	 -30.0	 30.0;
 	88	 89	 0.0139	 0.0712	 0.01934	 186	 186	 186	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -454,7 +454,7 @@ mpc.branch = [
 	32	 114	 0.0135	 0.0612	 0.01628	 176	 176	 176	 0.0	 0.0	 1	 -30.0	 30.0;
 	27	 115	 0.0164	 0.0741	 0.01972	 175	 175	 175	 0.0	 0.0	 1	 -30.0	 30.0;
 	114	 115	 0.0023	 0.0104	 0.00276	 175	 175	 175	 0.0	 0.0	 1	 -30.0	 30.0;
-	68	 116	 0.00034	 0.00405	 0.164	 7218	 7218	 7218	 0.0	 0.0	 1	 -30.0	 30.0;
+	68	 116	 0.00034	 0.00405	 0.164	 7218	 7218	 7218	 1.0	 0.0	 1	 -30.0	 30.0;
 	12	 117	 0.0329	 0.14	 0.0358	 170	 170	 170	 0.0	 0.0	 1	 -30.0	 30.0;
 	75	 118	 0.0145	 0.0481	 0.01198	 151	 151	 151	 0.0	 0.0	 1	 -30.0	 30.0;
 	76	 118	 0.0164	 0.0544	 0.01356	 151	 151	 151	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -601,6 +601,12 @@ mpc.branch = [
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
+% INFO    : 
+% INFO    : === Base KV Replacement Notes ===
+% INFO    : 
+% INFO    : === Transformer Setting Replacement Notes ===
+% WARNING : Branch 86-87 connects two different voltage levels (138.0, 161.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 68-116 connects two different voltage levels (345.0, 138.0), changing tap ratio 0.0 => 1.0
 % INFO    : 
 % INFO    : === Line Capacity Stat Model Notes ===
 % INFO    : Updated Thermal Rating: on line 1-2 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 151
@@ -771,7 +777,7 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 84-85 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 122
 % INFO    : Updated Thermal Rating: on line 85-86 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 156
 % WARNING : Different basekv values on line 86-87, branch flow stat model using max current model : from_basekv=138.0 to_basekv=161.0 
-% INFO    : Updated Thermal Rating: on line 86-87 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 141
+% INFO    : Updated Thermal Rating: on transformer 86-87 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 141
 % INFO    : Updated Thermal Rating: on line 85-88 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 186
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 85-89 : 218 , 167
 % INFO    : Updated Thermal Rating: on line 85-89 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 168
@@ -831,7 +837,7 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 27-115 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 175
 % INFO    : Updated Thermal Rating: on line 114-115 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 175
 % WARNING : Different basekv values on line 68-116, branch flow stat model using max current model : from_basekv=345.0 to_basekv=138.0 
-% INFO    : Updated Thermal Rating: on line 68-116 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 7218
+% INFO    : Updated Thermal Rating: on transformer 68-116 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 7218
 % INFO    : Updated Thermal Rating: on line 12-117 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 170
 % INFO    : Updated Thermal Rating: on line 75-118 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 151
 % INFO    : Updated Thermal Rating: on line 76-118 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 151

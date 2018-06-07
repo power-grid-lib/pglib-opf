@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.08     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.06     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                        30 - August - 2017                        %%%%%
+%%%%                         07 - June - 2018                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -231,7 +231,7 @@ mpc.gencost = [
 %	fbus	tbus	r	x	b	rateA	rateB	rateC	ratio	angle	status	angmin	angmax
 mpc.branch = [
 	1	 2	 0.0035	 0.0321	 0.5438	 613	 613	 613	 0.0	 0.0	 1	 -30.0	 30.0;
-	1	 3	 0.0034	 0.0326	 0.7224	 895	 895	 895	 0.0	 0.0	 1	 -30.0	 30.0;
+	1	 3	 0.0034	 0.0326	 0.7224	 895	 895	 895	 1.0	 0.0	 1	 -30.0	 30.0;
 	1	 4	 0.0064	 0.0621	 0.987	 470	 470	 470	 0.0	 0.0	 1	 -30.0	 30.0;
 	1	 5	 0.0011	 0.0119	 0.2012	 663	 663	 663	 0.0	 0.0	 1	 -30.0	 30.0;
 	1	 6	 0.0	 0.0133	 0.0	 900.0	 2206	 2206	 1.0519	 0.0	 1	 -30.0	 30.0;
@@ -241,8 +241,8 @@ mpc.branch = [
 	3	 50	 0.0389	 0.1699	 0.0	 169	 169	 169	 0.0	 0.0	 1	 -30.0	 30.0;
 	3	 103	 0.1074	 1.8023	 0.0	 17	 17	 17	 0.0	 0.0	 1	 -30.0	 30.0;
 	3	 123	 0.2883	 1.6719	 0.0	 18	 18	 18	 0.0	 0.0	 1	 -30.0	 30.0;
-	3	 124	 0.014	 0.6483	 0.0	 46	 46	 46	 0.0	 0.0	 1	 -30.0	 30.0;
-	3	 125	 0.0084	 0.1139	 0.0	 257	 257	 257	 0.0	 0.0	 1	 -30.0	 30.0;
+	3	 124	 0.014	 0.6483	 0.0	 46	 46	 46	 1.0	 0.0	 1	 -30.0	 30.0;
+	3	 125	 0.0084	 0.1139	 0.0	 257	 257	 257	 1.0	 0.0	 1	 -30.0	 30.0;
 	4	 112	 0.0059	 0.0568	 0.925	 514	 514	 514	 0.0	 0.0	 1	 -30.0	 30.0;
 	4	 115	 0.0	 0.0185	 0.0	 500.0	 1586	 1586	 1.0	 0.0	 1	 -30.0	 30.0;
 	4	 119	 0.0014	 0.0119	 0.205	 591	 591	 591	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -251,60 +251,60 @@ mpc.branch = [
 	5	 131	 0.0	 0.0127	 0.0	 710.0	 2310	 2310	 1.0249	 0.0	 1	 -30.0	 30.0;
 	7	 8	 0.0004	 0.0189	 0.0	 672.0	 1552	 1552	 0.9751	 0.0	 1	 -30.0	 30.0;
 	7	 9	 0.0017	 0.0169	 0.2872	 637	 637	 637	 0.0	 0.0	 1	 -30.0	 30.0;
-	8	 10	 0.4591	 1.0703	 0.0	 26	 26	 26	 0.0	 0.0	 1	 -30.0	 30.0;
+	8	 10	 0.4591	 1.0703	 0.0	 26	 26	 26	 1.0	 0.0	 1	 -30.0	 30.0;
 	8	 12	 0.0106	 0.0574	 0.0	 159	 159	 159	 0.0	 0.0	 1	 -30.0	 30.0;
-	8	 13	 0.1274	 0.4784	 0.0	 60	 60	 60	 0.0	 0.0	 1	 -30.0	 30.0;
-	8	 14	 0.0473	 0.3956	 0.0	 74	 74	 74	 0.0	 0.0	 1	 -30.0	 30.0;
-	8	 15	 0.5035	 1.7433	 0.0	 17	 17	 17	 0.0	 0.0	 1	 -30.0	 30.0;
-	8	 132	 0.0252	 0.288	 0.0	 102	 102	 102	 0.0	 0.0	 1	 -30.0	 30.0;
+	8	 13	 0.1274	 0.4784	 0.0	 60	 60	 60	 1.0	 0.0	 1	 -30.0	 30.0;
+	8	 14	 0.0473	 0.3956	 0.0	 74	 74	 74	 1.0	 0.0	 1	 -30.0	 30.0;
+	8	 15	 0.5035	 1.7433	 0.0	 17	 17	 17	 1.0	 0.0	 1	 -30.0	 30.0;
+	8	 132	 0.0252	 0.288	 0.0	 102	 102	 102	 1.0	 0.0	 1	 -30.0	 30.0;
 	9	 75	 0.0013	 0.015	 0.2682	 684	 684	 684	 0.0	 0.0	 1	 -30.0	 30.0;
 	10	 11	 0.0051	 0.037	 0.0716	 366	 366	 366	 0.0	 0.0	 1	 -30.0	 30.0;
-	10	 13	 0.1299	 0.622	 0.0	 47	 47	 47	 0.0	 0.0	 1	 -30.0	 30.0;
+	10	 13	 0.1299	 0.622	 0.0	 47	 47	 47	 1.0	 0.0	 1	 -30.0	 30.0;
 	10	 15	 0.1275	 0.7033	 0.0	 42	 42	 42	 0.0	 0.0	 1	 -30.0	 30.0;
-	10	 60	 0.2525	 1.2242	 0.0	 24	 24	 24	 0.0	 0.0	 1	 -30.0	 30.0;
+	10	 60	 0.2525	 1.2242	 0.0	 24	 24	 24	 1.0	 0.0	 1	 -30.0	 30.0;
 	11	 15	 0.0285	 0.1793	 0.3484	 162	 162	 162	 0.0	 0.0	 1	 -30.0	 30.0;
-	11	 46	 0.0142	 0.1225	 0.1876	 238	 238	 238	 0.0	 0.0	 1	 -30.0	 30.0;
+	11	 46	 0.0142	 0.1225	 0.1876	 238	 238	 238	 1.0	 0.0	 1	 -30.0	 30.0;
 	11	 58	 0.017	 0.107	 0.2074	 271	 271	 271	 0.0	 0.0	 1	 -30.0	 30.0;
 	11	 59	 0.0071	 0.0471	 0.0852	 350	 350	 350	 0.0	 0.0	 1	 -30.0	 30.0;
 	12	 2	 0.0008	 0.0377	 0.0	 336.0	 778	 778	 1.0252	 0.0	 1	 -30.0	 30.0;
-	12	 13	 0.1038	 0.3137	 0.0	 89	 89	 89	 0.0	 0.0	 1	 -30.0	 30.0;
-	12	 14	 0.1598	 0.6415	 0.0	 45	 45	 45	 0.0	 0.0	 1	 -30.0	 30.0;
-	12	 132	 0.4486	 1.5773	 0.0	 18	 18	 18	 0.0	 0.0	 1	 -30.0	 30.0;
-	13	 15	 0.044	 0.3227	 0.0	 91	 91	 91	 0.0	 0.0	 1	 -30.0	 30.0;
-	13	 62	 0.0098	 0.1221	 0.0	 240	 240	 240	 0.0	 0.0	 1	 -30.0	 30.0;
+	12	 13	 0.1038	 0.3137	 0.0	 89	 89	 89	 1.0	 0.0	 1	 -30.0	 30.0;
+	12	 14	 0.1598	 0.6415	 0.0	 45	 45	 45	 1.0	 0.0	 1	 -30.0	 30.0;
+	12	 132	 0.4486	 1.5773	 0.0	 18	 18	 18	 1.0	 0.0	 1	 -30.0	 30.0;
+	13	 15	 0.044	 0.3227	 0.0	 91	 91	 91	 1.0	 0.0	 1	 -30.0	 30.0;
+	13	 62	 0.0098	 0.1221	 0.0	 240	 240	 240	 1.0	 0.0	 1	 -30.0	 30.0;
 	14	 72	 0.0107	 0.0828	 0.0	 264	 264	 264	 0.0	 0.0	 1	 -30.0	 30.0;
 	14	 113	 0.0063	 0.0382	 0.0	 235	 235	 235	 0.0	 0.0	 1	 -30.0	 30.0;
 	14	 132	 0.0057	 0.0374	 0.0	 244	 244	 244	 0.0	 0.0	 1	 -30.0	 30.0;
 	15	 58	 0.0115	 0.0732	 0.142	 344	 344	 344	 0.0	 0.0	 1	 -30.0	 30.0;
-	15	 60	 0.3907	 1.6753	 0.0	 18	 18	 18	 0.0	 0.0	 1	 -30.0	 30.0;
+	15	 60	 0.3907	 1.6753	 0.0	 18	 18	 18	 1.0	 0.0	 1	 -30.0	 30.0;
 	15	 62	 0.0084	 0.0588	 0.0	 359	 359	 359	 0.0	 0.0	 1	 -30.0	 30.0;
 	15	 63	 0.1704	 1.4555	 0.0	 21	 21	 21	 0.0	 0.0	 1	 -30.0	 30.0;
 	16	 17	 0.6017	 1.4373	 0.0	 19	 19	 19	 0.0	 0.0	 1	 -30.0	 30.0;
 	16	 18	 0.0297	 0.107	 0.0546	 184	 184	 184	 0.0	 0.0	 1	 -30.0	 30.0;
-	16	 27	 0.1574	 0.8871	 0.0	 33	 33	 33	 0.0	 0.0	 1	 -30.0	 30.0;
-	16	 126	 0.1053	 0.5132	 0.0	 56	 56	 56	 0.0	 0.0	 1	 -30.0	 30.0;
-	16	 127	 0.0958	 0.5276	 0.0	 55	 55	 55	 0.0	 0.0	 1	 -30.0	 30.0;
+	16	 27	 0.1574	 0.8871	 0.0	 33	 33	 33	 1.0	 0.0	 1	 -30.0	 30.0;
+	16	 126	 0.1053	 0.5132	 0.0	 56	 56	 56	 1.0	 0.0	 1	 -30.0	 30.0;
+	16	 127	 0.0958	 0.5276	 0.0	 55	 55	 55	 1.0	 0.0	 1	 -30.0	 30.0;
 	17	 18	 0.0213	 0.1013	 0.0642	 209	 209	 209	 0.0	 0.0	 1	 -30.0	 30.0;
 	17	 19	 0.2314	 0.7678	 0.0	 37	 37	 37	 0.0	 0.0	 1	 -30.0	 30.0;
 	17	 21	 0.0471	 0.2665	 0.0	 109	 109	 109	 0.0	 0.0	 1	 -30.0	 30.0;
-	17	 127	 0.0287	 0.2637	 0.0	 111	 111	 111	 0.0	 0.0	 1	 -30.0	 30.0;
+	17	 127	 0.0287	 0.2637	 0.0	 111	 111	 111	 1.0	 0.0	 1	 -30.0	 30.0;
 	18	 30	 0.0207	 0.1088	 0.052	 220	 220	 220	 0.0	 0.0	 1	 -30.0	 30.0;
 	18	 32	 0.0234	 0.122	 0.0582	 219	 219	 219	 0.0	 0.0	 1	 -30.0	 30.0;
 	18	 37	 0.0	 0.0456	 0.0	 225.0	 644	 644	 1.1193	 0.0	 1	 -30.0	 30.0;
 	19	 21	 0.3867	 1.9005	 0.0	 16	 16	 16	 0.0	 0.0	 1	 -30.0	 30.0;
 	19	 38	 0.0239	 0.125	 0.0596	 219	 219	 219	 0.0	 0.0	 1	 -30.0	 30.0;
 	19	 43	 0.0603	 0.2572	 0.0	 112	 112	 112	 0.0	 0.0	 1	 -30.0	 30.0;
-	19	 127	 0.1074	 0.6809	 0.0	 43	 43	 43	 0.0	 0.0	 1	 -30.0	 30.0;
+	19	 127	 0.1074	 0.6809	 0.0	 43	 43	 43	 1.0	 0.0	 1	 -30.0	 30.0;
 	20	 53	 0.0	 0.114	 0.0	 75.0	 258	 258	 1.0	 0.0	 1	 -30.0	 30.0;
 	20	 157	 0.0113	 0.0279	 0.0004	 44.0	 66	 66	 0.0	 0.0	 1	 -30.0	 30.0;
 	21	 22	 0.0312	 0.1629	 0.0778	 177	 177	 177	 0.0	 0.0	 1	 -30.0	 30.0;
-	21	 127	 0.0105	 0.6414	 0.0	 46	 46	 46	 0.0	 0.0	 1	 -30.0	 30.0;
+	21	 127	 0.0105	 0.6414	 0.0	 46	 46	 46	 1.0	 0.0	 1	 -30.0	 30.0;
 	22	 38	 0.014	 0.054	 0.025	 190	 190	 190	 0.0	 0.0	 1	 -30.0	 30.0;
 	22	 39	 0.0	 0.0493	 0.0	 225.0	 595	 595	 1.1081	 0.0	 1	 -30.0	 30.0;
 	22	 40	 0.0188	 0.0717	 0.0328	 189	 189	 189	 0.0	 0.0	 1	 -30.0	 30.0;
 	22	 41	 0.0172	 0.085	 0.0404	 213	 213	 213	 0.0	 0.0	 1	 -30.0	 30.0;
 	23	 24	 0.0174	 0.0511	 0.023	 167	 167	 167	 0.0	 0.0	 1	 -30.0	 30.0;
-	23	 60	 0.066	 0.3093	 0.0	 93	 93	 93	 0.0	 0.0	 1	 -30.0	 30.0;
+	23	 60	 0.066	 0.3093	 0.0	 93	 93	 93	 1.0	 0.0	 1	 -30.0	 30.0;
 	24	 25	 0.0	 0.034	 0.0	 225.0	 863	 863	 1.0217	 0.0	 1	 -30.0	 30.0;
 	24	 28	 0.0249	 0.0725	 0.0202	 166	 166	 166	 0.0	 0.0	 1	 -30.0	 30.0;
 	24	 45	 0.0137	 0.0725	 0.034	 220	 220	 220	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -313,8 +313,8 @@ mpc.branch = [
 	26	 74	 0.0063	 0.0607	 0.93	 481	 481	 481	 0.0	 0.0	 1	 -30.0	 30.0;
 	26	 75	 0.003	 0.0322	 0.5038	 661	 661	 661	 0.0	 0.0	 1	 -30.0	 30.0;
 	26	 76	 0.0	 0.0082	 0.0	 1250.0	 3578	 3578	 1.04	 0.0	 1	 -30.0	 30.0;
-	27	 31	 0.0101	 0.1273	 0.0	 230	 230	 230	 0.0	 0.0	 1	 -30.0	 30.0;
-	27	 62	 0.0173	 0.581	 0.0	 51	 51	 51	 0.0	 0.0	 1	 -30.0	 30.0;
+	27	 31	 0.0101	 0.1273	 0.0	 230	 230	 230	 1.0	 0.0	 1	 -30.0	 30.0;
+	27	 62	 0.0173	 0.581	 0.0	 51	 51	 51	 1.0	 0.0	 1	 -30.0	 30.0;
 	27	 65	 0.0105	 0.2764	 0.0	 107	 107	 107	 0.0	 0.0	 1	 -30.0	 30.0;
 	27	 125	 0.035	 1.6845	 0.0	 18	 18	 18	 0.0	 0.0	 1	 -30.0	 30.0;
 	27	 126	 0.0022	 0.0225	 0.0	 646	 646	 646	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -335,16 +335,16 @@ mpc.branch = [
 	37	 126	 0.004	 0.0381	 0.67	 624	 624	 624	 0.0	 0.0	 1	 -30.0	 30.0;
 	37	 127	 0.004	 0.0403	 0.6832	 641	 641	 641	 0.0	 0.0	 1	 -30.0	 30.0;
 	39	 42	 0.002	 0.0186	 0.32	 617	 617	 617	 0.0	 0.0	 1	 -30.0	 30.0;
-	40	 81	 0.03	 0.345	 0.0038	 81.0	 85	 85	 0.0	 0.0	 1	 -30.0	 30.0;
+	40	 81	 0.03	 0.345	 0.0038	 81.0	 85	 85	 1.0	 0.0	 1	 -30.0	 30.0;
 	40	 82	 0.004	 0.019	 0.0108	 209	 209	 209	 0.0	 0.0	 1	 -30.0	 30.0;
-	41	 81	 0.037	 0.372	 0.0058	 79	 79	 79	 0.0	 0.0	 1	 -30.0	 30.0;
+	41	 81	 0.037	 0.372	 0.0058	 79	 79	 79	 1.0	 0.0	 1	 -30.0	 30.0;
 	41	 83	 0.0052	 0.0256	 0.0124	 213	 213	 213	 0.0	 0.0	 1	 -30.0	 30.0;
 	41	 84	 0.0057	 0.058	 0.0292	 301	 301	 301	 0.0	 0.0	 1	 -30.0	 30.0;
 	42	 109	 0.0019	 0.0196	 0.333	 648	 648	 648	 0.0	 0.0	 1	 -30.0	 30.0;
 	43	 44	 0.0188	 0.0751	 0.0348	 193	 193	 193	 0.0	 0.0	 1	 -30.0	 30.0;
 	43	 103	 0.0324	 0.1702	 0.0	 170	 170	 170	 0.0	 0.0	 1	 -30.0	 30.0;
-	43	 124	 0.0293	 0.1766	 0.0	 164	 164	 164	 0.0	 0.0	 1	 -30.0	 30.0;
-	43	 125	 0.1449	 0.6509	 0.0	 44	 44	 44	 0.0	 0.0	 1	 -30.0	 30.0;
+	43	 124	 0.0293	 0.1766	 0.0	 164	 164	 164	 1.0	 0.0	 1	 -30.0	 30.0;
+	43	 125	 0.1449	 0.6509	 0.0	 44	 44	 44	 1.0	 0.0	 1	 -30.0	 30.0;
 	44	 102	 0.013	 0.05	 0.0236	 180.0	 189	 189	 0.0	 0.0	 1	 -30.0	 30.0;
 	44	 103	 0.0127	 0.051	 0.0244	 180.0	 193	 193	 0.0	 0.0	 1	 -30.0	 30.0;
 	45	 54	 0.0108	 0.057	 0.0272	 220	 220	 220	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -354,10 +354,10 @@ mpc.branch = [
 	48	 50	 0.0336	 0.166	 0.078	 174	 174	 174	 0.0	 0.0	 1	 -30.0	 30.0;
 	48	 51	 0.042	 0.13	 0.057	 171	 171	 171	 0.0	 0.0	 1	 -30.0	 30.0;
 	48	 52	 0.054	 0.168	 0.074	 167	 167	 167	 0.0	 0.0	 1	 -30.0	 30.0;
-	49	 87	 0.014	 0.068	 0.0266	 423	 423	 423	 0.0	 0.0	 1	 -30.0	 30.0;
+	49	 87	 0.014	 0.068	 0.0266	 423	 423	 423	 1.0	 0.0	 1	 -30.0	 30.0;
 	50	 51	 0.03	 0.09	 0.041	 168	 168	 168	 0.0	 0.0	 1	 -30.0	 30.0;
 	50	 123	 0.4071	 1.8543	 0.0	 16	 16	 16	 0.0	 0.0	 1	 -30.0	 30.0;
-	50	 125	 0.1337	 0.6031	 0.0	 48	 48	 48	 0.0	 0.0	 1	 -30.0	 30.0;
+	50	 125	 0.1337	 0.6031	 0.0	 48	 48	 48	 1.0	 0.0	 1	 -30.0	 30.0;
 	51	 141	 0.0323	 0.1	 0.0442	 171	 171	 171	 0.0	 0.0	 1	 -30.0	 30.0;
 	52	 79	 0.0623	 0.2126	 0.094	 133	 133	 133	 0.0	 0.0	 1	 -30.0	 30.0;
 	52	 106	 0.0231	 0.0717	 0.0314	 171	 171	 171	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -378,15 +378,15 @@ mpc.branch = [
 	59	 61	 0.0106	 0.0706	 0.121	 351	 351	 351	 0.0	 0.0	 1	 -30.0	 30.0;
 	60	 61	 0.0027	 0.0653	 -0.0022	 100.0	 449	 449	 1.0252	 0.0	 1	 -30.0	 30.0;
 	60	 61	 0.002	 0.0393	 0.0	 200.0	 746	 746	 1.0252	 0.0	 1	 -30.0	 30.0;
-	60	 62	 0.3674	 0.964	 0.0	 29	 29	 29	 0.0	 0.0	 1	 -30.0	 30.0;
-	60	 65	 0.1041	 0.4144	 0.0	 69	 69	 69	 0.0	 0.0	 1	 -30.0	 30.0;
-	60	 126	 0.5367	 1.8295	 0.0	 16	 16	 16	 0.0	 0.0	 1	 -30.0	 30.0;
+	60	 62	 0.3674	 0.964	 0.0	 29	 29	 29	 1.0	 0.0	 1	 -30.0	 30.0;
+	60	 65	 0.1041	 0.4144	 0.0	 69	 69	 69	 1.0	 0.0	 1	 -30.0	 30.0;
+	60	 126	 0.5367	 1.8295	 0.0	 16	 16	 16	 1.0	 0.0	 1	 -30.0	 30.0;
 	61	 62	 0.0296	 0.2275	 0.3996	 128	 128	 128	 0.0	 0.0	 1	 -30.0	 30.0;
 	61	 63	 0.0043	 0.0422	 0.0764	 345.0	 422	 422	 0.0	 0.0	 1	 -30.0	 30.0;
 	62	 63	 0.0158	 0.1702	 0.0	 172	 172	 172	 0.0	 0.0	 1	 -30.0	 30.0;
-	62	 65	 0.004	 0.074	 0.0	 396	 396	 396	 0.0	 0.0	 1	 -30.0	 30.0;
-	62	 126	 0.0044	 0.2969	 0.0	 99	 99	 99	 0.0	 0.0	 1	 -30.0	 30.0;
-	63	 65	 0.2409	 1.96	 0.0	 15	 15	 15	 0.0	 0.0	 1	 -30.0	 30.0;
+	62	 65	 0.004	 0.074	 0.0	 396	 396	 396	 1.0	 0.0	 1	 -30.0	 30.0;
+	62	 126	 0.0044	 0.2969	 0.0	 99	 99	 99	 1.0	 0.0	 1	 -30.0	 30.0;
+	63	 65	 0.2409	 1.96	 0.0	 15	 15	 15	 1.0	 0.0	 1	 -30.0	 30.0;
 	64	 65	 0.005	 0.0571	 0.9098	 512	 512	 512	 0.0	 0.0	 1	 -30.0	 30.0;
 	64	 66	 0.0033	 0.0381	 0.6066	 684	 684	 684	 0.0	 0.0	 1	 -30.0	 30.0;
 	65	 126	 0.0031	 0.1536	 0.0	 191	 191	 191	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -413,10 +413,10 @@ mpc.branch = [
 	82	 83	 0.0053	 0.0249	 0.013	 208	 208	 208	 0.0	 0.0	 1	 -30.0	 30.0;
 	84	 93	 0.0125	 0.0826	 0.0414	 245	 245	 245	 0.0	 0.0	 1	 -30.0	 30.0;
 	85	 86	 0.0211	 0.1046	 0.0498	 214	 214	 214	 0.0	 0.0	 1	 -30.0	 30.0;
-	86	 87	 0.028	 0.112	 0.0538	 255	 255	 255	 0.0	 0.0	 1	 -30.0	 30.0;
-	86	 88	 0.044	 0.228	 0.109	 127	 127	 127	 0.0	 0.0	 1	 -30.0	 30.0;
-	88	 96	 0.074	 0.25	 0.0142	 48.0	 113	 113	 0.0	 0.0	 1	 -30.0	 30.0;
-	88	 106	 0.0079	 0.0468	 0.0232	 173.0	 619	 619	 0.0	 0.0	 1	 -30.0	 30.0;
+	86	 87	 0.028	 0.112	 0.0538	 255	 255	 255	 1.0	 0.0	 1	 -30.0	 30.0;
+	86	 88	 0.044	 0.228	 0.109	 127	 127	 127	 1.0	 0.0	 1	 -30.0	 30.0;
+	88	 96	 0.074	 0.25	 0.0142	 48.0	 113	 113	 1.0	 0.0	 1	 -30.0	 30.0;
+	88	 106	 0.0079	 0.0468	 0.0232	 173.0	 619	 619	 1.0	 0.0	 1	 -30.0	 30.0;
 	89	 86	 0.0	 0.057	 0.0	 90.0	 515	 515	 1.0252	 0.0	 1	 -30.0	 30.0;
 	89	 90	 0.069	 0.134	 0.014	 69.0	 98	 98	 0.0	 0.0	 1	 -30.0	 30.0;
 	90	 96	 0.1837	 0.359	 0.037	 73	 73	 73	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -441,8 +441,8 @@ mpc.branch = [
 	98	 105	 0.1485	 0.293	 0.031	 69.0	 90	 90	 0.0	 0.0	 1	 -30.0	 30.0;
 	100	 104	 0.062	 0.145	 0.0166	 69.0	 107	 107	 0.0	 0.0	 1	 -30.0	 30.0;
 	103	 123	 0.182	 0.751	 0.0	 38	 38	 38	 0.0	 0.0	 1	 -30.0	 30.0;
-	103	 124	 0.0002	 0.0167	 0.0	 1757	 1757	 1757	 0.0	 0.0	 1	 -30.0	 30.0;
-	103	 125	 0.0279	 0.1972	 0.0	 148	 148	 148	 0.0	 0.0	 1	 -30.0	 30.0;
+	103	 124	 0.0002	 0.0167	 0.0	 1757	 1757	 1757	 1.0	 0.0	 1	 -30.0	 30.0;
+	103	 125	 0.0279	 0.1972	 0.0	 148	 148	 148	 1.0	 0.0	 1	 -30.0	 30.0;
 	104	 34	 0.008	 0.0637	 -0.0033	 106.0	 457	 457	 1.0	 0.0	 1	 -30.0	 30.0;
 	105	 38	 0.0	 0.116	 0.0	 45.0	 253	 253	 1.0252	 0.0	 1	 -30.0	 30.0;
 	106	 107	 0.0196	 0.0611	 0.0268	 171	 171	 171	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -469,7 +469,7 @@ mpc.branch = [
 	120	 128	 0.0004	 0.0051	 0.1	 717	 717	 717	 0.0	 0.0	 1	 -30.0	 30.0;
 	120	 129	 0.0003	 0.0038	 0.0652	 715	 715	 715	 0.0	 0.0	 1	 -30.0	 30.0;
 	122	 123	 0.0175	 0.0835	 0.0398	 210	 210	 210	 0.0	 0.0	 1	 -30.0	 30.0;
-	123	 125	 0.0423	 0.2441	 0.0	 119	 119	 119	 0.0	 0.0	 1	 -30.0	 30.0;
+	123	 125	 0.0423	 0.2441	 0.0	 119	 119	 119	 1.0	 0.0	 1	 -30.0	 30.0;
 	124	 125	 0.0113	 0.1585	 0.0	 185	 185	 185	 0.0	 0.0	 1	 -30.0	 30.0;
 	124	 126	 0.0577	 0.8256	 0.0	 36	 36	 36	 0.0	 0.0	 1	 -30.0	 30.0;
 	125	 126	 0.0201	 0.5915	 0.0	 50	 50	 50	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -567,10 +567,59 @@ mpc.branch = [
 % INFO    : Updated Generator Cost: COW - 0.0 20.0 0.021978022 -> 0 16.6760835089 0
 % INFO    : Updated Generator Cost: COW - 0.0 20.0 0.0173913043 -> 0 13.0761218928 0
 % INFO    : 
+% INFO    : === Base KV Replacement Notes ===
+% INFO    : 
+% INFO    : === Transformer Setting Replacement Notes ===
+% WARNING : Branch 1-3 connects two different voltage levels (345.0, 161.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 3-124 connects two different voltage levels (161.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 3-125 connects two different voltage levels (161.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 8-10 connects two different voltage levels (115.0, 230.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 8-13 connects two different voltage levels (115.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 8-14 connects two different voltage levels (115.0, 161.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 8-15 connects two different voltage levels (115.0, 230.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 8-132 connects two different voltage levels (115.0, 161.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 10-13 connects two different voltage levels (230.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 10-60 connects two different voltage levels (230.0, 115.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 11-46 connects two different voltage levels (230.0, 161.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 12-13 connects two different voltage levels (115.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 12-14 connects two different voltage levels (115.0, 161.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 12-132 connects two different voltage levels (115.0, 161.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 13-15 connects two different voltage levels (345.0, 230.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 13-62 connects two different voltage levels (345.0, 230.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 15-60 connects two different voltage levels (230.0, 115.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 16-27 connects two different voltage levels (161.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 16-126 connects two different voltage levels (161.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 16-127 connects two different voltage levels (161.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 17-127 connects two different voltage levels (161.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 19-127 connects two different voltage levels (161.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 21-127 connects two different voltage levels (161.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 23-60 connects two different voltage levels (161.0, 115.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 27-31 connects two different voltage levels (345.0, 161.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 27-62 connects two different voltage levels (345.0, 230.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 40-81 connects two different voltage levels (161.0, 69.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 41-81 connects two different voltage levels (161.0, 69.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 43-124 connects two different voltage levels (161.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 43-125 connects two different voltage levels (161.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 49-87 connects two different voltage levels (161.0, 115.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 50-125 connects two different voltage levels (161.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 60-62 connects two different voltage levels (115.0, 230.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 60-65 connects two different voltage levels (115.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 60-126 connects two different voltage levels (115.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 62-65 connects two different voltage levels (230.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 62-126 connects two different voltage levels (230.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 63-65 connects two different voltage levels (230.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 86-87 connects two different voltage levels (161.0, 115.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 86-88 connects two different voltage levels (161.0, 69.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 88-96 connects two different voltage levels (69.0, 115.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 88-106 connects two different voltage levels (69.0, 161.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 103-124 connects two different voltage levels (161.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 103-125 connects two different voltage levels (161.0, 345.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 123-125 connects two different voltage levels (161.0, 345.0), changing tap ratio 0.0 => 1.0
+% INFO    : 
 % INFO    : === Line Capacity Stat Model Notes ===
 % INFO    : Updated Thermal Rating: on line 1-2 : Rate A, Rate B, Rate C , 3450.0, 0.0, 0.0 -> 613
 % WARNING : Different basekv values on line 1-3, branch flow stat model using max current model : from_basekv=345.0 to_basekv=161.0 
-% INFO    : Updated Thermal Rating: on line 1-3 : Rate A, Rate B, Rate C , 3709.0, 0.0, 0.0 -> 895
+% INFO    : Updated Thermal Rating: on transformer 1-3 : Rate A, Rate B, Rate C , 3709.0, 0.0, 0.0 -> 895
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 1-4 : 629 , 469
 % INFO    : Updated Thermal Rating: on line 1-4 : Rate A, Rate B, Rate C , 3450.0, 0.0, 0.0 -> 470
 % INFO    : Updated Thermal Rating: on line 1-5 : Rate A, Rate B, Rate C , 4002.0, 0.0, 0.0 -> 663
@@ -587,13 +636,13 @@ mpc.branch = [
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 3-123 : 229 , 17
 % INFO    : Updated Thermal Rating: on line 3-123 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 18
 % WARNING : Different basekv values on line 3-124, branch flow stat model using max current model : from_basekv=161.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 3-124 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 46
+% INFO    : Updated Thermal Rating: on transformer 3-124 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 46
 % WARNING : Different basekv values on line 3-125, branch flow stat model using max current model : from_basekv=161.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 3-125 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 257
+% INFO    : Updated Thermal Rating: on transformer 3-125 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 257
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 4-112 : 626 , 513
 % INFO    : Updated Thermal Rating: on line 4-112 : Rate A, Rate B, Rate C , 3450.0, 0.0, 0.0 -> 514
 % WARNING : Missing data for branch flow stat model on line 4-115 using max current model : from_basekv=345.0 to_basekv=161.0 r=0.0 x=0.0185
-% INFO    : Updated Thermal Rating: on line 4-115 : Rate B, Rate C , 0.0, 0.0 -> 1586
+% INFO    : Updated Thermal Rating: on transformer 4-115 : Rate B, Rate C , 0.0, 0.0 -> 1586
 % INFO    : Updated Thermal Rating: on line 4-119 : Rate A, Rate B, Rate C , 3450.0, 0.0, 0.0 -> 591
 % INFO    : Updated Thermal Rating: on line 5-120 : Rate A, Rate B, Rate C , 4002.0, 0.0, 0.0 -> 644
 % INFO    : Updated Thermal Rating: on line 5-129 : Rate A, Rate B, Rate C , 2474.0, 0.0, 0.0 -> 702
@@ -603,49 +652,49 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on transformer 7-8 : Rate B, Rate C , 0.0, 0.0 -> 1552
 % INFO    : Updated Thermal Rating: on line 7-9 : Rate A, Rate B, Rate C , 2474.0, 0.0, 0.0 -> 637
 % WARNING : Different basekv values on line 8-10, branch flow stat model using max current model : from_basekv=115.0 to_basekv=230.0 
-% INFO    : Updated Thermal Rating: on line 8-10 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 26
+% INFO    : Updated Thermal Rating: on transformer 8-10 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 26
 % INFO    : Updated Thermal Rating: on line 8-12 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 159
 % WARNING : Different basekv values on line 8-13, branch flow stat model using max current model : from_basekv=115.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 8-13 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 60
+% INFO    : Updated Thermal Rating: on transformer 8-13 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 60
 % WARNING : Different basekv values on line 8-14, branch flow stat model using max current model : from_basekv=115.0 to_basekv=161.0 
-% INFO    : Updated Thermal Rating: on line 8-14 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 74
+% INFO    : Updated Thermal Rating: on transformer 8-14 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 74
 % WARNING : Different basekv values on line 8-15, branch flow stat model using max current model : from_basekv=115.0 to_basekv=230.0 
-% INFO    : Updated Thermal Rating: on line 8-15 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 17
+% INFO    : Updated Thermal Rating: on transformer 8-15 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 17
 % WARNING : Different basekv values on line 8-132, branch flow stat model using max current model : from_basekv=115.0 to_basekv=161.0 
-% INFO    : Updated Thermal Rating: on line 8-132 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 102
+% INFO    : Updated Thermal Rating: on transformer 8-132 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 102
 % INFO    : Updated Thermal Rating: on line 9-75 : Rate A, Rate B, Rate C , 2474.0, 0.0, 0.0 -> 684
 % INFO    : Updated Thermal Rating: on line 10-11 : Rate A, Rate B, Rate C , 736.0, 0.0, 0.0 -> 366
 % WARNING : Different basekv values on line 10-13, branch flow stat model using max current model : from_basekv=230.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 10-13 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 47
+% INFO    : Updated Thermal Rating: on transformer 10-13 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 47
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 10-15 : 320 , 41
 % INFO    : Updated Thermal Rating: on line 10-15 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 42
 % WARNING : Different basekv values on line 10-60, branch flow stat model using max current model : from_basekv=230.0 to_basekv=115.0 
-% INFO    : Updated Thermal Rating: on line 10-60 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 24
+% INFO    : Updated Thermal Rating: on transformer 10-60 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 24
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 11-15 : 341 , 161
 % INFO    : Updated Thermal Rating: on line 11-15 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 162
 % WARNING : Different basekv values on line 11-46, branch flow stat model using max current model : from_basekv=230.0 to_basekv=161.0 
-% INFO    : Updated Thermal Rating: on line 11-46 : Rate A, Rate B, Rate C , 460.0, 0.0, 0.0 -> 238
+% INFO    : Updated Thermal Rating: on transformer 11-46 : Rate A, Rate B, Rate C , 460.0, 0.0, 0.0 -> 238
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 11-58 : 341 , 270
 % INFO    : Updated Thermal Rating: on line 11-58 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 271
 % INFO    : Updated Thermal Rating: on line 11-59 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 350
 % WARNING : Different basekv values on line 12-2, branch flow stat model using max current model : from_basekv=115.0 to_basekv=345.0 
 % INFO    : Updated Thermal Rating: on transformer 12-2 : Rate B, Rate C , 0.0, 0.0 -> 778
 % WARNING : Different basekv values on line 12-13, branch flow stat model using max current model : from_basekv=115.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 12-13 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 89
+% INFO    : Updated Thermal Rating: on transformer 12-13 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 89
 % WARNING : Different basekv values on line 12-14, branch flow stat model using max current model : from_basekv=115.0 to_basekv=161.0 
-% INFO    : Updated Thermal Rating: on line 12-14 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 45
+% INFO    : Updated Thermal Rating: on transformer 12-14 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 45
 % WARNING : Different basekv values on line 12-132, branch flow stat model using max current model : from_basekv=115.0 to_basekv=161.0 
-% INFO    : Updated Thermal Rating: on line 12-132 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 18
+% INFO    : Updated Thermal Rating: on transformer 12-132 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 18
 % WARNING : Different basekv values on line 13-15, branch flow stat model using max current model : from_basekv=345.0 to_basekv=230.0 
-% INFO    : Updated Thermal Rating: on line 13-15 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 91
+% INFO    : Updated Thermal Rating: on transformer 13-15 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 91
 % WARNING : Different basekv values on line 13-62, branch flow stat model using max current model : from_basekv=345.0 to_basekv=230.0 
-% INFO    : Updated Thermal Rating: on line 13-62 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 240
+% INFO    : Updated Thermal Rating: on transformer 13-62 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 240
 % INFO    : Updated Thermal Rating: on line 14-72 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 264
 % INFO    : Updated Thermal Rating: on line 14-113 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 235
 % INFO    : Updated Thermal Rating: on line 14-132 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 244
 % INFO    : Updated Thermal Rating: on line 15-58 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 344
 % WARNING : Different basekv values on line 15-60, branch flow stat model using max current model : from_basekv=230.0 to_basekv=115.0 
-% INFO    : Updated Thermal Rating: on line 15-60 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 18
+% INFO    : Updated Thermal Rating: on transformer 15-60 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 18
 % INFO    : Updated Thermal Rating: on line 15-62 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 359
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 15-63 : 394 , 20
 % INFO    : Updated Thermal Rating: on line 15-63 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 21
@@ -653,18 +702,18 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 16-17 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 19
 % INFO    : Updated Thermal Rating: on line 16-18 : Rate A, Rate B, Rate C , 269.0, 0.0, 0.0 -> 184
 % WARNING : Different basekv values on line 16-27, branch flow stat model using max current model : from_basekv=161.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 16-27 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 33
+% INFO    : Updated Thermal Rating: on transformer 16-27 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 33
 % WARNING : Different basekv values on line 16-126, branch flow stat model using max current model : from_basekv=161.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 16-126 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 56
+% INFO    : Updated Thermal Rating: on transformer 16-126 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 56
 % WARNING : Different basekv values on line 16-127, branch flow stat model using max current model : from_basekv=161.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 16-127 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 55
+% INFO    : Updated Thermal Rating: on transformer 16-127 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 55
 % INFO    : Updated Thermal Rating: on line 17-18 : Rate A, Rate B, Rate C , 361.0, 0.0, 0.0 -> 209
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 17-19 : 175 , 36
 % INFO    : Updated Thermal Rating: on line 17-19 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 37
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 17-21 : 227 , 108
 % INFO    : Updated Thermal Rating: on line 17-21 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 109
 % WARNING : Different basekv values on line 17-127, branch flow stat model using max current model : from_basekv=161.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 17-127 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 111
+% INFO    : Updated Thermal Rating: on transformer 17-127 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 111
 % INFO    : Updated Thermal Rating: on line 18-30 : Rate A, Rate B, Rate C , 362.0, 0.0, 0.0 -> 220
 % INFO    : Updated Thermal Rating: on line 18-32 : Rate A, Rate B, Rate C , 361.0, 0.0, 0.0 -> 219
 % WARNING : Missing data for branch flow stat model on line 18-37 using max current model : from_basekv=161.0 to_basekv=345.0 r=0.0 x=0.0456
@@ -675,14 +724,14 @@ mpc.branch = [
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 19-43 : 198 , 111
 % INFO    : Updated Thermal Rating: on line 19-43 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 112
 % WARNING : Different basekv values on line 19-127, branch flow stat model using max current model : from_basekv=161.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 19-127 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 43
+% INFO    : Updated Thermal Rating: on transformer 19-127 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 43
 % WARNING : Missing data for branch flow stat model on line 20-53 using max current model : from_basekv=69.0 to_basekv=161.0 r=0.0 x=0.114
-% INFO    : Updated Thermal Rating: on line 20-53 : Rate B, Rate C , 0.0, 0.0 -> 258
+% INFO    : Updated Thermal Rating: on transformer 20-53 : Rate B, Rate C , 0.0, 0.0 -> 258
 % INFO    : Updated Thermal Rating: on line 20-157 : Rate B, Rate C , 0.0, 0.0 -> 66
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 21-22 : 218 , 176
 % INFO    : Updated Thermal Rating: on line 21-22 : Rate A, Rate B, Rate C , 387.0, 0.0, 0.0 -> 177
 % WARNING : Different basekv values on line 21-127, branch flow stat model using max current model : from_basekv=161.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 21-127 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 46
+% INFO    : Updated Thermal Rating: on transformer 21-127 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 46
 % INFO    : Updated Thermal Rating: on line 22-38 : Rate A, Rate B, Rate C , 362.0, 0.0, 0.0 -> 190
 % WARNING : Missing data for branch flow stat model on line 22-39 using max current model : from_basekv=161.0 to_basekv=345.0 r=0.0 x=0.0493
 % INFO    : Updated Thermal Rating: on transformer 22-39 : Rate B, Rate C , 0.0, 0.0 -> 595
@@ -690,7 +739,7 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 22-41 : Rate A, Rate B, Rate C , 351.0, 0.0, 0.0 -> 213
 % INFO    : Updated Thermal Rating: on line 23-24 : Rate A, Rate B, Rate C , 361.0, 0.0, 0.0 -> 167
 % WARNING : Different basekv values on line 23-60, branch flow stat model using max current model : from_basekv=161.0 to_basekv=115.0 
-% INFO    : Updated Thermal Rating: on line 23-60 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 93
+% INFO    : Updated Thermal Rating: on transformer 23-60 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 93
 % WARNING : Missing data for branch flow stat model on line 24-25 using max current model : from_basekv=161.0 to_basekv=345.0 r=0.0 x=0.034
 % INFO    : Updated Thermal Rating: on transformer 24-25 : Rate B, Rate C , 0.0, 0.0 -> 863
 % INFO    : Updated Thermal Rating: on line 24-28 : Rate A, Rate B, Rate C , 361.0, 0.0, 0.0 -> 166
@@ -704,9 +753,9 @@ mpc.branch = [
 % WARNING : Missing data for branch flow stat model on line 26-76 using max current model : from_basekv=345.0 to_basekv=24.0 r=0.0 x=0.0082
 % INFO    : Updated Thermal Rating: on transformer 26-76 : Rate B, Rate C , 0.0, 0.0 -> 3578
 % WARNING : Different basekv values on line 27-31, branch flow stat model using max current model : from_basekv=345.0 to_basekv=161.0 
-% INFO    : Updated Thermal Rating: on line 27-31 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 230
+% INFO    : Updated Thermal Rating: on transformer 27-31 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 230
 % WARNING : Different basekv values on line 27-62, branch flow stat model using max current model : from_basekv=345.0 to_basekv=230.0 
-% INFO    : Updated Thermal Rating: on line 27-62 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 51
+% INFO    : Updated Thermal Rating: on transformer 27-62 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 51
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 27-65 : 1013 , 106
 % INFO    : Updated Thermal Rating: on line 27-65 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 107
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 27-125 : 1351 , 17
@@ -733,10 +782,10 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 37-127 : Rate A, Rate B, Rate C , 3312.0, 0.0, 0.0 -> 641
 % INFO    : Updated Thermal Rating: on line 39-42 : Rate A, Rate B, Rate C , 1656.0, 0.0, 0.0 -> 617
 % WARNING : Different basekv values on line 40-81, branch flow stat model using max current model : from_basekv=161.0 to_basekv=69.0 
-% INFO    : Updated Thermal Rating: on line 40-81 : Rate B, Rate C , 0.0, 0.0 -> 85
+% INFO    : Updated Thermal Rating: on transformer 40-81 : Rate B, Rate C , 0.0, 0.0 -> 85
 % INFO    : Updated Thermal Rating: on line 40-82 : Rate A, Rate B, Rate C , 351.0, 0.0, 0.0 -> 209
 % WARNING : Different basekv values on line 41-81, branch flow stat model using max current model : from_basekv=161.0 to_basekv=69.0 
-% INFO    : Updated Thermal Rating: on line 41-81 : Rate A, Rate B, Rate C , 81.0, 0.0, 0.0 -> 79
+% INFO    : Updated Thermal Rating: on transformer 41-81 : Rate A, Rate B, Rate C , 81.0, 0.0, 0.0 -> 79
 % INFO    : Updated Thermal Rating: on line 41-83 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 213
 % INFO    : Updated Thermal Rating: on line 41-84 : Rate A, Rate B, Rate C , 406.0, 0.0, 0.0 -> 301
 % INFO    : Updated Thermal Rating: on line 42-109 : Rate A, Rate B, Rate C , 3795.0, 0.0, 0.0 -> 648
@@ -744,9 +793,9 @@ mpc.branch = [
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 43-103 : 219 , 169
 % INFO    : Updated Thermal Rating: on line 43-103 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 170
 % WARNING : Different basekv values on line 43-124, branch flow stat model using max current model : from_basekv=161.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 43-124 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 164
+% INFO    : Updated Thermal Rating: on transformer 43-124 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 164
 % WARNING : Different basekv values on line 43-125, branch flow stat model using max current model : from_basekv=161.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 43-125 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 44
+% INFO    : Updated Thermal Rating: on transformer 43-125 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 44
 % INFO    : Updated Thermal Rating: on line 44-102 : Rate B, Rate C , 0.0, 0.0 -> 189
 % INFO    : Updated Thermal Rating: on line 44-103 : Rate B, Rate C , 0.0, 0.0 -> 193
 % INFO    : Updated Thermal Rating: on line 45-54 : Rate A, Rate B, Rate C , 354.0, 0.0, 0.0 -> 220
@@ -759,12 +808,12 @@ mpc.branch = [
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 48-52 : 170 , 166
 % INFO    : Updated Thermal Rating: on line 48-52 : Rate A, Rate B, Rate C , 261.0, 0.0, 0.0 -> 167
 % WARNING : Different basekv values on line 49-87, branch flow stat model using max current model : from_basekv=161.0 to_basekv=115.0 
-% INFO    : Updated Thermal Rating: on line 49-87 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 423
+% INFO    : Updated Thermal Rating: on transformer 49-87 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 423
 % INFO    : Updated Thermal Rating: on line 50-51 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 168
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 50-123 : 204 , 15
 % INFO    : Updated Thermal Rating: on line 50-123 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 16
 % WARNING : Different basekv values on line 50-125, branch flow stat model using max current model : from_basekv=161.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 50-125 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 48
+% INFO    : Updated Thermal Rating: on transformer 50-125 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 48
 % INFO    : Updated Thermal Rating: on line 51-141 : Rate A, Rate B, Rate C , 264.0, 0.0, 0.0 -> 171
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 52-79 : 178 , 132
 % INFO    : Updated Thermal Rating: on line 52-79 : Rate A, Rate B, Rate C , 269.0, 0.0, 0.0 -> 133
@@ -774,7 +823,7 @@ mpc.branch = [
 % WARNING : Missing data for branch flow stat model on line 52-118 using max current model : from_basekv=161.0 to_basekv=14.0 r=0.0 x=0.052
 % INFO    : Updated Thermal Rating: on transformer 52-118 : Rate B, Rate C , 0.0, 0.0 -> 565
 % WARNING : Different basekv values on line 53-11, branch flow stat model using max current model : from_basekv=161.0 to_basekv=230.0 
-% INFO    : Updated Thermal Rating: on line 53-11 : Rate B, Rate C , 0.0, 0.0 -> 1467
+% INFO    : Updated Thermal Rating: on transformer 53-11 : Rate B, Rate C , 0.0, 0.0 -> 1467
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 53-54 : 253 , 148
 % INFO    : Updated Thermal Rating: on line 53-54 : Rate A, Rate B, Rate C , 177.0, 0.0, 0.0 -> 149
 % INFO    : Updated Thermal Rating: on line 53-55 : Rate A, Rate B, Rate C , 538.0, 0.0, 0.0 -> 219
@@ -794,29 +843,29 @@ mpc.branch = [
 % WARNING : Different basekv values on line 60-61, branch flow stat model using max current model : from_basekv=115.0 to_basekv=230.0 
 % INFO    : Updated Thermal Rating: on transformer 60-61 : Rate B, Rate C , 0.0, 0.0 -> 746
 % WARNING : Different basekv values on line 60-62, branch flow stat model using max current model : from_basekv=115.0 to_basekv=230.0 
-% INFO    : Updated Thermal Rating: on line 60-62 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 29
+% INFO    : Updated Thermal Rating: on transformer 60-62 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 29
 % WARNING : Different basekv values on line 60-65, branch flow stat model using max current model : from_basekv=115.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 60-65 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 69
+% INFO    : Updated Thermal Rating: on transformer 60-65 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 69
 % WARNING : Different basekv values on line 60-126, branch flow stat model using max current model : from_basekv=115.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 60-126 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 16
+% INFO    : Updated Thermal Rating: on transformer 60-126 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 16
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 61-62 : 375 , 127
 % INFO    : Updated Thermal Rating: on line 61-62 : Rate A, Rate B, Rate C , 552.0, 0.0, 0.0 -> 128
 % INFO    : Updated Thermal Rating: on line 61-63 : Rate B, Rate C , 0.0, 0.0 -> 422
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 62-63 : 440 , 171
 % INFO    : Updated Thermal Rating: on line 62-63 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 172
 % WARNING : Different basekv values on line 62-65, branch flow stat model using max current model : from_basekv=230.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 62-65 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 396
+% INFO    : Updated Thermal Rating: on transformer 62-65 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 396
 % WARNING : Different basekv values on line 62-126, branch flow stat model using max current model : from_basekv=230.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 62-126 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 99
+% INFO    : Updated Thermal Rating: on transformer 62-126 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 99
 % WARNING : Different basekv values on line 63-65, branch flow stat model using max current model : from_basekv=230.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 63-65 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 15
+% INFO    : Updated Thermal Rating: on transformer 63-65 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 15
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 64-65 : 680 , 511
 % INFO    : Updated Thermal Rating: on line 64-65 : Rate A, Rate B, Rate C , 4140.0, 0.0, 0.0 -> 512
 % INFO    : Updated Thermal Rating: on line 64-66 : Rate A, Rate B, Rate C , 4140.0, 0.0, 0.0 -> 684
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 65-126 : 1370 , 190
 % INFO    : Updated Thermal Rating: on line 65-126 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 191
 % WARNING : Missing data for branch flow stat model on line 66-11 using max current model : from_basekv=345.0 to_basekv=230.0 r=0.0 x=0.0118
-% INFO    : Updated Thermal Rating: on line 66-11 : Rate B, Rate C , 0.0, 0.0 -> 2486
+% INFO    : Updated Thermal Rating: on transformer 66-11 : Rate B, Rate C , 0.0, 0.0 -> 2486
 % INFO    : Updated Thermal Rating: on line 67-68 : Rate A, Rate B, Rate C , 349.0, 0.0, 0.0 -> 220
 % INFO    : Updated Thermal Rating: on line 68-69 : Rate A, Rate B, Rate C , 351.0, 0.0, 0.0 -> 218
 % INFO    : Updated Thermal Rating: on line 69-77 : Rate A, Rate B, Rate C , 269.0, 0.0, 0.0 -> 189
@@ -845,13 +894,13 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 84-93 : Rate A, Rate B, Rate C , 406.0, 0.0, 0.0 -> 245
 % INFO    : Updated Thermal Rating: on line 85-86 : Rate A, Rate B, Rate C , 387.0, 0.0, 0.0 -> 214
 % WARNING : Different basekv values on line 86-87, branch flow stat model using max current model : from_basekv=161.0 to_basekv=115.0 
-% INFO    : Updated Thermal Rating: on line 86-87 : Rate A, Rate B, Rate C , 325.0, 0.0, 0.0 -> 255
+% INFO    : Updated Thermal Rating: on transformer 86-87 : Rate A, Rate B, Rate C , 325.0, 0.0, 0.0 -> 255
 % WARNING : Different basekv values on line 86-88, branch flow stat model using max current model : from_basekv=161.0 to_basekv=69.0 
-% INFO    : Updated Thermal Rating: on line 86-88 : Rate A, Rate B, Rate C , 180.0, 0.0, 0.0 -> 127
+% INFO    : Updated Thermal Rating: on transformer 86-88 : Rate A, Rate B, Rate C , 180.0, 0.0, 0.0 -> 127
 % WARNING : Different basekv values on line 88-96, branch flow stat model using max current model : from_basekv=69.0 to_basekv=115.0 
-% INFO    : Updated Thermal Rating: on line 88-96 : Rate B, Rate C , 0.0, 0.0 -> 113
+% INFO    : Updated Thermal Rating: on transformer 88-96 : Rate B, Rate C , 0.0, 0.0 -> 113
 % WARNING : Different basekv values on line 88-106, branch flow stat model using max current model : from_basekv=69.0 to_basekv=161.0 
-% INFO    : Updated Thermal Rating: on line 88-106 : Rate B, Rate C , 0.0, 0.0 -> 619
+% INFO    : Updated Thermal Rating: on transformer 88-106 : Rate B, Rate C , 0.0, 0.0 -> 619
 % WARNING : Missing data for branch flow stat model on line 89-86 using max current model : from_basekv=115.0 to_basekv=161.0 r=0.0 x=0.057
 % INFO    : Updated Thermal Rating: on transformer 89-86 : Rate B, Rate C , 0.0, 0.0 -> 515
 % INFO    : Updated Thermal Rating: on line 89-90 : Rate B, Rate C , 0.0, 0.0 -> 98
@@ -892,11 +941,11 @@ mpc.branch = [
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 103-123 : 195 , 37
 % INFO    : Updated Thermal Rating: on line 103-123 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 38
 % WARNING : Different basekv values on line 103-124, branch flow stat model using max current model : from_basekv=161.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 103-124 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1757
+% INFO    : Updated Thermal Rating: on transformer 103-124 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1757
 % WARNING : Different basekv values on line 103-125, branch flow stat model using max current model : from_basekv=161.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 103-125 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 148
+% INFO    : Updated Thermal Rating: on transformer 103-125 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 148
 % WARNING : Different basekv values on line 104-34, branch flow stat model using max current model : from_basekv=115.0 to_basekv=161.0 
-% INFO    : Updated Thermal Rating: on line 104-34 : Rate B, Rate C , 0.0, 0.0 -> 457
+% INFO    : Updated Thermal Rating: on transformer 104-34 : Rate B, Rate C , 0.0, 0.0 -> 457
 % WARNING : Missing data for branch flow stat model on line 105-38 using max current model : from_basekv=115.0 to_basekv=161.0 r=0.0 x=0.116
 % INFO    : Updated Thermal Rating: on transformer 105-38 : Rate B, Rate C , 0.0, 0.0 -> 253
 % INFO    : Updated Thermal Rating: on line 106-107 : Rate A, Rate B, Rate C , 269.0, 0.0, 0.0 -> 171
@@ -908,7 +957,7 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 109-125 : Rate A, Rate B, Rate C , 3450.0, 0.0, 0.0 -> 471
 % INFO    : Updated Thermal Rating: on line 110-111 : Rate B, Rate C , 0.0, 0.0 -> 200
 % WARNING : Missing data for branch flow stat model on line 110-112 using max current model : from_basekv=161.0 to_basekv=345.0 r=0.0 x=0.0185
-% INFO    : Updated Thermal Rating: on line 110-112 : Rate B, Rate C , 0.0, 0.0 -> 1586
+% INFO    : Updated Thermal Rating: on transformer 110-112 : Rate B, Rate C , 0.0, 0.0 -> 1586
 % WARNING : Missing data for branch flow stat model on line 110-114 using max current model : from_basekv=161.0 to_basekv=14.0 r=0.0 x=0.0768
 % INFO    : Updated Thermal Rating: on transformer 110-114 : Rate B, Rate C , 0.0, 0.0 -> 382
 % INFO    : Updated Thermal Rating: on line 110-134 : Rate A, Rate B, Rate C , 520.0, 0.0, 0.0 -> 268
@@ -933,7 +982,7 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 120-129 : Rate A, Rate B, Rate C , 2474.0, 0.0, 0.0 -> 715
 % INFO    : Updated Thermal Rating: on line 122-123 : Rate A, Rate B, Rate C , 349.0, 0.0, 0.0 -> 210
 % WARNING : Different basekv values on line 123-125, branch flow stat model using max current model : from_basekv=161.0 to_basekv=345.0 
-% INFO    : Updated Thermal Rating: on line 123-125 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 119
+% INFO    : Updated Thermal Rating: on transformer 123-125 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 119
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 124-125 : 750 , 184
 % INFO    : Updated Thermal Rating: on line 124-125 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 185
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 124-126 : 757 , 35
@@ -943,9 +992,9 @@ mpc.branch = [
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 126-127 : 575 , 41
 % INFO    : Updated Thermal Rating: on line 126-127 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 42
 % WARNING : Different basekv values on line 128-72, branch flow stat model using max current model : from_basekv=345.0 to_basekv=161.0 
-% INFO    : Updated Thermal Rating: on line 128-72 : Rate B, Rate C , 0.0, 0.0 -> 1630
+% INFO    : Updated Thermal Rating: on transformer 128-72 : Rate B, Rate C , 0.0, 0.0 -> 1630
 % WARNING : Different basekv values on line 129-132, branch flow stat model using max current model : from_basekv=345.0 to_basekv=161.0 
-% INFO    : Updated Thermal Rating: on line 129-132 : Rate B, Rate C , 0.0, 0.0 -> 1482
+% INFO    : Updated Thermal Rating: on transformer 129-132 : Rate B, Rate C , 0.0, 0.0 -> 1482
 % WARNING : Missing data for branch flow stat model on line 133-134 using max current model : from_basekv=69.0 to_basekv=161.0 r=0.0 x=0.041
 % INFO    : Updated Thermal Rating: on transformer 133-134 : Rate B, Rate C , 0.0, 0.0 -> 716
 % INFO    : Updated Thermal Rating: on line 133-135 : Rate B, Rate C , 0.0, 0.0 -> 65
@@ -955,7 +1004,7 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 136-139 : Rate B, Rate C , 0.0, 0.0 -> 66
 % INFO    : Updated Thermal Rating: on line 137-140 : Rate B, Rate C , 0.0, 0.0 -> 81
 % WARNING : Missing data for branch flow stat model on line 138-110 using max current model : from_basekv=69.0 to_basekv=161.0 r=0.0 x=0.041
-% INFO    : Updated Thermal Rating: on line 138-110 : Rate B, Rate C , 0.0, 0.0 -> 716
+% INFO    : Updated Thermal Rating: on transformer 138-110 : Rate B, Rate C , 0.0, 0.0 -> 716
 % INFO    : Updated Thermal Rating: on line 138-139 : Rate B, Rate C , 0.0, 0.0 -> 66
 % INFO    : Updated Thermal Rating: on line 138-140 : Rate B, Rate C , 0.0, 0.0 -> 80
 % INFO    : Updated Thermal Rating: on line 138-145 : Rate B, Rate C , 0.0, 0.0 -> 67
@@ -969,19 +1018,19 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 144-145 : Rate B, Rate C , 0.0, 0.0 -> 66
 % INFO    : Updated Thermal Rating: on line 144-146 : Rate B, Rate C , 0.0, 0.0 -> 86
 % WARNING : Missing data for branch flow stat model on line 148-116 using max current model : from_basekv=69.0 to_basekv=161.0 r=0.0 x=0.041
-% INFO    : Updated Thermal Rating: on line 148-116 : Rate B, Rate C , 0.0, 0.0 -> 716
+% INFO    : Updated Thermal Rating: on transformer 148-116 : Rate B, Rate C , 0.0, 0.0 -> 716
 % WARNING : Missing data for branch flow stat model on line 149-26 using max current model : from_basekv=161.0 to_basekv=345.0 r=0.0 x=0.0386
-% INFO    : Updated Thermal Rating: on line 149-26 : Rate B, Rate C , 0.0, 0.0 -> 760
+% INFO    : Updated Thermal Rating: on transformer 149-26 : Rate B, Rate C , 0.0, 0.0 -> 760
 % WARNING : Missing data for branch flow stat model on line 149-26 using max current model : from_basekv=161.0 to_basekv=345.0 r=0.0 x=0.0386
-% INFO    : Updated Thermal Rating: on line 149-26 : Rate B, Rate C , 0.0, 0.0 -> 760
+% INFO    : Updated Thermal Rating: on transformer 149-26 : Rate B, Rate C , 0.0, 0.0 -> 760
 % INFO    : Updated Thermal Rating: on line 149-150 : Rate A, Rate B, Rate C , 538.0, 0.0, 0.0 -> 276
 % INFO    : Updated Thermal Rating: on line 149-151 : Rate A, Rate B, Rate C , 538.0, 0.0, 0.0 -> 247
 % INFO    : Updated Thermal Rating: on line 149-152 : Rate A, Rate B, Rate C , 328.0, 0.0, 0.0 -> 207
 % INFO    : Updated Thermal Rating: on line 151-161 : Rate A, Rate B, Rate C , 538.0, 0.0, 0.0 -> 244
 % WARNING : Missing data for branch flow stat model on line 153-70 using max current model : from_basekv=69.0 to_basekv=161.0 r=0.0 x=0.0916
-% INFO    : Updated Thermal Rating: on line 153-70 : Rate B, Rate C , 0.0, 0.0 -> 321
+% INFO    : Updated Thermal Rating: on transformer 153-70 : Rate B, Rate C , 0.0, 0.0 -> 321
 % WARNING : Missing data for branch flow stat model on line 153-70 using max current model : from_basekv=69.0 to_basekv=161.0 r=0.0 x=0.0916
-% INFO    : Updated Thermal Rating: on line 153-70 : Rate B, Rate C , 0.0, 0.0 -> 321
+% INFO    : Updated Thermal Rating: on transformer 153-70 : Rate B, Rate C , 0.0, 0.0 -> 321
 % INFO    : Updated Thermal Rating: on line 153-154 : Rate B, Rate C , 0.0, 0.0 -> 83
 % INFO    : Updated Thermal Rating: on line 153-155 : Rate B, Rate C , 0.0, 0.0 -> 86
 % INFO    : Updated Thermal Rating: on line 154-156 : Rate B, Rate C , 0.0, 0.0 -> 66
@@ -989,7 +1038,7 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 155-156 : Rate B, Rate C , 0.0, 0.0 -> 89
 % INFO    : Updated Thermal Rating: on line 156-157 : Rate B, Rate C , 0.0, 0.0 -> 65
 % WARNING : Missing data for branch flow stat model on line 157-55 using max current model : from_basekv=69.0 to_basekv=161.0 r=0.0 x=0.0827
-% INFO    : Updated Thermal Rating: on line 157-55 : Rate B, Rate C , 0.0, 0.0 -> 355
+% INFO    : Updated Thermal Rating: on transformer 157-55 : Rate B, Rate C , 0.0, 0.0 -> 355
 % INFO    : Updated Thermal Rating: on line 157-158 : Rate B, Rate C , 0.0, 0.0 -> 71
 % INFO    : Updated Thermal Rating: on line 158-159 : Rate B, Rate C , 0.0, 0.0 -> 59
 % INFO    : Updated Thermal Rating: on line 159-160 : Rate B, Rate C , 0.0, 0.0 -> 86
