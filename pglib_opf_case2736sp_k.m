@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.08     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.06     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                        30 - August - 2017                        %%%%%
+%%%%                         07 - June - 2018                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -7132,6 +7132,10 @@ mpc.branch = [
 % INFO    : === Translation Options ===
 % INFO    : Phase Angle Bound:           30.0 (deg.)
 % INFO    : Setting Flat Start
+% INFO    : 
+% INFO    : === Base KV Replacement Notes ===
+% INFO    : 
+% INFO    : === Transformer Setting Replacement Notes ===
 % INFO    : 
 % INFO    : === Voltage Setpoint Replacement Notes ===
 % INFO    : Bus 1	: V=1.1010186, theta=36.775787 -> V=1.03, theta=0.0

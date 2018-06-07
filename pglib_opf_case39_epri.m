@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.08     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.06     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                        30 - August - 2017                        %%%%%
+%%%%                         07 - June - 2018                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -201,7 +201,7 @@ mpc.branch = [
 	22	 23	 0.0006	 0.0096	 0.1846	 600.0	 600.0	 600.0	 0.0	 0.0	 1	 -30.0	 30.0;
 	22	 35	 0.0	 0.0143	 0.0	 900.0	 900.0	 2500.0	 1.025	 0.0	 1	 -30.0	 30.0;
 	23	 24	 0.0022	 0.035	 0.361	 600.0	 600.0	 600.0	 0.0	 0.0	 1	 -30.0	 30.0;
-	23	 36	 0.0005	 0.0272	 0.0	 900.0	 900.0	 2500.0	 1.0	 0.0	 1	 -30.0	 30.0;
+	23	 36	 0.0005	 0.0272	 0.0	 900.0	 900.0	 2500.0	 0.0	 0.0	 1	 -30.0	 30.0;
 	25	 26	 0.0032	 0.0323	 0.531	 600.0	 600.0	 600.0	 0.0	 0.0	 1	 -30.0	 30.0;
 	25	 37	 0.0006	 0.0232	 0.0	 900.0	 900.0	 2500.0	 1.025	 0.0	 1	 -30.0	 30.0;
 	26	 27	 0.0014	 0.0147	 0.2396	 600.0	 600.0	 600.0	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -231,6 +231,11 @@ mpc.branch = [
 % INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 31.8136931499 0
 % INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 23.4199274596 0
 % INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 27.995136894 0
+% INFO    : 
+% INFO    : === Base KV Replacement Notes ===
+% INFO    : 
+% INFO    : === Transformer Setting Replacement Notes ===
+% WARNING : Transformer 23-36 connects the same voltage levels (345.0, 345.0) and has no phase shift, changing tap ratio 1.0 => 0.0
 % INFO    : 
 % INFO    : === Voltage Setpoint Replacement Notes ===
 % INFO    : Bus 1	: V=1.0393836, theta=-13.536602 -> V=1.0, theta=0.0

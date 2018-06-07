@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.08     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.06     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                        30 - August - 2017                        %%%%%
+%%%%                         07 - June - 2018                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -30,63 +30,63 @@ mpc.baseMVA = 100.0;
 %% bus data
 %	bus_i	type	Pd	Qd	Gs	Bs	area	Vm	Va	baseKV	zone	Vmax	Vmin
 mpc.bus = [
-	1	 3	 55.0	 17.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	2	 2	 3.0	 88.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	3	 2	 41.0	 21.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	4	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	5	 1	 13.0	 4.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	6	 2	 75.0	 2.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	7	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	8	 2	 150.0	 22.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	9	 2	 121.0	 26.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	10	 1	 5.0	 2.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	11	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	12	 2	 377.0	 24.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	13	 1	 18.0	 2.3	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	14	 1	 10.5	 5.3	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	15	 1	 22.0	 5.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	16	 1	 43.0	 3.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	17	 1	 42.0	 8.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	18	 1	 27.2	 9.8	 0.0	 10.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	19	 1	 3.3	 0.6	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	20	 1	 2.3	 1.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	21	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	22	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	23	 1	 6.3	 2.1	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	24	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	25	 1	 6.3	 3.2	 0.0	 5.9	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	26	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	27	 1	 9.3	 0.5	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	28	 1	 4.6	 2.3	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	29	 1	 17.0	 2.6	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	30	 1	 3.6	 1.8	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	31	 1	 5.8	 2.9	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	32	 1	 1.6	 0.8	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	33	 1	 3.8	 1.9	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	34	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	35	 1	 6.0	 3.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	36	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	37	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	38	 1	 14.0	 7.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	39	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	40	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	41	 1	 6.3	 3.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	42	 1	 7.1	 4.4	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	43	 1	 2.0	 1.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	44	 1	 12.0	 1.8	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	45	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	46	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	47	 1	 29.7	 11.6	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	48	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	49	 1	 18.0	 8.5	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	50	 1	 21.0	 10.5	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	51	 1	 18.0	 5.3	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	52	 1	 4.9	 2.2	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	53	 1	 20.0	 10.0	 0.0	 6.3	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	54	 1	 4.1	 1.4	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	55	 1	 6.8	 3.4	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	56	 1	 7.6	 2.2	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
-	57	 1	 6.7	 2.0	 0.0	 0.0	 1	    1.00000	    0.00000	 0.0	 1	    1.06000	    0.94000;
+	1	 3	 55.0	 17.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	2	 2	 3.0	 88.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	3	 2	 41.0	 21.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	4	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	5	 1	 13.0	 4.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	6	 2	 75.0	 2.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	7	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	8	 2	 150.0	 22.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	9	 2	 121.0	 26.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	10	 1	 5.0	 2.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	11	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	12	 2	 377.0	 24.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	13	 1	 18.0	 2.3	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	14	 1	 10.5	 5.3	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	15	 1	 22.0	 5.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	16	 1	 43.0	 3.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	17	 1	 42.0	 8.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	18	 1	 27.2	 9.8	 0.0	 10.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	19	 1	 3.3	 0.6	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	20	 1	 2.3	 1.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	21	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	22	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	23	 1	 6.3	 2.1	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	24	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	25	 1	 6.3	 3.2	 0.0	 5.9	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	26	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	27	 1	 9.3	 0.5	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	28	 1	 4.6	 2.3	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	29	 1	 17.0	 2.6	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	30	 1	 3.6	 1.8	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	31	 1	 5.8	 2.9	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	32	 1	 1.6	 0.8	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	33	 1	 3.8	 1.9	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	34	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	35	 1	 6.0	 3.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	36	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	37	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	38	 1	 14.0	 7.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	39	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	40	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	41	 1	 6.3	 3.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	42	 1	 7.1	 4.4	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	43	 1	 2.0	 1.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	44	 1	 12.0	 1.8	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	45	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	46	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	47	 1	 29.7	 11.6	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	48	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	49	 1	 18.0	 8.5	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	50	 1	 21.0	 10.5	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	51	 1	 18.0	 5.3	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	52	 1	 4.9	 2.2	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	53	 1	 20.0	 10.0	 0.0	 6.3	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	54	 1	 4.1	 1.4	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	55	 1	 6.8	 3.4	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	56	 1	 7.6	 2.2	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
+	57	 1	 6.7	 2.0	 0.0	 0.0	 1	    1.00000	    0.00000	 1.0	 1	    1.06000	    0.94000;
 ];
 
 %% generator data
@@ -234,166 +234,227 @@ mpc.branch = [
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: NG - 0.0 20.0 0.0322581 -> 0 48.6149603689 0
 % INFO    : 
+% INFO    : === Base KV Replacement Notes ===
+% WARNING : Bus 1 : basekv changed 0.0 => 1.0
+% WARNING : Bus 2 : basekv changed 0.0 => 1.0
+% WARNING : Bus 3 : basekv changed 0.0 => 1.0
+% WARNING : Bus 4 : basekv changed 0.0 => 1.0
+% WARNING : Bus 5 : basekv changed 0.0 => 1.0
+% WARNING : Bus 6 : basekv changed 0.0 => 1.0
+% WARNING : Bus 7 : basekv changed 0.0 => 1.0
+% WARNING : Bus 8 : basekv changed 0.0 => 1.0
+% WARNING : Bus 9 : basekv changed 0.0 => 1.0
+% WARNING : Bus 10 : basekv changed 0.0 => 1.0
+% WARNING : Bus 11 : basekv changed 0.0 => 1.0
+% WARNING : Bus 12 : basekv changed 0.0 => 1.0
+% WARNING : Bus 13 : basekv changed 0.0 => 1.0
+% WARNING : Bus 14 : basekv changed 0.0 => 1.0
+% WARNING : Bus 15 : basekv changed 0.0 => 1.0
+% WARNING : Bus 16 : basekv changed 0.0 => 1.0
+% WARNING : Bus 17 : basekv changed 0.0 => 1.0
+% WARNING : Bus 18 : basekv changed 0.0 => 1.0
+% WARNING : Bus 19 : basekv changed 0.0 => 1.0
+% WARNING : Bus 20 : basekv changed 0.0 => 1.0
+% WARNING : Bus 21 : basekv changed 0.0 => 1.0
+% WARNING : Bus 22 : basekv changed 0.0 => 1.0
+% WARNING : Bus 23 : basekv changed 0.0 => 1.0
+% WARNING : Bus 24 : basekv changed 0.0 => 1.0
+% WARNING : Bus 25 : basekv changed 0.0 => 1.0
+% WARNING : Bus 26 : basekv changed 0.0 => 1.0
+% WARNING : Bus 27 : basekv changed 0.0 => 1.0
+% WARNING : Bus 28 : basekv changed 0.0 => 1.0
+% WARNING : Bus 29 : basekv changed 0.0 => 1.0
+% WARNING : Bus 30 : basekv changed 0.0 => 1.0
+% WARNING : Bus 31 : basekv changed 0.0 => 1.0
+% WARNING : Bus 32 : basekv changed 0.0 => 1.0
+% WARNING : Bus 33 : basekv changed 0.0 => 1.0
+% WARNING : Bus 34 : basekv changed 0.0 => 1.0
+% WARNING : Bus 35 : basekv changed 0.0 => 1.0
+% WARNING : Bus 36 : basekv changed 0.0 => 1.0
+% WARNING : Bus 37 : basekv changed 0.0 => 1.0
+% WARNING : Bus 38 : basekv changed 0.0 => 1.0
+% WARNING : Bus 39 : basekv changed 0.0 => 1.0
+% WARNING : Bus 40 : basekv changed 0.0 => 1.0
+% WARNING : Bus 41 : basekv changed 0.0 => 1.0
+% WARNING : Bus 42 : basekv changed 0.0 => 1.0
+% WARNING : Bus 43 : basekv changed 0.0 => 1.0
+% WARNING : Bus 44 : basekv changed 0.0 => 1.0
+% WARNING : Bus 45 : basekv changed 0.0 => 1.0
+% WARNING : Bus 46 : basekv changed 0.0 => 1.0
+% WARNING : Bus 47 : basekv changed 0.0 => 1.0
+% WARNING : Bus 48 : basekv changed 0.0 => 1.0
+% WARNING : Bus 49 : basekv changed 0.0 => 1.0
+% WARNING : Bus 50 : basekv changed 0.0 => 1.0
+% WARNING : Bus 51 : basekv changed 0.0 => 1.0
+% WARNING : Bus 52 : basekv changed 0.0 => 1.0
+% WARNING : Bus 53 : basekv changed 0.0 => 1.0
+% WARNING : Bus 54 : basekv changed 0.0 => 1.0
+% WARNING : Bus 55 : basekv changed 0.0 => 1.0
+% WARNING : Bus 56 : basekv changed 0.0 => 1.0
+% WARNING : Bus 57 : basekv changed 0.0 => 1.0
+% INFO    : 
+% INFO    : === Transformer Setting Replacement Notes ===
+% INFO    : 
 % INFO    : === Line Capacity Stat Model Notes ===
-% WARNING : Missing data for branch flow stat model on line 1-2 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0083 x=0.028
+% WARNING : Missing data for branch flow stat model on line 1-2 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0083 x=0.028
 % INFO    : Updated Thermal Rating: on line 1-2 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1005
-% WARNING : Missing data for branch flow stat model on line 2-3 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0298 x=0.085
+% WARNING : Missing data for branch flow stat model on line 2-3 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0298 x=0.085
 % INFO    : Updated Thermal Rating: on line 2-3 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 326
-% WARNING : Missing data for branch flow stat model on line 3-4 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0112 x=0.0366
+% WARNING : Missing data for branch flow stat model on line 3-4 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0112 x=0.0366
 % INFO    : Updated Thermal Rating: on line 3-4 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 767
-% WARNING : Missing data for branch flow stat model on line 4-5 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0625 x=0.132
+% WARNING : Missing data for branch flow stat model on line 4-5 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0625 x=0.132
 % INFO    : Updated Thermal Rating: on line 4-5 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 201
-% WARNING : Missing data for branch flow stat model on line 4-6 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.043 x=0.148
+% WARNING : Missing data for branch flow stat model on line 4-6 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.043 x=0.148
 % INFO    : Updated Thermal Rating: on line 4-6 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 191
-% WARNING : Missing data for branch flow stat model on line 6-7 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.02 x=0.102
+% WARNING : Missing data for branch flow stat model on line 6-7 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.02 x=0.102
 % INFO    : Updated Thermal Rating: on line 6-7 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 283
-% WARNING : Missing data for branch flow stat model on line 6-8 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0339 x=0.173
+% WARNING : Missing data for branch flow stat model on line 6-8 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0339 x=0.173
 % INFO    : Updated Thermal Rating: on line 6-8 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 167
-% WARNING : Missing data for branch flow stat model on line 8-9 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0099 x=0.0505
+% WARNING : Missing data for branch flow stat model on line 8-9 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0099 x=0.0505
 % INFO    : Updated Thermal Rating: on line 8-9 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 570
-% WARNING : Missing data for branch flow stat model on line 9-10 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0369 x=0.1679
+% WARNING : Missing data for branch flow stat model on line 9-10 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0369 x=0.1679
 % INFO    : Updated Thermal Rating: on line 9-10 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 171
-% WARNING : Missing data for branch flow stat model on line 9-11 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0258 x=0.0848
+% WARNING : Missing data for branch flow stat model on line 9-11 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0258 x=0.0848
 % INFO    : Updated Thermal Rating: on line 9-11 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 331
-% WARNING : Missing data for branch flow stat model on line 9-12 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0648 x=0.295
+% WARNING : Missing data for branch flow stat model on line 9-12 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0648 x=0.295
 % INFO    : Updated Thermal Rating: on line 9-12 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 98
-% WARNING : Missing data for branch flow stat model on line 9-13 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0481 x=0.158
+% WARNING : Missing data for branch flow stat model on line 9-13 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0481 x=0.158
 % INFO    : Updated Thermal Rating: on line 9-13 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 178
-% WARNING : Missing data for branch flow stat model on line 13-14 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0132 x=0.0434
+% WARNING : Missing data for branch flow stat model on line 13-14 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0132 x=0.0434
 % INFO    : Updated Thermal Rating: on line 13-14 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 647
-% WARNING : Missing data for branch flow stat model on line 13-15 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0269 x=0.0869
+% WARNING : Missing data for branch flow stat model on line 13-15 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0269 x=0.0869
 % INFO    : Updated Thermal Rating: on line 13-15 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 323
-% WARNING : Missing data for branch flow stat model on line 1-15 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0178 x=0.091
+% WARNING : Missing data for branch flow stat model on line 1-15 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0178 x=0.091
 % INFO    : Updated Thermal Rating: on line 1-15 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 317
-% WARNING : Missing data for branch flow stat model on line 1-16 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0454 x=0.206
+% WARNING : Missing data for branch flow stat model on line 1-16 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0454 x=0.206
 % INFO    : Updated Thermal Rating: on line 1-16 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 140
-% WARNING : Missing data for branch flow stat model on line 1-17 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0238 x=0.108
+% WARNING : Missing data for branch flow stat model on line 1-17 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0238 x=0.108
 % INFO    : Updated Thermal Rating: on line 1-17 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 266
-% WARNING : Missing data for branch flow stat model on line 3-15 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0162 x=0.053
+% WARNING : Missing data for branch flow stat model on line 3-15 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0162 x=0.053
 % INFO    : Updated Thermal Rating: on line 3-15 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 530
-% WARNING : Missing data for branch flow stat model on line 4-18 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0 x=0.555
+% WARNING : Missing data for branch flow stat model on line 4-18 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0 x=0.555
 % INFO    : Updated Thermal Rating: on transformer 4-18 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 53
-% WARNING : Missing data for branch flow stat model on line 4-18 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0 x=0.43
+% WARNING : Missing data for branch flow stat model on line 4-18 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0 x=0.43
 % INFO    : Updated Thermal Rating: on transformer 4-18 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 69
-% WARNING : Missing data for branch flow stat model on line 5-6 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0302 x=0.0641
+% WARNING : Missing data for branch flow stat model on line 5-6 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0302 x=0.0641
 % INFO    : Updated Thermal Rating: on line 5-6 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 414
-% WARNING : Missing data for branch flow stat model on line 7-8 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0139 x=0.0712
+% WARNING : Missing data for branch flow stat model on line 7-8 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0139 x=0.0712
 % INFO    : Updated Thermal Rating: on line 7-8 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 405
-% WARNING : Missing data for branch flow stat model on line 10-12 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0277 x=0.1262
+% WARNING : Missing data for branch flow stat model on line 10-12 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0277 x=0.1262
 % INFO    : Updated Thermal Rating: on line 10-12 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 228
-% WARNING : Missing data for branch flow stat model on line 11-13 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0223 x=0.0732
+% WARNING : Missing data for branch flow stat model on line 11-13 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0223 x=0.0732
 % INFO    : Updated Thermal Rating: on line 11-13 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 384
-% WARNING : Missing data for branch flow stat model on line 12-13 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0178 x=0.058
+% WARNING : Missing data for branch flow stat model on line 12-13 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0178 x=0.058
 % INFO    : Updated Thermal Rating: on line 12-13 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 484
-% WARNING : Missing data for branch flow stat model on line 12-16 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.018 x=0.0813
+% WARNING : Missing data for branch flow stat model on line 12-16 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.018 x=0.0813
 % INFO    : Updated Thermal Rating: on line 12-16 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 353
-% WARNING : Missing data for branch flow stat model on line 12-17 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0397 x=0.179
+% WARNING : Missing data for branch flow stat model on line 12-17 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0397 x=0.179
 % INFO    : Updated Thermal Rating: on line 12-17 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 160
-% WARNING : Missing data for branch flow stat model on line 14-15 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0171 x=0.0547
+% WARNING : Missing data for branch flow stat model on line 14-15 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0171 x=0.0547
 % INFO    : Updated Thermal Rating: on line 14-15 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 512
-% WARNING : Missing data for branch flow stat model on line 18-19 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.461 x=0.685
+% WARNING : Missing data for branch flow stat model on line 18-19 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.461 x=0.685
 % INFO    : Updated Thermal Rating: on line 18-19 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 36
-% WARNING : Missing data for branch flow stat model on line 19-20 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.283 x=0.434
+% WARNING : Missing data for branch flow stat model on line 19-20 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.283 x=0.434
 % INFO    : Updated Thermal Rating: on line 19-20 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 57
-% WARNING : Missing data for branch flow stat model on line 21-20 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0 x=0.7767
+% WARNING : Missing data for branch flow stat model on line 21-20 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0 x=0.7767
 % INFO    : Updated Thermal Rating: on transformer 21-20 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 38
-% WARNING : Missing data for branch flow stat model on line 21-22 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0736 x=0.117
+% WARNING : Missing data for branch flow stat model on line 21-22 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0736 x=0.117
 % INFO    : Updated Thermal Rating: on line 21-22 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 213
-% WARNING : Missing data for branch flow stat model on line 22-23 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0099 x=0.0152
+% WARNING : Missing data for branch flow stat model on line 22-23 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0099 x=0.0152
 % INFO    : Updated Thermal Rating: on line 22-23 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 1617
-% WARNING : Missing data for branch flow stat model on line 23-24 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.166 x=0.256
+% WARNING : Missing data for branch flow stat model on line 23-24 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.166 x=0.256
 % INFO    : Updated Thermal Rating: on line 23-24 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 97
-% WARNING : Missing data for branch flow stat model on line 24-25 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0 x=1.182
-% INFO    : Updated Thermal Rating: on line 24-25 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 25
-% WARNING : Missing data for branch flow stat model on line 24-25 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0 x=1.23
-% INFO    : Updated Thermal Rating: on line 24-25 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 24
-% WARNING : Missing data for branch flow stat model on line 24-26 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0 x=0.0473
+% WARNING : Missing data for branch flow stat model on line 24-25 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0 x=1.182
+% INFO    : Updated Thermal Rating: on transformer 24-25 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 25
+% WARNING : Missing data for branch flow stat model on line 24-25 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0 x=1.23
+% INFO    : Updated Thermal Rating: on transformer 24-25 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 24
+% WARNING : Missing data for branch flow stat model on line 24-26 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0 x=0.0473
 % INFO    : Updated Thermal Rating: on transformer 24-26 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 621
-% WARNING : Missing data for branch flow stat model on line 26-27 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.165 x=0.254
+% WARNING : Missing data for branch flow stat model on line 26-27 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.165 x=0.254
 % INFO    : Updated Thermal Rating: on line 26-27 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 97
-% WARNING : Missing data for branch flow stat model on line 27-28 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0618 x=0.0954
+% WARNING : Missing data for branch flow stat model on line 27-28 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0618 x=0.0954
 % INFO    : Updated Thermal Rating: on line 27-28 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 259
-% WARNING : Missing data for branch flow stat model on line 28-29 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0418 x=0.0587
+% WARNING : Missing data for branch flow stat model on line 28-29 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0418 x=0.0587
 % INFO    : Updated Thermal Rating: on line 28-29 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 408
-% WARNING : Missing data for branch flow stat model on line 7-29 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0 x=0.0648
+% WARNING : Missing data for branch flow stat model on line 7-29 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0 x=0.0648
 % INFO    : Updated Thermal Rating: on transformer 7-29 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 453
-% WARNING : Missing data for branch flow stat model on line 25-30 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.135 x=0.202
+% WARNING : Missing data for branch flow stat model on line 25-30 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.135 x=0.202
 % INFO    : Updated Thermal Rating: on line 25-30 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 121
-% WARNING : Missing data for branch flow stat model on line 30-31 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.326 x=0.497
+% WARNING : Missing data for branch flow stat model on line 30-31 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.326 x=0.497
 % INFO    : Updated Thermal Rating: on line 30-31 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 50
-% WARNING : Missing data for branch flow stat model on line 31-32 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.507 x=0.755
+% WARNING : Missing data for branch flow stat model on line 31-32 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.507 x=0.755
 % INFO    : Updated Thermal Rating: on line 31-32 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 33
-% WARNING : Missing data for branch flow stat model on line 32-33 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0392 x=0.036
+% WARNING : Missing data for branch flow stat model on line 32-33 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0392 x=0.036
 % INFO    : Updated Thermal Rating: on line 32-33 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 552
-% WARNING : Missing data for branch flow stat model on line 34-32 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0 x=0.953
+% WARNING : Missing data for branch flow stat model on line 34-32 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0 x=0.953
 % INFO    : Updated Thermal Rating: on transformer 34-32 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 31
-% WARNING : Missing data for branch flow stat model on line 34-35 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.052 x=0.078
+% WARNING : Missing data for branch flow stat model on line 34-35 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.052 x=0.078
 % INFO    : Updated Thermal Rating: on line 34-35 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 313
-% WARNING : Missing data for branch flow stat model on line 35-36 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.043 x=0.0537
+% WARNING : Missing data for branch flow stat model on line 35-36 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.043 x=0.0537
 % INFO    : Updated Thermal Rating: on line 35-36 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 427
-% WARNING : Missing data for branch flow stat model on line 36-37 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.029 x=0.0366
+% WARNING : Missing data for branch flow stat model on line 36-37 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.029 x=0.0366
 % INFO    : Updated Thermal Rating: on line 36-37 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 629
-% WARNING : Missing data for branch flow stat model on line 37-38 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0651 x=0.1009
+% WARNING : Missing data for branch flow stat model on line 37-38 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0651 x=0.1009
 % INFO    : Updated Thermal Rating: on line 37-38 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 245
-% WARNING : Missing data for branch flow stat model on line 37-39 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0239 x=0.0379
+% WARNING : Missing data for branch flow stat model on line 37-39 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0239 x=0.0379
 % INFO    : Updated Thermal Rating: on line 37-39 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 655
-% WARNING : Missing data for branch flow stat model on line 36-40 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.03 x=0.0466
+% WARNING : Missing data for branch flow stat model on line 36-40 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.03 x=0.0466
 % INFO    : Updated Thermal Rating: on line 36-40 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 530
-% WARNING : Missing data for branch flow stat model on line 22-38 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0192 x=0.0295
+% WARNING : Missing data for branch flow stat model on line 22-38 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0192 x=0.0295
 % INFO    : Updated Thermal Rating: on line 22-38 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 834
-% WARNING : Missing data for branch flow stat model on line 11-41 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0 x=0.749
+% WARNING : Missing data for branch flow stat model on line 11-41 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0 x=0.749
 % INFO    : Updated Thermal Rating: on transformer 11-41 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 40
-% WARNING : Missing data for branch flow stat model on line 41-42 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.207 x=0.352
+% WARNING : Missing data for branch flow stat model on line 41-42 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.207 x=0.352
 % INFO    : Updated Thermal Rating: on line 41-42 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 72
-% WARNING : Missing data for branch flow stat model on line 41-43 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0 x=0.412
+% WARNING : Missing data for branch flow stat model on line 41-43 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0 x=0.412
 % INFO    : Updated Thermal Rating: on line 41-43 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 72
-% WARNING : Missing data for branch flow stat model on line 38-44 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0289 x=0.0585
+% WARNING : Missing data for branch flow stat model on line 38-44 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0289 x=0.0585
 % INFO    : Updated Thermal Rating: on line 38-44 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 450
-% WARNING : Missing data for branch flow stat model on line 15-45 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0 x=0.1042
+% WARNING : Missing data for branch flow stat model on line 15-45 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0 x=0.1042
 % INFO    : Updated Thermal Rating: on transformer 15-45 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 282
-% WARNING : Missing data for branch flow stat model on line 14-46 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0 x=0.0735
+% WARNING : Missing data for branch flow stat model on line 14-46 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0 x=0.0735
 % INFO    : Updated Thermal Rating: on transformer 14-46 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 400
-% WARNING : Missing data for branch flow stat model on line 46-47 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.023 x=0.068
+% WARNING : Missing data for branch flow stat model on line 46-47 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.023 x=0.068
 % INFO    : Updated Thermal Rating: on line 46-47 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 409
-% WARNING : Missing data for branch flow stat model on line 47-48 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0182 x=0.0233
+% WARNING : Missing data for branch flow stat model on line 47-48 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0182 x=0.0233
 % INFO    : Updated Thermal Rating: on line 47-48 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 993
-% WARNING : Missing data for branch flow stat model on line 48-49 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0834 x=0.129
+% WARNING : Missing data for branch flow stat model on line 48-49 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0834 x=0.129
 % INFO    : Updated Thermal Rating: on line 48-49 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 191
-% WARNING : Missing data for branch flow stat model on line 49-50 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0801 x=0.128
+% WARNING : Missing data for branch flow stat model on line 49-50 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0801 x=0.128
 % INFO    : Updated Thermal Rating: on line 49-50 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 195
-% WARNING : Missing data for branch flow stat model on line 50-51 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.1386 x=0.22
+% WARNING : Missing data for branch flow stat model on line 50-51 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.1386 x=0.22
 % INFO    : Updated Thermal Rating: on line 50-51 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 113
-% WARNING : Missing data for branch flow stat model on line 10-51 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0 x=0.0712
+% WARNING : Missing data for branch flow stat model on line 10-51 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0 x=0.0712
 % INFO    : Updated Thermal Rating: on transformer 10-51 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 412
-% WARNING : Missing data for branch flow stat model on line 13-49 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0 x=0.191
+% WARNING : Missing data for branch flow stat model on line 13-49 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0 x=0.191
 % INFO    : Updated Thermal Rating: on transformer 13-49 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 154
-% WARNING : Missing data for branch flow stat model on line 29-52 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.1442 x=0.187
+% WARNING : Missing data for branch flow stat model on line 29-52 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.1442 x=0.187
 % INFO    : Updated Thermal Rating: on line 29-52 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 125
-% WARNING : Missing data for branch flow stat model on line 52-53 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0762 x=0.0984
+% WARNING : Missing data for branch flow stat model on line 52-53 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0762 x=0.0984
 % INFO    : Updated Thermal Rating: on line 52-53 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 236
-% WARNING : Missing data for branch flow stat model on line 53-54 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.1878 x=0.232
+% WARNING : Missing data for branch flow stat model on line 53-54 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.1878 x=0.232
 % INFO    : Updated Thermal Rating: on line 53-54 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 99
-% WARNING : Missing data for branch flow stat model on line 54-55 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.1732 x=0.2265
+% WARNING : Missing data for branch flow stat model on line 54-55 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.1732 x=0.2265
 % INFO    : Updated Thermal Rating: on line 54-55 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 103
-% WARNING : Missing data for branch flow stat model on line 11-43 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0 x=0.153
+% WARNING : Missing data for branch flow stat model on line 11-43 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0 x=0.153
 % INFO    : Updated Thermal Rating: on transformer 11-43 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 192
-% WARNING : Missing data for branch flow stat model on line 44-45 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0624 x=0.1242
+% WARNING : Missing data for branch flow stat model on line 44-45 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0624 x=0.1242
 % INFO    : Updated Thermal Rating: on line 44-45 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 212
-% WARNING : Missing data for branch flow stat model on line 40-56 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0 x=1.195
+% WARNING : Missing data for branch flow stat model on line 40-56 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0 x=1.195
 % INFO    : Updated Thermal Rating: on transformer 40-56 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 25
-% WARNING : Missing data for branch flow stat model on line 56-41 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.553 x=0.549
+% WARNING : Missing data for branch flow stat model on line 56-41 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.553 x=0.549
 % INFO    : Updated Thermal Rating: on line 56-41 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 38
-% WARNING : Missing data for branch flow stat model on line 56-42 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.2125 x=0.354
+% WARNING : Missing data for branch flow stat model on line 56-42 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.2125 x=0.354
 % INFO    : Updated Thermal Rating: on line 56-42 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 72
-% WARNING : Missing data for branch flow stat model on line 39-57 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0 x=1.355
+% WARNING : Missing data for branch flow stat model on line 39-57 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0 x=1.355
 % INFO    : Updated Thermal Rating: on transformer 39-57 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 22
-% WARNING : Missing data for branch flow stat model on line 57-56 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.174 x=0.26
+% WARNING : Missing data for branch flow stat model on line 57-56 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.174 x=0.26
 % INFO    : Updated Thermal Rating: on line 57-56 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 94
-% WARNING : Missing data for branch flow stat model on line 38-49 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.115 x=0.177
+% WARNING : Missing data for branch flow stat model on line 38-49 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.115 x=0.177
 % INFO    : Updated Thermal Rating: on line 38-49 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 139
-% WARNING : Missing data for branch flow stat model on line 38-48 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0312 x=0.0482
+% WARNING : Missing data for branch flow stat model on line 38-48 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0312 x=0.0482
 % INFO    : Updated Thermal Rating: on line 38-48 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 511
-% WARNING : Missing data for branch flow stat model on line 9-55 using max current model : from_basekv=0.0 to_basekv=0.0 r=0.0 x=0.1205
+% WARNING : Missing data for branch flow stat model on line 9-55 using max current model : from_basekv=1.0 to_basekv=1.0 r=0.0 x=0.1205
 % INFO    : Updated Thermal Rating: on transformer 9-55 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 244
 % INFO    : 
 % INFO    : === Voltage Setpoint Replacement Notes ===

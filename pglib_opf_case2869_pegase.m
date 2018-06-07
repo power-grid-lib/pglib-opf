@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.08     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.06     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                        30 - August - 2017                        %%%%%
+%%%%                         07 - June - 2018                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -8024,52 +8024,52 @@ mpc.branch = [
 	9024	 6542	 0.000793	 0.06388	 0.0	 495	 495	 495	 0.998418	 0.0	 1	 -30.0	 30.0;
 	6069	 9192	 0.000609	 0.046809	 0.0	 675	 675	 675	 0.933053	 0.0	 1	 -30.0	 30.0;
 	6069	 1968	 0.00059	 0.04521	 0.0	 691.0	 699	 699	 0.91223	 0.0	 1	 -30.0	 30.0;
-	7829	 1968	 0.519194	 5.108058	 0.0	 7	 7	 7	 0.0	 0.0	 1	 -30.0	 30.0;
+	7829	 1968	 0.519194	 5.108058	 0.0	 7	 7	 7	 1.0	 0.0	 1	 -30.0	 30.0;
 	8574	 2299	 0.000559	 0.039982	 0.0	 790	 790	 790	 0.919523	 0.0	 1	 -30.0	 30.0;
 	8574	 5587	 0.000537	 0.045312	 0.0	 698	 698	 698	 0.948262	 0.0	 1	 -30.0	 30.0;
 	4929	 1815	 0.000889	 0.061549	 0.0	 514	 514	 514	 0.996867	 0.0	 1	 -30.0	 30.0;
-	1815	 792	 1.467822	 7.764888	 0.0	 4	 4	 4	 0.0	 0.0	 1	 -30.0	 30.0;
+	1815	 792	 1.467822	 7.764888	 0.0	 4	 4	 4	 1.0	 0.0	 1	 -30.0	 30.0;
 	6704	 4586	 0.000586	 0.049031	 0.0	 645	 645	 645	 0.923407	 0.0	 1	 -30.0	 30.0;
 	2441	 3506	 0.000417	 0.047801	 0.0	 658.0	 661	 661	 0.952413	 0.0	 1	 -30.0	 30.0;
 	1367	 6826	 0.000755	 0.05143	 0.0	 615	 615	 615	 0.924009	 0.0	 1	 -30.0	 30.0;
 	1676	 228	 0.000733	 0.052399	 0.0	 603	 603	 603	 0.934986	 0.0	 1	 -30.0	 30.0;
-	7829	 6826	 0.00078	 0.064311	 0.0	 492	 492	 492	 0.0	 0.0	 1	 -30.0	 30.0;
+	7829	 6826	 0.00078	 0.064311	 0.0	 492	 492	 492	 1.0	 0.0	 1	 -30.0	 30.0;
 	659	 3279	 0.00089	 0.048632	 0.0	 650	 650	 650	 0.987002	 0.0	 1	 -30.0	 30.0;
-	5210	 792	 0.00855	 0.08972	 0.0	 351	 351	 351	 0.0	 0.0	 1	 -30.0	 30.0;
-	1445	 792	 0.00223	 0.04836	 0.0	 653	 653	 653	 0.0	 0.0	 1	 -30.0	 30.0;
+	5210	 792	 0.00855	 0.08972	 0.0	 351	 351	 351	 1.0	 0.0	 1	 -30.0	 30.0;
+	1445	 792	 0.00223	 0.04836	 0.0	 653	 653	 653	 1.0	 0.0	 1	 -30.0	 30.0;
 	7180	 2168	 0.000581	 0.043111	 0.0	 658.0	 733	 733	 0.924038	 0.0	 1	 -30.0	 30.0;
 	6833	 8964	 0.000579	 0.043272	 0.0	 691.0	 730	 730	 0.901005	 0.0	 1	 -30.0	 30.0;
 	3659	 3242	 0.000586	 0.049031	 0.0	 645	 645	 645	 0.923407	 0.0	 1	 -30.0	 30.0;
 	8181	 4427	 0.000559	 0.049192	 0.0	 643	 643	 643	 0.924009	 0.0	 1	 -30.0	 30.0;
 	9025	 7563	 0.000573	 0.051129	 0.0	 618	 618	 618	 0.934986	 0.0	 1	 -30.0	 30.0;
 	2267	 5210	 0.000417	 0.039229	 0.0	 724.0	 806	 806	 0.967059	 0.0	 1	 -30.0	 30.0;
-	5210	 7279	 0.230542	 1.197733	 0.0	 26	 26	 26	 0.0	 0.0	 1	 -30.0	 30.0;
-	5210	 8335	 0.02284	 0.2644	 0.0	 120	 120	 120	 0.0	 0.0	 1	 -30.0	 30.0;
-	5210	 2449	 0.08537	 0.736798	 0.0	 43	 43	 43	 0.0	 0.0	 1	 -30.0	 30.0;
-	5210	 4665	 1.402768	 3.640289	 0.0	 9	 9	 9	 0.0	 0.0	 1	 -30.0	 30.0;
-	5210	 4495	 1.050227	 4.450207	 0.0	 7	 7	 7	 0.0	 0.0	 1	 -30.0	 30.0;
+	5210	 7279	 0.230542	 1.197733	 0.0	 26	 26	 26	 1.0	 0.0	 1	 -30.0	 30.0;
+	5210	 8335	 0.02284	 0.2644	 0.0	 120	 120	 120	 1.0	 0.0	 1	 -30.0	 30.0;
+	5210	 2449	 0.08537	 0.736798	 0.0	 43	 43	 43	 1.0	 0.0	 1	 -30.0	 30.0;
+	5210	 4665	 1.402768	 3.640289	 0.0	 9	 9	 9	 1.0	 0.0	 1	 -30.0	 30.0;
+	5210	 4495	 1.050227	 4.450207	 0.0	 7	 7	 7	 1.0	 0.0	 1	 -30.0	 30.0;
 	8179	 7279	 0.000716	 0.04371	 0.0	 723	 723	 723	 0.934986	 0.0	 1	 -30.0	 30.0;
-	1445	 7279	 0.518622	 2.317689	 0.0	 14	 14	 14	 0.0	 0.0	 1	 -30.0	 30.0;
+	1445	 7279	 0.518622	 2.317689	 0.0	 14	 14	 14	 1.0	 0.0	 1	 -30.0	 30.0;
 	5509	 8335	 0.00059	 0.045662	 0.0	 692	 692	 692	 0.955958	 0.0	 1	 -30.0	 30.0;
 	5509	 1531	 0.000603	 0.050959	 0.0	 620	 620	 620	 0.968125	 0.0	 1	 -30.0	 30.0;
-	1445	 8335	 0.047769	 0.554178	 0.0	 57	 57	 57	 0.0	 0.0	 1	 -30.0	 30.0;
+	1445	 8335	 0.047769	 0.554178	 0.0	 57	 57	 57	 1.0	 0.0	 1	 -30.0	 30.0;
 	7762	 5155	 0.000591	 0.045153	 0.0	 700	 700	 700	 0.918868	 0.0	 1	 -30.0	 30.0;
 	7762	 271	 0.0006	 0.047778	 0.0	 662	 662	 662	 0.948976	 0.0	 1	 -30.0	 30.0;
-	7829	 5776	 0.02436	 0.270151	 0.0	 117	 117	 117	 0.0	 0.0	 1	 -30.0	 30.0;
+	7829	 5776	 0.02436	 0.270151	 0.0	 117	 117	 117	 1.0	 0.0	 1	 -30.0	 30.0;
 	8329	 1445	 0.000802	 0.05727	 0.0	 552	 552	 552	 0.967021	 0.0	 1	 -30.0	 30.0;
 	8329	 1445	 0.000823	 0.056059	 0.0	 564	 564	 564	 0.967021	 0.0	 1	 -30.0	 30.0;
-	1445	 2449	 0.188099	 1.291901	 0.0	 25	 25	 25	 0.0	 0.0	 1	 -30.0	 30.0;
-	1445	 4665	 2.466323	 7.26343	 0.0	 5	 5	 5	 0.0	 0.0	 1	 -30.0	 30.0;
+	1445	 2449	 0.188099	 1.291901	 0.0	 25	 25	 25	 1.0	 0.0	 1	 -30.0	 30.0;
+	1445	 4665	 2.466323	 7.26343	 0.0	 5	 5	 5	 1.0	 0.0	 1	 -30.0	 30.0;
 	2268	 2908	 0.000523	 0.050352	 0.0	 628	 628	 628	 0.934622	 0.0	 1	 -30.0	 30.0;
 	8847	 5776	 0.000682	 0.049638	 0.0	 637	 637	 637	 0.913034	 0.0	 1	 -30.0	 30.0;
 	8847	 8103	 0.00099	 0.04736	 0.0	 667	 667	 667	 1.012146	 0.0	 1	 -30.0	 30.0;
 	317	 2449	 0.000616	 0.048759	 0.0	 648	 648	 648	 0.933053	 0.0	 1	 -30.0	 30.0;
-	7637	 8581	 9e-05	 0.015499	 0.0	 1678.0	 2038	 2038	 0.0	 -0.428189	 1	 -30.0	 30.0;
-	5848	 7526	 9e-05	 0.00963	 0.0	 1678.0	 3280	 3280	 0.0	 0.178581	 1	 -30.0	 30.0;
+	7637	 8581	 9e-05	 0.015499	 0.0	 1678.0	 2038	 2038	 1.0	 -0.428189	 1	 -30.0	 30.0;
+	5848	 7526	 9e-05	 0.00963	 0.0	 1678.0	 3280	 3280	 1.0	 0.178581	 1	 -30.0	 30.0;
 	89	 4495	 0.000664	 0.045609	 0.0	 693	 693	 693	 0.924009	 0.0	 1	 -30.0	 30.0;
 	2520	 4665	 0.000649	 0.044862	 0.0	 691.0	 705	 705	 0.933053	 0.0	 1	 -30.0	 30.0;
 	5996	 8420	 0.00067	 0.04326	 0.0	 724.0	 731	 731	 0.923407	 0.0	 1	 -30.0	 30.0;
-	2154	 5996	 9e-05	 0.009901	 0.0	 1678.0	 3191	 3191	 0.0	 -0.153178	 1	 -30.0	 30.0;
+	2154	 5996	 9e-05	 0.009901	 0.0	 1678.0	 3191	 3191	 1.0	 -0.153178	 1	 -30.0	 30.0;
 	4241	 2248	 0.000214	 0.018189	 0.0	 691.0	 1737	 1737	 0.997518	 0.0	 1	 -30.0	 30.0;
 	4717	 5787	 0.000545	 0.028951	 0.0	 1091	 1091	 1091	 1.002304	 0.0	 1	 -30.0	 30.0;
 	5425	 7431	 0.000433	 0.016641	 0.0	 691.0	 1898	 1898	 1.052632	 0.0	 1	 -30.0	 30.0;
@@ -8231,7 +8231,7 @@ mpc.branch = [
 	5016	 8860	 0.000323	 0.026885	 0.0	 691.0	 1175	 1175	 0.979227	 0.0	 1	 -30.0	 30.0;
 	7471	 549	 0.000323	 0.02748	 0.0	 691.0	 1150	 1150	 0.93617	 0.0	 1	 -30.0	 30.0;
 	7471	 549	 0.000292	 0.028158	 0.0	 691.0	 1122	 1122	 0.93617	 0.0	 1	 -30.0	 30.0;
-	549	 5002	 0.0	 0.009197	 0.0	 667.0	 3435	 3435	 0.0	 0.072386	 1	 -30.0	 30.0;
+	549	 5002	 0.0	 0.009197	 0.0	 667.0	 3435	 3435	 1.0	 0.072386	 1	 -30.0	 30.0;
 	5490	 3817	 0.000736	 0.044526	 0.0	 710	 710	 710	 0.982143	 0.0	 1	 -30.0	 30.0;
 	2854	 9112	 0.00086	 0.039488	 0.0	 800	 800	 800	 0.982143	 0.0	 1	 -30.0	 30.0;
 	2918	 6532	 0.000365	 0.024372	 0.0	 691.0	 1296	 1296	 0.93617	 0.0	 1	 -30.0	 30.0;
@@ -8293,7 +8293,7 @@ mpc.branch = [
 	1754	 3857	 0.000355	 0.030979	 0.0	 691.0	 1020	 1020	 0.93617	 0.0	 1	 -30.0	 30.0;
 	2518	 4544	 0.000302	 0.025707	 0.0	 691.0	 1229	 1229	 0.93617	 0.0	 1	 -30.0	 30.0;
 	2518	 4544	 0.000344	 0.025405	 0.0	 691.0	 1244	 1244	 0.93617	 0.0	 1	 -30.0	 30.0;
-	3069	 6115	 0.00012	 0.008908	 0.0	 591.0	 3546	 3546	 0.0	 -0.072388	 1	 -30.0	 30.0;
+	3069	 6115	 0.00012	 0.008908	 0.0	 591.0	 3546	 3546	 1.0	 -0.072388	 1	 -30.0	 30.0;
 	5067	 7641	 0.000365	 0.023715	 0.0	 691.0	 1332	 1332	 0.93617	 0.0	 1	 -30.0	 30.0;
 	6036	 8670	 0.000365	 0.023517	 0.0	 691.0	 1344	 1344	 0.979227	 0.0	 1	 -30.0	 30.0;
 	6036	 5522	 0.000334	 0.026812	 0.0	 691.0	 1179	 1179	 0.979227	 0.0	 1	 -30.0	 30.0;
@@ -8346,8 +8346,8 @@ mpc.branch = [
 	5461	 4816	 0.000881	 0.034014	 0.0	 929	 929	 929	 0.982143	 0.0	 1	 -30.0	 30.0;
 	5460	 3786	 0.000365	 0.026027	 0.0	 691.0	 1214	 1214	 0.93617	 0.0	 1	 -30.0	 30.0;
 	5460	 3786	 0.000386	 0.025673	 0.0	 691.0	 1231	 1231	 0.93617	 0.0	 1	 -30.0	 30.0;
-	7256	 4491	 0.00012	 0.011186	 0.0	 686.0	 2824	 2824	 0.0	 0.084507	 1	 -30.0	 30.0;
-	6153	 58	 0.00017	 0.007091	 0.0	 1316.0	 4454	 4454	 0.0	 -0.09784	 1	 -30.0	 30.0;
+	7256	 4491	 0.00012	 0.011186	 0.0	 686.0	 2824	 2824	 1.0	 0.084507	 1	 -30.0	 30.0;
+	6153	 58	 0.00017	 0.007091	 0.0	 1316.0	 4454	 4454	 1.0	 -0.09784	 1	 -30.0	 30.0;
 	6153	 6807	 0.000664	 0.047107	 0.0	 671	 671	 671	 0.982143	 0.0	 1	 -30.0	 30.0;
 	1465	 1262	 0.000313	 0.028314	 0.0	 691.0	 1116	 1116	 0.93617	 0.0	 1	 -30.0	 30.0;
 	1465	 1262	 0.000334	 0.025707	 0.0	 691.0	 1229	 1229	 0.93617	 0.0	 1	 -30.0	 30.0;
@@ -8357,10 +8357,10 @@ mpc.branch = [
 	6901	 4874	 0.000386	 0.02646	 0.0	 691.0	 1194	 1194	 0.93617	 0.0	 1	 -30.0	 30.0;
 	5241	 4	 0.000788	 0.040317	 0.0	 784	 784	 784	 0.982143	 0.0	 1	 -30.0	 30.0;
 	7520	 561	 0.000323	 0.025863	 0.0	 691.0	 1222	 1222	 0.979227	 0.0	 1	 -30.0	 30.0;
-	749	 4324	 1e-05	 0.022863	 0.0	 1048.0	 1382	 1382	 0.0	 0.04898	 1	 -30.0	 30.0;
+	749	 4324	 1e-05	 0.022863	 0.0	 1048.0	 1382	 1382	 1.0	 0.04898	 1	 -30.0	 30.0;
 	4141	 7124	 0.000334	 0.030306	 0.0	 691.0	 1043	 1043	 0.93617	 0.0	 1	 -30.0	 30.0;
 	4141	 7124	 0.000302	 0.030636	 0.0	 691.0	 1032	 1032	 0.93617	 0.0	 1	 -30.0	 30.0;
-	7466	 3649	 0.00011	 0.010476	 0.0	 572.0	 3016	 3016	 0.0	 -0.06138	 1	 -30.0	 30.0;
+	7466	 3649	 0.00011	 0.010476	 0.0	 572.0	 3016	 3016	 1.0	 -0.06138	 1	 -30.0	 30.0;
 	8222	 6556	 0.000344	 0.024841	 0.0	 691.0	 1272	 1272	 0.979227	 0.0	 1	 -30.0	 30.0;
 	8222	 6556	 0.000365	 0.025029	 0.0	 691.0	 1262	 1262	 0.979227	 0.0	 1	 -30.0	 30.0;
 	8222	 6556	 0.000355	 0.024101	 0.0	 691.0	 1311	 1311	 0.979227	 0.0	 1	 -30.0	 30.0;
@@ -8446,14 +8446,14 @@ mpc.branch = [
 	3538	 5001	 0.001271	 0.072001	 0.0	 439	 439	 439	 0.94	 0.0	 1	 -30.0	 30.0;
 	8249	 6139	 0.000442	 0.040802	 0.0	 775	 775	 775	 0.88	 0.0	 1	 -30.0	 30.0;
 	806	 91	 0.00048	 0.041601	 0.0	 760	 760	 760	 0.97	 0.0	 1	 -30.0	 30.0;
-	1747	 6998	 0.000543	 0.04261	 0.0	 742	 742	 742	 0.0	 0.0	 1	 -30.0	 30.0;
-	593	 6998	 0.000534	 0.04342	 0.0	 728	 728	 728	 0.0	 0.0	 1	 -30.0	 30.0;
+	1747	 6998	 0.000543	 0.04261	 0.0	 742	 742	 742	 1.0	 0.0	 1	 -30.0	 30.0;
+	593	 6998	 0.000534	 0.04342	 0.0	 728	 728	 728	 1.0	 0.0	 1	 -30.0	 30.0;
 	8432	 6295	 0.003895	 0.040564	 0.0	 776	 776	 776	 0.97	 0.0	 1	 -30.0	 30.0;
 	8432	 6295	 0.004413	 0.039762	 0.0	 790	 790	 790	 0.97	 0.0	 1	 -30.0	 30.0;
 	8432	 6295	 0.004498	 0.038954	 0.0	 806	 806	 806	 0.97	 0.0	 1	 -30.0	 30.0;
-	3190	 7090	 0.000621	 0.0376	 0.0	 840	 840	 840	 0.0	 0.0	 1	 -30.0	 30.0;
-	3484	 7090	 0.00063	 0.0368	 0.0	 859	 859	 859	 0.0	 0.0	 1	 -30.0	 30.0;
-	3484	 7844	 0.00064	 0.036	 0.0	 878	 878	 878	 0.0	 0.0	 1	 -30.0	 30.0;
+	3190	 7090	 0.000621	 0.0376	 0.0	 840	 840	 840	 1.0	 0.0	 1	 -30.0	 30.0;
+	3484	 7090	 0.00063	 0.0368	 0.0	 859	 859	 859	 1.0	 0.0	 1	 -30.0	 30.0;
+	3484	 7844	 0.00064	 0.036	 0.0	 878	 878	 878	 1.0	 0.0	 1	 -30.0	 30.0;
 	281	 3960	 0.000555	 0.040801	 0.0	 775	 775	 775	 0.984999	 0.0	 1	 -30.0	 30.0;
 	8086	 1477	 0.000546	 0.0416	 0.0	 760	 760	 760	 0.984999	 0.0	 1	 -30.0	 30.0;
 	8086	 8037	 0.000527	 0.0424	 0.0	 745	 745	 745	 0.984999	 0.0	 1	 -30.0	 30.0;
@@ -8466,8 +8466,8 @@ mpc.branch = [
 	6345	 7884	 0.000529	 0.036002	 0.0	 878	 878	 878	 0.954999	 0.0	 1	 -30.0	 30.0;
 	8114	 8738	 0.000473	 0.040802	 0.0	 775	 775	 775	 0.984999	 0.0	 1	 -30.0	 30.0;
 	8773	 8738	 0.000465	 0.041601	 0.0	 760	 760	 760	 0.984999	 0.0	 1	 -30.0	 30.0;
-	4059	 6282	 7e-05	 0.021201	 0.0	 790.0	 1490	 1490	 0.0	 0.0	 1	 -30.0	 30.0;
-	2002	 4340	 7e-05	 0.021599	 0.0	 790.0	 1463	 1463	 0.0	 0.0	 1	 -30.0	 30.0;
+	4059	 6282	 7e-05	 0.021201	 0.0	 790.0	 1490	 1490	 1.0	 0.0	 1	 -30.0	 30.0;
+	2002	 4340	 7e-05	 0.021599	 0.0	 790.0	 1463	 1463	 1.0	 0.0	 1	 -30.0	 30.0;
 	5165	 3363	 0.00054	 0.04	 0.0	 790	 790	 790	 0.98421	 0.0	 1	 -30.0	 30.0;
 	5165	 3363	 0.000472	 0.039202	 0.0	 806	 806	 806	 0.984999	 0.0	 1	 -30.0	 30.0;
 	2722	 3363	 0.00048	 0.038402	 0.0	 823	 823	 823	 0.984999	 0.0	 1	 -30.0	 30.0;
@@ -8508,15 +8508,15 @@ mpc.branch = [
 	4077	 7442	 0.000627	 0.041599	 0.0	 760	 760	 760	 1.039999	 0.0	 1	 -30.0	 30.0;
 	1052	 8277	 0.001048	 0.084802	 0.0	 373	 373	 373	 1.045	 0.0	 1	 -30.0	 30.0;
 	3878	 8277	 0.001029	 0.086397	 0.0	 366	 366	 366	 1.045	 0.0	 1	 -30.0	 30.0;
-	76	 5346	 0.000808	 0.047709	 0.0	 662	 662	 662	 0.0	 0.0	 1	 -30.0	 30.0;
+	76	 5346	 0.000808	 0.047709	 0.0	 662	 662	 662	 1.0	 0.0	 1	 -30.0	 30.0;
 	4485	 3000	 0.00061	 0.0392	 0.0	 806	 806	 806	 1.015	 0.0	 1	 -30.0	 30.0;
 	4485	 3000	 0.00062	 0.0384	 0.0	 823	 823	 823	 1.015	 0.0	 1	 -30.0	 30.0;
 	6283	 3000	 0.00064	 0.0376	 0.0	 840	 840	 840	 1.015	 0.0	 1	 -30.0	 30.0;
 	395	 4082	 0.00063	 0.0368	 0.0	 859	 859	 859	 0.984999	 0.0	 1	 -30.0	 30.0;
 	5843	 5246	 0.00064	 0.036	 0.0	 878	 878	 878	 0.984999	 0.0	 1	 -30.0	 30.0;
 	5843	 5246	 0.000573	 0.0408	 0.0	 775	 775	 775	 0.984999	 0.0	 1	 -30.0	 30.0;
-	6477	 2478	 0.001067	 0.083199	 0.0	 380	 380	 380	 0.0	 0.0	 1	 -30.0	 30.0;
-	5295	 2478	 0.001048	 0.084802	 0.0	 373	 373	 373	 0.0	 0.0	 1	 -30.0	 30.0;
+	6477	 2478	 0.001067	 0.083199	 0.0	 380	 380	 380	 1.0	 0.0	 1	 -30.0	 30.0;
+	5295	 2478	 0.001048	 0.084802	 0.0	 373	 373	 373	 1.0	 0.0	 1	 -30.0	 30.0;
 	6504	 3341	 0.001519	 0.050701	 0.0	 623	 623	 623	 1.013513	 0.0	 1	 -30.0	 30.0;
 	130	 5452	 0.000821	 0.051524	 0.0	 613	 613	 613	 1.052632	 0.0	 1	 -30.0	 30.0;
 	130	 5452	 0.000803	 0.047869	 0.0	 660	 660	 660	 1.052632	 0.0	 1	 -30.0	 30.0;
@@ -8525,7 +8525,7 @@ mpc.branch = [
 	8088	 4721	 0.000463	 0.026569	 0.0	 1189	 1189	 1189	 1.038781	 0.0	 1	 -30.0	 30.0;
 	3080	 8789	 0.000556	 0.030088	 0.0	 1050	 1050	 1050	 1.08147	 0.0	 1	 -30.0	 30.0;
 	3080	 8789	 0.000581	 0.029019	 0.0	 1089	 1089	 1089	 1.08147	 0.0	 1	 -30.0	 30.0;
-	5825	 702	 0.0017	 0.077979	 0.0	 405	 405	 405	 0.0	 0.0	 1	 -30.0	 30.0;
+	5825	 702	 0.0017	 0.077979	 0.0	 405	 405	 405	 1.0	 0.0	 1	 -30.0	 30.0;
 	8224	 5517	 0.000569	 0.046371	 0.0	 682	 682	 682	 1.052632	 0.0	 1	 -30.0	 30.0;
 	8224	 5517	 0.00056	 0.047255	 0.0	 669	 669	 669	 1.052632	 0.0	 1	 -30.0	 30.0;
 	536	 4344	 0.0008	 0.050159	 0.0	 630	 630	 630	 1.066857	 0.0	 1	 -30.0	 30.0;
@@ -9079,6 +9079,45 @@ mpc.branch = [
 % INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 43.1484715245 0
 % INFO    : Updated Generator Cost: NG - 0.0 1.0 0.0 -> 0 69.995792023 0
 % INFO    : Updated Generator Cost: COW - 0.0 1.0 0.0 -> 0 24.856264593 0
+% INFO    : 
+% INFO    : === Base KV Replacement Notes ===
+% INFO    : 
+% INFO    : === Transformer Setting Replacement Notes ===
+% WARNING : Branch 7829-1968 connects two different voltage levels (220.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 1815-792 connects two different voltage levels (220.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 7829-6826 connects two different voltage levels (220.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 5210-792 connects two different voltage levels (220.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 1445-792 connects two different voltage levels (220.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 5210-7279 connects two different voltage levels (220.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 5210-8335 connects two different voltage levels (220.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 5210-2449 connects two different voltage levels (220.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 5210-4665 connects two different voltage levels (220.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 5210-4495 connects two different voltage levels (220.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 1445-7279 connects two different voltage levels (220.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 1445-8335 connects two different voltage levels (220.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 7829-5776 connects two different voltage levels (220.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 1445-2449 connects two different voltage levels (220.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 1445-4665 connects two different voltage levels (220.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Transformer 7637-8581 has a phase shift of -0.428189, changing tap ratio 0.0 => 1.0
+% WARNING : Transformer 5848-7526 has a phase shift of 0.178581, changing tap ratio 0.0 => 1.0
+% WARNING : Transformer 2154-5996 has a phase shift of -0.153178, changing tap ratio 0.0 => 1.0
+% WARNING : Transformer 549-5002 has a phase shift of 0.072386, changing tap ratio 0.0 => 1.0
+% WARNING : Transformer 3069-6115 has a phase shift of -0.072388, changing tap ratio 0.0 => 1.0
+% WARNING : Transformer 7256-4491 has a phase shift of 0.084507, changing tap ratio 0.0 => 1.0
+% WARNING : Transformer 6153-58 has a phase shift of -0.09784, changing tap ratio 0.0 => 1.0
+% WARNING : Transformer 749-4324 has a phase shift of 0.04898, changing tap ratio 0.0 => 1.0
+% WARNING : Transformer 7466-3649 has a phase shift of -0.06138, changing tap ratio 0.0 => 1.0
+% WARNING : Branch 1747-6998 connects two different voltage levels (380.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 593-6998 connects two different voltage levels (380.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 3190-7090 connects two different voltage levels (380.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 3484-7090 connects two different voltage levels (380.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 3484-7844 connects two different voltage levels (380.0, 150.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 4059-6282 connects two different voltage levels (380.0, 220.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 2002-4340 connects two different voltage levels (380.0, 220.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 76-5346 connects two different voltage levels (220.0, 110.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 6477-2478 connects two different voltage levels (220.0, 110.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 5295-2478 connects two different voltage levels (220.0, 110.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 5825-702 connects two different voltage levels (220.0, 150.0), changing tap ratio 0.0 => 1.0
 % INFO    : 
 % INFO    : === Line Capacity UB Model Notes ===
 % INFO    : Updated Thermal Rating: on line 5147-3097 : Rate B, Rate C , 0.0, 0.0 -> 5104
@@ -13134,42 +13173,42 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on transformer 9024-6542 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 495
 % INFO    : Updated Thermal Rating: on transformer 6069-9192 : Rate A, Rate B, Rate C , 691.0, 0.0, 0.0 -> 675
 % INFO    : Updated Thermal Rating: on transformer 6069-1968 : Rate B, Rate C , 0.0, 0.0 -> 699
-% INFO    : Updated Thermal Rating: on line 7829-1968 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 7
+% INFO    : Updated Thermal Rating: on transformer 7829-1968 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 7
 % INFO    : Updated Thermal Rating: on transformer 8574-2299 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 790
 % INFO    : Updated Thermal Rating: on transformer 8574-5587 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 698
 % INFO    : Updated Thermal Rating: on transformer 4929-1815 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 514
-% INFO    : Updated Thermal Rating: on line 1815-792 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 4
+% INFO    : Updated Thermal Rating: on transformer 1815-792 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 4
 % INFO    : Updated Thermal Rating: on transformer 6704-4586 : Rate A, Rate B, Rate C , 658.0, 0.0, 0.0 -> 645
 % INFO    : Updated Thermal Rating: on transformer 2441-3506 : Rate B, Rate C , 0.0, 0.0 -> 661
 % INFO    : Updated Thermal Rating: on transformer 1367-6826 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 615
 % INFO    : Updated Thermal Rating: on transformer 1676-228 : Rate A, Rate B, Rate C , 658.0, 0.0, 0.0 -> 603
-% INFO    : Updated Thermal Rating: on line 7829-6826 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 492
+% INFO    : Updated Thermal Rating: on transformer 7829-6826 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 492
 % INFO    : Updated Thermal Rating: on transformer 659-3279 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 650
-% INFO    : Updated Thermal Rating: on line 5210-792 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 351
-% INFO    : Updated Thermal Rating: on line 1445-792 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 653
+% INFO    : Updated Thermal Rating: on transformer 5210-792 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 351
+% INFO    : Updated Thermal Rating: on transformer 1445-792 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 653
 % INFO    : Updated Thermal Rating: on transformer 7180-2168 : Rate B, Rate C , 0.0, 0.0 -> 733
 % INFO    : Updated Thermal Rating: on transformer 6833-8964 : Rate B, Rate C , 0.0, 0.0 -> 730
 % INFO    : Updated Thermal Rating: on transformer 3659-3242 : Rate A, Rate B, Rate C , 691.0, 0.0, 0.0 -> 645
 % INFO    : Updated Thermal Rating: on transformer 8181-4427 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 643
 % INFO    : Updated Thermal Rating: on transformer 9025-7563 : Rate A, Rate B, Rate C , 658.0, 0.0, 0.0 -> 618
 % INFO    : Updated Thermal Rating: on transformer 2267-5210 : Rate B, Rate C , 0.0, 0.0 -> 806
-% INFO    : Updated Thermal Rating: on line 5210-7279 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 26
-% INFO    : Updated Thermal Rating: on line 5210-8335 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 120
-% INFO    : Updated Thermal Rating: on line 5210-2449 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 43
-% INFO    : Updated Thermal Rating: on line 5210-4665 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 9
-% INFO    : Updated Thermal Rating: on line 5210-4495 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 7
+% INFO    : Updated Thermal Rating: on transformer 5210-7279 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 26
+% INFO    : Updated Thermal Rating: on transformer 5210-8335 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 120
+% INFO    : Updated Thermal Rating: on transformer 5210-2449 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 43
+% INFO    : Updated Thermal Rating: on transformer 5210-4665 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 9
+% INFO    : Updated Thermal Rating: on transformer 5210-4495 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 7
 % INFO    : Updated Thermal Rating: on transformer 8179-7279 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 723
-% INFO    : Updated Thermal Rating: on line 1445-7279 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 14
+% INFO    : Updated Thermal Rating: on transformer 1445-7279 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 14
 % INFO    : Updated Thermal Rating: on transformer 5509-8335 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 692
 % INFO    : Updated Thermal Rating: on transformer 5509-1531 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 620
-% INFO    : Updated Thermal Rating: on line 1445-8335 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 57
+% INFO    : Updated Thermal Rating: on transformer 1445-8335 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 57
 % INFO    : Updated Thermal Rating: on transformer 7762-5155 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 700
 % INFO    : Updated Thermal Rating: on transformer 7762-271 : Rate A, Rate B, Rate C , 691.0, 0.0, 0.0 -> 662
-% INFO    : Updated Thermal Rating: on line 7829-5776 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 117
+% INFO    : Updated Thermal Rating: on transformer 7829-5776 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 117
 % INFO    : Updated Thermal Rating: on transformer 8329-1445 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 552
 % INFO    : Updated Thermal Rating: on transformer 8329-1445 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 564
-% INFO    : Updated Thermal Rating: on line 1445-2449 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 25
-% INFO    : Updated Thermal Rating: on line 1445-4665 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 5
+% INFO    : Updated Thermal Rating: on transformer 1445-2449 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 25
+% INFO    : Updated Thermal Rating: on transformer 1445-4665 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 5
 % INFO    : Updated Thermal Rating: on transformer 2268-2908 : Rate A, Rate B, Rate C , 724.0, 0.0, 0.0 -> 628
 % INFO    : Updated Thermal Rating: on transformer 8847-5776 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 637
 % INFO    : Updated Thermal Rating: on transformer 8847-8103 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 667
@@ -13556,14 +13595,14 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on transformer 3538-5001 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 439
 % INFO    : Updated Thermal Rating: on transformer 8249-6139 : Rate A, Rate B, Rate C , 921.0, 0.0, 0.0 -> 775
 % INFO    : Updated Thermal Rating: on transformer 806-91 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 760
-% INFO    : Updated Thermal Rating: on line 1747-6998 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 742
-% INFO    : Updated Thermal Rating: on line 593-6998 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 728
+% INFO    : Updated Thermal Rating: on transformer 1747-6998 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 742
+% INFO    : Updated Thermal Rating: on transformer 593-6998 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 728
 % INFO    : Updated Thermal Rating: on transformer 8432-6295 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 776
 % INFO    : Updated Thermal Rating: on transformer 8432-6295 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 790
 % INFO    : Updated Thermal Rating: on transformer 8432-6295 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 806
-% INFO    : Updated Thermal Rating: on line 3190-7090 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 840
-% INFO    : Updated Thermal Rating: on line 3484-7090 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 859
-% INFO    : Updated Thermal Rating: on line 3484-7844 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 878
+% INFO    : Updated Thermal Rating: on transformer 3190-7090 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 840
+% INFO    : Updated Thermal Rating: on transformer 3484-7090 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 859
+% INFO    : Updated Thermal Rating: on transformer 3484-7844 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 878
 % INFO    : Updated Thermal Rating: on transformer 281-3960 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 775
 % INFO    : Updated Thermal Rating: on transformer 8086-1477 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 760
 % INFO    : Updated Thermal Rating: on transformer 8086-8037 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 745
@@ -13576,8 +13615,8 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on transformer 6345-7884 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 878
 % INFO    : Updated Thermal Rating: on transformer 8114-8738 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 775
 % INFO    : Updated Thermal Rating: on transformer 8773-8738 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 760
-% INFO    : Updated Thermal Rating: on line 4059-6282 : Rate B, Rate C , 0.0, 0.0 -> 1490
-% INFO    : Updated Thermal Rating: on line 2002-4340 : Rate B, Rate C , 0.0, 0.0 -> 1463
+% INFO    : Updated Thermal Rating: on transformer 4059-6282 : Rate B, Rate C , 0.0, 0.0 -> 1490
+% INFO    : Updated Thermal Rating: on transformer 2002-4340 : Rate B, Rate C , 0.0, 0.0 -> 1463
 % INFO    : Updated Thermal Rating: on transformer 5165-3363 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 790
 % INFO    : Updated Thermal Rating: on transformer 5165-3363 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 806
 % INFO    : Updated Thermal Rating: on transformer 2722-3363 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 823
@@ -13618,15 +13657,15 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on transformer 4077-7442 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 760
 % INFO    : Updated Thermal Rating: on transformer 1052-8277 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 373
 % INFO    : Updated Thermal Rating: on transformer 3878-8277 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 366
-% INFO    : Updated Thermal Rating: on line 76-5346 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 662
+% INFO    : Updated Thermal Rating: on transformer 76-5346 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 662
 % INFO    : Updated Thermal Rating: on transformer 4485-3000 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 806
 % INFO    : Updated Thermal Rating: on transformer 4485-3000 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 823
 % INFO    : Updated Thermal Rating: on transformer 6283-3000 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 840
 % INFO    : Updated Thermal Rating: on transformer 395-4082 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 859
 % INFO    : Updated Thermal Rating: on transformer 5843-5246 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 878
 % INFO    : Updated Thermal Rating: on transformer 5843-5246 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 775
-% INFO    : Updated Thermal Rating: on line 6477-2478 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 380
-% INFO    : Updated Thermal Rating: on line 5295-2478 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 373
+% INFO    : Updated Thermal Rating: on transformer 6477-2478 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 380
+% INFO    : Updated Thermal Rating: on transformer 5295-2478 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 373
 % INFO    : Updated Thermal Rating: on transformer 6504-3341 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 623
 % INFO    : Updated Thermal Rating: on transformer 130-5452 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 613
 % INFO    : Updated Thermal Rating: on transformer 130-5452 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 660
@@ -13635,7 +13674,7 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on transformer 8088-4721 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 1189
 % INFO    : Updated Thermal Rating: on transformer 3080-8789 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 1050
 % INFO    : Updated Thermal Rating: on transformer 3080-8789 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 1089
-% INFO    : Updated Thermal Rating: on line 5825-702 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 405
+% INFO    : Updated Thermal Rating: on transformer 5825-702 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 405
 % INFO    : Updated Thermal Rating: on transformer 8224-5517 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 682
 % INFO    : Updated Thermal Rating: on transformer 8224-5517 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 669
 % INFO    : Updated Thermal Rating: on transformer 536-4344 : Rate A, Rate B, Rate C , 0.0, 0.0, 0.0 -> 630

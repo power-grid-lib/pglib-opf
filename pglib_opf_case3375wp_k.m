@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.08     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.06     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                        30 - August - 2017                        %%%%%
+%%%%                         07 - June - 2018                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -5185,10 +5185,10 @@ mpc.branch = [
 	10178	 10223	 0.0023	 0.04426	 0.0	 650	 650	 650	 0.0	 0.0	 1	 -30.0	 30.0;
 	10179	 10223	 0.0024	 0.14454	 0.0	 200	 200	 200	 0.0	 0.0	 1	 -30.0	 30.0;
 	10181	 10180	 0.07557	 0.28529	 0.0	 109	 109	 109	 0.0	 0.0	 1	 -30.0	 30.0;
-	10179	 10180	 0.04117	 0.28881	 0.0	 110	 110	 110	 0.0	 0.0	 1	 -30.0	 30.0;
-	10182	 10180	 0.02077	 0.16725	 0.0	 190	 190	 190	 0.0	 0.0	 1	 -30.0	 30.0;
-	10179	 10181	 0.04117	 0.28881	 0.0	 110	 110	 110	 0.0	 0.0	 1	 -30.0	 30.0;
-	10182	 10181	 0.02077	 0.16725	 0.0	 190	 190	 190	 0.0	 0.0	 1	 -30.0	 30.0;
+	10179	 10180	 0.04117	 0.28881	 0.0	 110	 110	 110	 1.0	 0.0	 1	 -30.0	 30.0;
+	10182	 10180	 0.02077	 0.16725	 0.0	 190	 190	 190	 1.0	 0.0	 1	 -30.0	 30.0;
+	10179	 10181	 0.04117	 0.28881	 0.0	 110	 110	 110	 1.0	 0.0	 1	 -30.0	 30.0;
+	10182	 10181	 0.02077	 0.16725	 0.0	 190	 190	 190	 1.0	 0.0	 1	 -30.0	 30.0;
 	10179	 10182	 0.00221	 0.05859	 0.0	 491	 491	 491	 0.0	 0.0	 1	 -30.0	 30.0;
 	10178	 10182	 0.00529	 0.57896	 0.0	 50	 50	 50	 0.0	 0.0	 1	 -30.0	 30.0;
 	10179	 10178	 0.00345	 0.0839	 0.0	 343	 343	 343	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -9108,6 +9108,14 @@ mpc.branch = [
 % INFO    : === Generator Reactive Capacity Overide Notes ===
 % INFO    : Gen at bus 10079	: Qmax 275.0 -> 4000
 % INFO    : 
+% INFO    : === Base KV Replacement Notes ===
+% INFO    : 
+% INFO    : === Transformer Setting Replacement Notes ===
+% WARNING : Branch 10179-10180 connects two different voltage levels (400.0, 220.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 10182-10180 connects two different voltage levels (400.0, 220.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 10179-10181 connects two different voltage levels (400.0, 220.0), changing tap ratio 0.0 => 1.0
+% WARNING : Branch 10182-10181 connects two different voltage levels (400.0, 220.0), changing tap ratio 0.0 => 1.0
+% INFO    : 
 % INFO    : === Line Capacity Stat Model Notes ===
 % INFO    : Updated Thermal Rating: on line 10330-10331 : Rate A, Rate B, Rate C , 99999.0, 19052.0, 19052.0 -> 183
 % INFO    : Updated Thermal Rating: on line 10300-10355 : Rate A, Rate B, Rate C , 99999.0, 19052.0, 19052.0 -> 122
@@ -9897,13 +9905,13 @@ mpc.branch = [
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 10181-10180 : 255 , 108
 % INFO    : Updated Thermal Rating: on line 10181-10180 : Rate A, Rate B, Rate C , 99999.0, 457.0, 457.0 -> 109
 % WARNING : Different basekv values on line 10179-10180, branch flow stat model using max current model : from_basekv=400.0 to_basekv=220.0 
-% INFO    : Updated Thermal Rating: on line 10179-10180 : Rate A, Rate B, Rate C , 99999.0, 1200.0, 1200.0 -> 110
+% INFO    : Updated Thermal Rating: on transformer 10179-10180 : Rate A, Rate B, Rate C , 99999.0, 1200.0, 1200.0 -> 110
 % WARNING : Different basekv values on line 10182-10180, branch flow stat model using max current model : from_basekv=400.0 to_basekv=220.0 
-% INFO    : Updated Thermal Rating: on line 10182-10180 : Rate A, Rate B, Rate C , 99999.0, 1200.0, 1200.0 -> 190
+% INFO    : Updated Thermal Rating: on transformer 10182-10180 : Rate A, Rate B, Rate C , 99999.0, 1200.0, 1200.0 -> 190
 % WARNING : Different basekv values on line 10179-10181, branch flow stat model using max current model : from_basekv=400.0 to_basekv=220.0 
-% INFO    : Updated Thermal Rating: on line 10179-10181 : Rate A, Rate B, Rate C , 99999.0, 1200.0, 1200.0 -> 110
+% INFO    : Updated Thermal Rating: on transformer 10179-10181 : Rate A, Rate B, Rate C , 99999.0, 1200.0, 1200.0 -> 110
 % WARNING : Different basekv values on line 10182-10181, branch flow stat model using max current model : from_basekv=400.0 to_basekv=220.0 
-% INFO    : Updated Thermal Rating: on line 10182-10181 : Rate A, Rate B, Rate C , 99999.0, 1200.0, 1200.0 -> 190
+% INFO    : Updated Thermal Rating: on transformer 10182-10181 : Rate A, Rate B, Rate C , 99999.0, 1200.0, 1200.0 -> 190
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 10179-10182 : 1178 , 490
 % INFO    : Updated Thermal Rating: on line 10179-10182 : Rate A, Rate B, Rate C , 99999.0, 831.0, 831.0 -> 491
 % WARNING : Updated Thermal Rating Stat Model was larger than UB Model: on 10178-10182 : 2318 , 49

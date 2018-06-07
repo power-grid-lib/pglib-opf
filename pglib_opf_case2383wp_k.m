@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v17.08     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.06     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                        30 - August - 2017                        %%%%%
+%%%%                         07 - June - 2018                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -3305,7 +3305,7 @@ mpc.branch = [
 	102	 89	 0.00207	 0.01343	 0.02207	 362.0	 362.0	 362.0	 0.0	 0.0	 1	 -30.0	 30.0;
 	1217	 89	 0.00145	 0.0657	 -0.00523	 160.0	 160.0	 160.0	 1.0212	 0.0	 1	 -30.0	 30.0;
 	104	 90	 0.00455	 0.0314	 0.05489	 464.0	 464.0	 464.0	 0.0	 0.0	 1	 -30.0	 30.0;
-	1244	 90	 0.00145	 0.06756	 -0.00348	 160.0	 160.0	 160.0	 0.0	 0.0	 1	 -30.0	 30.0;
+	1244	 90	 0.00145	 0.06756	 -0.00348	 160.0	 160.0	 160.0	 1.0	 0.0	 1	 -30.0	 30.0;
 	1343	 91	 0.00145	 0.06756	 -0.0029	 160.0	 160.0	 160.0	 1.0144	 0.0	 1	 -30.0	 30.0;
 	100	 92	 0.00094	 0.01038	 0.28992	 845.0	 845.0	 845.0	 0.0	 0.0	 1	 -30.0	 30.0;
 	92	 106	 0.00094	 0.0105	 0.2928	 845.0	 845.0	 845.0	 0.0	 0.0	 1	 -30.0	 30.0;
@@ -5987,6 +5987,11 @@ mpc.branch = [
 % INFO    : === Translation Options ===
 % INFO    : Phase Angle Bound:           30.0 (deg.)
 % INFO    : Setting Flat Start
+% INFO    : 
+% INFO    : === Base KV Replacement Notes ===
+% INFO    : 
+% INFO    : === Transformer Setting Replacement Notes ===
+% WARNING : Branch 1244-90 connects two different voltage levels (110.0, 220.0), changing tap ratio 0.0 => 1.0
 % INFO    : 
 % INFO    : === Voltage Setpoint Replacement Notes ===
 % INFO    : Bus 1	: V=1.0945877, theta=-1.4947677 -> V=1.03, theta=0.0
