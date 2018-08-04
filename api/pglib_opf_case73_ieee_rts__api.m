@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.06     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.08     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                         07 - June - 2018                         %%%%%
+%%%%                         31 - July - 2018                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case73_ieee_rts__api
@@ -519,9 +519,9 @@ mpc.branch = [
 % INFO    : Gen at bus 122	: Pg=30.0, Qg=3.0 -> Pg=68.0, Qg=-9.0
 % INFO    : Gen at bus 122	: Pg=30.0, Qg=3.0 -> Pg=68.0, Qg=-9.0
 % INFO    : Gen at bus 122	: Pg=30.0, Qg=3.0 -> Pg=68.0, Qg=-9.0
-% INFO    : Gen at bus 123	: Pg=104.65, Qg=15.0 -> Pg=294.0, Qg=18.0
 % INFO    : Gen at bus 123	: Pg=104.65, Qg=15.0 -> Pg=294.0, Qg=17.0
-% INFO    : Gen at bus 123	: Pg=245.0, Qg=62.5 -> Pg=379.0, Qg=18.0
+% INFO    : Gen at bus 123	: Pg=104.65, Qg=15.0 -> Pg=294.0, Qg=17.0
+% INFO    : Gen at bus 123	: Pg=245.0, Qg=62.5 -> Pg=379.0, Qg=17.0
 % INFO    : Gen at bus 201	: Pg=18.0, Qg=5.0 -> Pg=69.0, Qg=1.0
 % INFO    : Gen at bus 201	: Pg=18.0, Qg=5.0 -> Pg=69.0, Qg=1.0
 % INFO    : Gen at bus 201	: Pg=45.6, Qg=2.5 -> Pg=68.0, Qg=1.0
@@ -982,9 +982,9 @@ mpc.branch = [
 % INFO    : Gen at bus 122	: Pg=68.0, Qg=-9.0 -> Pg=61.5, Qg=0.0
 % INFO    : Gen at bus 122	: Pg=68.0, Qg=-9.0 -> Pg=95.5, Qg=0.0
 % INFO    : Gen at bus 122	: Pg=68.0, Qg=-9.0 -> Pg=65.0, Qg=0.0
-% INFO    : Gen at bus 123	: Pg=294.0, Qg=18.0 -> Pg=309.575, Qg=0.0
+% INFO    : Gen at bus 123	: Pg=294.0, Qg=17.0 -> Pg=309.575, Qg=0.0
 % INFO    : Gen at bus 123	: Pg=294.0, Qg=17.0 -> Pg=171.575, Qg=0.0
-% INFO    : Gen at bus 123	: Pg=379.0, Qg=18.0 -> Pg=258.0, Qg=0.0
+% INFO    : Gen at bus 123	: Pg=379.0, Qg=17.0 -> Pg=258.0, Qg=0.0
 % INFO    : Gen at bus 201	: Pg=69.0, Qg=1.0 -> Pg=61.0, Qg=0.0
 % INFO    : Gen at bus 201	: Pg=69.0, Qg=1.0 -> Pg=45.0, Qg=0.0
 % INFO    : Gen at bus 201	: Pg=68.0, Qg=1.0 -> Pg=69.8, Qg=0.0

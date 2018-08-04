@@ -12,11 +12,11 @@ use the [HSL](http://www.hsl.rl.ac.uk/ipopt/) ma27 solver in IPOPT.
 The default linear solver will increase the runtime by 2-6x.
 
 ## Software Versions
-**[PowerModels.jl](https://github.com/lanl-ansi/PowerModels.jl):** v0.7.2, 31e7627c4844fb8c54ff7206c0937cc907368e1e
+**[PowerModels.jl](https://github.com/lanl-ansi/PowerModels.jl):** v0.3.4-143-g31e7627, 31e7627c4844fb8c54ff7206c0937cc907368e1e
 
-**[Ipopt.jl](https://github.com/JuliaOpt/Ipopt.jl):** v0.3.0, ac35cedbdd602bb0f1c257a5e04b516df5119155
+**[Ipopt.jl](https://github.com/JuliaOpt/Ipopt.jl):** v0.2.6-14-gac35ced, ac35cedbdd602bb0f1c257a5e04b516df5119155
 
-**[PGLib OPF](https://github.com/power-grid-lib/pglib-opf):** v18.06, dbfab62e1cffad0a59f6c128b040273ff8ee2f9b
+**[PGLib OPF](https://github.com/power-grid-lib/pglib-opf):** none, dbfab62e1cffad0a59f6c128b040273ff8ee2f9b
 
 **Hardware:** Dual Intel 2.10GHz CPUs, 128GB RAM
 
