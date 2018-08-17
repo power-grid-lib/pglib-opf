@@ -3,7 +3,7 @@
 %%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.08     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                         31 - July - 2018                         %%%%%
+%%%%                        08 - August - 2018                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case3012wp_k__api
@@ -9911,9 +9911,9 @@ mpc.branch = [
 % INFO    : Gen at bus 38	: Pg=305.0, Qg=85.5 -> Pg=262.0, Qg=-24.0
 % INFO    : Gen at bus 38	: Pg=305.0, Qg=85.5 -> Pg=262.0, Qg=-24.0
 % INFO    : Gen at bus 39	: Pg=305.0, Qg=85.5 -> Pg=262.0, Qg=59.0
-% INFO    : Gen at bus 40	: Pg=305.0, Qg=85.5 -> Pg=270.0, Qg=36.0
-% INFO    : Gen at bus 40	: Pg=305.0, Qg=85.5 -> Pg=270.0, Qg=36.0
-% INFO    : Gen at bus 40	: Pg=305.0, Qg=85.5 -> Pg=270.0, Qg=76.0
+% INFO    : Gen at bus 40	: Pg=305.0, Qg=85.5 -> Pg=270.0, Qg=49.0
+% INFO    : Gen at bus 40	: Pg=305.0, Qg=85.5 -> Pg=270.0, Qg=49.0
+% INFO    : Gen at bus 40	: Pg=305.0, Qg=85.5 -> Pg=270.0, Qg=49.0
 % INFO    : Gen at bus 41	: Pg=305.0, Qg=85.5 -> Pg=269.0, Qg=32.0
 % INFO    : Gen at bus 41	: Pg=305.0, Qg=85.5 -> Pg=269.0, Qg=32.0
 % INFO    : Gen at bus 41	: Pg=305.0, Qg=85.5 -> Pg=269.0, Qg=32.0
@@ -10298,9 +10298,9 @@ mpc.branch = [
 % INFO    : Gen at bus 38	: Qg -24.0, Qmin -19.0, Qmax 190.0 -> Qmin -28.8, Qmax 190.0
 % INFO    : Gen at bus 38	: Qg -24.0, Qmin -19.0, Qmax 190.0 -> Qmin -28.8, Qmax 190.0
 % INFO    : Gen at bus 39	: Qg 59.0, Qmin -19.0, Qmax 190.0 -> Qmin -70.8, Qmax 190.0
-% INFO    : Gen at bus 40	: Qg 36.0, Qmin -19.0, Qmax 190.0 -> Qmin -43.2, Qmax 190.0
-% INFO    : Gen at bus 40	: Qg 36.0, Qmin -19.0, Qmax 190.0 -> Qmin -43.2, Qmax 190.0
-% INFO    : Gen at bus 40	: Qg 76.0, Qmin -19.0, Qmax 190.0 -> Qmin -91.2, Qmax 190.0
+% INFO    : Gen at bus 40	: Qg 49.0, Qmin -19.0, Qmax 190.0 -> Qmin -58.8, Qmax 190.0
+% INFO    : Gen at bus 40	: Qg 49.0, Qmin -19.0, Qmax 190.0 -> Qmin -58.8, Qmax 190.0
+% INFO    : Gen at bus 40	: Qg 49.0, Qmin -19.0, Qmax 190.0 -> Qmin -58.8, Qmax 190.0
 % INFO    : Gen at bus 41	: Qg 32.0, Qmin -19.0, Qmax 190.0 -> Qmin -38.4, Qmax 190.0
 % INFO    : Gen at bus 41	: Qg 32.0, Qmin -19.0, Qmax 190.0 -> Qmin -38.4, Qmax 190.0
 % INFO    : Gen at bus 41	: Qg 32.0, Qmin -19.0, Qmax 190.0 -> Qmin -38.4, Qmax 190.0
@@ -11578,9 +11578,9 @@ mpc.branch = [
 % INFO    : Gen at bus 38 - COW	: Pmax 262.0, Qmin -28.8, Qmax 190.0 -> Qmin -131.0, Qmax 190.0
 % INFO    : Gen at bus 38 - COW	: Pmax 960.0, Qmin -28.8, Qmax 190.0 -> Qmin -480.0, Qmax 480.0
 % INFO    : Gen at bus 39 - COW	: Pmax 327.0, Qmin -70.8, Qmax 190.0 -> Qmin -164.0, Qmax 190.0
-% INFO    : Gen at bus 40 - NG	: Pmax 281.0, Qmin -43.2, Qmax 190.0 -> Qmin -141.0, Qmax 190.0
-% INFO    : Gen at bus 40 - NG	: Pmax 332.0, Qmin -43.2, Qmax 190.0 -> Qmin -166.0, Qmax 190.0
-% INFO    : Gen at bus 40 - NG	: Pmax 412.0, Qmin -91.2, Qmax 190.0 -> Qmin -206.0, Qmax 206.0
+% INFO    : Gen at bus 40 - NG	: Pmax 281.0, Qmin -58.8, Qmax 190.0 -> Qmin -141.0, Qmax 190.0
+% INFO    : Gen at bus 40 - NG	: Pmax 332.0, Qmin -58.8, Qmax 190.0 -> Qmin -166.0, Qmax 190.0
+% INFO    : Gen at bus 40 - NG	: Pmax 412.0, Qmin -58.8, Qmax 190.0 -> Qmin -206.0, Qmax 206.0
 % INFO    : Gen at bus 41 - COW	: Pmax 410.0, Qmin -38.4, Qmax 190.0 -> Qmin -205.0, Qmax 205.0
 % INFO    : Gen at bus 41 - COW	: Pmax 1069.0, Qmin -38.4, Qmax 190.0 -> Qmin -535.0, Qmax 535.0
 % INFO    : Gen at bus 41 - NG	: Pmax 413.0, Qmin -38.4, Qmax 190.0 -> Qmin -207.0, Qmax 207.0
@@ -12045,9 +12045,9 @@ mpc.branch = [
 % INFO    : Gen at bus 38	: Pg=262.0, Qg=-24.0 -> Pg=191.0, Qg=29.5
 % INFO    : Gen at bus 38	: Pg=262.0, Qg=-24.0 -> Pg=540.0, Qg=0.0
 % INFO    : Gen at bus 39	: Pg=262.0, Qg=59.0 -> Pg=223.5, Qg=13.0
-% INFO    : Gen at bus 40	: Pg=270.0, Qg=36.0 -> Pg=200.5, Qg=24.5
-% INFO    : Gen at bus 40	: Pg=270.0, Qg=36.0 -> Pg=226.0, Qg=12.0
-% INFO    : Gen at bus 40	: Pg=270.0, Qg=76.0 -> Pg=266.0, Qg=0.0
+% INFO    : Gen at bus 40	: Pg=270.0, Qg=49.0 -> Pg=200.5, Qg=24.5
+% INFO    : Gen at bus 40	: Pg=270.0, Qg=49.0 -> Pg=226.0, Qg=12.0
+% INFO    : Gen at bus 40	: Pg=270.0, Qg=49.0 -> Pg=266.0, Qg=0.0
 % INFO    : Gen at bus 41	: Pg=269.0, Qg=32.0 -> Pg=265.0, Qg=0.0
 % INFO    : Gen at bus 41	: Pg=269.0, Qg=32.0 -> Pg=594.5, Qg=0.0
 % INFO    : Gen at bus 41	: Pg=269.0, Qg=32.0 -> Pg=266.5, Qg=0.0

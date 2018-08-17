@@ -3,7 +3,7 @@
 %%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.08     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                         31 - July - 2018                         %%%%%
+%%%%                        08 - August - 2018                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case500_tamu__api
@@ -1516,17 +1516,17 @@ mpc.branch = [
 % INFO    : Bus 500	: Pd=23.43, Qd=6.25 -> Pd=29.71, Qd=6.25
 % INFO    : 
 % INFO    : === Generator Setpoint Replacement Notes ===
-% INFO    : Gen at bus 9	: Pg=501.67, Qg=132.75 -> Pg=721.0, Qg=121.0
-% INFO    : Gen at bus 16	: Pg=288.89, Qg=63.56 -> Pg=389.0, Qg=58.0
-% INFO    : Gen at bus 17	: Pg=577.785, Qg=127.115 -> Pg=850.0, Qg=193.0
-% INFO    : Gen at bus 18	: Pg=102.44, Qg=22.54 -> Pg=185.0, Qg=-11.0
-% INFO    : Gen at bus 49	: Pg=0.845, Qg=0.225 -> Pg=29.0, Qg=-2.0
+% INFO    : Gen at bus 9	: Pg=501.67, Qg=132.75 -> Pg=712.0, Qg=120.0
+% INFO    : Gen at bus 16	: Pg=288.89, Qg=63.56 -> Pg=391.0, Qg=59.0
+% INFO    : Gen at bus 17	: Pg=577.785, Qg=127.115 -> Pg=870.0, Qg=193.0
+% INFO    : Gen at bus 18	: Pg=102.44, Qg=22.54 -> Pg=186.0, Qg=-11.0
+% INFO    : Gen at bus 49	: Pg=0.845, Qg=0.225 -> Pg=29.0, Qg=-1.0
 % INFO    : Gen at bus 50	: Pg=1.69, Qg=0.445 -> Pg=37.0, Qg=-2.0
 % INFO    : Gen at bus 71	: Pg=2.6, Qg=0.67 -> Pg=75.0, Qg=54.0
 % INFO    : Gen at bus 72	: Pg=1.3, Qg=0.335 -> Pg=28.0, Qg=10.0
 % INFO    : Gen at bus 73	: Pg=0.91, Qg=0.235 -> Pg=22.0, Qg=4.0
-% INFO    : Gen at bus 82	: Pg=235.235, Qg=60.62 -> Pg=409.0, Qg=125.0
-% INFO    : Gen at bus 127	: Pg=105.3, Qg=27.135 -> Pg=221.0, Qg=19.0
+% INFO    : Gen at bus 82	: Pg=235.235, Qg=60.62 -> Pg=408.0, Qg=125.0
+% INFO    : Gen at bus 127	: Pg=105.3, Qg=27.135 -> Pg=222.0, Qg=20.0
 % INFO    : Gen at bus 128	: Pg=105.3, Qg=27.135 -> Pg=233.0, Qg=66.0
 % INFO    : Gen at bus 144	: Pg=391.655, Qg=86.165 -> Pg=203.0, Qg=30.0
 % INFO    : Gen at bus 145	: Pg=391.655, Qg=86.165 -> Pg=255.0, Qg=58.0
@@ -1535,12 +1535,12 @@ mpc.branch = [
 % INFO    : Gen at bus 169	: Pg=251.55, Qg=64.825 -> Pg=349.0, Qg=43.0
 % INFO    : Gen at bus 197	: Pg=190.84, Qg=50.5 -> Pg=307.0, Qg=82.0
 % INFO    : Gen at bus 198	: Pg=134.745, Qg=35.655 -> Pg=277.0, Qg=116.0
-% INFO    : Gen at bus 222	: Pg=3.38, Qg=0.875 -> Pg=72.0, Qg=32.0
+% INFO    : Gen at bus 222	: Pg=3.38, Qg=0.875 -> Pg=72.0, Qg=31.0
 % INFO    : Gen at bus 223	: Pg=11.7, Qg=3.015 -> Pg=78.0, Qg=21.0
-% INFO    : Gen at bus 224	: Pg=332.28, Qg=85.625 -> Pg=285.0, Qg=64.0
-% INFO    : Gen at bus 225	: Pg=334.62, Qg=86.225 -> Pg=343.0, Qg=131.0
+% INFO    : Gen at bus 224	: Pg=332.28, Qg=85.625 -> Pg=286.0, Qg=64.0
+% INFO    : Gen at bus 225	: Pg=334.62, Qg=86.225 -> Pg=344.0, Qg=131.0
 % INFO    : Gen at bus 231	: Pg=1.885, Qg=0.5 -> Pg=30.0, Qg=-8.0
-% INFO    : Gen at bus 258	: Pg=0.715, Qg=0.19 -> Pg=28.0, Qg=8.0
+% INFO    : Gen at bus 258	: Pg=0.715, Qg=0.19 -> Pg=27.0, Qg=8.0
 % INFO    : Gen at bus 301	: Pg=1.885, Qg=0.5 -> Pg=62.0, Qg=15.0
 % INFO    : Gen at bus 302	: Pg=1.885, Qg=0.5 -> Pg=69.0, Qg=15.0
 % INFO    : Gen at bus 305	: Pg=0.65, Qg=0.165 -> Pg=13.0, Qg=3.0
@@ -1550,34 +1550,34 @@ mpc.branch = [
 % INFO    : Gen at bus 351	: Pg=4.03, Qg=1.04 -> Pg=52.0, Qg=8.0
 % INFO    : Gen at bus 352	: Pg=9.36, Qg=2.41 -> Pg=56.0, Qg=10.0
 % INFO    : Gen at bus 353	: Pg=48.1, Qg=12.395 -> Pg=85.0, Qg=15.0
-% INFO    : Gen at bus 410	: Pg=89.015, Qg=27.255 -> Pg=229.0, Qg=-8.0
-% INFO    : Gen at bus 411	: Pg=89.015, Qg=27.255 -> Pg=228.0, Qg=-9.0
-% INFO    : Gen at bus 412	: Pg=89.015, Qg=27.255 -> Pg=222.0, Qg=-9.0
-% INFO    : Gen at bus 413	: Pg=89.015, Qg=27.255 -> Pg=223.0, Qg=-9.0
+% INFO    : Gen at bus 410	: Pg=89.015, Qg=27.255 -> Pg=228.0, Qg=-8.0
+% INFO    : Gen at bus 411	: Pg=89.015, Qg=27.255 -> Pg=227.0, Qg=-9.0
+% INFO    : Gen at bus 412	: Pg=89.015, Qg=27.255 -> Pg=221.0, Qg=-9.0
+% INFO    : Gen at bus 413	: Pg=89.015, Qg=27.255 -> Pg=222.0, Qg=-9.0
 % INFO    : Gen at bus 430	: Pg=0.65, Qg=0.165 -> Pg=89.0, Qg=-8.0
 % INFO    : Gen at bus 431	: Pg=2.145, Qg=0.555 -> Pg=100.0, Qg=8.0
 % INFO    : Gen at bus 432	: Pg=0.78, Qg=0.2 -> Pg=89.0, Qg=12.0
 % INFO    : Gen at bus 433	: Pg=4.355, Qg=1.12 -> Pg=94.0, Qg=-13.0
 % INFO    : Gen at bus 434	: Pg=2.795, Qg=0.72 -> Pg=104.0, Qg=27.0
 % INFO    : Gen at bus 437	: Pg=128.05, Qg=33.0 -> Pg=266.0, Qg=69.0
-% INFO    : Gen at bus 438	: Pg=128.05, Qg=33.0 -> Pg=279.0, Qg=46.0
-% INFO    : Gen at bus 439	: Pg=128.05, Qg=33.0 -> Pg=268.0, Qg=95.0
-% INFO    : Gen at bus 455	: Pg=144.84, Qg=44.345 -> Pg=306.0, Qg=83.0
-% INFO    : Gen at bus 456	: Pg=289.685, Qg=88.685 -> Pg=387.0, Qg=90.0
+% INFO    : Gen at bus 438	: Pg=128.05, Qg=33.0 -> Pg=278.0, Qg=46.0
+% INFO    : Gen at bus 439	: Pg=128.05, Qg=33.0 -> Pg=268.0, Qg=96.0
+% INFO    : Gen at bus 455	: Pg=144.84, Qg=44.345 -> Pg=302.0, Qg=83.0
+% INFO    : Gen at bus 456	: Pg=289.685, Qg=88.685 -> Pg=383.0, Qg=90.0
 % INFO    : Gen at bus 458	: Pg=71.24, Qg=0.0 -> Pg=117.0, Qg=-44.0
-% INFO    : Gen at bus 480	: Pg=36.4, Qg=9.38 -> Pg=81.0, Qg=2.0
-% INFO    : Gen at bus 481	: Pg=29.25, Qg=7.535 -> Pg=60.0, Qg=2.0
+% INFO    : Gen at bus 480	: Pg=36.4, Qg=9.38 -> Pg=80.0, Qg=2.0
+% INFO    : Gen at bus 481	: Pg=29.25, Qg=7.535 -> Pg=59.0, Qg=2.0
 % INFO    : Gen at bus 482	: Pg=29.25, Qg=7.535 -> Pg=68.0, Qg=3.0
-% INFO    : Gen at bus 483	: Pg=15.6, Qg=4.02 -> Pg=65.0, Qg=1.0
-% INFO    : Gen at bus 484	: Pg=18.2, Qg=4.69 -> Pg=51.0, Qg=1.0
+% INFO    : Gen at bus 483	: Pg=15.6, Qg=4.02 -> Pg=64.0, Qg=1.0
+% INFO    : Gen at bus 484	: Pg=18.2, Qg=4.69 -> Pg=50.0, Qg=1.0
 % INFO    : Gen at bus 497	: Pg=39.0, Qg=10.05 -> Pg=125.0, Qg=24.0
 % INFO    : Gen at bus 498	: Pg=11.7, Qg=3.015 -> Pg=64.0, Qg=12.0
 % INFO    : 
 % INFO    : === Generator Reactive Capacity Atleast Setpoint Value Notes ===
-% INFO    : Gen at bus 9	: Qg 121.0, Qmin -94.16, Qmax 359.66 -> Qmin -145.2, Qmax 359.66
-% INFO    : Gen at bus 16	: Qg 58.0, Qmin -36.44, Qmax 163.56 -> Qmin -69.6, Qmax 163.56
+% INFO    : Gen at bus 9	: Qg 120.0, Qmin -94.16, Qmax 359.66 -> Qmin -144.0, Qmax 359.66
+% INFO    : Gen at bus 16	: Qg 59.0, Qmin -36.44, Qmax 163.56 -> Qmin -70.8, Qmax 163.56
 % INFO    : Gen at bus 17	: Qg 193.0, Qmin -72.89, Qmax 327.12 -> Qmin -231.6, Qmax 327.12
-% INFO    : Gen at bus 49	: Qg -2.0, Qmin -0.16, Qmax 0.61 -> Qmin -2.4, Qmax 2.4
+% INFO    : Gen at bus 49	: Qg -1.0, Qmin -0.16, Qmax 0.61 -> Qmin -1.2, Qmax 1.2
 % INFO    : Gen at bus 50	: Qg -2.0, Qmin -0.32, Qmax 1.21 -> Qmin -2.4, Qmax 2.4
 % INFO    : Gen at bus 63	: Qg 0.635, Qmin -0.36, Qmax 1.63 -> Qmin -0.762, Qmax 1.63
 % INFO    : Gen at bus 71	: Qg 54.0, Qmin -0.2, Qmax 1.54 -> Qmin -64.8, Qmax 64.8
@@ -1586,7 +1586,7 @@ mpc.branch = [
 % INFO    : Gen at bus 82	: Qg 125.0, Qmin -17.73, Qmax 138.97 -> Qmin -150.0, Qmax 138.97
 % INFO    : Gen at bus 125	: Qg 27.135, Qmin -7.94, Qmax 62.21 -> Qmin -32.562, Qmax 62.21
 % INFO    : Gen at bus 126	: Qg 27.135, Qmin -7.94, Qmax 62.21 -> Qmin -32.562, Qmax 62.21
-% INFO    : Gen at bus 127	: Qg 19.0, Qmin -7.94, Qmax 62.21 -> Qmin -22.8, Qmax 62.21
+% INFO    : Gen at bus 127	: Qg 20.0, Qmin -7.94, Qmax 62.21 -> Qmin -24.0, Qmax 62.21
 % INFO    : Gen at bus 128	: Qg 66.0, Qmin -7.94, Qmax 62.21 -> Qmin -79.2, Qmax 79.2
 % INFO    : Gen at bus 145	: Qg 58.0, Qmin -49.41, Qmax 221.74 -> Qmin -69.6, Qmax 221.74
 % INFO    : Gen at bus 167	: Qg 35.0, Qmin -9.48, Qmax 74.3 -> Qmin -42.0, Qmax 74.3
@@ -1594,7 +1594,7 @@ mpc.branch = [
 % INFO    : Gen at bus 169	: Qg 43.0, Qmin -18.96, Qmax 148.61 -> Qmin -51.6, Qmax 148.61
 % INFO    : Gen at bus 197	: Qg 82.0, Qmin -35.82, Qmax 136.82 -> Qmin -98.4, Qmax 136.82
 % INFO    : Gen at bus 198	: Qg 116.0, Qmin -25.29, Qmax 96.6 -> Qmin -139.2, Qmax 139.2
-% INFO    : Gen at bus 222	: Qg 32.0, Qmin -0.25, Qmax 2.0 -> Qmin -38.4, Qmax 38.4
+% INFO    : Gen at bus 222	: Qg 31.0, Qmin -0.25, Qmax 2.0 -> Qmin -37.2, Qmax 37.2
 % INFO    : Gen at bus 223	: Qg 21.0, Qmin -0.88, Qmax 6.91 -> Qmin -25.2, Qmax 25.2
 % INFO    : Gen at bus 224	: Qg 64.0, Qmin -25.05, Qmax 196.3 -> Qmin -76.8, Qmax 196.3
 % INFO    : Gen at bus 225	: Qg 131.0, Qmin -25.23, Qmax 197.68 -> Qmin -157.2, Qmax 197.68
@@ -1642,7 +1642,7 @@ mpc.branch = [
 % INFO    : Gen at bus 436	: Qg 33.0, Qmin -9.65, Qmax 75.65 -> Qmin -39.6, Qmax 75.65
 % INFO    : Gen at bus 437	: Qg 69.0, Qmin -9.65, Qmax 75.65 -> Qmin -82.8, Qmax 75.65
 % INFO    : Gen at bus 438	: Qg 46.0, Qmin -9.65, Qmax 75.65 -> Qmin -55.2, Qmax 75.65
-% INFO    : Gen at bus 439	: Qg 95.0, Qmin -9.65, Qmax 75.65 -> Qmin -114.0, Qmax 114.0
+% INFO    : Gen at bus 439	: Qg 96.0, Qmin -9.65, Qmax 75.65 -> Qmin -115.2, Qmax 115.2
 % INFO    : Gen at bus 442	: Qg 21.49, Qmin -11.99, Qmax 54.97 -> Qmin -25.788, Qmax 54.97
 % INFO    : Gen at bus 443	: Qg 34.82, Qmin -19.43, Qmax 89.07 -> Qmin -41.784, Qmax 89.07
 % INFO    : Gen at bus 444	: Qg 0.655, Qmin -0.37, Qmax 1.68 -> Qmin -0.786, Qmax 1.68
@@ -1656,25 +1656,25 @@ mpc.branch = [
 % INFO    : Gen at bus 498	: Qg 12.0, Qmin -0.88, Qmax 6.91 -> Qmin -14.4, Qmax 14.4
 % INFO    : 
 % INFO    : === Generator Classification Notes ===
-% INFO    : PEL    22  -     7.99
-% INFO    : COW    18  -    34.76
-% INFO    : NG     50  -    57.25
+% INFO    : PEL    22  -     7.96
+% INFO    : COW    18  -    34.84
+% INFO    : NG     50  -    57.20
 % INFO    : 
 % INFO    : === Generator Active Capacity Stat Model Notes ===
-% INFO    : Gen at bus 9 - COW	: Pg=721.0, Pmax=771.8 -> Pmax=730   samples: 4
-% INFO    : Gen at bus 16 - NG	: Pg=389.0, Pmax=444.45 -> Pmax=439   samples: 15
-% INFO    : Gen at bus 17 - COW	: Pg=850.0, Pmax=888.9 -> Pmax=874   samples: 5
-% INFO    : Gen at bus 18 - COW	: Pg=185.0, Pmax=157.6 -> Pmax=688   samples: 3
+% INFO    : Gen at bus 9 - COW	: Pg=712.0, Pmax=771.8 -> Pmax=730   samples: 4
+% INFO    : Gen at bus 16 - NG	: Pg=391.0, Pmax=444.45 -> Pmax=439   samples: 15
+% INFO    : Gen at bus 17 - COW	: Pg=870.0, Pmax=888.9 -> Pmax=874   samples: 5
+% INFO    : Gen at bus 18 - COW	: Pg=186.0, Pmax=157.6 -> Pmax=688   samples: 3
 % INFO    : Gen at bus 49 - PEL	: Pg=29.0, Pmax=1.3 -> Pmax=41   samples: 1
 % INFO    : Gen at bus 50 - PEL	: Pg=37.0, Pmax=2.6 -> Pmax=59   samples: 2
 % INFO    : Gen at bus 63 - PEL	: Pg=2.08, Pmax=3.2 -> Pmax=9   samples: 6
 % INFO    : Gen at bus 71 - NG	: Pg=75.0, Pmax=4.0 -> Pmax=90   samples: 1
 % INFO    : Gen at bus 72 - PEL	: Pg=28.0, Pmax=2.0 -> Pmax=33   samples: 1
 % INFO    : Gen at bus 73 - NG	: Pg=22.0, Pmax=1.4 -> Pmax=32   samples: 3
-% INFO    : Gen at bus 82 - NG	: Pg=409.0, Pmax=361.9 -> Pmax=499   samples: 62
+% INFO    : Gen at bus 82 - NG	: Pg=408.0, Pmax=361.9 -> Pmax=499   samples: 62
 % INFO    : Gen at bus 125 - NG	: Pg=105.3, Pmax=162.0 -> Pmax=155   samples: 1
 % INFO    : Gen at bus 126 - NG	: Pg=105.3, Pmax=162.0 -> Pmax=147   samples: 4
-% INFO    : Gen at bus 127 - NG	: Pg=221.0, Pmax=162.0 -> Pmax=279   samples: 18
+% INFO    : Gen at bus 127 - NG	: Pg=222.0, Pmax=162.0 -> Pmax=279   samples: 18
 % INFO    : Gen at bus 128 - NG	: Pg=233.0, Pmax=162.0 -> Pmax=348   samples: 3
 % INFO    : Gen at bus 144 - COW	: Pg=203.0, Pmax=602.55 -> Pmax=387   samples: 1
 % INFO    : Gen at bus 145 - COW	: Pg=255.0, Pmax=602.55 -> Pmax=296   samples: 2
@@ -1685,8 +1685,8 @@ mpc.branch = [
 % INFO    : Gen at bus 198 - NG	: Pg=277.0, Pmax=207.3 -> Pmax=494   samples: 11
 % INFO    : Gen at bus 222 - NG	: Pg=72.0, Pmax=5.2 -> Pmax=206   samples: 1
 % INFO    : Gen at bus 223 - PEL	: Pg=78.0, Pmax=18.0 -> Pmax=79   samples: 24
-% INFO    : Gen at bus 224 - COW	: Pg=285.0, Pmax=511.2 -> Pmax=363   samples: 3
-% INFO    : Gen at bus 225 - COW	: Pg=343.0, Pmax=514.8 -> Pmax=715   samples: 4
+% INFO    : Gen at bus 224 - COW	: Pg=286.0, Pmax=511.2 -> Pmax=363   samples: 3
+% INFO    : Gen at bus 225 - COW	: Pg=344.0, Pmax=514.8 -> Pmax=715   samples: 4
 % INFO    : Gen at bus 231 - PEL	: Pg=30.0, Pmax=2.9 -> Pmax=103   samples: 4
 % INFO    : Gen at bus 248 - NG	: Pg=86.58, Pmax=133.2 -> Pmax=96   samples: 2
 % INFO    : Gen at bus 249 - COW	: Pg=86.58, Pmax=133.2 -> Pmax=162   samples: 1
@@ -1695,7 +1695,7 @@ mpc.branch = [
 % INFO    : Gen at bus 255 - NG	: Pg=2.145, Pmax=3.3 -> Pmax=8   samples: 40
 % INFO    : Gen at bus 256 - PEL	: Pg=1.885, Pmax=2.9 -> Pmax=6   samples: 2
 % INFO    : Gen at bus 257 - NG	: Pg=3.51, Pmax=5.4 -> Pmax=4   samples: 9
-% INFO    : Gen at bus 258 - PEL	: Pg=28.0, Pmax=1.1 -> Pmax=58   samples: 1
+% INFO    : Gen at bus 258 - PEL	: Pg=27.0, Pmax=1.1 -> Pmax=58   samples: 1
 % INFO    : Gen at bus 264 - COW	: Pg=25.48, Pmax=39.2 -> Pmax=69   samples: 3
 % INFO    : Gen at bus 265 - NG	: Pg=6.89, Pmax=10.6 -> Pmax=7   samples: 4
 % INFO    : Gen at bus 275 - NG	: Pg=65.78, Pmax=101.2 -> Pmax=266   samples: 2
@@ -1721,10 +1721,10 @@ mpc.branch = [
 % INFO    : Gen at bus 395 - NG	: Pg=75.66, Pmax=116.4 -> Pmax=100   samples: 3
 % INFO    : Gen at bus 396 - NG	: Pg=75.66, Pmax=116.4 -> Pmax=213   samples: 5
 % INFO    : Gen at bus 409 - COW	: Pg=65.0, Pmax=100.0 -> Pmax=211   samples: 2
-% INFO    : Gen at bus 410 - COW	: Pg=229.0, Pmax=136.95 -> Pmax=453   samples: 1
-% INFO    : Gen at bus 411 - NG	: Pg=228.0, Pmax=136.95 -> Pmax=382   samples: 23
-% INFO    : Gen at bus 412 - NG	: Pg=222.0, Pmax=136.95 -> Pmax=240   samples: 6
-% INFO    : Gen at bus 413 - NG	: Pg=223.0, Pmax=136.95 -> Pmax=328   samples: 2
+% INFO    : Gen at bus 410 - COW	: Pg=228.0, Pmax=136.95 -> Pmax=453   samples: 1
+% INFO    : Gen at bus 411 - NG	: Pg=227.0, Pmax=136.95 -> Pmax=382   samples: 23
+% INFO    : Gen at bus 412 - NG	: Pg=221.0, Pmax=136.95 -> Pmax=240   samples: 6
+% INFO    : Gen at bus 413 - NG	: Pg=222.0, Pmax=136.95 -> Pmax=328   samples: 2
 % INFO    : Gen at bus 414 - NG	: Pg=72.215, Pmax=111.1 -> Pmax=142   samples: 7
 % INFO    : Gen at bus 430 - NG	: Pg=89.0, Pmax=1.0 -> Pmax=256   samples: 1
 % INFO    : Gen at bus 431 - NG	: Pg=100.0, Pmax=3.3 -> Pmax=228   samples: 3
@@ -1734,20 +1734,20 @@ mpc.branch = [
 % INFO    : Gen at bus 435 - NG	: Pg=128.05, Pmax=197.0 -> Pmax=267   samples: 4
 % INFO    : Gen at bus 436 - NG	: Pg=128.05, Pmax=197.0 -> Pmax=137   samples: 4
 % INFO    : Gen at bus 437 - NG	: Pg=266.0, Pmax=197.0 -> Pmax=355   samples: 7
-% INFO    : Gen at bus 438 - NG	: Pg=279.0, Pmax=197.0 -> Pmax=517   samples: 6
+% INFO    : Gen at bus 438 - NG	: Pg=278.0, Pmax=197.0 -> Pmax=517   samples: 6
 % INFO    : Gen at bus 439 - NG	: Pg=268.0, Pmax=197.0 -> Pmax=346   samples: 1
 % INFO    : Gen at bus 442 - NG	: Pg=70.2, Pmax=108.0 -> Pmax=113   samples: 2
 % INFO    : Gen at bus 443 - COW	: Pg=113.75, Pmax=175.0 -> Pmax=494   samples: 4
 % INFO    : Gen at bus 444 - COW	: Pg=2.145, Pmax=3.3 -> Pmax=4   samples: 39
-% INFO    : Gen at bus 455 - NG	: Pg=306.0, Pmax=222.83 -> Pmax=463   samples: 3
-% INFO    : Gen at bus 456 - COW	: Pg=387.0, Pmax=445.67 -> Pmax=913   samples: 4
+% INFO    : Gen at bus 455 - NG	: Pg=302.0, Pmax=222.83 -> Pmax=463   samples: 3
+% INFO    : Gen at bus 456 - COW	: Pg=383.0, Pmax=445.67 -> Pmax=913   samples: 4
 % INFO    : Gen at bus 458 - NG	: Pg=117.0, Pmax=109.6 -> Pmax=232   samples: 2
 % INFO    : Gen at bus 463 - PEL	: Pg=4.68, Pmax=7.2 -> Pmax=12   samples: 12
-% INFO    : Gen at bus 480 - PEL	: Pg=81.0, Pmax=56.0 -> Pmax=83   samples: 5
-% INFO    : Gen at bus 481 - NG	: Pg=60.0, Pmax=45.0 -> Pmax=110   samples: 3
+% INFO    : Gen at bus 480 - PEL	: Pg=80.0, Pmax=56.0 -> Pmax=83   samples: 5
+% INFO    : Gen at bus 481 - NG	: Pg=59.0, Pmax=45.0 -> Pmax=110   samples: 3
 % INFO    : Gen at bus 482 - NG	: Pg=68.0, Pmax=45.0 -> Pmax=93   samples: 1
-% INFO    : Gen at bus 483 - PEL	: Pg=65.0, Pmax=24.0 -> Pmax=134   samples: 1
-% INFO    : Gen at bus 484 - PEL	: Pg=51.0, Pmax=28.0 -> Pmax=65   samples: 4
+% INFO    : Gen at bus 483 - PEL	: Pg=64.0, Pmax=24.0 -> Pmax=134   samples: 1
+% INFO    : Gen at bus 484 - PEL	: Pg=50.0, Pmax=28.0 -> Pmax=65   samples: 4
 % INFO    : Gen at bus 494 - COW	: Pg=3.77, Pmax=5.8 -> Pmax=9   samples: 1
 % INFO    : Gen at bus 497 - NG	: Pg=125.0, Pmax=60.0 -> Pmax=492   samples: 2
 % INFO    : Gen at bus 498 - PEL	: Pg=64.0, Pmax=18.0 -> Pmax=92   samples: 5
@@ -1845,11 +1845,11 @@ mpc.branch = [
 % INFO    : Gen at bus 498	: Pmin=5.4 -> Pmin=2.7 
 % INFO    : 
 % INFO    : === Generator Reactive Capacity Atleast Max 50 Percent Active Model Notes ===
-% INFO    : Gen at bus 9 - COW	: Pmax 730.0, Qmin -145.2, Qmax 359.66 -> Qmin -365.0, Qmax 365.0
-% INFO    : Gen at bus 16 - NG	: Pmax 439.0, Qmin -69.6, Qmax 163.56 -> Qmin -220.0, Qmax 220.0
+% INFO    : Gen at bus 9 - COW	: Pmax 730.0, Qmin -144.0, Qmax 359.66 -> Qmin -365.0, Qmax 365.0
+% INFO    : Gen at bus 16 - NG	: Pmax 439.0, Qmin -70.8, Qmax 163.56 -> Qmin -220.0, Qmax 220.0
 % INFO    : Gen at bus 17 - COW	: Pmax 874.0, Qmin -231.6, Qmax 327.12 -> Qmin -437.0, Qmax 437.0
 % INFO    : Gen at bus 18 - COW	: Pmax 688.0, Qmin -12.92, Qmax 58.0 -> Qmin -344.0, Qmax 344.0
-% INFO    : Gen at bus 49 - PEL	: Pmax 41.0, Qmin -2.4, Qmax 2.4 -> Qmin -21.0, Qmax 21.0
+% INFO    : Gen at bus 49 - PEL	: Pmax 41.0, Qmin -1.2, Qmax 1.2 -> Qmin -21.0, Qmax 21.0
 % INFO    : Gen at bus 50 - PEL	: Pmax 59.0, Qmin -2.4, Qmax 2.4 -> Qmin -30.0, Qmax 30.0
 % INFO    : Gen at bus 63 - PEL	: Pmax 9.0, Qmin -0.762, Qmax 1.63 -> Qmin -5.0, Qmax 5.0
 % INFO    : Gen at bus 72 - PEL	: Pmax 33.0, Qmin -12.0, Qmax 12.0 -> Qmin -17.0, Qmax 17.0
@@ -1857,7 +1857,7 @@ mpc.branch = [
 % INFO    : Gen at bus 82 - NG	: Pmax 499.0, Qmin -150.0, Qmax 138.97 -> Qmin -250.0, Qmax 250.0
 % INFO    : Gen at bus 125 - NG	: Pmax 155.0, Qmin -32.562, Qmax 62.21 -> Qmin -78.0, Qmax 78.0
 % INFO    : Gen at bus 126 - NG	: Pmax 147.0, Qmin -32.562, Qmax 62.21 -> Qmin -74.0, Qmax 74.0
-% INFO    : Gen at bus 127 - NG	: Pmax 279.0, Qmin -22.8, Qmax 62.21 -> Qmin -140.0, Qmax 140.0
+% INFO    : Gen at bus 127 - NG	: Pmax 279.0, Qmin -24.0, Qmax 62.21 -> Qmin -140.0, Qmax 140.0
 % INFO    : Gen at bus 128 - NG	: Pmax 348.0, Qmin -79.2, Qmax 79.2 -> Qmin -174.0, Qmax 174.0
 % INFO    : Gen at bus 144 - COW	: Pmax 387.0, Qmin -49.41, Qmax 221.74 -> Qmin -194.0, Qmax 221.74
 % INFO    : Gen at bus 145 - COW	: Pmax 296.0, Qmin -69.6, Qmax 221.74 -> Qmin -148.0, Qmax 221.74
@@ -1866,7 +1866,7 @@ mpc.branch = [
 % INFO    : Gen at bus 169 - NG	: Pmax 621.0, Qmin -51.6, Qmax 148.61 -> Qmin -311.0, Qmax 311.0
 % INFO    : Gen at bus 197 - COW	: Pmax 603.0, Qmin -98.4, Qmax 136.82 -> Qmin -302.0, Qmax 302.0
 % INFO    : Gen at bus 198 - NG	: Pmax 494.0, Qmin -139.2, Qmax 139.2 -> Qmin -247.0, Qmax 247.0
-% INFO    : Gen at bus 222 - NG	: Pmax 206.0, Qmin -38.4, Qmax 38.4 -> Qmin -103.0, Qmax 103.0
+% INFO    : Gen at bus 222 - NG	: Pmax 206.0, Qmin -37.2, Qmax 37.2 -> Qmin -103.0, Qmax 103.0
 % INFO    : Gen at bus 223 - PEL	: Pmax 79.0, Qmin -25.2, Qmax 25.2 -> Qmin -40.0, Qmax 40.0
 % INFO    : Gen at bus 224 - COW	: Pmax 363.0, Qmin -76.8, Qmax 196.3 -> Qmin -182.0, Qmax 196.3
 % INFO    : Gen at bus 225 - COW	: Pmax 715.0, Qmin -157.2, Qmax 197.68 -> Qmin -358.0, Qmax 358.0
@@ -1918,7 +1918,7 @@ mpc.branch = [
 % INFO    : Gen at bus 436 - NG	: Pmax 137.0, Qmin -39.6, Qmax 75.65 -> Qmin -69.0, Qmax 75.65
 % INFO    : Gen at bus 437 - NG	: Pmax 355.0, Qmin -82.8, Qmax 75.65 -> Qmin -178.0, Qmax 178.0
 % INFO    : Gen at bus 438 - NG	: Pmax 517.0, Qmin -55.2, Qmax 75.65 -> Qmin -259.0, Qmax 259.0
-% INFO    : Gen at bus 439 - NG	: Pmax 346.0, Qmin -114.0, Qmax 114.0 -> Qmin -173.0, Qmax 173.0
+% INFO    : Gen at bus 439 - NG	: Pmax 346.0, Qmin -115.2, Qmax 115.2 -> Qmin -173.0, Qmax 173.0
 % INFO    : Gen at bus 442 - NG	: Pmax 113.0, Qmin -25.788, Qmax 54.97 -> Qmin -57.0, Qmax 57.0
 % INFO    : Gen at bus 443 - COW	: Pmax 494.0, Qmin -41.784, Qmax 89.07 -> Qmin -247.0, Qmax 247.0
 % INFO    : Gen at bus 444 - COW	: Pmax 4.0, Qmin -0.786, Qmax 1.68 -> Qmin -2.0, Qmax 2.0
@@ -1936,20 +1936,20 @@ mpc.branch = [
 % INFO    : Gen at bus 498 - PEL	: Pmax 92.0, Qmin -14.4, Qmax 14.4 -> Qmin -46.0, Qmax 46.0
 % INFO    : 
 % INFO    : === Generator Setpoint Replacement Notes ===
-% INFO    : Gen at bus 9	: Pg=721.0, Qg=121.0 -> Pg=422.885, Qg=0.0
-% INFO    : Gen at bus 16	: Pg=389.0, Qg=58.0 -> Pg=252.8325, Qg=0.0
-% INFO    : Gen at bus 17	: Pg=850.0, Qg=193.0 -> Pg=503.6675, Qg=0.0
-% INFO    : Gen at bus 18	: Pg=185.0, Qg=-11.0 -> Pg=355.82, Qg=0.0
-% INFO    : Gen at bus 49	: Pg=29.0, Qg=-2.0 -> Pg=20.5975, Qg=0.0
+% INFO    : Gen at bus 9	: Pg=712.0, Qg=120.0 -> Pg=422.885, Qg=0.0
+% INFO    : Gen at bus 16	: Pg=391.0, Qg=59.0 -> Pg=252.8325, Qg=0.0
+% INFO    : Gen at bus 17	: Pg=870.0, Qg=193.0 -> Pg=503.6675, Qg=0.0
+% INFO    : Gen at bus 18	: Pg=186.0, Qg=-11.0 -> Pg=355.82, Qg=0.0
+% INFO    : Gen at bus 49	: Pg=29.0, Qg=-1.0 -> Pg=20.5975, Qg=0.0
 % INFO    : Gen at bus 50	: Pg=37.0, Qg=-2.0 -> Pg=29.695, Qg=0.0
 % INFO    : Gen at bus 63	: Pg=2.08, Qg=0.635 -> Pg=4.74, Qg=0.0
 % INFO    : Gen at bus 71	: Pg=75.0, Qg=54.0 -> Pg=45.3, Qg=0.0
 % INFO    : Gen at bus 72	: Pg=28.0, Qg=10.0 -> Pg=16.65, Qg=0.0
 % INFO    : Gen at bus 73	: Pg=22.0, Qg=4.0 -> Pg=16.105, Qg=0.0
-% INFO    : Gen at bus 82	: Pg=409.0, Qg=125.0 -> Pg=276.6425, Qg=0.0
+% INFO    : Gen at bus 82	: Pg=408.0, Qg=125.0 -> Pg=276.6425, Qg=0.0
 % INFO    : Gen at bus 125	: Pg=105.3, Qg=27.135 -> Pg=89.65, Qg=0.0
 % INFO    : Gen at bus 126	: Pg=105.3, Qg=27.135 -> Pg=85.65, Qg=0.0
-% INFO    : Gen at bus 127	: Pg=221.0, Qg=19.0 -> Pg=151.65, Qg=0.0
+% INFO    : Gen at bus 127	: Pg=222.0, Qg=20.0 -> Pg=151.65, Qg=0.0
 % INFO    : Gen at bus 128	: Pg=233.0, Qg=66.0 -> Pg=186.15, Qg=0.0
 % INFO    : Gen at bus 144	: Pg=203.0, Qg=30.0 -> Pg=238.69, Qg=13.87
 % INFO    : Gen at bus 145	: Pg=255.0, Qg=58.0 -> Pg=193.19, Qg=36.87
@@ -1958,10 +1958,10 @@ mpc.branch = [
 % INFO    : Gen at bus 169	: Pg=349.0, Qg=43.0 -> Pg=339.525, Qg=0.0
 % INFO    : Gen at bus 197	: Pg=307.0, Qg=82.0 -> Pg=323.52, Qg=0.0
 % INFO    : Gen at bus 198	: Pg=277.0, Qg=116.0 -> Pg=262.5475, Qg=0.0
-% INFO    : Gen at bus 222	: Pg=72.0, Qg=32.0 -> Pg=103.39, Qg=0.0
+% INFO    : Gen at bus 222	: Pg=72.0, Qg=31.0 -> Pg=103.39, Qg=0.0
 % INFO    : Gen at bus 223	: Pg=78.0, Qg=21.0 -> Pg=40.85, Qg=0.0
-% INFO    : Gen at bus 224	: Pg=285.0, Qg=64.0 -> Pg=219.84, Qg=7.15
-% INFO    : Gen at bus 225	: Pg=343.0, Qg=131.0 -> Pg=396.11, Qg=0.0
+% INFO    : Gen at bus 224	: Pg=286.0, Qg=64.0 -> Pg=219.84, Qg=7.15
+% INFO    : Gen at bus 225	: Pg=344.0, Qg=131.0 -> Pg=396.11, Qg=0.0
 % INFO    : Gen at bus 231	: Pg=30.0, Qg=-8.0 -> Pg=51.7175, Qg=0.0
 % INFO    : Gen at bus 248	: Pg=86.58, Qg=26.505 -> Pg=57.99, Qg=9.9
 % INFO    : Gen at bus 249	: Pg=86.58, Qg=26.505 -> Pg=90.99, Qg=0.0
@@ -1970,7 +1970,7 @@ mpc.branch = [
 % INFO    : Gen at bus 255	: Pg=2.145, Qg=0.57 -> Pg=4.2475, Qg=0.0
 % INFO    : Gen at bus 256	: Pg=1.885, Qg=0.5 -> Pg=3.2175, Qg=0.0
 % INFO    : Gen at bus 257	: Pg=3.51, Qg=0.93 -> Pg=2.405, Qg=0.26
-% INFO    : Gen at bus 258	: Pg=28.0, Qg=8.0 -> Pg=29.0825, Qg=0.0
+% INFO    : Gen at bus 258	: Pg=27.0, Qg=8.0 -> Pg=29.0825, Qg=0.0
 % INFO    : Gen at bus 264	: Pg=25.48, Qg=7.8 -> Pg=37.44, Qg=0.0
 % INFO    : Gen at bus 265	: Pg=6.89, Qg=2.11 -> Pg=4.295, Qg=0.7
 % INFO    : Gen at bus 275	: Pg=65.78, Qg=20.14 -> Pg=140.59, Qg=0.0
@@ -1996,10 +1996,10 @@ mpc.branch = [
 % INFO    : Gen at bus 395	: Pg=75.66, Qg=23.165 -> Pg=58.73, Qg=4.625
 % INFO    : Gen at bus 396	: Pg=75.66, Qg=23.165 -> Pg=115.23, Qg=0.0
 % INFO    : Gen at bus 409	: Pg=65.0, Qg=19.9 -> Pg=113.0, Qg=0.0
-% INFO    : Gen at bus 410	: Pg=229.0, Qg=-8.0 -> Pg=236.77, Qg=0.0
-% INFO    : Gen at bus 411	: Pg=228.0, Qg=-9.0 -> Pg=201.27, Qg=0.0
-% INFO    : Gen at bus 412	: Pg=222.0, Qg=-9.0 -> Pg=130.27, Qg=0.0
-% INFO    : Gen at bus 413	: Pg=223.0, Qg=-9.0 -> Pg=174.27, Qg=0.0
+% INFO    : Gen at bus 410	: Pg=228.0, Qg=-8.0 -> Pg=236.77, Qg=0.0
+% INFO    : Gen at bus 411	: Pg=227.0, Qg=-9.0 -> Pg=201.27, Qg=0.0
+% INFO    : Gen at bus 412	: Pg=221.0, Qg=-9.0 -> Pg=130.27, Qg=0.0
+% INFO    : Gen at bus 413	: Pg=222.0, Qg=-9.0 -> Pg=174.27, Qg=0.0
 % INFO    : Gen at bus 414	: Pg=72.215, Qg=22.11 -> Pg=79.3325, Qg=0.0
 % INFO    : Gen at bus 430	: Pg=89.0, Qg=-8.0 -> Pg=128.075, Qg=0.0
 % INFO    : Gen at bus 431	: Pg=100.0, Qg=8.0 -> Pg=114.2475, Qg=0.0
@@ -2009,20 +2009,20 @@ mpc.branch = [
 % INFO    : Gen at bus 435	: Pg=128.05, Qg=33.0 -> Pg=148.275, Qg=0.0
 % INFO    : Gen at bus 436	: Pg=128.05, Qg=33.0 -> Pg=83.275, Qg=3.325
 % INFO    : Gen at bus 437	: Pg=266.0, Qg=69.0 -> Pg=192.275, Qg=0.0
-% INFO    : Gen at bus 438	: Pg=279.0, Qg=46.0 -> Pg=273.275, Qg=0.0
-% INFO    : Gen at bus 439	: Pg=268.0, Qg=95.0 -> Pg=187.775, Qg=0.0
+% INFO    : Gen at bus 438	: Pg=278.0, Qg=46.0 -> Pg=273.275, Qg=0.0
+% INFO    : Gen at bus 439	: Pg=268.0, Qg=96.0 -> Pg=187.775, Qg=0.0
 % INFO    : Gen at bus 442	: Pg=70.2, Qg=21.49 -> Pg=64.6, Qg=0.0
 % INFO    : Gen at bus 443	: Pg=113.75, Qg=34.82 -> Pg=260.125, Qg=0.0
 % INFO    : Gen at bus 444	: Pg=2.145, Qg=0.655 -> Pg=2.2475, Qg=0.0
-% INFO    : Gen at bus 455	: Pg=306.0, Qg=83.0 -> Pg=248.2125, Qg=0.0
-% INFO    : Gen at bus 456	: Pg=387.0, Qg=90.0 -> Pg=489.925, Qg=0.0
+% INFO    : Gen at bus 455	: Pg=302.0, Qg=83.0 -> Pg=248.2125, Qg=0.0
+% INFO    : Gen at bus 456	: Pg=383.0, Qg=90.0 -> Pg=489.925, Qg=0.0
 % INFO    : Gen at bus 458	: Pg=117.0, Qg=-44.0 -> Pg=124.22, Qg=0.0
 % INFO    : Gen at bus 463	: Pg=4.68, Qg=1.24 -> Pg=6.54, Qg=0.0
-% INFO    : Gen at bus 480	: Pg=81.0, Qg=2.0 -> Pg=45.7, Qg=0.0
-% INFO    : Gen at bus 481	: Pg=60.0, Qg=2.0 -> Pg=58.375, Qg=0.0
+% INFO    : Gen at bus 480	: Pg=80.0, Qg=2.0 -> Pg=45.7, Qg=0.0
+% INFO    : Gen at bus 481	: Pg=59.0, Qg=2.0 -> Pg=58.375, Qg=0.0
 % INFO    : Gen at bus 482	: Pg=68.0, Qg=3.0 -> Pg=49.875, Qg=0.0
-% INFO    : Gen at bus 483	: Pg=65.0, Qg=1.0 -> Pg=68.8, Qg=0.0
-% INFO    : Gen at bus 484	: Pg=51.0, Qg=1.0 -> Pg=34.6, Qg=0.0
+% INFO    : Gen at bus 483	: Pg=64.0, Qg=1.0 -> Pg=68.8, Qg=0.0
+% INFO    : Gen at bus 484	: Pg=50.0, Qg=1.0 -> Pg=34.6, Qg=0.0
 % INFO    : Gen at bus 494	: Pg=3.77, Qg=0.995 -> Pg=4.935, Qg=0.0
 % INFO    : Gen at bus 497	: Pg=125.0, Qg=24.0 -> Pg=250.5, Qg=0.0
 % INFO    : Gen at bus 498	: Pg=64.0, Qg=12.0 -> Pg=47.35, Qg=0.0

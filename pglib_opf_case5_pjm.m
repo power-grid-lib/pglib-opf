@@ -3,7 +3,7 @@
 %%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.08     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                         31 - July - 2018                         %%%%%
+%%%%                        08 - August - 2018                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %

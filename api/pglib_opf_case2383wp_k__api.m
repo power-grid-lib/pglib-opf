@@ -3,7 +3,7 @@
 %%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.08     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                         31 - July - 2018                         %%%%%
+%%%%                        08 - August - 2018                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case2383wp_k__api
@@ -7813,7 +7813,7 @@ mpc.branch = [
 % INFO    : Gen at bus 31	: Pg=575.0, Qg=175.0 -> Pg=325.0, Qg=127.0
 % INFO    : Gen at bus 41	: Pg=135.0, Qg=60.0 -> Pg=131.0, Qg=22.0
 % INFO    : Gen at bus 42	: Pg=240.0, Qg=60.0 -> Pg=132.0, Qg=3.0
-% INFO    : Gen at bus 43	: Pg=240.0, Qg=120.0 -> Pg=244.0, Qg=-16.0
+% INFO    : Gen at bus 43	: Pg=240.0, Qg=120.0 -> Pg=243.0, Qg=-16.0
 % INFO    : Gen at bus 44	: Pg=240.0, Qg=120.0 -> Pg=258.0, Qg=-93.0
 % INFO    : Gen at bus 45	: Pg=40.67, Qg=10.5 -> Pg=138.0, Qg=-10.0
 % INFO    : Gen at bus 63	: Pg=397.5, Qg=151.0 -> Pg=188.0, Qg=48.0
@@ -8001,7 +8001,7 @@ mpc.branch = [
 % INFO    : Gen at bus 1600	: Pg=16.995, Qg=3.0 -> Pg=66.0, Qg=13.0
 % INFO    : Gen at bus 1602	: Pg=80.0, Qg=45.0 -> Pg=90.0, Qg=20.0
 % INFO    : Gen at bus 1603	: Pg=80.0, Qg=45.0 -> Pg=89.0, Qg=61.0
-% INFO    : Gen at bus 1609	: Pg=0.295, Qg=0.0 -> Pg=31.0, Qg=-18.0
+% INFO    : Gen at bus 1609	: Pg=0.295, Qg=0.0 -> Pg=32.0, Qg=-18.0
 % INFO    : Gen at bus 1617	: Pg=1.95, Qg=0.0 -> Pg=29.0, Qg=-17.0
 % INFO    : Gen at bus 1620	: Pg=1.56, Qg=0.0 -> Pg=34.0, Qg=-12.0
 % INFO    : Gen at bus 1627	: Pg=1.56, Qg=0.0 -> Pg=22.0, Qg=3.0
@@ -8439,7 +8439,7 @@ mpc.branch = [
 % INFO    : PEL    115 -    22.56
 % INFO    : SYNC   4   -     0.00
 % INFO    : NUC    2   -     0.90
-% INFO    : COW    33  -    16.93
+% INFO    : COW    33  -    16.92
 % INFO    : NG     173 -    59.62
 % INFO    : 
 % INFO    : === Generator Active Capacity Stat Model Notes ===
@@ -8452,7 +8452,7 @@ mpc.branch = [
 % INFO    : Gen at bus 31 - COW	: Pg=325.0, Pmax=1000.0 -> Pmax=495   samples: 1
 % INFO    : Gen at bus 41 - NG	: Pg=131.0, Pmax=200.0 -> Pmax=643   samples: 1
 % INFO    : Gen at bus 42 - NG	: Pg=132.0, Pmax=410.0 -> Pmax=620   samples: 2
-% INFO    : Gen at bus 43 - COW	: Pg=244.0, Pmax=410.0 -> Pmax=482   samples: 2
+% INFO    : Gen at bus 43 - COW	: Pg=243.0, Pmax=410.0 -> Pmax=482   samples: 2
 % INFO    : Gen at bus 44 - NG	: Pg=258.0, Pmax=410.0 -> Pmax=422   samples: 1
 % INFO    : Gen at bus 45 - PEL	: Pg=138.0, Pmax=42.2 -> Pmax=139   samples: 24
 % INFO    : Gen at bus 63 - COW	: Pg=188.0, Pmax=650.0 -> Pmax=206   samples: 1
@@ -8641,7 +8641,7 @@ mpc.branch = [
 % INFO    : Gen at bus 1600 - PEL	: Pg=66.0, Pmax=17.43 -> Pmax=105   samples: 7
 % INFO    : Gen at bus 1602 - COW	: Pg=90.0, Pmax=120.0 -> Pmax=181   samples: 1
 % INFO    : Gen at bus 1603 - NG	: Pg=89.0, Pmax=120.0 -> Pmax=236   samples: 2
-% INFO    : Gen at bus 1609 - PEL	: Pg=31.0, Pmax=0.3 -> Pmax=47   samples: 2
+% INFO    : Gen at bus 1609 - PEL	: Pg=32.0, Pmax=0.3 -> Pmax=47   samples: 2
 % INFO    : Gen at bus 1617 - PEL	: Pg=29.0, Pmax=2.0 -> Pmax=99   samples: 2
 % INFO    : Gen at bus 1620 - PEL	: Pg=34.0, Pmax=1.6 -> Pmax=69   samples: 2
 % INFO    : Gen at bus 1627 - PEL	: Pg=22.0, Pmax=1.6 -> Pmax=53   samples: 1
@@ -9410,7 +9410,7 @@ mpc.branch = [
 % INFO    : Gen at bus 31	: Pg=325.0, Qg=127.0 -> Pg=285.0, Qg=51.0
 % INFO    : Gen at bus 41	: Pg=131.0, Qg=22.0 -> Pg=339.0, Qg=0.0
 % INFO    : Gen at bus 42	: Pg=132.0, Qg=3.0 -> Pg=327.5, Qg=0.0
-% INFO    : Gen at bus 43	: Pg=244.0, Qg=-16.0 -> Pg=258.5, Qg=0.0
+% INFO    : Gen at bus 43	: Pg=243.0, Qg=-16.0 -> Pg=258.5, Qg=0.0
 % INFO    : Gen at bus 44	: Pg=258.0, Qg=-93.0 -> Pg=228.5, Qg=14.5
 % INFO    : Gen at bus 45	: Pg=138.0, Qg=-10.0 -> Pg=79.285, Qg=0.0
 % INFO    : Gen at bus 63	: Pg=188.0, Qg=48.0 -> Pg=139.25, Qg=99.5
@@ -9598,7 +9598,7 @@ mpc.branch = [
 % INFO    : Gen at bus 1600	: Pg=66.0, Qg=13.0 -> Pg=56.64, Qg=0.0
 % INFO    : Gen at bus 1602	: Pg=90.0, Qg=20.0 -> Pg=100.5, Qg=0.0
 % INFO    : Gen at bus 1603	: Pg=89.0, Qg=61.0 -> Pg=128.0, Qg=0.0
-% INFO    : Gen at bus 1609	: Pg=31.0, Qg=-18.0 -> Pg=23.5725, Qg=0.0
+% INFO    : Gen at bus 1609	: Pg=32.0, Qg=-18.0 -> Pg=23.5725, Qg=0.0
 % INFO    : Gen at bus 1617	: Pg=29.0, Qg=-17.0 -> Pg=49.975, Qg=0.0
 % INFO    : Gen at bus 1620	: Pg=34.0, Qg=-12.0 -> Pg=34.88, Qg=0.0
 % INFO    : Gen at bus 1627	: Pg=22.0, Qg=3.0 -> Pg=26.88, Qg=0.0
