@@ -1,6 +1,11 @@
 PGLib OPF Benchmarks Change Log 
 ===============================
 
+### v18.08
+- Add TAMU cases, #7
+- Add SDET cases, #11
+- Add GOC cases
+
 ### v18.06
 - updated baseline and case generation to PowerModels v0.7
 - cleaned up transformer parameters, #4

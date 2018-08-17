@@ -16,7 +16,7 @@ The default linear solver will increase the runtime by 2-6x.
 
 **[Ipopt.jl](https://github.com/JuliaOpt/Ipopt.jl):** v0.3.0, ac35cedbdd602bb0f1c257a5e04b516df5119155
 
-**[PGLib OPF](https://github.com/power-grid-lib/pglib-opf):** v18.06, dbfab62e1cffad0a59f6c128b040273ff8ee2f9b
+**[PGLib OPF](https://github.com/power-grid-lib/pglib-opf):** v18.08, dbfab62e1cffad0a59f6c128b040273ff8ee2f9b
 
 **Hardware:** Dual Intel 2.10GHz CPUs, 128GB RAM
 

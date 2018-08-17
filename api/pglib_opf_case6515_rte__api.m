@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.06     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.08     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                         07 - June - 2018                         %%%%%
+%%%%                        08 - August - 2018                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case6515_rte__api
@@ -22464,8 +22464,8 @@ mpc.branch = [
 % INFO    : Gen at bus 6117	: Pg=113.33, Qg=27.72 -> Pg=107.0, Qg=-167.0
 % INFO    : Gen at bus 6126	: Pg=369.5, Qg=0.0 -> Pg=149.0, Qg=418.0
 % INFO    : Gen at bus 6132	: Pg=3.545, Qg=-1.73 -> Pg=24.0, Qg=-63.0
-% INFO    : Gen at bus 6133	: Pg=92.5, Qg=0.0 -> Pg=579.0, Qg=72.0
-% INFO    : Gen at bus 6133	: Pg=94.5, Qg=0.0 -> Pg=579.0, Qg=194.0
+% INFO    : Gen at bus 6133	: Pg=92.5, Qg=0.0 -> Pg=579.0, Qg=133.0
+% INFO    : Gen at bus 6133	: Pg=94.5, Qg=0.0 -> Pg=579.0, Qg=133.0
 % INFO    : Gen at bus 6139	: Pg=228.0, Qg=0.0 -> Pg=246.0, Qg=19.0
 % INFO    : Gen at bus 6139	: Pg=77.0, Qg=2.4 -> Pg=246.0, Qg=19.0
 % INFO    : Gen at bus 6139	: Pg=25.0, Qg=18.0 -> Pg=246.0, Qg=19.0
@@ -23079,8 +23079,8 @@ mpc.branch = [
 % INFO    : Gen at bus 6117	: Qg -167.0, Qmin -68.0, Qmax 123.44 -> Qmin -200.4, Qmax 200.4
 % INFO    : Gen at bus 6126	: Qg 418.0, Qmin -221.7, Qmax 221.7 -> Qmin -501.6, Qmax 501.6
 % INFO    : Gen at bus 6132	: Qg -63.0, Qmin -5.59, Qmax 2.13 -> Qmin -75.6, Qmax 75.6
-% INFO    : Gen at bus 6133	: Qg 72.0, Qmin -55.5, Qmax 55.5 -> Qmin -86.4, Qmax 86.4
-% INFO    : Gen at bus 6133	: Qg 194.0, Qmin -56.7, Qmax 56.7 -> Qmin -232.8, Qmax 232.8
+% INFO    : Gen at bus 6133	: Qg 133.0, Qmin -55.5, Qmax 55.5 -> Qmin -159.6, Qmax 159.6
+% INFO    : Gen at bus 6133	: Qg 133.0, Qmin -56.7, Qmax 56.7 -> Qmin -159.6, Qmax 159.6
 % INFO    : Gen at bus 6139	: Qg 19.0, Qmin -15.0, Qmax 51.0 -> Qmin -22.8, Qmax 51.0
 % INFO    : Gen at bus 6157	: Qg -7.035, Qmin -14.07, Qmax 0.0 -> Qmin -14.07, Qmax 8.442
 % INFO    : Gen at bus 6157	: Qg -7.035, Qmin -14.07, Qmax 0.0 -> Qmin -14.07, Qmax 8.442
@@ -25679,8 +25679,8 @@ mpc.branch = [
 % INFO    : Gen at bus 6113 - NG	: Pmax 784.0, Qmin -204.0, Qmax 204.0 -> Qmin -392.0, Qmax 392.0
 % INFO    : Gen at bus 6112 - COW	: Pmax 919.0, Qmin -450.0, Qmax 450.0 -> Qmin -460.0, Qmax 460.0
 % INFO    : Gen at bus 6115 - NUC	: Pmax 1487.0, Qmin -450.0, Qmax 450.0 -> Qmin -744.0, Qmax 744.0
-% INFO    : Gen at bus 6133 - NG	: Pmax 654.0, Qmin -86.4, Qmax 86.4 -> Qmin -327.0, Qmax 327.0
-% INFO    : Gen at bus 6133 - NG	: Pmax 654.0, Qmin -232.8, Qmax 232.8 -> Qmin -327.0, Qmax 327.0
+% INFO    : Gen at bus 6133 - NG	: Pmax 654.0, Qmin -159.6, Qmax 159.6 -> Qmin -327.0, Qmax 327.0
+% INFO    : Gen at bus 6133 - NG	: Pmax 654.0, Qmin -159.6, Qmax 159.6 -> Qmin -327.0, Qmax 327.0
 % INFO    : Gen at bus 6134 - COW	: Pmax 374.0, Qmin -252.0, Qmax 182.0 -> Qmin -252.0, Qmax 187.0
 % INFO    : Gen at bus 6139 - COW	: Pmax 610.0, Qmin -136.8, Qmax 136.8 -> Qmin -305.0, Qmax 305.0
 % INFO    : Gen at bus 6139 - NG	: Pmax 311.0, Qmin -46.2, Qmax 51.0 -> Qmin -156.0, Qmax 156.0
@@ -26969,8 +26969,8 @@ mpc.branch = [
 % INFO    : Gen at bus 6126	: Pg=149.0, Qg=418.0 -> Pg=178.5, Qg=0.0
 % INFO    : Gen at bus 6130	: Pg=-828.485, Qg=0.0 -> Pg=-828.485, Qg=0.0
 % INFO    : Gen at bus 6132	: Pg=24.0, Qg=-63.0 -> Pg=18.5, Qg=0.0
-% INFO    : Gen at bus 6133	: Pg=579.0, Qg=72.0 -> Pg=327.0, Qg=0.0
-% INFO    : Gen at bus 6133	: Pg=579.0, Qg=194.0 -> Pg=327.0, Qg=0.0
+% INFO    : Gen at bus 6133	: Pg=579.0, Qg=133.0 -> Pg=327.0, Qg=0.0
+% INFO    : Gen at bus 6133	: Pg=579.0, Qg=133.0 -> Pg=327.0, Qg=0.0
 % INFO    : Gen at bus 6134	: Pg=0.0, Qg=-35.0 -> Pg=15.0, Qg=-35.0
 % INFO    : Gen at bus 6134	: Pg=0.0, Qg=-35.0 -> Pg=-123.5, Qg=-35.0
 % INFO    : Gen at bus 6134	: Pg=0.0, Qg=-35.0 -> Pg=-15.0, Qg=-35.0
