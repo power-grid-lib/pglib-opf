@@ -14,7 +14,7 @@ The default linear solver will increase the runtime by 2-6x.
 ## Software Versions
 **[PowerModels.jl](https://github.com/lanl-ansi/PowerModels.jl):** v0.7.2, 31e7627c4844fb8c54ff7206c0937cc907368e1e
 
-**[Ipopt.jl](https://github.com/JuliaOpt/Ipopt.jl):** v0.4.0, ac35cedbdd602bb0f1c257a5e04b516df5119155
+**[Ipopt.jl](https://github.com/JuliaOpt/Ipopt.jl):** v0.3.0, ac35cedbdd602bb0f1c257a5e04b516df5119155
 
 **[PGLib OPF](https://github.com/power-grid-lib/pglib-opf):** v18.08, dbfab62e1cffad0a59f6c128b040273ff8ee2f9b
 
