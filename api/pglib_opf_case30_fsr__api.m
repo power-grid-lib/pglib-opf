@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.08     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v19.01     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                        08 - August - 2018                        %%%%%
+%%%%                       04 - January - 2019                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case30_fsr__api
@@ -54,14 +54,14 @@ mpc.bus = [
 ];
 
 %% generator data
-%	bus	Pg	Qg	Qmax	Qmin	Vg	mBase	status	Pmax	Pmin	Pc1	Pc2	Qc1min	Qc1max	Qc2min	Qc2max	ramp_agc	ramp_10	ramp_30	ramp_q	apf
+%	bus	Pg	Qg	Qmax	Qmin	Vg	mBase	status	Pmax	Pmin
 mpc.gen = [
-	1	 133.5	 39.8	 250.0	 -170.4	 1.0	 100.0	 1	 267	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % NG
-	2	 9.0	 0.0	 159.6	 -159.6	 1.0	 100.0	 1	 18	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % NG
-	22	 53.0	 13.5	 80.0	 -53.0	 1.0	 100.0	 1	 106	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % NG
-	27	 109.0	 0.0	 109.0	 -109.0	 1.0	 100.0	 1	 218	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % NG
-	23	 68.5	 0.0	 69.0	 -69.0	 1.0	 100.0	 1	 137	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % NG
-	13	 51.5	 4.0	 60.0	 -52.0	 1.0	 100.0	 1	 103	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % NG
+	1	 133.5	 39.8	 250.0	 -170.4	 1.0	 100.0	 1	 267	 0.0; % NG
+	2	 9.0	 0.0	 159.6	 -159.6	 1.025	 100.0	 1	 18	 0.0; % NG
+	22	 53.0	 13.5	 80.0	 -53.0	 1.025	 100.0	 1	 106	 0.0; % NG
+	27	 109.0	 0.0	 109.0	 -109.0	 1.025	 100.0	 1	 218	 0.0; % NG
+	23	 68.5	 0.0	 69.0	 -69.0	 1.025	 100.0	 1	 137	 0.0; % NG
+	13	 51.5	 4.0	 60.0	 -52.0	 1.025	 100.0	 1	 103	 0.0; % NG
 ];
 
 %% generator cost data
@@ -186,10 +186,16 @@ mpc.branch = [
 % INFO    : 
 % INFO    : === Generator Setpoint Replacement Notes ===
 % INFO    : Gen at bus 1	: Pg=59.0, Qg=142.0 -> Pg=133.5, Qg=39.8
+% INFO    : Gen at bus 1	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 2	: Pg=0.0, Qg=-133.0 -> Pg=9.0, Qg=0.0
+% INFO    : Gen at bus 2	: Vg=1.025 -> Vg=1.025
 % INFO    : Gen at bus 22	: Pg=24.0, Qg=25.0 -> Pg=53.0, Qg=13.5
+% INFO    : Gen at bus 22	: Vg=1.025 -> Vg=1.025
 % INFO    : Gen at bus 27	: Pg=53.0, Qg=31.0 -> Pg=109.0, Qg=0.0
+% INFO    : Gen at bus 27	: Vg=1.025 -> Vg=1.025
 % INFO    : Gen at bus 23	: Pg=28.0, Qg=14.0 -> Pg=68.5, Qg=0.0
+% INFO    : Gen at bus 23	: Vg=1.025 -> Vg=1.025
 % INFO    : Gen at bus 13	: Pg=51.0, Qg=41.0 -> Pg=51.5, Qg=4.0
+% INFO    : Gen at bus 13	: Vg=1.025 -> Vg=1.025
 % INFO    : 
 % INFO    : === Writing Matpower Case File Notes ===

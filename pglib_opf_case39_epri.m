@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.08     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v19.01     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                        08 - August - 2018                        %%%%%
+%%%%                       04 - January - 2019                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -131,33 +131,33 @@ mpc.bus = [
 ];
 
 %% generator data
-%	bus	Pg	Qg	Qmax	Qmin	Vg	mBase	status	Pmax	Pmin	Pc1	Pc2	Qc1min	Qc1max	Qc2min	Qc2max	ramp_agc	ramp_10	ramp_30	ramp_q	apf
+%	bus	Pg	Qg	Qmax	Qmin	Vg	mBase	status	Pmax	Pmin
 mpc.gen = [
-	30	 520.0	 270.0	 400.0	 140.0	 1.0499	 100.0	 1	 1040.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % NUC
-	31	 323.0	 100.0	 300.0	 -100.0	 0.982	 100.0	 1	 646.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % COW
-	32	 362.5	 225.0	 300.0	 150.0	 0.9841	 100.0	 1	 725.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % COW
-	33	 326.0	 125.0	 250.0	 0.0	 0.9972	 100.0	 1	 652.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % COW
-	34	 254.0	 83.5	 167.0	 0.0	 1.0123	 100.0	 1	 508.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % COW
-	35	 343.5	 100.0	 300.0	 -100.0	 1.0494	 100.0	 1	 687.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % COW
-	36	 290.0	 120.0	 240.0	 0.0	 1.0636	 100.0	 1	 580.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % COW
-	37	 282.0	 125.0	 250.0	 0.0	 1.0275	 100.0	 1	 564.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % COW
-	38	 432.5	 75.0	 300.0	 -150.0	 1.0265	 100.0	 1	 865.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % COW
-	39	 550.0	 100.0	 300.0	 -100.0	 1.03	 100.0	 1	 1100.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % COW
+	30	 520.0	 270.0	 400.0	 140.0	 1.0	 100.0	 1	 1040.0	 0.0; % NUC
+	31	 323.0	 100.0	 300.0	 -100.0	 1.0	 100.0	 1	 646.0	 0.0; % COW
+	32	 362.5	 225.0	 300.0	 150.0	 1.0	 100.0	 1	 725.0	 0.0; % COW
+	33	 326.0	 125.0	 250.0	 0.0	 1.0	 100.0	 1	 652.0	 0.0; % COW
+	34	 254.0	 83.5	 167.0	 0.0	 1.0	 100.0	 1	 508.0	 0.0; % COW
+	35	 343.5	 100.0	 300.0	 -100.0	 1.0	 100.0	 1	 687.0	 0.0; % COW
+	36	 290.0	 120.0	 240.0	 0.0	 1.0	 100.0	 1	 580.0	 0.0; % COW
+	37	 282.0	 125.0	 250.0	 0.0	 1.0	 100.0	 1	 564.0	 0.0; % COW
+	38	 432.5	 75.0	 300.0	 -150.0	 1.0	 100.0	 1	 865.0	 0.0; % COW
+	39	 550.0	 100.0	 300.0	 -100.0	 1.0	 100.0	 1	 1100.0	 0.0; % COW
 ];
 
 %% generator cost data
 %	2	startup	shutdown	n	c(n-1)	...	c0
 mpc.gencost = [
-	2	 0.0	 0.0	 3	   0.000000	   7.166982	   0.000000; % NUC
-	2	 0.0	 0.0	 3	   0.000000	  16.187269	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	  25.555307	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	  34.870276	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	  25.414524	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	  32.515386	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	  19.388021	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	  31.813693	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	  23.419927	   0.000000; % COW
-	2	 0.0	 0.0	 3	   0.000000	  27.995137	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	   6.724778	   0.000000; % NUC
+	2	 0.0	 0.0	 3	   0.000000	  14.707625	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  24.804734	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  34.844643	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  24.652994	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  32.306483	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  18.157477	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  31.550181	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  22.503168	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  27.434444	   0.000000; % COW
 ];
 
 %% branch data
@@ -221,21 +221,23 @@ mpc.branch = [
 % INFO    : COW    9   -    96.03
 % INFO    : 
 % INFO    : === Generator Active Cost Stat Model Notes ===
-% INFO    : Updated Generator Cost: NUC - 0.2 0.3 0.01 -> 0 7.1669817497 0
-% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 16.1872690976 0
-% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 25.5553071449 0
-% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 34.8702758014 0
-% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 25.4145237093 0
-% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 32.5153860917 0
-% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 19.3880209428 0
-% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 31.8136931499 0
-% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 23.4199274596 0
-% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 27.995136894 0
+% INFO    : Updated Generator Cost: NUC - 0.2 0.3 0.01 -> 0 6.72477811338 0
+% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 14.7076252515 0
+% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 24.8047338223 0
+% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 34.84464286 0
+% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 24.6529938713 0
+% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 32.306483114 0
+% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 18.1574766212 0
+% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 31.5501806971 0
+% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 22.5031675377 0
+% INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 27.4344440931 0
 % INFO    : 
 % INFO    : === Base KV Replacement Notes ===
 % INFO    : 
 % INFO    : === Transformer Setting Replacement Notes ===
 % WARNING : Transformer 23-36 connects the same voltage levels (345.0, 345.0) and has no phase shift, changing tap ratio 1.0 => 0.0
+% INFO    : 
+% INFO    : === Line Capacity Monotonicity Notes ===
 % INFO    : 
 % INFO    : === Voltage Setpoint Replacement Notes ===
 % INFO    : Bus 1	: V=1.0393836, theta=-13.536602 -> V=1.0, theta=0.0
@@ -280,14 +282,24 @@ mpc.branch = [
 % INFO    : 
 % INFO    : === Generator Setpoint Replacement Notes ===
 % INFO    : Gen at bus 30	: Pg=250.0, Qg=161.762 -> Pg=520.0, Qg=270.0
+% INFO    : Gen at bus 30	: Vg=1.0499 -> Vg=1.0
 % INFO    : Gen at bus 31	: Pg=677.871, Qg=221.574 -> Pg=323.0, Qg=100.0
+% INFO    : Gen at bus 31	: Vg=0.982 -> Vg=1.0
 % INFO    : Gen at bus 32	: Pg=650.0, Qg=206.965 -> Pg=362.5, Qg=225.0
+% INFO    : Gen at bus 32	: Vg=0.9841 -> Vg=1.0
 % INFO    : Gen at bus 33	: Pg=632.0, Qg=108.293 -> Pg=326.0, Qg=125.0
+% INFO    : Gen at bus 33	: Vg=0.9972 -> Vg=1.0
 % INFO    : Gen at bus 34	: Pg=508.0, Qg=166.688 -> Pg=254.0, Qg=83.5
+% INFO    : Gen at bus 34	: Vg=1.0123 -> Vg=1.0
 % INFO    : Gen at bus 35	: Pg=650.0, Qg=210.661 -> Pg=343.5, Qg=100.0
+% INFO    : Gen at bus 35	: Vg=1.0494 -> Vg=1.0
 % INFO    : Gen at bus 36	: Pg=560.0, Qg=100.165 -> Pg=290.0, Qg=120.0
+% INFO    : Gen at bus 36	: Vg=1.0636 -> Vg=1.0
 % INFO    : Gen at bus 37	: Pg=540.0, Qg=-1.36945 -> Pg=282.0, Qg=125.0
+% INFO    : Gen at bus 37	: Vg=1.0275 -> Vg=1.0
 % INFO    : Gen at bus 38	: Pg=830.0, Qg=21.7327 -> Pg=432.5, Qg=75.0
+% INFO    : Gen at bus 38	: Vg=1.0265 -> Vg=1.0
 % INFO    : Gen at bus 39	: Pg=1000.0, Qg=78.4674 -> Pg=550.0, Qg=100.0
+% INFO    : Gen at bus 39	: Vg=1.03 -> Vg=1.0
 % INFO    : 
 % INFO    : === Writing Matpower Case File Notes ===

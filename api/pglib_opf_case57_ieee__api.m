@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.08     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v19.01     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                        08 - August - 2018                        %%%%%
+%%%%                       04 - January - 2019                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case57_ieee__api
@@ -73,27 +73,27 @@ mpc.bus = [
 ];
 
 %% generator data
-%	bus	Pg	Qg	Qmax	Qmin	Vg	mBase	status	Pmax	Pmin	Pc1	Pc2	Qc1min	Qc1max	Qc2min	Qc2max	ramp_agc	ramp_10	ramp_30	ramp_q	apf
+%	bus	Pg	Qg	Qmax	Qmin	Vg	mBase	status	Pmax	Pmin
 mpc.gen = [
-	1	 1.0	 0.0	 123.0	 -123.0	 1.04	 100.0	 1	 2	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % NG
-	2	 0.0	 16.5	 50.0	 -17.0	 1.01	 100.0	 1	 0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % SYNC
-	3	 331.5	 0.0	 332.0	 -332.0	 0.985	 100.0	 1	 663	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % NG
-	6	 0.0	 0.0	 116.4	 -116.4	 0.98	 100.0	 1	 0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % SYNC
-	8	 314.5	 0.0	 315.0	 -315.0	 1.005	 100.0	 1	 629	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % COW
-	9	 0.0	 0.0	 38.4	 -38.4	 0.98	 100.0	 1	 0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % SYNC
-	12	 372.5	 0.0	 373.0	 -373.0	 1.015	 100.0	 1	 745	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % COW
+	1	 1.0	 0.0	 123.0	 -123.0	 1.0	 100.0	 1	 2	 0.0; % NG
+	2	 0.0	 16.5	 50.0	 -17.0	 1.0	 100.0	 1	 0	 0.0; % SYNC
+	3	 331.5	 0.0	 332.0	 -332.0	 1.0	 100.0	 1	 663	 0.0; % NG
+	6	 0.0	 0.0	 116.4	 -116.4	 1.0	 100.0	 1	 0	 0.0; % SYNC
+	8	 314.5	 0.0	 315.0	 -315.0	 1.0	 100.0	 1	 629	 0.0; % COW
+	9	 0.0	 0.0	 38.4	 -38.4	 1.0	 100.0	 1	 0	 0.0; % SYNC
+	12	 372.5	 0.0	 373.0	 -373.0	 1.0	 100.0	 1	 745	 0.0; % COW
 ];
 
 %% generator cost data
 %	2	startup	shutdown	n	c(n-1)	...	c0
 mpc.gencost = [
-	2	 0.0	 0.0	 3	   0.000000	  18.277588	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  16.960624	   0.000000; % NG
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	  45.877299	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  34.075557	   0.000000; % NG
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	  30.784636	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  30.441037	   0.000000; % COW
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
-	2	 0.0	 0.0	 3	   0.000000	  48.614960	   0.000000; % COW
+	2	 0.0	 0.0	 3	   0.000000	  37.188979	   0.000000; % COW
 ];
 
 %% branch data
@@ -270,11 +270,18 @@ mpc.branch = [
 % INFO    : 
 % INFO    : === Generator Setpoint Replacement Notes ===
 % INFO    : Gen at bus 1	: Pg=1.0, Qg=-44.0 -> Pg=1.0, Qg=0.0
+% INFO    : Gen at bus 1	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 2	: Pg=0.0, Qg=-11.0 -> Pg=0.0, Qg=16.5
+% INFO    : Gen at bus 2	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 3	: Pg=587.0, Qg=86.0 -> Pg=331.5, Qg=0.0
+% INFO    : Gen at bus 3	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 6	: Pg=0.0, Qg=97.0 -> Pg=0.0, Qg=0.0
+% INFO    : Gen at bus 6	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 8	: Pg=460.0, Qg=45.0 -> Pg=314.5, Qg=0.0
+% INFO    : Gen at bus 8	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 9	: Pg=0.0, Qg=32.0 -> Pg=0.0, Qg=0.0
+% INFO    : Gen at bus 9	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 12	: Pg=441.0, Qg=159.0 -> Pg=372.5, Qg=0.0
+% INFO    : Gen at bus 12	: Vg=1.0 -> Vg=1.0
 % INFO    : 
 % INFO    : === Writing Matpower Case File Notes ===

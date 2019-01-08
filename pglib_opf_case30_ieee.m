@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.08     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v19.01     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                        08 - August - 2018                        %%%%%
+%%%%                       04 - January - 2019                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -61,21 +61,21 @@ mpc.bus = [
 ];
 
 %% generator data
-%	bus	Pg	Qg	Qmax	Qmin	Vg	mBase	status	Pmax	Pmin	Pc1	Pc2	Qc1min	Qc1max	Qc2min	Qc2max	ramp_agc	ramp_10	ramp_30	ramp_q	apf
+%	bus	Pg	Qg	Qmax	Qmin	Vg	mBase	status	Pmax	Pmin
 mpc.gen = [
-	1	 135.5	 5.0	 10.0	 0.0	 1.06	 100.0	 1	 271	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % NG
-	2	 46.0	 3.0	 46.0	 -40.0	 1.045	 100.0	 1	 92	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % NG
-	5	 0.0	 0.0	 40.0	 -40.0	 1.01	 100.0	 1	 0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % SYNC
-	8	 0.0	 15.0	 40.0	 -10.0	 1.01	 100.0	 1	 0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % SYNC
-	11	 0.0	 9.0	 24.0	 -6.0	 1.082	 100.0	 1	 0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % SYNC
-	13	 0.0	 9.0	 24.0	 -6.0	 1.071	 100.0	 1	 0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0; % SYNC
+	1	 135.5	 5.0	 10.0	 0.0	 1.0	 100.0	 1	 271	 0.0; % NG
+	2	 46.0	 3.0	 46.0	 -40.0	 1.0	 100.0	 1	 92	 0.0; % NG
+	5	 0.0	 0.0	 40.0	 -40.0	 1.0	 100.0	 1	 0	 0.0; % SYNC
+	8	 0.0	 15.0	 40.0	 -10.0	 1.0	 100.0	 1	 0	 0.0; % SYNC
+	11	 0.0	 9.0	 24.0	 -6.0	 1.0	 100.0	 1	 0	 0.0; % SYNC
+	13	 0.0	 9.0	 24.0	 -6.0	 1.0	 100.0	 1	 0	 0.0; % SYNC
 ];
 
 %% generator cost data
 %	2	startup	shutdown	n	c(n-1)	...	c0
 mpc.gencost = [
-	2	 0.0	 0.0	 3	   0.000000	  32.112559	   0.000000; % NG
-	2	 0.0	 0.0	 3	   0.000000	  61.798693	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  18.421528	   0.000000; % NG
+	2	 0.0	 0.0	 3	   0.000000	  52.182254	   0.000000; % NG
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000; % SYNC
@@ -153,8 +153,8 @@ mpc.branch = [
 % INFO    : Gen at bus 2 - NG	: Pmax 92.0, Qmin -40.0, Qmax 50.0 -> Qmin -40.0, Qmax 46.0
 % INFO    : 
 % INFO    : === Generator Active Cost Stat Model Notes ===
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.038432 -> 0 32.1125588081 0
-% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.25 -> 0 61.7986931465 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.038432 -> 0 18.4215281069 0
+% INFO    : Updated Generator Cost: NG - 0.0 20.0 0.25 -> 0 52.182254017 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
 % INFO    : Updated Generator Cost: SYNC - 0.0 40.0 0.01 -> 0 0.0 0
@@ -219,6 +219,8 @@ mpc.branch = [
 % INFO    : Updated Thermal Rating: on line 8-28 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 140
 % INFO    : Updated Thermal Rating: on line 6-28 : Rate A, Rate B, Rate C , 9900.0, 0.0, 0.0 -> 149
 % INFO    : 
+% INFO    : === Line Capacity Monotonicity Notes ===
+% INFO    : 
 % INFO    : === Voltage Setpoint Replacement Notes ===
 % INFO    : Bus 1	: V=1.06, theta=0.0 -> V=1.0, theta=0.0
 % INFO    : Bus 2	: V=1.043, theta=-5.48 -> V=1.0, theta=0.0
@@ -253,10 +255,16 @@ mpc.branch = [
 % INFO    : 
 % INFO    : === Generator Setpoint Replacement Notes ===
 % INFO    : Gen at bus 1	: Pg=260.2, Qg=-16.1 -> Pg=135.5, Qg=5.0
+% INFO    : Gen at bus 1	: Vg=1.06 -> Vg=1.0
 % INFO    : Gen at bus 2	: Pg=40.0, Qg=50.0 -> Pg=46.0, Qg=3.0
+% INFO    : Gen at bus 2	: Vg=1.045 -> Vg=1.0
 % INFO    : Gen at bus 5	: Pg=0.0, Qg=37.0 -> Pg=0.0, Qg=0.0
+% INFO    : Gen at bus 5	: Vg=1.01 -> Vg=1.0
 % INFO    : Gen at bus 8	: Pg=0.0, Qg=37.3 -> Pg=0.0, Qg=15.0
+% INFO    : Gen at bus 8	: Vg=1.01 -> Vg=1.0
 % INFO    : Gen at bus 11	: Pg=0.0, Qg=16.2 -> Pg=0.0, Qg=9.0
+% INFO    : Gen at bus 11	: Vg=1.082 -> Vg=1.0
 % INFO    : Gen at bus 13	: Pg=0.0, Qg=10.6 -> Pg=0.0, Qg=9.0
+% INFO    : Gen at bus 13	: Vg=1.071 -> Vg=1.0
 % INFO    : 
 % INFO    : === Writing Matpower Case File Notes ===

@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v18.08     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v19.01     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Small Angle Difference             %%%%%
-%%%%                        08 - August - 2018                        %%%%%
+%%%%                       04 - January - 2019                        %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case14_ieee__sad
@@ -30,20 +30,20 @@ mpc.bus = [
 ];
 
 %% generator data
-%	bus	Pg	Qg	Qmax	Qmin	Vg	mBase	status	Pmax	Pmin	Pc1	Pc2	Qc1min	Qc1max	Qc2min	Qc2max	ramp_agc	ramp_10	ramp_30	ramp_q	apf
+%	bus	Pg	Qg	Qmax	Qmin	Vg	mBase	status	Pmax	Pmin
 mpc.gen = [
-	1	 170.0	 5.0	 10.0	 0.0	 1.06	 100.0	 1	 340.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0;
-	2	 29.5	 0.0	 30.0	 -30.0	 1.045	 100.0	 1	 59.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0;
-	3	 0.0	 20.0	 40.0	 0.0	 1.01	 100.0	 1	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0;
-	6	 0.0	 9.0	 24.0	 -6.0	 1.07	 100.0	 1	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0;
-	8	 0.0	 9.0	 24.0	 -6.0	 1.09	 100.0	 1	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0;
+	1	 170.0	 5.0	 10.0	 0.0	 1.0	 100.0	 1	 340.0	 0.0;
+	2	 29.5	 0.0	 30.0	 -30.0	 1.0	 100.0	 1	 59.0	 0.0;
+	3	 0.0	 20.0	 40.0	 0.0	 1.0	 100.0	 1	 0.0	 0.0;
+	6	 0.0	 9.0	 24.0	 -6.0	 1.0	 100.0	 1	 0.0	 0.0;
+	8	 0.0	 9.0	 24.0	 -6.0	 1.0	 100.0	 1	 0.0	 0.0;
 ];
 
 %% generator cost data
 %	2	startup	shutdown	n	c(n-1)	...	c0
 mpc.gencost = [
-	2	 0.0	 0.0	 3	   0.000000	  22.879299	   0.000000;
-	2	 0.0	 0.0	 3	   0.000000	  36.375423	   0.000000;
+	2	 0.0	 0.0	 3	   0.000000	   7.920951	   0.000000;
+	2	 0.0	 0.0	 3	   0.000000	  23.269494	   0.000000;
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000;
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000;
 	2	 0.0	 0.0	 3	   0.000000	   0.000000	   0.000000;
@@ -80,5 +80,7 @@ mpc.branch = [
 % INFO    : === Base KV Replacement Notes ===
 % INFO    : 
 % INFO    : === Transformer Setting Replacement Notes ===
+% INFO    : 
+% INFO    : === Line Capacity Monotonicity Notes ===
 % INFO    : 
 % INFO    : === Writing Matpower Case File Notes ===
