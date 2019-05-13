@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v19.01     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v19.05     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                       04 - January - 2019                        %%%%%
+%%%%                         10 - May - 2019                          %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case2383wp_k__api
@@ -2439,12 +2439,12 @@ mpc.gen = [
 	140	 298.5	 0.0	 281.0	 -281.0	 1.03	 240.0	 1	 562	 35.0; % COW
 	176	 106.0	 50.0	 220.0	 -120.0	 1.0	 430.0	 1	 177	 35.0; % COW
 	177	 190.0	 23.5	 220.0	 -173.0	 1.0	 430.0	 1	 345	 35.0; % NG
-	180	 0.0	 0.0	 inf	 -inf	 1.0	 7485.0	 1	 0	 0.0; % SYNC
-	181	 143.0	 0.0	 inf	 -inf	 1.03	 210.0	 1	 199	 87.0; % NG
-	182	 336.5	 0.0	 inf	 -inf	 1.0	 13465.0	 1	 520	 153.0; % NG
-	184	 0.0	 0.0	 inf	 -inf	 1.03	 8353.0	 1	 0	 0.0; % SYNC
-	185	 0.0	 0.0	 inf	 -inf	 1.0	 14254.0	 1	 0	 0.0; % SYNC
-	186	 0.0	 0.0	 inf	 -inf	 1.03	 7401.0	 1	 0	 0.0; % SYNC
+	180	 0.0	 0.0	 129.6	 -129.6	 1.0	 7485.0	 1	 0	 0.0; % SYNC
+	181	 143.0	 0.0	 100.0	 -100.0	 1.03	 210.0	 1	 199	 87.0; % NG
+	182	 336.5	 0.0	 386.4	 -386.4	 1.0	 13465.0	 1	 520	 153.0; % NG
+	184	 0.0	 0.0	 208.7361	 -208.7361	 1.03	 8353.0	 1	 0	 0.0; % SYNC
+	185	 0.0	 0.0	 114.0	 -114.0	 1.0	 14254.0	 1	 0	 0.0; % SYNC
+	186	 0.0	 0.0	 96.2922	 -96.2922	 1.03	 7401.0	 1	 0	 0.0; % SYNC
 	192	 100.0625	 0.0	 78.0	 -78.0	 1.035	 114.0	 1	 155	 45.125; % NG
 	196	 26.715	 0.0	 27.0	 -27.0	 1.035	 1.0	 1	 53	 0.43; % PEL
 	198	 62.19	 0.0	 62.0	 -62.0	 1.035	 1.0	 1	 124	 0.38; % NG
@@ -8156,6 +8156,9 @@ mpc.branch = [
 % INFO    : Gen at bus 132	: Qg 4.0, Qmin 0.0, Qmax 480.0 -> Qmin -4.8, Qmax 480.0
 % INFO    : Gen at bus 139	: Qg 5.0, Qmin 0.0, Qmax 360.0 -> Qmin -6.0, Qmax 360.0
 % INFO    : Gen at bus 140	: Qg -16.0, Qmin 0.0, Qmax 120.0 -> Qmin -19.2, Qmax 120.0
+% INFO    : Gen at bus 180	: Qg 108.0, Qmin -50.5632, Qmax 50.5632 -> Qmin -129.6, Qmax 129.6
+% INFO    : Gen at bus 182	: Qg 322.0, Qmin -145.6185, Qmax 145.6185 -> Qmin -386.4, Qmax 386.4
+% INFO    : Gen at bus 185	: Qg 95.0, Qmin -36.699, Qmax 36.699 -> Qmin -114.0, Qmax 114.0
 % INFO    : Gen at bus 192	: Qg -6.0, Qmin 0.0, Qmax 50.0 -> Qmin -7.2, Qmax 50.0
 % INFO    : Gen at bus 196	: Qg 1.0, Qmin 0.0, Qmax 1.0 -> Qmin -1.2, Qmax 1.0
 % INFO    : Gen at bus 198	: Qg 4.0, Qmin 0.0, Qmax 1.0 -> Qmin -4.8, Qmax 4.8
@@ -9121,6 +9124,7 @@ mpc.branch = [
 % INFO    : Gen at bus 139 - COW	: Pmax 260.0, Qmin -6.0, Qmax 360.0 -> Qmin -130.0, Qmax 360.0
 % INFO    : Gen at bus 140 - COW	: Pmax 562.0, Qmin -19.2, Qmax 120.0 -> Qmin -281.0, Qmax 281.0
 % INFO    : Gen at bus 177 - NG	: Pmax 345.0, Qmin -120.0, Qmax 220.0 -> Qmin -173.0, Qmax 220.0
+% INFO    : Gen at bus 181 - NG	: Pmax 199.0, Qmin -78.4518, Qmax 78.4518 -> Qmin -100.0, Qmax 100.0
 % INFO    : Gen at bus 192 - NG	: Pmax 155.0, Qmin -7.2, Qmax 50.0 -> Qmin -78.0, Qmax 78.0
 % INFO    : Gen at bus 196 - PEL	: Pmax 53.0, Qmin -1.2, Qmax 1.0 -> Qmin -27.0, Qmax 27.0
 % INFO    : Gen at bus 198 - NG	: Pmax 124.0, Qmin -4.8, Qmax 4.8 -> Qmin -62.0, Qmax 62.0
@@ -9392,6 +9396,8 @@ mpc.branch = [
 % INFO    : Gen at bus 2376 - PEL	: Pmax 38.0, Qmin -6.0, Qmax 6.0 -> Qmin -19.0, Qmax 19.0
 % INFO    : Gen at bus 2379 - NG	: Pmax 189.0, Qmin -50.4, Qmax 50.4 -> Qmin -95.0, Qmax 95.0
 % INFO    : Gen at bus 2381 - NG	: Pmax 155.0, Qmin -37.2, Qmax 37.2 -> Qmin -78.0, Qmax 78.0
+% INFO    : 
+% INFO    : === Generator Bounds Update Notes ===
 % INFO    : 
 % INFO    : === Generator Setpoint Replacement Notes ===
 % INFO    : Gen at bus 10	: Pg=195.0, Qg=200.0 -> Pg=124.0, Qg=0.0

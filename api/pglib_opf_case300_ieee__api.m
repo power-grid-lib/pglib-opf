@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v19.01     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v19.05     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                       04 - January - 2019                        %%%%%
+%%%%                         10 - May - 2019                          %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case300_ieee__api
@@ -1335,6 +1335,8 @@ mpc.branch = [
 % INFO    : Gen at bus 7166 - COW	: Pmax 507.0, Qmin -200.0, Qmax 300.0 -> Qmin -254.0, Qmax 300.0
 % INFO    : Gen at bus 9054 - COW	: Pmax 271.0, Qmin -69.6, Qmax 69.6 -> Qmin -136.0, Qmax 136.0
 % INFO    : Gen at bus 9055 - NG	: Pmax 46.0, Qmin -10.8, Qmax 10.8 -> Qmin -23.0, Qmax 23.0
+% INFO    : 
+% INFO    : === Generator Bounds Update Notes ===
 % INFO    : 
 % INFO    : === Generator Setpoint Replacement Notes ===
 % INFO    : Gen at bus 8	: Pg=0.0, Qg=241.0 -> Pg=0.0, Qg=0.0

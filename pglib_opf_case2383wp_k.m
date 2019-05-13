@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v19.01     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v19.05     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                       04 - January - 2019                        %%%%%
+%%%%                         10 - May - 2019                          %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -2454,12 +2454,12 @@ mpc.gen = [
 	140	 135.0	 60.0	 120.0	 0.0	 1.03	 240.0	 1	 200.0	 70.0;
 	176	 335.0	 50.0	 220.0	 -120.0	 1.0	 430.0	 1	 600.0	 70.0;
 	177	 135.0	 50.0	 220.0	 -120.0	 1.0	 430.0	 1	 200.0	 70.0;
-	180	 0.0	 0.0	 inf	 -inf	 1.0	 7485.0	 1	 0.0	 0.0;
-	181	 174.5	 0.0	 inf	 -inf	 1.03	 210.0	 1	 175.0	 174.0;
-	182	 306.795	 0.0	 inf	 -inf	 1.0	 13465.0	 1	 307.59	 306.0;
-	184	 0.0	 0.0	 inf	 -inf	 1.03	 8353.0	 1	 0.0	 0.0;
-	185	 0.0	 0.0	 inf	 -inf	 1.0	 14254.0	 1	 0.0	 0.0;
-	186	 0.0	 0.0	 inf	 -inf	 1.03	 7401.0	 1	 0.0	 0.0;
+	180	 0.0	 0.0	 50.5632	 -50.5632	 1.0	 7485.0	 1	 0.0	 0.0;
+	181	 174.5	 0.0	 78.4518	 -78.4518	 1.03	 210.0	 1	 175.0	 174.0;
+	182	 306.795	 0.0	 145.6185	 -145.6185	 1.0	 13465.0	 1	 307.59	 306.0;
+	184	 0.0	 0.0	 208.7361	 -208.7361	 1.03	 8353.0	 1	 0.0	 0.0;
+	185	 0.0	 0.0	 36.699	 -36.699	 1.0	 14254.0	 1	 0.0	 0.0;
+	186	 0.0	 0.0	 96.2922	 -96.2922	 1.03	 7401.0	 1	 0.0	 0.0;
 	192	 92.625	 25.0	 50.0	 0.0	 1.035	 114.0	 1	 95.0	 90.25;
 	196	 0.88	 0.5	 1.0	 0.0	 1.035	 1.0	 1	 0.9	 0.86;
 	198	 0.78	 0.5	 1.0	 0.0	 1.035	 1.0	 1	 0.8	 0.76;
@@ -5981,6 +5981,14 @@ mpc.branch = [
 % INFO    : === Translation Options ===
 % INFO    : Phase Angle Bound:           30.0 (deg.)
 % INFO    : Setting Flat Start
+% INFO    : 
+% INFO    : === Generator Bounds Update Notes ===
+% WARNING : Gen at bus 180 inf reactive power bound: Qmin -inf, Qmax inf -> Qmin -50.5632, Qmax 50.5632
+% WARNING : Gen at bus 181 inf reactive power bound: Qmin -inf, Qmax inf -> Qmin -78.4518, Qmax 78.4518
+% WARNING : Gen at bus 182 inf reactive power bound: Qmin -inf, Qmax inf -> Qmin -145.6185, Qmax 145.6185
+% WARNING : Gen at bus 184 inf reactive power bound: Qmin -inf, Qmax inf -> Qmin -208.7361, Qmax 208.7361
+% WARNING : Gen at bus 185 inf reactive power bound: Qmin -inf, Qmax inf -> Qmin -36.699, Qmax 36.699
+% WARNING : Gen at bus 186 inf reactive power bound: Qmin -inf, Qmax inf -> Qmin -96.2922, Qmax 96.2922
 % INFO    : 
 % INFO    : === Base KV Replacement Notes ===
 % INFO    : 
