@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v19.01     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v19.05     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                       04 - January - 2019                        %%%%%
+%%%%                         10 - May - 2019                          %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -231,6 +231,8 @@ mpc.branch = [
 % INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 31.5501806971 0
 % INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 22.5031675377 0
 % INFO    : Updated Generator Cost: COW - 0.2 0.3 0.01 -> 0 27.4344440931 0
+% INFO    : 
+% INFO    : === Generator Bounds Update Notes ===
 % INFO    : 
 % INFO    : === Base KV Replacement Notes ===
 % INFO    : 

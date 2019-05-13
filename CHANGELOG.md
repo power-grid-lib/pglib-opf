@@ -1,6 +1,9 @@
 PGLib OPF Benchmarks Change Log 
 ===============================
 
+### v19.05
+- Minor fixes to generator bounds, #22, #29
+
 ### v19.01
 - Fixed generator voltage setpoints, #5
 - Made thermal limits monotonic, #15
