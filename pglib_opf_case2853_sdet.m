@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v19.05     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v20.04     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%               Benchmark Group - Typical Operations               %%%%%
-%%%%                         10 - May - 2019                          %%%%%
+%%%%                         12 - July - 2020                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -12,7 +12,8 @@
 %
 %   https://egriddata.org/group/sustainable-data-evolution-technology-sdet
 %
-%   Developed by Renke Huang
+%   Developed by Renke Huang,
+%   Pacific Northwest National Laboratory, U.S.A.
 %   Provided in the public domain. June, 2018
 %
 function mpc = pglib_opf_case2853_sdet

@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v19.05     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v20.04     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Small Angle Difference             %%%%%
-%%%%                         10 - May - 2019                          %%%%%
+%%%%                         12 - July - 2020                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case3_lmbd__sad
@@ -37,13 +37,13 @@ mpc.gencost = [
 %% branch data
 %	fbus	tbus	r	x	b	rateA	rateB	rateC	ratio	angle	status	angmin	angmax
 mpc.branch = [
-	1	 3	 0.065	 0.62	 0.45	 9000.0	 9000.0	 9000.0	 0.0	 0.0	 1	 -18.739318	 18.739318;
-	3	 2	 0.025	 0.75	 0.7	 50.0	 50.0	 50.0	 0.0	 0.0	 1	 -18.739318	 18.739318;
-	1	 2	 0.042	 0.9	 0.3	 9000.0	 9000.0	 9000.0	 0.0	 0.0	 1	 -18.739318	 18.739318;
+	1	 3	 0.065	 0.62	 0.45	 9000.0	 9000.0	 9000.0	 0.0	 0.0	 1	 -18.7397099664	 18.7397099664;
+	3	 2	 0.025	 0.75	 0.7	 50.0	 50.0	 50.0	 0.0	 0.0	 1	 -18.7397099664	 18.7397099664;
+	1	 2	 0.042	 0.9	 0.3	 9000.0	 9000.0	 9000.0	 0.0	 0.0	 1	 -18.7397099664	 18.7397099664;
 ];
 
 % INFO    : === Translation Options ===
-% INFO    : Phase Angle Bound:           18.739318 (deg.)
+% INFO    : Phase Angle Bound:           18.7397099664 (deg.)
 % INFO    : 
 % INFO    : === Generator Bounds Update Notes ===
 % INFO    : 
