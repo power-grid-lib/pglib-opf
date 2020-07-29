@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v19.05     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v20.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                         10 - May - 2019                          %%%%%
+%%%%                         12 - July - 2020                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case14_ieee__api
@@ -123,8 +123,6 @@ mpc.branch = [
 % INFO    : === Generator Reactive Capacity Atleast Max 50 Percent Active Model Notes ===
 % INFO    : Gen at bus 1 - NG	: Pmax 398.0, Qmin -37.2, Qmax 37.2 -> Qmin -199.0, Qmax 199.0
 % INFO    : Gen at bus 2 - NG	: Pmax 230.0, Qmin -57.6, Qmax 57.6 -> Qmin -115.0, Qmax 115.0
-% INFO    : 
-% INFO    : === Generator Bounds Update Notes ===
 % INFO    : 
 % INFO    : === Generator Setpoint Replacement Notes ===
 % INFO    : Gen at bus 1	: Pg=355.0, Qg=31.0 -> Pg=199.0, Qg=0.0

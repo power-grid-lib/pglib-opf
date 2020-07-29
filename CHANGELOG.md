@@ -1,5 +1,13 @@
-PGLib OPF Benchmarks Change Log 
+PGLib OPF Benchmarks Change Log
 ===============================
+
+### v20.07
+- Add 18 cases from ARPA-e's Grid Optimization Competition, Challenge 1 Final Event
+- Update some case names from `_tamu` to `_activ` (#26)
+- Updated baseline results and case generation to PowerModels v0.17
+- Removed `pglib_opf_case30_fsr.m` due to marginal benchmarking value
+- Removed 500, 2000 and 10000 bus `activ` cases in favor of similar grid optimization competition cases
+- Removed 2316 bus `SDET` case in favor of similar grid optimization competition cases
 
 ### v19.05
 - Minor fixes to generator bounds, #22, #29
@@ -7,7 +15,7 @@ PGLib OPF Benchmarks Change Log
 ### v19.01
 - Fixed generator voltage setpoints, #5
 - Made thermal limits monotonic, #15
-- Updated Polish network source files to Matpower v7.0, #17
+- Updated Polish network source files to MATPOWER v7.0, #17
 - Simplified generator data, #18
 - Made minor corrections to the fuel cost model
 - Updated baseline results and case generation to PowerModels v0.9

@@ -6,7 +6,7 @@ This benchmark library is curated and maintained by the [IEEE PES Task Force on 
 ![The Mathematical Model of the Optimal Power Flow Problem](MODEL.png?raw=true "Optional Title")
 &nbsp;
 
-A detailed description of this mathematical model is available [here](https://arxiv.org/abs/1502.07847).  All of the cases files are curated in the [Matpower](http://www.pserc.cornell.edu/matpower) data format.  Open-source reference implementations are available in [Matpower](http://www.pserc.cornell.edu/matpower) and [PowerModels.jl](https://github.com/lanl-ansi/PowerModels.jl) and baseline results are reported in [BASELINE.md](BASELINE.md).
+A detailed description of this mathematical model is available [here](https://arxiv.org/abs/1502.07847).  All of the cases files are curated in the [MATPOWER](https://matpower.org) data format.  Open-source reference implementations are available in [MATPOWER](https://matpower.org) and [PowerModels.jl](https://github.com/lanl-ansi/PowerModels.jl) and baseline results are reported in [BASELINE.md](BASELINE.md).
 
 ### Problem Variants
 
