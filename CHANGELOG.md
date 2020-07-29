@@ -15,7 +15,7 @@ PGLib OPF Benchmarks Change Log
 ### v19.01
 - Fixed generator voltage setpoints, #5
 - Made thermal limits monotonic, #15
-- Updated Polish network source files to Matpower v7.0, #17
+- Updated Polish network source files to MATPOWER v7.0, #17
 - Simplified generator data, #18
 - Made minor corrections to the fuel cost model
 - Updated baseline results and case generation to PowerModels v0.9
