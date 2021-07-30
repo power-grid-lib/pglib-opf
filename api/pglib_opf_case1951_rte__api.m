@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v20.07     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v21.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                         12 - July - 2020                         %%%%%
+%%%%                         29 - July - 2021                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case1951_rte__api
@@ -2009,13 +2009,13 @@ mpc.gen = [
 	1118	 388.75	 0.0	 386.0	 -386.0	 1.01384	 100.0	 1	 772	 5.5; % NG
 	897	 29.35	 0.0	 28.0	 -28.0	 1.0	 100.0	 1	 56	 2.7; % NG
 	897	 26.35	 0.0	 25.0	 -25.0	 1.0	 100.0	 1	 50	 2.7; % PEL
-	58	 47.8	 0.0	 2054.4	 -2054.4	 1.00431	 100.0	 1	 95	 0.6; % NG
+	58	 47.8	 0.0	 2052.0	 -2052.0	 1.00431	 100.0	 1	 95	 0.6; % NG
 	82	 232.765	 0.0	 232.0	 -232.0	 1.01562	 100.0	 1	 463	 2.53; % NG
 	474	 280.1	 0.0	 278.0	 -278.0	 1.01533	 100.0	 1	 555	 5.2; % NG
 	1221	 50.9	 0.0	 86.4	 -86.4	 1.0	 100.0	 1	 96	 5.8; % NG
 	355	 0.0	 0.0	 40.0	 -40.0	 1.0	 100.0	 0	 57	 6.2; % NG
 	471	 307.4	 0.0	 304.0	 -304.0	 1.0171	 100.0	 1	 607	 7.8; % COW
-	1321	 54.05	 0.0	 3500.4	 -3500.4	 1.00423	 100.0	 1	 107	 1.1; % NG
+	1321	 54.05	 0.0	 3501.6	 -3501.6	 1.00423	 100.0	 1	 107	 1.1; % NG
 	1321	 0.01	 -0.0	 0.1	 -0.1	 1.00423	 100.0	 0	 0	 0.0; % PEL
 	1829	 259.675	 0.0	 259.0	 -259.0	 1.01429	 100.0	 1	 517	 2.35; % NG
 	1005	 64.45	 0.0	 63.0	 -63.0	 1.00521	 100.0	 1	 125	 3.9; % NG
@@ -6416,12 +6416,12 @@ mpc.branch = [
 % INFO    : Gen at bus 1118	: Pg=33.0, Qg=0.0 -> Pg=749.0, Qg=207.0
 % INFO    : Gen at bus 897	: Pg=16.2, Qg=3.5 -> Pg=45.0, Qg=-2.0
 % INFO    : Gen at bus 897	: Pg=16.2, Qg=3.5 -> Pg=45.0, Qg=-2.0
-% INFO    : Gen at bus 58	: Pg=3.6, Qg=1.95 -> Pg=48.0, Qg=1712.0
+% INFO    : Gen at bus 58	: Pg=3.6, Qg=1.95 -> Pg=48.0, Qg=1710.0
 % INFO    : Gen at bus 82	: Pg=15.18, Qg=0.0 -> Pg=450.0, Qg=34.0
 % INFO    : Gen at bus 474	: Pg=31.2, Qg=-1.5 -> Pg=187.0, Qg=-61.0
 % INFO    : Gen at bus 1221	: Pg=34.8, Qg=0.0 -> Pg=68.0, Qg=-72.0
 % INFO    : Gen at bus 471	: Pg=46.8, Qg=0.5 -> Pg=185.0, Qg=31.0
-% INFO    : Gen at bus 1321	: Pg=6.6, Qg=0.95 -> Pg=50.0, Qg=2917.0
+% INFO    : Gen at bus 1321	: Pg=6.6, Qg=0.95 -> Pg=50.0, Qg=2918.0
 % INFO    : Gen at bus 1829	: Pg=14.1, Qg=0.0 -> Pg=313.0, Qg=-13.0
 % INFO    : Gen at bus 1005	: Pg=23.4, Qg=0.0 -> Pg=49.0, Qg=-14.0
 % INFO    : Gen at bus 14	: Pg=16.56, Qg=0.0 -> Pg=280.0, Qg=36.0
@@ -6780,12 +6780,12 @@ mpc.branch = [
 % INFO    : Gen at bus 100	: Qg 188.0, Qmin -26.0, Qmax 59.0 -> Qmin -225.6, Qmax 225.6
 % INFO    : Gen at bus 973	: Qg -6.0, Qmin 0.0, Qmax 0.0 -> Qmin -7.2, Qmax 7.2
 % INFO    : Gen at bus 1118	: Qg 207.0, Qmin 0.0, Qmax 0.0 -> Qmin -248.4, Qmax 248.4
-% INFO    : Gen at bus 58	: Qg 1712.0, Qmin 1.9, Qmax 2.0 -> Qmin -2054.4, Qmax 2054.4
+% INFO    : Gen at bus 58	: Qg 1710.0, Qmin 1.9, Qmax 2.0 -> Qmin -2052.0, Qmax 2052.0
 % INFO    : Gen at bus 82	: Qg 34.0, Qmin 0.0, Qmax 0.0 -> Qmin -40.8, Qmax 40.8
 % INFO    : Gen at bus 474	: Qg -61.0, Qmin -13.0, Qmax 10.0 -> Qmin -73.2, Qmax 73.2
 % INFO    : Gen at bus 1221	: Qg -72.0, Qmin -35.0, Qmax 35.0 -> Qmin -86.4, Qmax 86.4
 % INFO    : Gen at bus 471	: Qg 31.0, Qmin 0.0, Qmax 1.0 -> Qmin -37.2, Qmax 37.2
-% INFO    : Gen at bus 1321	: Qg 2917.0, Qmin 0.9, Qmax 1.0 -> Qmin -3500.4, Qmax 3500.4
+% INFO    : Gen at bus 1321	: Qg 2918.0, Qmin 0.9, Qmax 1.0 -> Qmin -3501.6, Qmax 3501.6
 % INFO    : Gen at bus 1829	: Qg -13.0, Qmin -8.0, Qmax 8.0 -> Qmin -15.6, Qmax 15.6
 % INFO    : Gen at bus 14	: Qg 36.0, Qmin 0.0, Qmax 0.0 -> Qmin -43.2, Qmax 43.2
 % INFO    : Gen at bus 14	: Qg 36.0, Qmin 0.0, Qmax 0.0 -> Qmin -43.2, Qmax 43.2
@@ -8141,7 +8141,7 @@ mpc.branch = [
 % INFO    : Gen at bus 897	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 897	: Pg=45.0, Qg=-2.0 -> Pg=26.35, Qg=0.0
 % INFO    : Gen at bus 897	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 58	: Pg=48.0, Qg=1712.0 -> Pg=47.8, Qg=0.0
+% INFO    : Gen at bus 58	: Pg=48.0, Qg=1710.0 -> Pg=47.8, Qg=0.0
 % INFO    : Gen at bus 58	: Vg=1.00431 -> Vg=1.00431
 % INFO    : Gen at bus 82	: Pg=450.0, Qg=34.0 -> Pg=232.765, Qg=0.0
 % INFO    : Gen at bus 82	: Vg=1.01562 -> Vg=1.01562
@@ -8152,7 +8152,7 @@ mpc.branch = [
 % INFO    : Gen at bus 355	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 471	: Pg=185.0, Qg=31.0 -> Pg=307.4, Qg=0.0
 % INFO    : Gen at bus 471	: Vg=1.017105 -> Vg=1.0171
-% INFO    : Gen at bus 1321	: Pg=50.0, Qg=2917.0 -> Pg=54.05, Qg=0.0
+% INFO    : Gen at bus 1321	: Pg=50.0, Qg=2918.0 -> Pg=54.05, Qg=0.0
 % INFO    : Gen at bus 1321	: Vg=1.004235 -> Vg=1.00423
 % INFO    : Gen at bus 1321	: Vg=1.004235 -> Vg=1.00423
 % INFO    : Gen at bus 1829	: Pg=313.0, Qg=-13.0 -> Pg=259.675, Qg=0.0

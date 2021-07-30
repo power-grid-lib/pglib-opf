@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v20.07     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v21.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                         12 - July - 2020                         %%%%%
+%%%%                         29 - July - 2021                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case3120sp_k__api
@@ -10200,8 +10200,8 @@ mpc.branch = [
 % INFO    : Gen at bus 71	: Pg=177.0, Qg=53.0 -> Pg=199.0, Qg=158.0
 % INFO    : Gen at bus 92	: Pg=180.0, Qg=63.5 -> Pg=200.0, Qg=71.0
 % INFO    : Gen at bus 92	: Pg=182.5, Qg=62.5 -> Pg=200.0, Qg=71.0
-% INFO    : Gen at bus 93	: Pg=182.5, Qg=62.5 -> Pg=218.0, Qg=101.0
-% INFO    : Gen at bus 93	: Pg=182.5, Qg=62.5 -> Pg=218.0, Qg=101.0
+% INFO    : Gen at bus 93	: Pg=182.5, Qg=62.5 -> Pg=218.0, Qg=100.0
+% INFO    : Gen at bus 93	: Pg=182.5, Qg=62.5 -> Pg=218.0, Qg=102.0
 % INFO    : Gen at bus 96	: Pg=281.5, Qg=91.5 -> Pg=195.0, Qg=25.0
 % INFO    : Gen at bus 96	: Pg=280.0, Qg=90.5 -> Pg=195.0, Qg=25.0
 % INFO    : Gen at bus 113	: Pg=10.5, Qg=0.0 -> Pg=108.0, Qg=-147.0
@@ -10496,8 +10496,8 @@ mpc.branch = [
 % INFO    : Gen at bus 71	: Qg 158.0, Qmin -14.0, Qmax 120.0 -> Qmin -189.6, Qmax 189.6
 % INFO    : Gen at bus 92	: Qg 71.0, Qmin -7.0, Qmax 134.0 -> Qmin -85.2, Qmax 134.0
 % INFO    : Gen at bus 92	: Qg 71.0, Qmin -6.0, Qmax 131.0 -> Qmin -85.2, Qmax 131.0
-% INFO    : Gen at bus 93	: Qg 101.0, Qmin -6.0, Qmax 131.0 -> Qmin -121.2, Qmax 131.0
-% INFO    : Gen at bus 93	: Qg 101.0, Qmin -6.0, Qmax 131.0 -> Qmin -121.2, Qmax 131.0
+% INFO    : Gen at bus 93	: Qg 100.0, Qmin -6.0, Qmax 131.0 -> Qmin -120.0, Qmax 131.0
+% INFO    : Gen at bus 93	: Qg 102.0, Qmin -6.0, Qmax 131.0 -> Qmin -122.4, Qmax 131.0
 % INFO    : Gen at bus 113	: Qg -147.0, Qmin 0.0, Qmax 0.0 -> Qmin -176.4, Qmax 176.4
 % INFO    : Gen at bus 119	: Qg -99.0, Qmin -10.0, Qmax 120.0 -> Qmin -118.8, Qmax 120.0
 % INFO    : Gen at bus 120	: Qg 155.0, Qmin -10.0, Qmax 120.0 -> Qmin -186.0, Qmax 186.0
@@ -11629,8 +11629,8 @@ mpc.branch = [
 % INFO    : Gen at bus 92 - NG	: Pmax 262.0, Qmin -85.2, Qmax 134.0 -> Qmin -131.0, Qmax 134.0
 % INFO    : Gen at bus 92 - NG	: Pmax 211.0, Qmin -85.2, Qmax 131.0 -> Qmin -106.0, Qmax 131.0
 % INFO    : Gen at bus 93 - NG	: Pmax 13.0, Qmin -6.0, Qmax 131.0 -> Qmin -7.0, Qmax 131.0
-% INFO    : Gen at bus 93 - NG	: Pmax 331.0, Qmin -121.2, Qmax 131.0 -> Qmin -166.0, Qmax 166.0
-% INFO    : Gen at bus 93 - NG	: Pmax 270.0, Qmin -121.2, Qmax 131.0 -> Qmin -135.0, Qmax 135.0
+% INFO    : Gen at bus 93 - NG	: Pmax 331.0, Qmin -120.0, Qmax 131.0 -> Qmin -166.0, Qmax 166.0
+% INFO    : Gen at bus 93 - NG	: Pmax 270.0, Qmin -122.4, Qmax 131.0 -> Qmin -135.0, Qmax 135.0
 % INFO    : Gen at bus 96 - COW	: Pmax 267.0, Qmin -30.0, Qmax 213.0 -> Qmin -134.0, Qmax 213.0
 % INFO    : Gen at bus 96 - NG	: Pmax 446.0, Qmin -31.0, Qmax 212.0 -> Qmin -223.0, Qmax 223.0
 % INFO    : Gen at bus 113 - NG	: Pmax 426.0, Qmin 0.0, Qmax 0.0 -> Qmin -213.0, Qmax 213.0
@@ -12090,9 +12090,9 @@ mpc.branch = [
 % INFO    : Gen at bus 92	: Pg=200.0, Qg=71.0 -> Pg=140.5, Qg=12.5
 % INFO    : Gen at bus 92	: Vg=1.03 -> Vg=1.03
 % INFO    : Gen at bus 93	: Vg=1.03 -> Vg=1.03
-% INFO    : Gen at bus 93	: Pg=218.0, Qg=101.0 -> Pg=200.5, Qg=0.0
+% INFO    : Gen at bus 93	: Pg=218.0, Qg=100.0 -> Pg=200.5, Qg=0.0
 % INFO    : Gen at bus 93	: Vg=1.03 -> Vg=1.03
-% INFO    : Gen at bus 93	: Pg=218.0, Qg=101.0 -> Pg=170.0, Qg=0.0
+% INFO    : Gen at bus 93	: Pg=218.0, Qg=102.0 -> Pg=170.0, Qg=0.0
 % INFO    : Gen at bus 93	: Vg=1.03 -> Vg=1.03
 % INFO    : Gen at bus 96	: Pg=195.0, Qg=25.0 -> Pg=178.5, Qg=39.5
 % INFO    : Gen at bus 96	: Vg=1.0 -> Vg=1.0
