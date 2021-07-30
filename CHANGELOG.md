@@ -1,6 +1,9 @@
 PGLib OPF Benchmarks Change Log
 ===============================
 
+### v21.07
+- Add 60 bus Nordic system and 8387 bus pegase system
+
 ### v20.07
 - Add 18 cases from ARPA-e's Grid Optimization Competition, Challenge 1 Final Event
 - Update some case names from `_tamu` to `_activ` (#26)

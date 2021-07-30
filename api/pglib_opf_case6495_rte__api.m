@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v20.07     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v21.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                         12 - July - 2020                         %%%%%
+%%%%                         29 - July - 2021                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case6495_rte__api
@@ -7522,8 +7522,8 @@ mpc.gen = [
 	5993	 187.5	 0.0	 1255.2	 -1255.2	 0.975	 100.0	 1	 375	 0.0; % NG
 	5993	 57.0	 0.0	 1255.2	 -1255.2	 0.975	 100.0	 1	 114	 0.0; % NG
 	5996	 12.5	 0.0	 181.2	 -181.2	 0.975	 100.0	 1	 25	 0.0; % NG
-	5999	 527.0	 0.0	 30897.6	 -30897.6	 0.975	 100.0	 1	 904	 150.0; % COW
-	6000	 271.0	 0.0	 38575.2	 -38575.2	 0.975	 100.0	 1	 542	 0.0; % NG
+	5999	 527.0	 0.0	 30945.6	 -30945.6	 0.975	 100.0	 1	 904	 150.0; % COW
+	6000	 271.0	 0.0	 38659.2	 -38659.2	 0.975	 100.0	 1	 542	 0.0; % NG
 	6004	 332.25	 9.0	 304.0	 -286.0	 0.975	 100.0	 1	 572	 92.5; % COW
 	6004	 0.0	 0.0	 304.0	 -171.0	 0.975	 100.0	 0	 305	 92.5; % COW
 	6004	 503.5	 0.0	 446.0	 -446.0	 0.975	 100.0	 1	 892	 115.0; % COW
@@ -22343,8 +22343,8 @@ mpc.branch = [
 % INFO    : Gen at bus 5993	: Pg=108.85, Qg=0.0 -> Pg=103.0, Qg=1046.0
 % INFO    : Gen at bus 5993	: Pg=202.15, Qg=0.0 -> Pg=103.0, Qg=1046.0
 % INFO    : Gen at bus 5996	: Pg=240.665, Qg=0.0 -> Pg=19.0, Qg=-151.0
-% INFO    : Gen at bus 5999	: Pg=450.0, Qg=0.0 -> Pg=784.0, Qg=-25748.0
-% INFO    : Gen at bus 6000	: Pg=250.0, Qg=0.0 -> Pg=480.0, Qg=32146.0
+% INFO    : Gen at bus 5999	: Pg=450.0, Qg=0.0 -> Pg=785.0, Qg=-25788.0
+% INFO    : Gen at bus 6000	: Pg=250.0, Qg=0.0 -> Pg=480.0, Qg=32216.0
 % INFO    : Gen at bus 6004	: Pg=301.5, Qg=66.5 -> Pg=245.0, Qg=-117.0
 % INFO    : Gen at bus 6004	: Pg=304.5, Qg=66.5 -> Pg=290.0, Qg=-117.0
 % INFO    : Gen at bus 6004	: Pg=279.0, Qg=98.0 -> Pg=225.0, Qg=-117.0
@@ -22464,7 +22464,7 @@ mpc.branch = [
 % INFO    : Gen at bus 6297	: Pg=10.0, Qg=1.615 -> Pg=31.0, Qg=3.0
 % INFO    : Gen at bus 6298	: Pg=833.5, Qg=226.955 -> Pg=567.0, Qg=11.0
 % INFO    : Gen at bus 6299	: Pg=863.5, Qg=235.535 -> Pg=582.0, Qg=117.0
-% INFO    : Gen at bus 6300	: Pg=863.5, Qg=235.535 -> Pg=574.0, Qg=118.0
+% INFO    : Gen at bus 6300	: Pg=863.5, Qg=235.535 -> Pg=574.0, Qg=119.0
 % INFO    : Gen at bus 6301	: Pg=47.5, Qg=10.18 -> Pg=31.0, Qg=-17.0
 % INFO    : Gen at bus 6302	: Pg=1.45, Qg=91.015 -> Pg=679.0, Qg=220.0
 % INFO    : Gen at bus 6303	: Pg=0.0, Qg=27.97 -> Pg=0.0, Qg=87.0
@@ -22941,8 +22941,8 @@ mpc.branch = [
 % INFO    : Gen at bus 5993	: Qg 1046.0, Qmin -65.31, Qmax 65.31 -> Qmin -1255.2, Qmax 1255.2
 % INFO    : Gen at bus 5993	: Qg 1046.0, Qmin -121.29, Qmax 121.29 -> Qmin -1255.2, Qmax 1255.2
 % INFO    : Gen at bus 5996	: Qg -151.0, Qmin -144.4, Qmax 144.4 -> Qmin -181.2, Qmax 181.2
-% INFO    : Gen at bus 5999	: Qg -25748.0, Qmin -280.0, Qmax 280.0 -> Qmin -30897.6, Qmax 30897.6
-% INFO    : Gen at bus 6000	: Qg 32146.0, Qmin -280.0, Qmax 280.0 -> Qmin -38575.2, Qmax 38575.2
+% INFO    : Gen at bus 5999	: Qg -25788.0, Qmin -280.0, Qmax 280.0 -> Qmin -30945.6, Qmax 30945.6
+% INFO    : Gen at bus 6000	: Qg 32216.0, Qmin -280.0, Qmax 280.0 -> Qmin -38659.2, Qmax 38659.2
 % INFO    : Gen at bus 6011	: Qg -108.0, Qmin -84.81, Qmax 22.86 -> Qmin -129.6, Qmax 129.6
 % INFO    : Gen at bus 6016	: Qg -220.0, Qmin -142.15, Qmax 140.07 -> Qmin -264.0, Qmax 264.0
 % INFO    : Gen at bus 6017	: Qg 7.0, Qmin 0.0, Qmax 7.0 -> Qmin -8.4, Qmax 7.0
@@ -24072,7 +24072,7 @@ mpc.branch = [
 % INFO    : Gen at bus 5993 - NG	: Pg=103.0, Pmax=217.7 -> Pmax=375   samples: 1
 % INFO    : Gen at bus 5993 - NG	: Pg=103.0, Pmax=404.3 -> Pmax=114   samples: 1
 % INFO    : Gen at bus 5996 - NG	: Pg=19.0, Pmax=481.33 -> Pmax=25   samples: 6
-% INFO    : Gen at bus 5999 - COW	: Pg=784.0, Pmax=600.0 -> Pmax=904   samples: 6
+% INFO    : Gen at bus 5999 - COW	: Pg=785.0, Pmax=600.0 -> Pmax=904   samples: 6
 % WARNING : Failed to find a generator capacity within (480.0-2400.0) after 100 samples, using percent increase model
 % INFO    : Gen at bus 6000 - NG	: Pg=480.0, Pmax=500.0 -> Pmax=542   samples: 100
 % INFO    : Gen at bus 6004 - COW	: Pg=245.0, Pmax=418.0 -> Pmax=572   samples: 2
@@ -27164,9 +27164,9 @@ mpc.branch = [
 % INFO    : Gen at bus 5993	: Vg=0.975 -> Vg=0.975
 % INFO    : Gen at bus 5996	: Pg=19.0, Qg=-151.0 -> Pg=12.5, Qg=0.0
 % INFO    : Gen at bus 5996	: Vg=0.975 -> Vg=0.975
-% INFO    : Gen at bus 5999	: Pg=784.0, Qg=-25748.0 -> Pg=527.0, Qg=0.0
+% INFO    : Gen at bus 5999	: Pg=785.0, Qg=-25788.0 -> Pg=527.0, Qg=0.0
 % INFO    : Gen at bus 5999	: Vg=0.975 -> Vg=0.975
-% INFO    : Gen at bus 6000	: Pg=480.0, Qg=32146.0 -> Pg=271.0, Qg=0.0
+% INFO    : Gen at bus 6000	: Pg=480.0, Qg=32216.0 -> Pg=271.0, Qg=0.0
 % INFO    : Gen at bus 6000	: Vg=0.975 -> Vg=0.975
 % INFO    : Gen at bus 6004	: Pg=245.0, Qg=-117.0 -> Pg=332.25, Qg=9.0
 % INFO    : Gen at bus 6004	: Vg=0.975 -> Vg=0.975
@@ -27451,7 +27451,7 @@ mpc.branch = [
 % INFO    : Gen at bus 6298	: Vg=0.975 -> Vg=0.975
 % INFO    : Gen at bus 6299	: Pg=582.0, Qg=117.0 -> Pg=800.75, Qg=1.525
 % INFO    : Gen at bus 6299	: Vg=0.975 -> Vg=0.975
-% INFO    : Gen at bus 6300	: Pg=574.0, Qg=118.0 -> Pg=554.75, Qg=124.525
+% INFO    : Gen at bus 6300	: Pg=574.0, Qg=119.0 -> Pg=554.75, Qg=124.525
 % INFO    : Gen at bus 6300	: Vg=0.975 -> Vg=0.975
 % INFO    : Gen at bus 6301	: Pg=31.0, Qg=-17.0 -> Pg=31.0, Qg=10.18
 % INFO    : Gen at bus 6301	: Vg=0.975 -> Vg=0.975

@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v20.07     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v21.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Small Angle Difference             %%%%%
-%%%%                         12 - July - 2020                         %%%%%
+%%%%                         29 - July - 2021                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case2742_goc__sad
@@ -7821,4 +7821,3 @@ mpc.branch = [
 % INFO    : === Line Capacity Monotonicity Notes ===
 % INFO    : 
 % INFO    : === Writing Matpower Case File Notes ===
-% WARNING : No comments found in comments.txt for case named pglib_opf_case2742_goc__sad
