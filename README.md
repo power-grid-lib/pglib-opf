@@ -2,9 +2,15 @@
 
 This benchmark library is curated and maintained by the [IEEE PES Task Force on Benchmarks for Validation of Emerging Power System Algorithms](https://power-grid-lib.github.io/) and is designed to evaluate a well established version of the the AC Optimal Power Flow problem.  This [introductory video](https://youtu.be/fC3hzddCJ2c) and [detailed report](https://arxiv.org/abs/1908.02788) present the motivations and goals of this benchmark library.  In particular, these cases are designed for benchmarking algorithms that solve the following Non-Convex Nonlinear Program,
 
-&nbsp;
-![The Mathematical Model of the Optimal Power Flow Problem](MODEL.png?raw=true "Optional Title")
-&nbsp;
+<p align="left">
+    <img src="MODEL.png#gh-light-mode-only" width="500"/>
+    <img src="MODEL_INV.png#gh-dark-mode-only" width="500"/>
+  </a>
+</p>
+
+<!-- ![GitHub-Mark-Light](MODEL.png#gh-light-mode-only) -->
+<!-- ![GitHub-Mark-Dark ](MODEL_INV.png#gh-dark-mode-only) -->
+
 
 A detailed description of this mathematical model is available [here](https://arxiv.org/abs/1502.07847).  All of the cases files are curated in the [MATPOWER](https://matpower.org) data format.  Open-source reference implementations are available in [MATPOWER](https://matpower.org) and [PowerModels.jl](https://github.com/lanl-ansi/PowerModels.jl) and baseline results are reported in [BASELINE.md](BASELINE.md).
 
