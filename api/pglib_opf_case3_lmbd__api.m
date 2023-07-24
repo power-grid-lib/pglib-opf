@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v21.07     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v23.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                         29 - July - 2021                         %%%%%
+%%%%                         23 - July - 2023                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case3_lmbd__api
@@ -15,7 +15,7 @@ mpc.baseMVA = 100.0;
 mpc.bus = [
 	1	 3	 147.08	 40.00	 0.0	 0.0	 1	    1.00000	    0.00000	 240.0	 1	    1.10000	    0.90000;
 	2	 2	 147.08	 40.00	 0.0	 0.0	 1	    1.00000	    0.00000	 240.0	 1	    1.10000	    0.90000;
-	3	 2	 127.02	 50.00	 0.0	 0.0	 1	    1.00000	    0.00000	 240.0	 1	    1.10000	    0.90000;
+	3	 2	 127.03	 50.00	 0.0	 0.0	 1	    1.00000	    0.00000	 240.0	 1	    1.10000	    0.90000;
 ];
 
 %% generator data
@@ -51,7 +51,7 @@ mpc.branch = [
 % INFO    : === Load Replacement Notes ===
 % INFO    : Bus 1	: Pd=110.0, Qd=40.0 -> Pd=147.08, Qd=40.00
 % INFO    : Bus 2	: Pd=110.0, Qd=40.0 -> Pd=147.08, Qd=40.00
-% INFO    : Bus 3	: Pd=95.0, Qd=50.0 -> Pd=127.02, Qd=50.00
+% INFO    : Bus 3	: Pd=95.0, Qd=50.0 -> Pd=127.03, Qd=50.00
 % INFO    : 
 % INFO    : === Generator Setpoint Replacement Notes ===
 % INFO    : Gen at bus 1	: Pg=1000.0, Qg=0.0 -> Pg=265.0, Qg=41.0

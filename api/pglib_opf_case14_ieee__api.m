@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v21.07     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v23.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                         29 - July - 2021                         %%%%%
+%%%%                         23 - July - 2023                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case14_ieee__api
@@ -35,7 +35,7 @@ mpc.gen = [
 	1	 199.0	 0.0	 199.0	 -199.0	 1.0	 100.0	 1	 398	 0.0; % NG
 	2	 115.0	 0.0	 115.0	 -115.0	 1.0	 100.0	 1	 230	 0.0; % NG
 	3	 0.0	 0.0	 72.0	 -72.0	 1.0	 100.0	 1	 0	 0.0; % SYNC
-	6	 0.0	 0.0	 56.4	 -56.4	 1.0	 100.0	 1	 0	 0.0; % SYNC
+	6	 0.0	 0.0	 57.6	 -57.6	 1.0	 100.0	 1	 0	 0.0; % SYNC
 	8	 0.0	 0.0	 30.0	 -30.0	 1.0	 100.0	 1	 0	 0.0; % SYNC
 ];
 
@@ -94,17 +94,17 @@ mpc.branch = [
 % INFO    : Bus 14	: Pd=14.9, Qd=5.0 -> Pd=29.29, Qd=5.00
 % INFO    : 
 % INFO    : === Generator Setpoint Replacement Notes ===
-% INFO    : Gen at bus 1	: Pg=170.0, Qg=5.0 -> Pg=355.0, Qg=31.0
-% INFO    : Gen at bus 2	: Pg=29.5, Qg=0.0 -> Pg=151.0, Qg=48.0
+% INFO    : Gen at bus 1	: Pg=170.0, Qg=5.0 -> Pg=353.0, Qg=37.0
+% INFO    : Gen at bus 2	: Pg=29.5, Qg=0.0 -> Pg=153.0, Qg=41.0
 % INFO    : Gen at bus 3	: Pg=0.0, Qg=20.0 -> Pg=0.0, Qg=60.0
-% INFO    : Gen at bus 6	: Pg=0.0, Qg=9.0 -> Pg=0.0, Qg=47.0
+% INFO    : Gen at bus 6	: Pg=0.0, Qg=9.0 -> Pg=0.0, Qg=48.0
 % INFO    : Gen at bus 8	: Pg=0.0, Qg=9.0 -> Pg=0.0, Qg=25.0
 % INFO    : 
 % INFO    : === Generator Reactive Capacity Atleast Setpoint Value Notes ===
-% INFO    : Gen at bus 1	: Qg 31.0, Qmin 0.0, Qmax 10.0 -> Qmin -37.2, Qmax 37.2
-% INFO    : Gen at bus 2	: Qg 48.0, Qmin -30.0, Qmax 30.0 -> Qmin -57.6, Qmax 57.6
+% INFO    : Gen at bus 1	: Qg 37.0, Qmin 0.0, Qmax 10.0 -> Qmin -44.4, Qmax 44.4
+% INFO    : Gen at bus 2	: Qg 41.0, Qmin -30.0, Qmax 30.0 -> Qmin -49.2, Qmax 49.2
 % INFO    : Gen at bus 3	: Qg 60.0, Qmin 0.0, Qmax 40.0 -> Qmin -72.0, Qmax 72.0
-% INFO    : Gen at bus 6	: Qg 47.0, Qmin -6.0, Qmax 24.0 -> Qmin -56.4, Qmax 56.4
+% INFO    : Gen at bus 6	: Qg 48.0, Qmin -6.0, Qmax 24.0 -> Qmin -57.6, Qmax 57.6
 % INFO    : Gen at bus 8	: Qg 25.0, Qmin -6.0, Qmax 24.0 -> Qmin -30.0, Qmax 30.0
 % INFO    : 
 % INFO    : === Generator Classification Notes ===
@@ -112,8 +112,8 @@ mpc.branch = [
 % INFO    : NG     2   -   100.00
 % INFO    : 
 % INFO    : === Generator Active Capacity Stat Model Notes ===
-% INFO    : Gen at bus 1 - NG	: Pg=355.0, Pmax=340.0 -> Pmax=398   samples: 10
-% INFO    : Gen at bus 2 - NG	: Pg=151.0, Pmax=59.0 -> Pmax=230   samples: 1
+% INFO    : Gen at bus 1 - NG	: Pg=353.0, Pmax=340.0 -> Pmax=398   samples: 10
+% INFO    : Gen at bus 2 - NG	: Pg=153.0, Pmax=59.0 -> Pmax=230   samples: 1
 % INFO    : Gen at bus 3 - SYNC	: Pg=0.0, Pmax=0.0 -> Pmax=0   samples: 0
 % INFO    : Gen at bus 6 - SYNC	: Pg=0.0, Pmax=0.0 -> Pmax=0   samples: 0
 % INFO    : Gen at bus 8 - SYNC	: Pg=0.0, Pmax=0.0 -> Pmax=0   samples: 0
@@ -121,17 +121,17 @@ mpc.branch = [
 % INFO    : === Generator Active Capacity LB Model Notes ===
 % INFO    : 
 % INFO    : === Generator Reactive Capacity Atleast Max 50 Percent Active Model Notes ===
-% INFO    : Gen at bus 1 - NG	: Pmax 398.0, Qmin -37.2, Qmax 37.2 -> Qmin -199.0, Qmax 199.0
-% INFO    : Gen at bus 2 - NG	: Pmax 230.0, Qmin -57.6, Qmax 57.6 -> Qmin -115.0, Qmax 115.0
+% INFO    : Gen at bus 1 - NG	: Pmax 398.0, Qmin -44.4, Qmax 44.4 -> Qmin -199.0, Qmax 199.0
+% INFO    : Gen at bus 2 - NG	: Pmax 230.0, Qmin -49.2, Qmax 49.2 -> Qmin -115.0, Qmax 115.0
 % INFO    : 
 % INFO    : === Generator Setpoint Replacement Notes ===
-% INFO    : Gen at bus 1	: Pg=355.0, Qg=31.0 -> Pg=199.0, Qg=0.0
+% INFO    : Gen at bus 1	: Pg=353.0, Qg=37.0 -> Pg=199.0, Qg=0.0
 % INFO    : Gen at bus 1	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2	: Pg=151.0, Qg=48.0 -> Pg=115.0, Qg=0.0
+% INFO    : Gen at bus 2	: Pg=153.0, Qg=41.0 -> Pg=115.0, Qg=0.0
 % INFO    : Gen at bus 2	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 3	: Pg=0.0, Qg=60.0 -> Pg=0.0, Qg=0.0
 % INFO    : Gen at bus 3	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 6	: Pg=0.0, Qg=47.0 -> Pg=0.0, Qg=0.0
+% INFO    : Gen at bus 6	: Pg=0.0, Qg=48.0 -> Pg=0.0, Qg=0.0
 % INFO    : Gen at bus 6	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 8	: Pg=0.0, Qg=25.0 -> Pg=0.0, Qg=0.0
 % INFO    : Gen at bus 8	: Vg=1.0 -> Vg=1.0
