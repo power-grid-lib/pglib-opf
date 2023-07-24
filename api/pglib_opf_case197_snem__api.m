@@ -215,41 +215,41 @@ mpc.bus = [
 %% generator data
 %	bus	Pg	Qg	Qmax	Qmin	Vg	mBase	status	Pmax	Pmin
 mpc.gen = [
-	2114	 46.0	 10.0	 110.0	 -90.0	 1.0	 147.696965935	 1	 92	 0.0; % NG
-	2115	 109.5	 5.0	 120.0	 -110.0	 1.0	 147.170128863	 1	 219	 0.0; % COW
-	2116	 72.0	 0.0	 72.0	 -72.0	 1.0	 99.8268229078	 1	 144	 0.0; % NG
-	2117	 97.0	 0.0	 97.0	 -97.0	 1.0	 59.56099006	 1	 194	 0.0; % PEL
-	2118	 134.5	 0.0	 135.0	 -135.0	 1.0	 123.244468958	 1	 269	 0.0; % NG
-	2119	 87.0	 0.0	 87.0	 -87.0	 1.0	 37.8683050583	 1	 174	 0.0; % COW
-	2123	 40.0	 0.0	 72.0	 -72.0	 1.0	 72.6031327684	 1	 80	 0.0; % NG
-	2124	 172.5	 0.0	 173.0	 -173.0	 1.0	 192.647608941	 1	 345	 0.0; % NG
-	2125	 113.5	 0.0	 114.0	 -114.0	 1.0	 96.002555525	 1	 227	 0.0; % NG
-	2126	 12.5	 3.5	 20.0	 -13.0	 1.0	 16.4278021573	 1	 25	 0.0; % NG
-	2127	 27.0	 0.0	 27.0	 -27.0	 1.0	 40.33056631	 1	 54	 0.0; % NG
-	2128	 38.5	 0.0	 39.0	 -39.0	 1.0	 40.0795192	 1	 77	 0.0; % NG
-	2129	 27.0	 0.0	 27.0	 -27.0	 1.0	 33.6463986922	 1	 54	 0.0; % PEL
-	2130	 41.0	 0.0	 41.0	 -41.0	 1.0	 33.3273031253	 1	 82	 0.0; % NG
-	2131	 25.0	 0.0	 25.0	 -25.0	 1.0	 34.2333408685	 1	 50	 0.0; % NG
-	2132	 22.5	 3.5	 30.0	 -23.0	 1.0	 37.7499579499	 1	 45	 0.0; % PEL
-	2133	 35.0	 2.5	 40.0	 -35.0	 1.0	 53.9771218854	 1	 70	 0.0; % COW
-	2134	 58.5	 5.5	 70.0	 -59.0	 1.0	 169.17400955	 1	 117	 0.0; % NG
-	2135	 68.5	 5.0	 80.0	 -70.0	 1.0	 175.344738018	 1	 137	 0.0; % COW
-	2136	 38.5	 10.0	 80.0	 -60.0	 1.0	 168.121105693	 1	 77	 0.0; % NG
-	2138	 30.0	 1.4	 40.0	 -37.2	 1.0	 33.7659113865	 1	 60	 0.0; % NG
-	2139	 57.0	 0.0	 57.0	 -57.0	 1.0	 36.76534479	 1	 114	 0.0; % NG
-	2140	 25.0	 10.0	 70.0	 -50.0	 1.0	 67.9893259308	 1	 50	 0.0; % NG
-	2142	 59.0	 5.5	 70.0	 -59.0	 1.0	 68.3699770729	 1	 118	 0.0; % PEL
-	2143	 33.0	 15.0	 70.0	 -40.0	 1.0	 66.635863774	 1	 66	 0.0; % PEL
-	2144	 68.0	 1.0	 70.0	 -68.0	 1.0	 67.2894188494	 1	 136	 0.0; % PEL
-	2148	 97.5	 0.0	 98.0	 -98.0	 1.0	 83.725310623	 1	 195	 0.0; % NG
-	2329	 28.5	 0.5	 30.0	 -29.0	 1.0	 65.7624427797	 1	 57	 0.0; % NG
-	2330	 16.5	 1.5	 20.0	 -17.0	 1.0	 36.1447293924	 1	 33	 0.0; % NG
-	2331	 17.0	 0.0	 20.0	 -20.0	 1.0	 32.9465583476	 1	 34	 0.0; % NG
-	2332	 20.5	 0.0	 21.0	 -21.0	 1.0	 34.0468555721	 1	 41	 0.0; % COW
-	2333	 84.0	 0.0	 84.0	 -84.0	 1.0	 16.3866927561	 1	 168	 0.0; % COW
-	2334	 23.0	 0.0	 23.0	 -23.0	 1.0	 32.5552539895	 1	 46	 0.0; % COW
-	2335	 55.0	 0.0	 55.0	 -55.0	 1.0	 31.9203887789	 1	 110	 0.0; % NG
-	2250	 705.0	 0.0	 705.0	 -705.0	 1.0	 5.43358585262	 1	 1410	 0.0; % NG
+	2114	 2.0	 10.0	 110.0	 -90.0	 1.0	 147.696965935	 1	 4	 0.0; % NG
+	2115	 2.0	 5.0	 120.0	 -110.0	 1.0	 147.170128863	 1	 4	 0.0; % COW
+	2116	 106.5	 0.0	 107.0	 -107.0	 1.0	 99.8268229078	 1	 213	 0.0; % NG
+	2117	 1.5	 0.0	 20.0	 -20.0	 1.0	 59.56099006	 1	 3	 0.0; % PEL
+	2118	 1.0	 5.0	 90.0	 -80.0	 1.0	 123.244468958	 1	 2	 0.0; % NG
+	2119	 4.0	 0.0	 20.0	 -20.0	 1.0	 37.8683050583	 1	 8	 0.0; % COW
+	2123	 3.5	 0.0	 72.0	 -72.0	 1.0	 72.6031327684	 1	 7	 0.0; % NG
+	2124	 208.0	 0.0	 208.0	 -208.0	 1.0	 192.647608941	 1	 416	 0.0; % NG
+	2125	 158.5	 0.0	 159.0	 -159.0	 1.0	 96.002555525	 1	 317	 0.0; % NG
+	2126	 2.0	 5.0	 20.0	 -10.0	 1.0	 16.4278021573	 1	 4	 0.0; % NG
+	2127	 2.0	 0.0	 20.0	 -20.0	 1.0	 40.33056631	 1	 4	 0.0; % NG
+	2128	 1.5	 0.0	 20.0	 -20.0	 1.0	 40.0795192	 1	 3	 0.0; % NG
+	2129	 84.0	 0.0	 84.0	 -84.0	 1.0	 33.6463986922	 1	 168	 0.0; % PEL
+	2130	 60.0	 0.0	 60.0	 -60.0	 1.0	 33.3273031253	 1	 120	 0.0; % NG
+	2131	 79.5	 0.0	 80.0	 -80.0	 1.0	 34.2333408685	 1	 159	 0.0; % NG
+	2132	 1.0	 8.4	 30.0	 -13.2	 1.0	 37.7499579499	 1	 2	 0.0; % PEL
+	2133	 0.5	 10.0	 40.0	 -20.0	 1.0	 53.9771218854	 1	 1	 0.0; % COW
+	2134	 1.5	 10.0	 70.0	 -50.0	 1.0	 169.17400955	 1	 3	 0.0; % NG
+	2135	 2.0	 5.0	 80.0	 -70.0	 1.0	 175.344738018	 1	 4	 0.0; % COW
+	2136	 2.0	 10.0	 80.0	 -60.0	 1.0	 168.121105693	 1	 4	 0.0; % NG
+	2138	 102.0	 0.0	 102.0	 -102.0	 1.0	 33.7659113865	 1	 204	 0.0; % NG
+	2139	 90.5	 0.0	 91.0	 -91.0	 1.0	 36.76534479	 1	 181	 0.0; % NG
+	2140	 99.0	 0.0	 99.0	 -99.0	 1.0	 67.9893259308	 1	 198	 0.0; % NG
+	2142	 1.0	 15.0	 70.0	 -40.0	 1.0	 68.3699770729	 1	 2	 0.0; % PEL
+	2143	 0.5	 15.0	 70.0	 -40.0	 1.0	 66.635863774	 1	 1	 0.0; % PEL
+	2144	 1.0	 15.0	 70.0	 -40.0	 1.0	 67.2894188494	 1	 2	 0.0; % PEL
+	2148	 9.0	 -5.0	 10.0	 -20.0	 1.0	 83.725310623	 1	 18	 0.0; % NG
+	2329	 2.0	 5.0	 30.0	 -20.0	 1.0	 65.7624427797	 1	 4	 0.0; % NG
+	2330	 1.5	 5.0	 20.0	 -10.0	 1.0	 36.1447293924	 1	 3	 0.0; % NG
+	2331	 1.0	 0.0	 20.0	 -20.0	 1.0	 32.9465583476	 1	 2	 0.0; % NG
+	2332	 0.5	 -5.0	 10.0	 -20.0	 1.0	 34.0468555721	 1	 1	 0.0; % COW
+	2333	 0.5	 0.0	 10.0	 -10.0	 1.0	 16.3866927561	 1	 1	 0.0; % COW
+	2334	 1.0	 5.0	 20.0	 -10.0	 1.0	 32.5552539895	 1	 2	 0.0; % COW
+	2335	 2.0	 5.0	 20.0	 -10.0	 1.0	 31.9203887789	 1	 4	 0.0; % NG
+	2250	 701.5	 0.0	 702.0	 -702.0	 1.0	 5.43358585262	 1	 1403	 0.0; % NG
 ];
 
 %% generator cost data
@@ -657,195 +657,175 @@ mpc.branch = [
 % INFO    : Bus 2339	: Pd=15.7169929211, Qd=-4.31763789598 -> Pd=15.72, Qd=-4.32
 % INFO    : 
 % INFO    : === Generator Setpoint Replacement Notes ===
-% INFO    : Gen at bus 2114	: Pg=75.0, Qg=10.0 -> Pg=67.0, Qg=-11.0
-% INFO    : Gen at bus 2115	: Pg=75.0, Qg=5.0 -> Pg=67.0, Qg=-12.0
-% INFO    : Gen at bus 2116	: Pg=50.0, Qg=10.0 -> Pg=45.0, Qg=-1.0
-% INFO    : Gen at bus 2117	: Pg=30.0, Qg=0.0 -> Pg=42.0, Qg=-31.0
-% INFO    : Gen at bus 2118	: Pg=65.0, Qg=5.0 -> Pg=81.0, Qg=-47.0
-% INFO    : Gen at bus 2119	: Pg=20.0, Qg=0.0 -> Pg=37.0, Qg=-3.0
+% INFO    : Gen at bus 2114	: Pg=75.0, Qg=10.0 -> Pg=1.0, Qg=6.0
+% INFO    : Gen at bus 2115	: Pg=75.0, Qg=5.0 -> Pg=1.0, Qg=3.0
+% INFO    : Gen at bus 2116	: Pg=50.0, Qg=10.0 -> Pg=96.0, Qg=8.0
+% INFO    : Gen at bus 2117	: Pg=30.0, Qg=0.0 -> Pg=1.0, Qg=-5.0
+% INFO    : Gen at bus 2118	: Pg=65.0, Qg=5.0 -> Pg=1.0, Qg=7.0
+% INFO    : Gen at bus 2119	: Pg=20.0, Qg=0.0 -> Pg=4.0, Qg=3.0
 % INFO    : Gen at bus 2123	: Pg=40.0, Qg=10.0 -> Pg=0.0, Qg=-60.0
-% INFO    : Gen at bus 2124	: Pg=100.0, Qg=40.0 -> Pg=128.0, Qg=-84.0
-% INFO    : Gen at bus 2125	: Pg=50.0, Qg=25.0 -> Pg=69.0, Qg=-46.0
-% INFO    : Gen at bus 2126	: Pg=10.0, Qg=5.0 -> Pg=11.0, Qg=-4.0
-% INFO    : Gen at bus 2127	: Pg=25.0, Qg=0.0 -> Pg=22.0, Qg=-16.0
-% INFO    : Gen at bus 2128	: Pg=25.0, Qg=0.0 -> Pg=22.0, Qg=-15.0
-% INFO    : Gen at bus 2129	: Pg=20.0, Qg=5.0 -> Pg=19.0, Qg=2.0
-% INFO    : Gen at bus 2130	: Pg=20.0, Qg=5.0 -> Pg=19.0, Qg=2.0
-% INFO    : Gen at bus 2131	: Pg=20.0, Qg=5.0 -> Pg=19.0, Qg=2.0
-% INFO    : Gen at bus 2132	: Pg=20.0, Qg=10.0 -> Pg=31.0, Qg=-5.0
-% INFO    : Gen at bus 2133	: Pg=30.0, Qg=10.0 -> Pg=33.0, Qg=9.0
-% INFO    : Gen at bus 2134	: Pg=85.0, Qg=10.0 -> Pg=62.0, Qg=7.0
-% INFO    : Gen at bus 2135	: Pg=90.0, Qg=5.0 -> Pg=61.0, Qg=7.0
-% INFO    : Gen at bus 2136	: Pg=85.0, Qg=10.0 -> Pg=63.0, Qg=6.0
-% INFO    : Gen at bus 2138	: Pg=20.0, Qg=5.0 -> Pg=46.0, Qg=-31.0
-% INFO    : Gen at bus 2139	: Pg=20.0, Qg=5.0 -> Pg=49.0, Qg=-34.0
-% INFO    : Gen at bus 2140	: Pg=35.0, Qg=10.0 -> Pg=32.0, Qg=-16.0
-% INFO    : Gen at bus 2142	: Pg=35.0, Qg=15.0 -> Pg=45.0, Qg=-10.0
-% INFO    : Gen at bus 2143	: Pg=35.0, Qg=15.0 -> Pg=47.0, Qg=-14.0
-% INFO    : Gen at bus 2144	: Pg=35.0, Qg=15.0 -> Pg=45.0, Qg=-10.0
-% INFO    : Gen at bus 2148	: Pg=45.0, Qg=-5.0 -> Pg=41.0, Qg=-11.0
-% INFO    : Gen at bus 2329	: Pg=35.0, Qg=5.0 -> Pg=46.0, Qg=-13.0
-% INFO    : Gen at bus 2330	: Pg=20.0, Qg=5.0 -> Pg=28.0, Qg=-4.0
-% INFO    : Gen at bus 2331	: Pg=20.0, Qg=0.0 -> Pg=24.0, Qg=-3.0
-% INFO    : Gen at bus 2332	: Pg=20.0, Qg=-5.0 -> Pg=23.0, Qg=-3.0
-% INFO    : Gen at bus 2333	: Pg=10.0, Qg=0.0 -> Pg=40.0, Qg=-11.0
-% INFO    : Gen at bus 2334	: Pg=20.0, Qg=5.0 -> Pg=25.0, Qg=-4.0
-% INFO    : Gen at bus 2335	: Pg=20.0, Qg=5.0 -> Pg=24.0, Qg=-3.0
-% INFO    : Gen at bus 2250	: Pg=275.0, Qg=5.0 -> Pg=1249.0, Qg=278.0
+% INFO    : Gen at bus 2124	: Pg=100.0, Qg=40.0 -> Pg=403.0, Qg=26.0
+% INFO    : Gen at bus 2125	: Pg=50.0, Qg=25.0 -> Pg=213.0, Qg=12.0
+% INFO    : Gen at bus 2126	: Pg=10.0, Qg=5.0 -> Pg=1.0, Qg=4.0
+% INFO    : Gen at bus 2127	: Pg=25.0, Qg=0.0 -> Pg=1.0, Qg=-2.0
+% INFO    : Gen at bus 2128	: Pg=25.0, Qg=0.0 -> Pg=1.0, Qg=-2.0
+% INFO    : Gen at bus 2129	: Pg=20.0, Qg=5.0 -> Pg=90.0, Qg=4.0
+% INFO    : Gen at bus 2130	: Pg=20.0, Qg=5.0 -> Pg=91.0, Qg=4.0
+% INFO    : Gen at bus 2131	: Pg=20.0, Qg=5.0 -> Pg=91.0, Qg=4.0
+% INFO    : Gen at bus 2132	: Pg=20.0, Qg=10.0 -> Pg=1.0, Qg=11.0
+% INFO    : Gen at bus 2133	: Pg=30.0, Qg=10.0 -> Pg=1.0, Qg=10.0
+% INFO    : Gen at bus 2134	: Pg=85.0, Qg=10.0 -> Pg=1.0, Qg=11.0
+% INFO    : Gen at bus 2135	: Pg=90.0, Qg=5.0 -> Pg=1.0, Qg=6.0
+% INFO    : Gen at bus 2136	: Pg=85.0, Qg=10.0 -> Pg=1.0, Qg=11.0
+% INFO    : Gen at bus 2138	: Pg=20.0, Qg=5.0 -> Pg=159.0, Qg=-3.0
+% INFO    : Gen at bus 2139	: Pg=20.0, Qg=5.0 -> Pg=128.0, Qg=-3.0
+% INFO    : Gen at bus 2140	: Pg=35.0, Qg=10.0 -> Pg=146.0, Qg=7.0
+% INFO    : Gen at bus 2142	: Pg=35.0, Qg=15.0 -> Pg=1.0, Qg=16.0
+% INFO    : Gen at bus 2143	: Pg=35.0, Qg=15.0 -> Pg=1.0, Qg=16.0
+% INFO    : Gen at bus 2144	: Pg=35.0, Qg=15.0 -> Pg=1.0, Qg=16.0
+% INFO    : Gen at bus 2148	: Pg=45.0, Qg=-5.0 -> Pg=11.0, Qg=-3.0
+% INFO    : Gen at bus 2329	: Pg=35.0, Qg=5.0 -> Pg=1.0, Qg=7.0
+% INFO    : Gen at bus 2330	: Pg=20.0, Qg=5.0 -> Pg=1.0, Qg=7.0
+% INFO    : Gen at bus 2331	: Pg=20.0, Qg=0.0 -> Pg=1.0, Qg=1.0
+% INFO    : Gen at bus 2332	: Pg=20.0, Qg=-5.0 -> Pg=1.0, Qg=-5.0
+% INFO    : Gen at bus 2333	: Pg=10.0, Qg=0.0 -> Pg=1.0, Qg=1.0
+% INFO    : Gen at bus 2334	: Pg=20.0, Qg=5.0 -> Pg=1.0, Qg=6.0
+% INFO    : Gen at bus 2335	: Pg=20.0, Qg=5.0 -> Pg=1.0, Qg=6.0
+% INFO    : Gen at bus 2250	: Pg=275.0, Qg=5.0 -> Pg=1242.0, Qg=12.0
 % INFO    : 
 % INFO    : === Generator Reactive Capacity Atleast Setpoint Value Notes ===
-% INFO    : Gen at bus 2117	: Qg -31.0, Qmin -20.0, Qmax 20.0 -> Qmin -37.2, Qmax 37.2
 % INFO    : Gen at bus 2123	: Qg -60.0, Qmin -30.0, Qmax 50.0 -> Qmin -72.0, Qmax 72.0
-% INFO    : Gen at bus 2124	: Qg -84.0, Qmin -40.0, Qmax 120.0 -> Qmin -100.8, Qmax 120.0
-% INFO    : Gen at bus 2125	: Qg -46.0, Qmin -20.0, Qmax 70.0 -> Qmin -55.2, Qmax 70.0
-% INFO    : Gen at bus 2138	: Qg -31.0, Qmin -30.0, Qmax 40.0 -> Qmin -37.2, Qmax 40.0
-% INFO    : Gen at bus 2139	: Qg -34.0, Qmin -10.0, Qmax 20.0 -> Qmin -40.8, Qmax 40.8
-% INFO    : Gen at bus 2148	: Qg -11.0, Qmin -20.0, Qmax 10.0 -> Qmin -20.0, Qmax 13.2
-% INFO    : Gen at bus 2333	: Qg -11.0, Qmin -10.0, Qmax 10.0 -> Qmin -13.2, Qmax 13.2
+% INFO    : Gen at bus 2132	: Qg 11.0, Qmin -10.0, Qmax 30.0 -> Qmin -13.2, Qmax 30.0
 % INFO    : 
 % INFO    : === Generator Classification Notes ===
-% INFO    : PEL    6   -     8.60
-% INFO    : COW    7   -    10.74
-% INFO    : NG     22  -    80.65
+% INFO    : PEL    6   -     3.52
+% INFO    : COW    7   -     0.37
+% INFO    : NG     22  -    96.11
 % INFO    : 
 % INFO    : === Generator Active Capacity Stat Model Notes ===
-% INFO    : Gen at bus 2114 - NG	: Pg=67.0, Pmax=150.0 -> Pmax=92   samples: 1
-% INFO    : Gen at bus 2115 - COW	: Pg=67.0, Pmax=150.0 -> Pmax=219   samples: 2
-% INFO    : Gen at bus 2116 - NG	: Pg=45.0, Pmax=100.0 -> Pmax=144   samples: 5
-% INFO    : Gen at bus 2117 - PEL	: Pg=42.0, Pmax=60.0 -> Pmax=194   samples: 3
-% INFO    : Gen at bus 2118 - NG	: Pg=81.0, Pmax=130.0 -> Pmax=269   samples: 1
-% INFO    : Gen at bus 2119 - COW	: Pg=37.0, Pmax=40.0 -> Pmax=174   samples: 5
-% INFO    : Gen at bus 2123 - NG	: Pg=0.0, Pmax=80.0 -> Pmax=80   samples: 1
-% INFO    : Gen at bus 2124 - NG	: Pg=128.0, Pmax=200.0 -> Pmax=345   samples: 1
-% INFO    : Gen at bus 2125 - NG	: Pg=69.0, Pmax=100.0 -> Pmax=227   samples: 3
-% INFO    : Gen at bus 2126 - NG	: Pg=11.0, Pmax=20.0 -> Pmax=25   samples: 1
-% INFO    : Gen at bus 2127 - NG	: Pg=22.0, Pmax=50.0 -> Pmax=54   samples: 10
-% INFO    : Gen at bus 2128 - NG	: Pg=22.0, Pmax=50.0 -> Pmax=77   samples: 3
-% INFO    : Gen at bus 2129 - PEL	: Pg=19.0, Pmax=40.0 -> Pmax=54   samples: 1
-% INFO    : Gen at bus 2130 - NG	: Pg=19.0, Pmax=40.0 -> Pmax=82   samples: 1
-% INFO    : Gen at bus 2131 - NG	: Pg=19.0, Pmax=40.0 -> Pmax=50   samples: 1
-% INFO    : Gen at bus 2132 - PEL	: Pg=31.0, Pmax=40.0 -> Pmax=45   samples: 1
-% INFO    : Gen at bus 2133 - COW	: Pg=33.0, Pmax=60.0 -> Pmax=70   samples: 13
-% INFO    : Gen at bus 2134 - NG	: Pg=62.0, Pmax=170.0 -> Pmax=117   samples: 1
-% INFO    : Gen at bus 2135 - COW	: Pg=61.0, Pmax=180.0 -> Pmax=137   samples: 1
-% INFO    : Gen at bus 2136 - NG	: Pg=63.0, Pmax=170.0 -> Pmax=77   samples: 1
-% INFO    : Gen at bus 2138 - NG	: Pg=46.0, Pmax=40.0 -> Pmax=60   samples: 3
-% INFO    : Gen at bus 2139 - NG	: Pg=49.0, Pmax=40.0 -> Pmax=114   samples: 1
-% INFO    : Gen at bus 2140 - NG	: Pg=32.0, Pmax=70.0 -> Pmax=50   samples: 2
-% INFO    : Gen at bus 2142 - PEL	: Pg=45.0, Pmax=70.0 -> Pmax=118   samples: 9
-% INFO    : Gen at bus 2143 - PEL	: Pg=47.0, Pmax=70.0 -> Pmax=66   samples: 5
-% INFO    : Gen at bus 2144 - PEL	: Pg=45.0, Pmax=70.0 -> Pmax=136   samples: 4
-% INFO    : Gen at bus 2148 - NG	: Pg=41.0, Pmax=90.0 -> Pmax=195   samples: 1
-% INFO    : Gen at bus 2329 - NG	: Pg=46.0, Pmax=70.0 -> Pmax=57   samples: 1
-% INFO    : Gen at bus 2330 - NG	: Pg=28.0, Pmax=40.0 -> Pmax=33   samples: 6
-% INFO    : Gen at bus 2331 - NG	: Pg=24.0, Pmax=40.0 -> Pmax=34   samples: 2
-% INFO    : Gen at bus 2332 - COW	: Pg=23.0, Pmax=40.0 -> Pmax=41   samples: 1
-% INFO    : Gen at bus 2333 - COW	: Pg=40.0, Pmax=20.0 -> Pmax=168   samples: 3
-% INFO    : Gen at bus 2334 - COW	: Pg=25.0, Pmax=40.0 -> Pmax=46   samples: 1
-% INFO    : Gen at bus 2335 - NG	: Pg=24.0, Pmax=40.0 -> Pmax=110   samples: 3
-% WARNING : Failed to find a generator capacity within (1249.0-6245.0) after 100 samples, using percent increase model
-% INFO    : Gen at bus 2250 - NG	: Pg=1249.0, Pmax=550.0 -> Pmax=1410   samples: 100
+% INFO    : Gen at bus 2114 - NG	: Pg=1.0, Pmax=150.0 -> Pmax=4   samples: 41
+% INFO    : Gen at bus 2115 - COW	: Pg=1.0, Pmax=150.0 -> Pmax=4   samples: 93
+% INFO    : Gen at bus 2116 - NG	: Pg=96.0, Pmax=100.0 -> Pmax=213   samples: 1
+% INFO    : Gen at bus 2117 - PEL	: Pg=1.0, Pmax=60.0 -> Pmax=3   samples: 3
+% INFO    : Gen at bus 2118 - NG	: Pg=1.0, Pmax=130.0 -> Pmax=2   samples: 16
+% INFO    : Gen at bus 2119 - COW	: Pg=4.0, Pmax=40.0 -> Pmax=8   samples: 10
+% INFO    : Gen at bus 2123 - NG	: Pg=0.0, Pmax=80.0 -> Pmax=7   samples: 1
+% INFO    : Gen at bus 2124 - NG	: Pg=403.0, Pmax=200.0 -> Pmax=416   samples: 28
+% INFO    : Gen at bus 2125 - NG	: Pg=213.0, Pmax=100.0 -> Pmax=317   samples: 14
+% INFO    : Gen at bus 2126 - NG	: Pg=1.0, Pmax=20.0 -> Pmax=4   samples: 2
+% INFO    : Gen at bus 2127 - NG	: Pg=1.0, Pmax=50.0 -> Pmax=4   samples: 21
+% INFO    : Gen at bus 2128 - NG	: Pg=1.0, Pmax=50.0 -> Pmax=3   samples: 7
+% INFO    : Gen at bus 2129 - PEL	: Pg=90.0, Pmax=40.0 -> Pmax=168   samples: 7
+% INFO    : Gen at bus 2130 - NG	: Pg=91.0, Pmax=40.0 -> Pmax=120   samples: 1
+% INFO    : Gen at bus 2131 - NG	: Pg=91.0, Pmax=40.0 -> Pmax=159   samples: 1
+% INFO    : Gen at bus 2132 - PEL	: Pg=1.0, Pmax=40.0 -> Pmax=2   samples: 6
+% WARNING : Failed to find a generator capacity within (1.0-5.0) after 100 samples, using percent increase model
+% INFO    : Gen at bus 2133 - COW	: Pg=1.0, Pmax=60.0 -> Pmax=1   samples: 100
+% INFO    : Gen at bus 2134 - NG	: Pg=1.0, Pmax=170.0 -> Pmax=3   samples: 16
+% INFO    : Gen at bus 2135 - COW	: Pg=1.0, Pmax=180.0 -> Pmax=4   samples: 64
+% INFO    : Gen at bus 2136 - NG	: Pg=1.0, Pmax=170.0 -> Pmax=4   samples: 18
+% INFO    : Gen at bus 2138 - NG	: Pg=159.0, Pmax=40.0 -> Pmax=204   samples: 2
+% INFO    : Gen at bus 2139 - NG	: Pg=128.0, Pmax=40.0 -> Pmax=181   samples: 1
+% INFO    : Gen at bus 2140 - NG	: Pg=146.0, Pmax=70.0 -> Pmax=198   samples: 2
+% INFO    : Gen at bus 2142 - PEL	: Pg=1.0, Pmax=70.0 -> Pmax=2   samples: 1
+% INFO    : Gen at bus 2143 - PEL	: Pg=1.0, Pmax=70.0 -> Pmax=1   samples: 25
+% INFO    : Gen at bus 2144 - PEL	: Pg=1.0, Pmax=70.0 -> Pmax=2   samples: 17
+% INFO    : Gen at bus 2148 - NG	: Pg=11.0, Pmax=90.0 -> Pmax=18   samples: 2
+% INFO    : Gen at bus 2329 - NG	: Pg=1.0, Pmax=70.0 -> Pmax=4   samples: 8
+% INFO    : Gen at bus 2330 - NG	: Pg=1.0, Pmax=40.0 -> Pmax=3   samples: 17
+% INFO    : Gen at bus 2331 - NG	: Pg=1.0, Pmax=40.0 -> Pmax=2   samples: 1
+% INFO    : Gen at bus 2332 - COW	: Pg=1.0, Pmax=40.0 -> Pmax=1   samples: 22
+% WARNING : Failed to find a generator capacity within (1.0-5.0) after 100 samples, using percent increase model
+% INFO    : Gen at bus 2333 - COW	: Pg=1.0, Pmax=20.0 -> Pmax=1   samples: 100
+% INFO    : Gen at bus 2334 - COW	: Pg=1.0, Pmax=40.0 -> Pmax=2   samples: 26
+% INFO    : Gen at bus 2335 - NG	: Pg=1.0, Pmax=40.0 -> Pmax=4   samples: 15
+% WARNING : Failed to find a generator capacity within (1242.0-6210.0) after 100 samples, using percent increase model
+% INFO    : Gen at bus 2250 - NG	: Pg=1242.0, Pmax=550.0 -> Pmax=1403   samples: 100
 % INFO    : 
 % INFO    : === Generator Active Capacity LB Model Notes ===
 % INFO    : 
 % INFO    : === Generator Reactive Capacity Atleast Max 50 Percent Active Model Notes ===
-% INFO    : Gen at bus 2116 - NG	: Pmax 144.0, Qmin -40.0, Qmax 60.0 -> Qmin -72.0, Qmax 72.0
-% INFO    : Gen at bus 2117 - PEL	: Pmax 194.0, Qmin -37.2, Qmax 37.2 -> Qmin -97.0, Qmax 97.0
-% INFO    : Gen at bus 2118 - NG	: Pmax 269.0, Qmin -80.0, Qmax 90.0 -> Qmin -135.0, Qmax 135.0
-% INFO    : Gen at bus 2119 - COW	: Pmax 174.0, Qmin -20.0, Qmax 20.0 -> Qmin -87.0, Qmax 87.0
-% INFO    : Gen at bus 2124 - NG	: Pmax 345.0, Qmin -100.8, Qmax 120.0 -> Qmin -173.0, Qmax 173.0
-% INFO    : Gen at bus 2125 - NG	: Pmax 227.0, Qmin -55.2, Qmax 70.0 -> Qmin -114.0, Qmax 114.0
-% INFO    : Gen at bus 2126 - NG	: Pmax 25.0, Qmin -10.0, Qmax 20.0 -> Qmin -13.0, Qmax 20.0
-% INFO    : Gen at bus 2127 - NG	: Pmax 54.0, Qmin -20.0, Qmax 20.0 -> Qmin -27.0, Qmax 27.0
-% INFO    : Gen at bus 2128 - NG	: Pmax 77.0, Qmin -20.0, Qmax 20.0 -> Qmin -39.0, Qmax 39.0
-% INFO    : Gen at bus 2129 - PEL	: Pmax 54.0, Qmin -10.0, Qmax 20.0 -> Qmin -27.0, Qmax 27.0
-% INFO    : Gen at bus 2130 - NG	: Pmax 82.0, Qmin -10.0, Qmax 20.0 -> Qmin -41.0, Qmax 41.0
-% INFO    : Gen at bus 2131 - NG	: Pmax 50.0, Qmin -10.0, Qmax 20.0 -> Qmin -25.0, Qmax 25.0
-% INFO    : Gen at bus 2132 - PEL	: Pmax 45.0, Qmin -10.0, Qmax 30.0 -> Qmin -23.0, Qmax 30.0
-% INFO    : Gen at bus 2133 - COW	: Pmax 70.0, Qmin -20.0, Qmax 40.0 -> Qmin -35.0, Qmax 40.0
-% INFO    : Gen at bus 2134 - NG	: Pmax 117.0, Qmin -50.0, Qmax 70.0 -> Qmin -59.0, Qmax 70.0
-% INFO    : Gen at bus 2139 - NG	: Pmax 114.0, Qmin -40.8, Qmax 40.8 -> Qmin -57.0, Qmax 57.0
-% INFO    : Gen at bus 2142 - PEL	: Pmax 118.0, Qmin -40.0, Qmax 70.0 -> Qmin -59.0, Qmax 70.0
-% INFO    : Gen at bus 2144 - PEL	: Pmax 136.0, Qmin -40.0, Qmax 70.0 -> Qmin -68.0, Qmax 70.0
-% INFO    : Gen at bus 2148 - NG	: Pmax 195.0, Qmin -20.0, Qmax 13.2 -> Qmin -98.0, Qmax 98.0
-% INFO    : Gen at bus 2329 - NG	: Pmax 57.0, Qmin -20.0, Qmax 30.0 -> Qmin -29.0, Qmax 30.0
-% INFO    : Gen at bus 2330 - NG	: Pmax 33.0, Qmin -10.0, Qmax 20.0 -> Qmin -17.0, Qmax 20.0
-% INFO    : Gen at bus 2332 - COW	: Pmax 41.0, Qmin -20.0, Qmax 10.0 -> Qmin -21.0, Qmax 21.0
-% INFO    : Gen at bus 2333 - COW	: Pmax 168.0, Qmin -13.2, Qmax 13.2 -> Qmin -84.0, Qmax 84.0
-% INFO    : Gen at bus 2334 - COW	: Pmax 46.0, Qmin -10.0, Qmax 20.0 -> Qmin -23.0, Qmax 23.0
-% INFO    : Gen at bus 2335 - NG	: Pmax 110.0, Qmin -10.0, Qmax 20.0 -> Qmin -55.0, Qmax 55.0
-% INFO    : Gen at bus 2250 - NG	: Pmax 1410.0, Qmin -540.0, Qmax 550.0 -> Qmin -705.0, Qmax 705.0
+% INFO    : Gen at bus 2116 - NG	: Pmax 213.0, Qmin -40.0, Qmax 60.0 -> Qmin -107.0, Qmax 107.0
+% INFO    : Gen at bus 2124 - NG	: Pmax 416.0, Qmin -40.0, Qmax 120.0 -> Qmin -208.0, Qmax 208.0
+% INFO    : Gen at bus 2125 - NG	: Pmax 317.0, Qmin -20.0, Qmax 70.0 -> Qmin -159.0, Qmax 159.0
+% INFO    : Gen at bus 2129 - PEL	: Pmax 168.0, Qmin -10.0, Qmax 20.0 -> Qmin -84.0, Qmax 84.0
+% INFO    : Gen at bus 2130 - NG	: Pmax 120.0, Qmin -10.0, Qmax 20.0 -> Qmin -60.0, Qmax 60.0
+% INFO    : Gen at bus 2131 - NG	: Pmax 159.0, Qmin -10.0, Qmax 20.0 -> Qmin -80.0, Qmax 80.0
+% INFO    : Gen at bus 2138 - NG	: Pmax 204.0, Qmin -30.0, Qmax 40.0 -> Qmin -102.0, Qmax 102.0
+% INFO    : Gen at bus 2139 - NG	: Pmax 181.0, Qmin -10.0, Qmax 20.0 -> Qmin -91.0, Qmax 91.0
+% INFO    : Gen at bus 2140 - NG	: Pmax 198.0, Qmin -50.0, Qmax 70.0 -> Qmin -99.0, Qmax 99.0
+% INFO    : Gen at bus 2250 - NG	: Pmax 1403.0, Qmin -540.0, Qmax 550.0 -> Qmin -702.0, Qmax 702.0
 % INFO    : 
 % INFO    : === Generator Setpoint Replacement Notes ===
-% INFO    : Gen at bus 2114	: Pg=67.0, Qg=-11.0 -> Pg=46.0, Qg=10.0
+% INFO    : Gen at bus 2114	: Pg=1.0, Qg=6.0 -> Pg=2.0, Qg=10.0
 % INFO    : Gen at bus 2114	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2115	: Pg=67.0, Qg=-12.0 -> Pg=109.5, Qg=5.0
+% INFO    : Gen at bus 2115	: Pg=1.0, Qg=3.0 -> Pg=2.0, Qg=5.0
 % INFO    : Gen at bus 2115	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2116	: Pg=45.0, Qg=-1.0 -> Pg=72.0, Qg=0.0
+% INFO    : Gen at bus 2116	: Pg=96.0, Qg=8.0 -> Pg=106.5, Qg=0.0
 % INFO    : Gen at bus 2116	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2117	: Pg=42.0, Qg=-31.0 -> Pg=97.0, Qg=0.0
+% INFO    : Gen at bus 2117	: Pg=1.0, Qg=-5.0 -> Pg=1.5, Qg=0.0
 % INFO    : Gen at bus 2117	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2118	: Pg=81.0, Qg=-47.0 -> Pg=134.5, Qg=0.0
+% INFO    : Gen at bus 2118	: Pg=1.0, Qg=7.0 -> Pg=1.0, Qg=5.0
 % INFO    : Gen at bus 2118	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2119	: Pg=37.0, Qg=-3.0 -> Pg=87.0, Qg=0.0
+% INFO    : Gen at bus 2119	: Pg=4.0, Qg=3.0 -> Pg=4.0, Qg=0.0
 % INFO    : Gen at bus 2119	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2123	: Pg=0.0, Qg=-60.0 -> Pg=40.0, Qg=0.0
+% INFO    : Gen at bus 2123	: Pg=0.0, Qg=-60.0 -> Pg=3.5, Qg=0.0
 % INFO    : Gen at bus 2123	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2124	: Pg=128.0, Qg=-84.0 -> Pg=172.5, Qg=0.0
+% INFO    : Gen at bus 2124	: Pg=403.0, Qg=26.0 -> Pg=208.0, Qg=0.0
 % INFO    : Gen at bus 2124	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2125	: Pg=69.0, Qg=-46.0 -> Pg=113.5, Qg=0.0
+% INFO    : Gen at bus 2125	: Pg=213.0, Qg=12.0 -> Pg=158.5, Qg=0.0
 % INFO    : Gen at bus 2125	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2126	: Pg=11.0, Qg=-4.0 -> Pg=12.5, Qg=3.5
+% INFO    : Gen at bus 2126	: Pg=1.0, Qg=4.0 -> Pg=2.0, Qg=5.0
 % INFO    : Gen at bus 2126	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2127	: Pg=22.0, Qg=-16.0 -> Pg=27.0, Qg=0.0
+% INFO    : Gen at bus 2127	: Pg=1.0, Qg=-2.0 -> Pg=2.0, Qg=0.0
 % INFO    : Gen at bus 2127	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2128	: Pg=22.0, Qg=-15.0 -> Pg=38.5, Qg=0.0
+% INFO    : Gen at bus 2128	: Pg=1.0, Qg=-2.0 -> Pg=1.5, Qg=0.0
 % INFO    : Gen at bus 2128	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2129	: Pg=19.0, Qg=2.0 -> Pg=27.0, Qg=0.0
+% INFO    : Gen at bus 2129	: Pg=90.0, Qg=4.0 -> Pg=84.0, Qg=0.0
 % INFO    : Gen at bus 2129	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2130	: Pg=19.0, Qg=2.0 -> Pg=41.0, Qg=0.0
+% INFO    : Gen at bus 2130	: Pg=91.0, Qg=4.0 -> Pg=60.0, Qg=0.0
 % INFO    : Gen at bus 2130	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2131	: Pg=19.0, Qg=2.0 -> Pg=25.0, Qg=0.0
+% INFO    : Gen at bus 2131	: Pg=91.0, Qg=4.0 -> Pg=79.5, Qg=0.0
 % INFO    : Gen at bus 2131	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2132	: Pg=31.0, Qg=-5.0 -> Pg=22.5, Qg=3.5
+% INFO    : Gen at bus 2132	: Pg=1.0, Qg=11.0 -> Pg=1.0, Qg=8.4
 % INFO    : Gen at bus 2132	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2133	: Pg=33.0, Qg=9.0 -> Pg=35.0, Qg=2.5
+% INFO    : Gen at bus 2133	: Pg=1.0, Qg=10.0 -> Pg=0.5, Qg=10.0
 % INFO    : Gen at bus 2133	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2134	: Pg=62.0, Qg=7.0 -> Pg=58.5, Qg=5.5
+% INFO    : Gen at bus 2134	: Pg=1.0, Qg=11.0 -> Pg=1.5, Qg=10.0
 % INFO    : Gen at bus 2134	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2135	: Pg=61.0, Qg=7.0 -> Pg=68.5, Qg=5.0
+% INFO    : Gen at bus 2135	: Pg=1.0, Qg=6.0 -> Pg=2.0, Qg=5.0
 % INFO    : Gen at bus 2135	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2136	: Pg=63.0, Qg=6.0 -> Pg=38.5, Qg=10.0
+% INFO    : Gen at bus 2136	: Pg=1.0, Qg=11.0 -> Pg=2.0, Qg=10.0
 % INFO    : Gen at bus 2136	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2138	: Pg=46.0, Qg=-31.0 -> Pg=30.0, Qg=1.4
+% INFO    : Gen at bus 2138	: Pg=159.0, Qg=-3.0 -> Pg=102.0, Qg=0.0
 % INFO    : Gen at bus 2138	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2139	: Pg=49.0, Qg=-34.0 -> Pg=57.0, Qg=0.0
+% INFO    : Gen at bus 2139	: Pg=128.0, Qg=-3.0 -> Pg=90.5, Qg=0.0
 % INFO    : Gen at bus 2139	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2140	: Pg=32.0, Qg=-16.0 -> Pg=25.0, Qg=10.0
+% INFO    : Gen at bus 2140	: Pg=146.0, Qg=7.0 -> Pg=99.0, Qg=0.0
 % INFO    : Gen at bus 2140	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2142	: Pg=45.0, Qg=-10.0 -> Pg=59.0, Qg=5.5
+% INFO    : Gen at bus 2142	: Pg=1.0, Qg=16.0 -> Pg=1.0, Qg=15.0
 % INFO    : Gen at bus 2142	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2143	: Pg=47.0, Qg=-14.0 -> Pg=33.0, Qg=15.0
+% INFO    : Gen at bus 2143	: Pg=1.0, Qg=16.0 -> Pg=0.5, Qg=15.0
 % INFO    : Gen at bus 2143	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2144	: Pg=45.0, Qg=-10.0 -> Pg=68.0, Qg=1.0
+% INFO    : Gen at bus 2144	: Pg=1.0, Qg=16.0 -> Pg=1.0, Qg=15.0
 % INFO    : Gen at bus 2144	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2148	: Pg=41.0, Qg=-11.0 -> Pg=97.5, Qg=0.0
+% INFO    : Gen at bus 2148	: Pg=11.0, Qg=-3.0 -> Pg=9.0, Qg=-5.0
 % INFO    : Gen at bus 2148	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2329	: Pg=46.0, Qg=-13.0 -> Pg=28.5, Qg=0.5
+% INFO    : Gen at bus 2329	: Pg=1.0, Qg=7.0 -> Pg=2.0, Qg=5.0
 % INFO    : Gen at bus 2329	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2330	: Pg=28.0, Qg=-4.0 -> Pg=16.5, Qg=1.5
+% INFO    : Gen at bus 2330	: Pg=1.0, Qg=7.0 -> Pg=1.5, Qg=5.0
 % INFO    : Gen at bus 2330	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2331	: Pg=24.0, Qg=-3.0 -> Pg=17.0, Qg=0.0
+% INFO    : Gen at bus 2331	: Pg=1.0, Qg=1.0 -> Pg=1.0, Qg=0.0
 % INFO    : Gen at bus 2331	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2332	: Pg=23.0, Qg=-3.0 -> Pg=20.5, Qg=0.0
+% INFO    : Gen at bus 2332	: Pg=1.0, Qg=-5.0 -> Pg=0.5, Qg=-5.0
 % INFO    : Gen at bus 2332	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2333	: Pg=40.0, Qg=-11.0 -> Pg=84.0, Qg=0.0
+% INFO    : Gen at bus 2333	: Pg=1.0, Qg=1.0 -> Pg=0.5, Qg=0.0
 % INFO    : Gen at bus 2333	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2334	: Pg=25.0, Qg=-4.0 -> Pg=23.0, Qg=0.0
+% INFO    : Gen at bus 2334	: Pg=1.0, Qg=6.0 -> Pg=1.0, Qg=5.0
 % INFO    : Gen at bus 2334	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2335	: Pg=24.0, Qg=-3.0 -> Pg=55.0, Qg=0.0
+% INFO    : Gen at bus 2335	: Pg=1.0, Qg=6.0 -> Pg=2.0, Qg=5.0
 % INFO    : Gen at bus 2335	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 2250	: Pg=1249.0, Qg=278.0 -> Pg=705.0, Qg=0.0
+% INFO    : Gen at bus 2250	: Pg=1242.0, Qg=12.0 -> Pg=701.5, Qg=0.0
 % INFO    : Gen at bus 2250	: Vg=1.0 -> Vg=1.0
 % INFO    : 
 % INFO    : === Writing Matpower Case File Notes ===
