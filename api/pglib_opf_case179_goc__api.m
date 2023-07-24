@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v21.07     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v23.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                         29 - July - 2021                         %%%%%
+%%%%                         23 - July - 2023                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case179_goc__api
@@ -213,7 +213,7 @@ mpc.gen = [
 	47	 108.755	 0.69	 100.88	 -99.5	 1.003	 220.0	 1	 182	 35.51	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 233.6808; % NG
 	65	 1257.9275	 198.28	 1553.56	 -1157.0	 1.003	 5800.0	 1	 2313	 202.855	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 5459.918; % COW
 	70	 144.5525	 -79.99	 642.85	 -802.83	 1.003	 2600.0	 1	 238	 51.105	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 2377.3799; % NG
-	77	 4464.77	 0.0	 3722.4	 -3722.4	 1.003	 10400.0	 1	 7109	 1820.54	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 11165.0508; % COW
+	77	 4464.27	 0.0	 3717.6	 -3717.6	 1.003	 10400.0	 1	 7108	 1820.54	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 11165.0508; % COW
 	79	 6756.5525	 0.0	 6132.0	 -6132.0	 1.003	 20000.0	 1	 12263	 1250.105	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 18208.2246; % COW
 	103	 1386.795	 0.0	 1358.0	 -1358.0	 1.003	 1500.0	 1	 2716	 57.59	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 1359.8911; % COW
 	112	 795.78	 0.0	 694.0	 -694.0	 1.003	 2100.0	 1	 1387	 204.56	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 0.0	 2247.1069; % COW
@@ -658,8 +658,8 @@ mpc.branch = [
 % INFO    : Gen at bus 45	: Pg=2010.625, Qg=89.785 -> Pg=2759.0, Qg=724.0
 % INFO    : Gen at bus 47	: Pg=152.35, Qg=0.69 -> Pg=169.0, Qg=44.0
 % INFO    : Gen at bus 65	: Pg=2932.815, Qg=353.385 -> Pg=2133.0, Qg=219.0
-% INFO    : Gen at bus 70	: Pg=1239.795, Qg=-79.99 -> Pg=220.0, Qg=-441.0
-% INFO    : Gen at bus 77	: Pg=7403.065, Qg=135.05 -> Pg=6554.0, Qg=3102.0
+% INFO    : Gen at bus 70	: Pg=1239.795, Qg=-79.99 -> Pg=220.0, Qg=-438.0
+% INFO    : Gen at bus 77	: Pg=7403.065, Qg=135.05 -> Pg=6553.0, Qg=3098.0
 % INFO    : Gen at bus 79	: Pg=10354.215, Qg=2358.21 -> Pg=11305.0, Qg=2287.0
 % INFO    : Gen at bus 103	: Pg=737.535, Qg=-14.145 -> Pg=2504.0, Qg=599.0
 % INFO    : Gen at bus 112	: Pg=1328.115, Qg=-16.82 -> Pg=1279.0, Qg=113.0
@@ -677,7 +677,7 @@ mpc.branch = [
 % INFO    : Gen at bus 9	: Qg -481.0, Qmin -418.35, Qmax 701.97 -> Qmin -577.2, Qmax 701.97
 % INFO    : Gen at bus 43	: Qg 327.0, Qmin -167.99, Qmax 311.04 -> Qmin -392.4, Qmax 392.4
 % INFO    : Gen at bus 45	: Qg 724.0, Qmin -586.38, Qmax 765.95 -> Qmin -868.8, Qmax 765.95
-% INFO    : Gen at bus 77	: Qg 3102.0, Qmin -2178.05, Qmax 2448.15 -> Qmin -3722.4, Qmax 3722.4
+% INFO    : Gen at bus 77	: Qg 3098.0, Qmin -2178.05, Qmax 2448.15 -> Qmin -3717.6, Qmax 3717.6
 % INFO    : Gen at bus 79	: Qg 2287.0, Qmin -1313.95, Qmax 6030.37 -> Qmin -2744.4, Qmax 6030.37
 % INFO    : Gen at bus 103	: Qg 599.0, Qmin -356.23, Qmax 327.94 -> Qmin -718.8, Qmax 718.8
 % INFO    : Gen at bus 116	: Qg 490.0, Qmin -289.98, Qmax 275.09 -> Qmin -588.0, Qmax 588.0
@@ -715,8 +715,8 @@ mpc.branch = [
 % WARNING : Failed to find a generator capacity within (2133.0-10665.0) after 100 samples, using percent increase model
 % INFO    : Gen at bus 65 - COW	: Pg=2133.0, Pmax=5459.92 -> Pmax=2313   samples: 100
 % INFO    : Gen at bus 70 - NG	: Pg=220.0, Pmax=2377.38 -> Pmax=238   samples: 12
-% WARNING : Failed to find a generator capacity within (6554.0-32770.0) after 100 samples, using percent increase model
-% INFO    : Gen at bus 77 - COW	: Pg=6554.0, Pmax=11165.05 -> Pmax=7109   samples: 100
+% WARNING : Failed to find a generator capacity within (6553.0-32765.0) after 100 samples, using percent increase model
+% INFO    : Gen at bus 77 - COW	: Pg=6553.0, Pmax=11165.05 -> Pmax=7108   samples: 100
 % WARNING : Failed to find a generator capacity within (11305.0-56525.0) after 100 samples, using percent increase model
 % INFO    : Gen at bus 79 - COW	: Pg=11305.0, Pmax=18208.22 -> Pmax=12263   samples: 100
 % WARNING : Failed to find a generator capacity within (2504.0-12520.0) after 100 samples, using percent increase model
@@ -821,9 +821,9 @@ mpc.branch = [
 % INFO    : Gen at bus 47	: Vg=1.003 -> Vg=1.003
 % INFO    : Gen at bus 65	: Pg=2133.0, Qg=219.0 -> Pg=1257.9275, Qg=198.28
 % INFO    : Gen at bus 65	: Vg=1.003 -> Vg=1.003
-% INFO    : Gen at bus 70	: Pg=220.0, Qg=-441.0 -> Pg=144.5525, Qg=-79.99
+% INFO    : Gen at bus 70	: Pg=220.0, Qg=-438.0 -> Pg=144.5525, Qg=-79.99
 % INFO    : Gen at bus 70	: Vg=1.003 -> Vg=1.003
-% INFO    : Gen at bus 77	: Pg=6554.0, Qg=3102.0 -> Pg=4464.77, Qg=0.0
+% INFO    : Gen at bus 77	: Pg=6553.0, Qg=3098.0 -> Pg=4464.27, Qg=0.0
 % INFO    : Gen at bus 77	: Vg=1.003 -> Vg=1.003
 % INFO    : Gen at bus 79	: Pg=11305.0, Qg=2287.0 -> Pg=6756.5525, Qg=0.0
 % INFO    : Gen at bus 79	: Vg=1.003 -> Vg=1.003

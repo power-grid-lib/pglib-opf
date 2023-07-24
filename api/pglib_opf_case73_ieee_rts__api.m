@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v21.07     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v23.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                         29 - July - 2021                         %%%%%
+%%%%                         23 - July - 2023                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case73_ieee_rts__api
@@ -521,7 +521,7 @@ mpc.branch = [
 % INFO    : Gen at bus 122	: Pg=30.0, Qg=3.0 -> Pg=68.0, Qg=-9.0
 % INFO    : Gen at bus 123	: Pg=104.65, Qg=15.0 -> Pg=294.0, Qg=17.0
 % INFO    : Gen at bus 123	: Pg=104.65, Qg=15.0 -> Pg=294.0, Qg=18.0
-% INFO    : Gen at bus 123	: Pg=245.0, Qg=62.5 -> Pg=379.0, Qg=17.0
+% INFO    : Gen at bus 123	: Pg=245.0, Qg=62.5 -> Pg=379.0, Qg=18.0
 % INFO    : Gen at bus 201	: Pg=18.0, Qg=5.0 -> Pg=69.0, Qg=1.0
 % INFO    : Gen at bus 201	: Pg=18.0, Qg=5.0 -> Pg=69.0, Qg=1.0
 % INFO    : Gen at bus 201	: Pg=45.6, Qg=2.5 -> Pg=68.0, Qg=1.0
@@ -1016,7 +1016,7 @@ mpc.branch = [
 % INFO    : Gen at bus 123	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 123	: Pg=294.0, Qg=18.0 -> Pg=171.575, Qg=0.0
 % INFO    : Gen at bus 123	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 123	: Pg=379.0, Qg=17.0 -> Pg=258.0, Qg=0.0
+% INFO    : Gen at bus 123	: Pg=379.0, Qg=18.0 -> Pg=258.0, Qg=0.0
 % INFO    : Gen at bus 123	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 201	: Pg=69.0, Qg=1.0 -> Pg=61.0, Qg=0.0
 % INFO    : Gen at bus 201	: Vg=1.0 -> Vg=1.0

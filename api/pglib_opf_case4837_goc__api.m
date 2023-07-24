@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v21.07     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v23.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                         29 - July - 2021                         %%%%%
+%%%%                         23 - July - 2023                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case4837_goc__api
@@ -4983,8 +4983,8 @@ mpc.gen = [
 	75582	 184.25	 0.0	 173.0	 -173.0	 1.0	 100.0	 1	 345	 23.5; % NG
 	75582	 257.75	 0.0	 246.0	 -246.0	 1.0	 100.0	 1	 492	 23.5; % COW
 	75582	 112.25	 6.3	 113.6	 -101.0	 1.0	 100.0	 1	 201	 23.5; % NG
-	75584	 521.5	 0.0	 1952.4	 -1952.4	 1.0	 100.0	 1	 998	 45.0; % NG
-	75584	 521.5	 0.0	 1952.4	 -1952.4	 1.0	 100.0	 1	 998	 45.0; % NG
+	75584	 521.5	 0.0	 5671874.4	 -5671874.4	 1.0	 100.0	 1	 998	 45.0; % NG
+	75584	 521.5	 0.0	 5675778.0	 -5675778.0	 1.0	 100.0	 1	 998	 45.0; % NG
 	75586	 142.5	 0.0	 118.0	 -118.0	 1.0	 100.0	 1	 235	 50.0; % NG
 	75586	 105.0	 49.45	 213.9	 -115.0	 1.0	 100.0	 1	 185	 25.0; % COW
 	75587	 514.5	 0.0	 490.0	 -490.0	 1.0	 100.0	 1	 979	 50.0; % COW
@@ -16186,8 +16186,8 @@ mpc.branch = [
 % INFO    : Gen at bus 75582	: Pg=100.0, Qg=26.25 -> Pg=134.0, Qg=-46.0
 % INFO    : Gen at bus 75582	: Pg=101.5, Qg=26.25 -> Pg=134.0, Qg=-46.0
 % INFO    : Gen at bus 75582	: Pg=101.5, Qg=26.25 -> Pg=134.0, Qg=-46.0
-% INFO    : Gen at bus 75584	: Pg=121.0, Qg=25.8 -> Pg=884.0, Qg=1627.0
-% INFO    : Gen at bus 75584	: Pg=121.5, Qg=25.8 -> Pg=884.0, Qg=1627.0
+% INFO    : Gen at bus 75584	: Pg=121.0, Qg=25.8 -> Pg=884.0, Qg=-4726562.0
+% INFO    : Gen at bus 75584	: Pg=121.5, Qg=25.8 -> Pg=884.0, Qg=4729815.0
 % INFO    : Gen at bus 75586	: Pg=125.0, Qg=25.55 -> Pg=175.0, Qg=-76.0
 % INFO    : Gen at bus 75586	: Pg=161.0, Qg=49.45 -> Pg=125.0, Qg=-76.0
 % INFO    : Gen at bus 75587	: Pg=116.5, Qg=22.6 -> Pg=204.0, Qg=-22.0
@@ -16319,8 +16319,8 @@ mpc.branch = [
 % INFO    : Gen at bus 75686	: Pg=51.5, Qg=6.35 -> Pg=88.0, Qg=-4.0
 % INFO    : Gen at bus 75686	: Pg=51.0, Qg=6.35 -> Pg=88.0, Qg=-4.0
 % INFO    : Gen at bus 75689	: Pg=47.0, Qg=10.75 -> Pg=213.0, Qg=-25.0
-% INFO    : Gen at bus 75689	: Pg=47.0, Qg=10.75 -> Pg=213.0, Qg=-25.0
-% INFO    : Gen at bus 75689	: Pg=252.5, Qg=27.5 -> Pg=383.0, Qg=-25.0
+% INFO    : Gen at bus 75689	: Pg=47.0, Qg=10.75 -> Pg=213.0, Qg=-24.0
+% INFO    : Gen at bus 75689	: Pg=252.5, Qg=27.5 -> Pg=383.0, Qg=-27.0
 % INFO    : Gen at bus 75689	: Pg=321.0, Qg=42.15 -> Pg=473.0, Qg=-25.0
 % INFO    : Gen at bus 75694	: Pg=39.5, Qg=4.3 -> Pg=157.0, Qg=58.0
 % INFO    : Gen at bus 75694	: Pg=34.0, Qg=4.3 -> Pg=144.0, Qg=58.0
@@ -16330,13 +16330,13 @@ mpc.branch = [
 % INFO    : Gen at bus 75697	: Pg=26.5, Qg=10.4 -> Pg=111.0, Qg=16.0
 % INFO    : Gen at bus 75705	: Pg=42.775, Qg=0.0 -> Pg=206.0, Qg=-118.0
 % INFO    : Gen at bus 75708	: Pg=437.0, Qg=100.4 -> Pg=496.0, Qg=91.0
-% INFO    : Gen at bus 75711	: Pg=341.0, Qg=0.0 -> Pg=458.0, Qg=56.0
-% INFO    : Gen at bus 75711	: Pg=367.5, Qg=0.0 -> Pg=458.0, Qg=56.0
+% INFO    : Gen at bus 75711	: Pg=341.0, Qg=0.0 -> Pg=458.0, Qg=2.0
+% INFO    : Gen at bus 75711	: Pg=367.5, Qg=0.0 -> Pg=458.0, Qg=110.0
 % INFO    : Gen at bus 75713	: Pg=404.5, Qg=88.3 -> Pg=574.0, Qg=145.0
 % INFO    : Gen at bus 75715	: Pg=217.5, Qg=29.2 -> Pg=273.0, Qg=77.0
 % INFO    : Gen at bus 75716	: Pg=213.0, Qg=26.1 -> Pg=367.0, Qg=-118.0
-% INFO    : Gen at bus 75717	: Pg=192.5, Qg=23.95 -> Pg=465.0, Qg=88.0
-% INFO    : Gen at bus 75717	: Pg=192.5, Qg=24.45 -> Pg=465.0, Qg=88.0
+% INFO    : Gen at bus 75717	: Pg=192.5, Qg=23.95 -> Pg=465.0, Qg=89.0
+% INFO    : Gen at bus 75717	: Pg=192.5, Qg=24.45 -> Pg=465.0, Qg=86.0
 % INFO    : Gen at bus 75717	: Pg=173.0, Qg=42.85 -> Pg=445.0, Qg=88.0
 % INFO    : Gen at bus 75717	: Pg=172.0, Qg=42.85 -> Pg=445.0, Qg=88.0
 % INFO    : Gen at bus 75719	: Pg=147.0, Qg=39.65 -> Pg=579.0, Qg=202.0
@@ -16448,8 +16448,8 @@ mpc.branch = [
 % INFO    : Gen at bus 75581	: Qg 768.0, Qmin -62.5, Qmax 132.8 -> Qmin -921.6, Qmax 921.6
 % INFO    : Gen at bus 75581	: Qg 768.0, Qmin -99.7, Qmax 185.4 -> Qmin -921.6, Qmax 921.6
 % INFO    : Gen at bus 75581	: Qg 768.0, Qmin -199.5, Qmax 370.9 -> Qmin -921.6, Qmax 921.6
-% INFO    : Gen at bus 75584	: Qg 1627.0, Qmin -60.0, Qmax 111.6 -> Qmin -1952.4, Qmax 1952.4
-% INFO    : Gen at bus 75584	: Qg 1627.0, Qmin -60.0, Qmax 111.6 -> Qmin -1952.4, Qmax 1952.4
+% INFO    : Gen at bus 75584	: Qg -4726562.0, Qmin -60.0, Qmax 111.6 -> Qmin -5671874.4, Qmax 5671874.4
+% INFO    : Gen at bus 75584	: Qg 4729815.0, Qmin -60.0, Qmax 111.6 -> Qmin -5675778.0, Qmax 5675778.0
 % INFO    : Gen at bus 75586	: Qg -76.0, Qmin -59.5, Qmax 110.6 -> Qmin -91.2, Qmax 110.6
 % INFO    : Gen at bus 75588	: Qg -120.0, Qmin 0.0, Qmax 0.0 -> Qmin -144.0, Qmax 144.0
 % INFO    : Gen at bus 75593	: Qg 66.0, Qmin -45.0, Qmax 65.4 -> Qmin -79.2, Qmax 79.2
@@ -17694,9 +17694,9 @@ mpc.branch = [
 % INFO    : Gen at bus 75582	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 75582	: Pg=134.0, Qg=-46.0 -> Pg=112.25, Qg=6.3
 % INFO    : Gen at bus 75582	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 75584	: Pg=884.0, Qg=1627.0 -> Pg=521.5, Qg=0.0
+% INFO    : Gen at bus 75584	: Pg=884.0, Qg=-4726562.0 -> Pg=521.5, Qg=0.0
 % INFO    : Gen at bus 75584	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 75584	: Pg=884.0, Qg=1627.0 -> Pg=521.5, Qg=0.0
+% INFO    : Gen at bus 75584	: Pg=884.0, Qg=4729815.0 -> Pg=521.5, Qg=0.0
 % INFO    : Gen at bus 75584	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 75586	: Pg=175.0, Qg=-76.0 -> Pg=142.5, Qg=0.0
 % INFO    : Gen at bus 75586	: Vg=1.0 -> Vg=1.0
@@ -17960,9 +17960,9 @@ mpc.branch = [
 % INFO    : Gen at bus 75686	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 75689	: Pg=213.0, Qg=-25.0 -> Pg=141.0, Qg=0.0
 % INFO    : Gen at bus 75689	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 75689	: Pg=213.0, Qg=-25.0 -> Pg=197.5, Qg=0.0
+% INFO    : Gen at bus 75689	: Pg=213.0, Qg=-24.0 -> Pg=197.5, Qg=0.0
 % INFO    : Gen at bus 75689	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 75689	: Pg=383.0, Qg=-25.0 -> Pg=246.5, Qg=0.0
+% INFO    : Gen at bus 75689	: Pg=383.0, Qg=-27.0 -> Pg=246.5, Qg=0.0
 % INFO    : Gen at bus 75689	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 75689	: Pg=473.0, Qg=-25.0 -> Pg=339.5, Qg=1.65
 % INFO    : Gen at bus 75689	: Vg=1.0 -> Vg=1.0
@@ -17982,9 +17982,9 @@ mpc.branch = [
 % INFO    : Gen at bus 75705	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 75708	: Pg=496.0, Qg=91.0 -> Pg=401.0, Qg=55.8
 % INFO    : Gen at bus 75708	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 75711	: Pg=458.0, Qg=56.0 -> Pg=270.0, Qg=0.0
+% INFO    : Gen at bus 75711	: Pg=458.0, Qg=2.0 -> Pg=270.0, Qg=0.0
 % INFO    : Gen at bus 75711	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 75711	: Pg=458.0, Qg=56.0 -> Pg=342.5, Qg=0.0
+% INFO    : Gen at bus 75711	: Pg=458.0, Qg=110.0 -> Pg=342.5, Qg=0.0
 % INFO    : Gen at bus 75711	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 75713	: Pg=574.0, Qg=145.0 -> Pg=399.0, Qg=29.05
 % INFO    : Gen at bus 75713	: Vg=1.0 -> Vg=1.0
@@ -17992,9 +17992,9 @@ mpc.branch = [
 % INFO    : Gen at bus 75715	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 75716	: Pg=367.0, Qg=-118.0 -> Pg=280.0, Qg=0.0
 % INFO    : Gen at bus 75716	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 75717	: Pg=465.0, Qg=88.0 -> Pg=383.5, Qg=0.0
+% INFO    : Gen at bus 75717	: Pg=465.0, Qg=89.0 -> Pg=383.5, Qg=0.0
 % INFO    : Gen at bus 75717	: Vg=1.0 -> Vg=1.0
-% INFO    : Gen at bus 75717	: Pg=465.0, Qg=88.0 -> Pg=290.5, Qg=0.0
+% INFO    : Gen at bus 75717	: Pg=465.0, Qg=86.0 -> Pg=290.5, Qg=0.0
 % INFO    : Gen at bus 75717	: Vg=1.0 -> Vg=1.0
 % INFO    : Gen at bus 75717	: Pg=445.0, Qg=88.0 -> Pg=296.5, Qg=0.0
 % INFO    : Gen at bus 75717	: Vg=1.0 -> Vg=1.0

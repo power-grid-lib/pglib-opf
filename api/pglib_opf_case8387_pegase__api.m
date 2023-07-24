@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v21.07     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v23.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                         29 - July - 2021                         %%%%%
+%%%%                         23 - July - 2023                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case8387_pegase__api
@@ -1267,7 +1267,7 @@ mpc.bus = [
 	1252	 1	 0.0	 0.0	 0.0	 22.60474	 1	    1.00000	    0.00000	 150.0	 1	    1.10000	    0.90000;
 	1253	 1	 19.50	 6.00	 0.0	 0.0	 1	    1.00000	    0.00000	 110.0	 1	    1.10000	    0.90000;
 	1254	 2	 3.90	 2.20	 0.0	 0.0	 1	    1.00000	    0.00000	 150.0	 1	    1.10000	    0.90000;
-	1255	 1	 157.15	 21.40	 0.0	 0.0	 1	    1.01049	    0.00000	 220.0	 1	    1.12097	    0.90000;
+	1255	 1	 157.16	 21.40	 0.0	 0.0	 1	    1.01049	    0.00000	 220.0	 1	    1.12097	    0.90000;
 	1256	 1	 11.70	 3.50	 0.0	 0.0	 1	    1.00000	    0.00000	 110.0	 1	    1.10000	    0.90000;
 	1257	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.00000	    0.00000	 220.0	 1	    1.10000	    0.90000;
 	1258	 1	 0.0	 0.0	 0.0	 0.0	 1	    1.02497	    0.00000	 380.0	 1	    1.14995	    0.90000;
@@ -27435,7 +27435,7 @@ mpc.branch = [
 % INFO    : Bus 1251	: Pd=10.11121, Qd=8.9 -> Pd=10.94, Qd=8.90
 % INFO    : Bus 1253	: Pd=18.01998, Qd=6.0 -> Pd=19.50, Qd=6.00
 % INFO    : Bus 1254	: Pd=3.603996, Qd=2.2 -> Pd=3.90, Qd=2.20
-% INFO    : Bus 1255	: Pd=145.2, Qd=21.4 -> Pd=157.15, Qd=21.40
+% INFO    : Bus 1255	: Pd=145.2, Qd=21.4 -> Pd=157.16, Qd=21.40
 % INFO    : Bus 1256	: Pd=10.81199, Qd=3.5 -> Pd=11.70, Qd=3.50
 % INFO    : Bus 1259	: Pd=19.82198, Qd=3.1 -> Pd=21.45, Qd=3.10
 % INFO    : Bus 1261	: Pd=562.3, Qd=159.1 -> Pd=608.60, Qd=159.10
@@ -31386,7 +31386,7 @@ mpc.branch = [
 % INFO    : Bus 8382	: Pd=246.5, Qd=-1.9 -> Pd=246.50, Qd=-1.90
 % INFO    : 
 % INFO    : === Generator Setpoint Replacement Notes ===
-% INFO    : Gen at bus 5	: Pg=1044.4, Qg=140.4 -> Pg=2178.0, Qg=494.0
+% INFO    : Gen at bus 5	: Pg=1044.4, Qg=140.4 -> Pg=2178.0, Qg=495.0
 % INFO    : Gen at bus 10	: Pg=31.25, Qg=13.32 -> Pg=0.0, Qg=-11.0
 % INFO    : Gen at bus 14	: Pg=467.5, Qg=104.0 -> Pg=494.0, Qg=-92.0
 % INFO    : Gen at bus 20	: Pg=319.6, Qg=86.8 -> Pg=241.0, Qg=137.0
@@ -32634,7 +32634,7 @@ mpc.branch = [
 % INFO    : Gen at bus 5475	: Pg=72.9, Qg=22.2 -> Pg=106.0, Qg=27.0
 % INFO    : Gen at bus 5478	: Pg=820.2, Qg=119.4 -> Pg=566.0, Qg=38.0
 % INFO    : Gen at bus 5486	: Pg=0.2, Qg=0.98 -> Pg=60.0, Qg=9.0
-% INFO    : Gen at bus 5487	: Pg=697.2, Qg=165.6 -> Pg=419.0, Qg=174.0
+% INFO    : Gen at bus 5487	: Pg=697.2, Qg=165.6 -> Pg=419.0, Qg=173.0
 % INFO    : Gen at bus 5503	: Pg=0.51, Qg=0.64 -> Pg=81.0, Qg=19.0
 % INFO    : Gen at bus 5510	: Pg=14.58, Qg=5.96 -> Pg=79.0, Qg=29.0
 % INFO    : Gen at bus 5524	: Pg=74.8, Qg=11.0 -> Pg=216.0, Qg=86.0
@@ -33253,7 +33253,7 @@ mpc.branch = [
 % INFO    : Gen at bus 8385	: Pg=419.0, Qg=124.2 -> Pg=413.0, Qg=58.0
 % INFO    : 
 % INFO    : === Generator Reactive Capacity Atleast Setpoint Value Notes ===
-% INFO    : Gen at bus 5	: Qg 494.0, Qmin -211.567, Qmax 524.5259 -> Qmin -592.8, Qmax 524.5259
+% INFO    : Gen at bus 5	: Qg 495.0, Qmin -211.567, Qmax 524.5259 -> Qmin -594.0, Qmax 524.5259
 % INFO    : Gen at bus 20	: Qg 137.0, Qmin -66.2055, Qmax 179.4347 -> Qmin -164.4, Qmax 179.4347
 % INFO    : Gen at bus 27	: Qg 102.0, Qmin 0.8, Qmax 0.8 -> Qmin -122.4, Qmax 122.4
 % INFO    : Gen at bus 28	: Qg 144.0, Qmin 0.1, Qmax 0.1 -> Qmin -172.8, Qmax 172.8
@@ -33629,7 +33629,7 @@ mpc.branch = [
 % INFO    : Gen at bus 5432	: Qg 171.0, Qmin -128.135, Qmax 362.2147 -> Qmin -205.2, Qmax 362.2147
 % INFO    : Gen at bus 5446	: Qg 178.0, Qmin -139.212, Qmax 411.6599 -> Qmin -213.6, Qmax 411.6599
 % INFO    : Gen at bus 5475	: Qg 27.0, Qmin -17.9276, Qmax 56.85985 -> Qmin -32.4, Qmax 56.85985
-% INFO    : Gen at bus 5487	: Qg 174.0, Qmin -138.952, Qmax 351.6586 -> Qmin -208.8, Qmax 351.6586
+% INFO    : Gen at bus 5487	: Qg 173.0, Qmin -138.952, Qmax 351.6586 -> Qmin -207.6, Qmax 351.6586
 % INFO    : Gen at bus 5524	: Qg 86.0, Qmin -15.1397, Qmax 34.67426 -> Qmin -103.2, Qmax 103.2
 % INFO    : Gen at bus 5536	: Qg 145.0, Qmin -59.5527, Qmax 185.6273 -> Qmin -174.0, Qmax 185.6273
 % INFO    : Gen at bus 5541	: Qg 27.0, Qmin -19.0656, Qmax 55.72582 -> Qmin -32.4, Qmax 55.72582
@@ -36361,7 +36361,7 @@ mpc.branch = [
 % INFO    : Gen at bus 8385	: Pmin=200.0 -> Pmin=100.0 
 % INFO    : 
 % INFO    : === Generator Reactive Capacity Atleast Max 50 Percent Active Model Notes ===
-% INFO    : Gen at bus 5 - COW	: Pmax 2362.0, Qmin -592.8, Qmax 524.5259 -> Qmin -1181.0, Qmax 1181.0
+% INFO    : Gen at bus 5 - COW	: Pmax 2362.0, Qmin -594.0, Qmax 524.5259 -> Qmin -1181.0, Qmax 1181.0
 % INFO    : Gen at bus 14 - NG	: Pmax 700.0, Qmin -93.4811, Qmax 212.965 -> Qmin -350.0, Qmax 350.0
 % INFO    : Gen at bus 27 - PEL	: Pmax 312.0, Qmin -122.4, Qmax 122.4 -> Qmin -156.0, Qmax 156.0
 % INFO    : Gen at bus 34 - NG	: Pmax 35.0, Qmin -7.14375, Qmax 17.7615 -> Qmin -18.0, Qmax 18.0
@@ -37125,7 +37125,7 @@ mpc.branch = [
 % INFO    : Gen at bus 5446 - NUC	: Pmax 1211.0, Qmin -213.6, Qmax 411.6599 -> Qmin -606.0, Qmax 606.0
 % INFO    : Gen at bus 5475 - NG	: Pmax 155.0, Qmin -32.4, Qmax 56.85985 -> Qmin -78.0, Qmax 78.0
 % INFO    : Gen at bus 5478 - COW	: Pmax 938.0, Qmin -161.157, Qmax 390.3955 -> Qmin -469.0, Qmax 469.0
-% INFO    : Gen at bus 5487 - COW	: Pmax 521.0, Qmin -208.8, Qmax 351.6586 -> Qmin -261.0, Qmax 351.6586
+% INFO    : Gen at bus 5487 - COW	: Pmax 521.0, Qmin -207.6, Qmax 351.6586 -> Qmin -261.0, Qmax 351.6586
 % INFO    : Gen at bus 5524 - NG	: Pmax 300.0, Qmin -103.2, Qmax 103.2 -> Qmin -150.0, Qmax 150.0
 % INFO    : Gen at bus 5526 - NG	: Pmax 187.0, Qmin -13.2341, Qmax 36.58297 -> Qmin -94.0, Qmax 94.0
 % INFO    : Gen at bus 5528 - COW	: Pmax 902.0, Qmin -155.881, Qmax 395.5863 -> Qmin -451.0, Qmax 451.0
@@ -37481,7 +37481,7 @@ mpc.branch = [
 % INFO    : Gen at bus 8385 - NG	: Pmax 449.0, Qmin -93.2181, Qmax 274.1952 -> Qmin -225.0, Qmax 274.1952
 % INFO    : 
 % INFO    : === Generator Setpoint Replacement Notes ===
-% INFO    : Gen at bus 5	: Pg=2178.0, Qg=494.0 -> Pg=1280.999999, Qg=0.0
+% INFO    : Gen at bus 5	: Pg=2178.0, Qg=495.0 -> Pg=1280.999999, Qg=0.0
 % INFO    : Gen at bus 5	: Vg=1.060105 -> Vg=1.01328
 % INFO    : Gen at bus 10	: Pg=0.0, Qg=-11.0 -> Pg=-4953.5, Qg=0.0
 % INFO    : Gen at bus 10	: Vg=1.045776 -> Vg=1.0
@@ -39977,7 +39977,7 @@ mpc.branch = [
 % INFO    : Gen at bus 5478	: Vg=1.052289 -> Vg=1.0186
 % INFO    : Gen at bus 5486	: Pg=60.0, Qg=9.0 -> Pg=-4897.0, Qg=0.0
 % INFO    : Gen at bus 5486	: Vg=1.078087 -> Vg=1.02378
-% INFO    : Gen at bus 5487	: Pg=419.0, Qg=174.0 -> Pg=327.1666665, Qg=45.3293
+% INFO    : Gen at bus 5487	: Pg=419.0, Qg=173.0 -> Pg=327.1666665, Qg=45.3293
 % INFO    : Gen at bus 5487	: Vg=1.049727 -> Vg=1.0231
 % INFO    : Gen at bus 5503	: Pg=81.0, Qg=19.0 -> Pg=-4912.5, Qg=0.0
 % INFO    : Gen at bus 5503	: Vg=1.000917 -> Vg=1.0

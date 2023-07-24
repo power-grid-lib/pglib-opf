@@ -1,9 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v21.07     %%%%%
+%%%%    IEEE PES Power Grid Library - Optimal Power Flow - v23.07     %%%%%
 %%%%          (https://github.com/power-grid-lib/pglib-opf)           %%%%%
 %%%%             Benchmark Group - Active Power Increase              %%%%%
-%%%%                         29 - July - 2021                         %%%%%
+%%%%                         23 - July - 2023                         %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function mpc = pglib_opf_case2868_rte__api
@@ -9951,7 +9951,7 @@ mpc.branch = [
 % INFO    : Gen at bus 2439	: Pg=865.0, Qg=230.335 -> Pg=1108.0, Qg=308.0
 % INFO    : Gen at bus 2440	: Pg=820.0, Qg=210.31 -> Pg=1026.0, Qg=341.0
 % INFO    : Gen at bus 2441	: Pg=25.9, Qg=13.51 -> Pg=42.0, Qg=6.0
-% INFO    : Gen at bus 2442	: Pg=860.0, Qg=234.135 -> Pg=1242.0, Qg=423.0
+% INFO    : Gen at bus 2442	: Pg=860.0, Qg=234.135 -> Pg=1241.0, Qg=423.0
 % INFO    : Gen at bus 2443	: Pg=860.0, Qg=234.135 -> Pg=1240.0, Qg=426.0
 % INFO    : Gen at bus 2444	: Pg=380.0, Qg=111.02 -> Pg=987.0, Qg=610.0
 % INFO    : Gen at bus 2445	: Pg=380.0, Qg=111.02 -> Pg=987.0, Qg=610.0
@@ -10852,7 +10852,7 @@ mpc.branch = [
 % INFO    : Gen at bus 2439 - COW	: Pg=1108.0, Pmax=1380.0 -> Pmax=1190   samples: 10
 % INFO    : Gen at bus 2440 - COW	: Pg=1026.0, Pmax=1290.0 -> Pmax=1240   samples: 27
 % INFO    : Gen at bus 2441 - COW	: Pg=42.0, Pmax=51.0 -> Pmax=71   samples: 1
-% INFO    : Gen at bus 2442 - NUC	: Pg=1242.0, Pmax=1380.0 -> Pmax=1341   samples: 15
+% INFO    : Gen at bus 2442 - NUC	: Pg=1241.0, Pmax=1380.0 -> Pmax=1341   samples: 15
 % INFO    : Gen at bus 2443 - NUC	: Pg=1240.0, Pmax=1380.0 -> Pmax=1574   samples: 7
 % INFO    : Gen at bus 2444 - NUC	: Pg=987.0, Pmax=585.0 -> Pmax=1312   samples: 2
 % INFO    : Gen at bus 2445 - COW	: Pg=987.0, Pmax=585.0 -> Pmax=1270   samples: 8
@@ -13032,7 +13032,7 @@ mpc.branch = [
 % INFO    : Gen at bus 2440	: Vg=0.975 -> Vg=0.975
 % INFO    : Gen at bus 2441	: Pg=42.0, Qg=6.0 -> Pg=35.7, Qg=0.755
 % INFO    : Gen at bus 2441	: Vg=0.975 -> Vg=0.975
-% INFO    : Gen at bus 2442	: Pg=1242.0, Qg=423.0 -> Pg=755.5, Qg=2.24
+% INFO    : Gen at bus 2442	: Pg=1241.0, Qg=423.0 -> Pg=755.5, Qg=2.24
 % INFO    : Gen at bus 2442	: Vg=0.975 -> Vg=0.975
 % INFO    : Gen at bus 2443	: Pg=1240.0, Qg=426.0 -> Pg=872.0, Qg=0.0
 % INFO    : Gen at bus 2443	: Vg=0.975 -> Vg=0.975

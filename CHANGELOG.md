@@ -1,6 +1,11 @@
 PGLib OPF Benchmarks Change Log
 ===============================
 
+### v23.07
+- Add 2 cases from the Synthetic Australian system project
+- Add 5 cases from the EPIGRIDS project
+- Updated baseline results and case generation to PowerModels v0.19
+
 ### v21.07
 - Add 60 bus Nordic system and 8387 bus pegase system
 
